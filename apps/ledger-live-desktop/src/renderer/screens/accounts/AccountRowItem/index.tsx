@@ -222,7 +222,12 @@ const AccountRowItem = (props: Props) => {
             data-testid={account.type === "Account" && `account-component-${accountName}`}
           >
             <Header account={account} />
-            <Box flex="12%">
+            <Box flex="10%">
+              <div style={{fontSize: 10}}>
+                {account.deviceId}
+              </div>
+            </Box>
+            <Box flex="2%">
               <div>
                 <AccountSyncStatusIndicator accountId={mainAccount.id} account={account} />
               </div>
