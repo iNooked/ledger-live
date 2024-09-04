@@ -422,6 +422,7 @@ export const makeScanAccounts =
       }
 
       async function main() {
+        // TODO: use this one ?
         try {
           const derivationModes = getDerivationModesForCurrency(currency);
 
