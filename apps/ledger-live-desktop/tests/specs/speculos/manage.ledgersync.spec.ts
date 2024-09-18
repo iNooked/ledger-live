@@ -5,7 +5,7 @@ import { getDescription } from "../../utils/customJsonReporter";
 
 const app: AppInfos = AppInfos.LS;
 
-test.describe(`[${app.name}] Sync Accounts`, () => {
+test.describe.serial(`[${app.name}] Sync Accounts`, () => {
   test.use({
     userdata: "ledgerSync",
     speculosApp: app,
@@ -41,4 +41,7 @@ test.describe(`[${app.name}] Sync Accounts`, () => {
       await app.drawer.close();
     },
   );
+
+  
 });
+

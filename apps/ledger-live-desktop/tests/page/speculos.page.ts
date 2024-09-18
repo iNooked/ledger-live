@@ -49,6 +49,7 @@ export class SpeculosPage extends AppPage {
 
   @step("Press right on the device until specified text appears, then confirm the operation")
   async confirmOperationOnDevice(text: string) {
+  //  await waitFor(text)
     await pressRightUntil(text);
     await pressBoth();
   }
