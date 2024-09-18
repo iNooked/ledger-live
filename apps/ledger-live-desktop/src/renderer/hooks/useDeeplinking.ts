@@ -135,7 +135,12 @@ export function useDeepLinkHandler() {
           ...(ajsPropTrackData ? JSON.parse(ajsPropTrackData) : {}),
         });
       }
+      console.log("url")
       switch (url) {
+        case "loadprofile": {
+          const { buffer, id } = query;
+          navigate(`/settings/profile?id=${id}&buffer=${buffer}`);
+        }
         case "accounts": {
           const { address } = query;
           if (address && typeof address === "string") {
