@@ -12,6 +12,7 @@ export class LedgerSyncDrawer extends Drawer {
   private backupDeletionSuccessText = this.page.getByText(
     "Your Ledger Live apps are no longer synched",
   );
+  private syncDataButton = this.page.getByTestId('topbar-synchronized');
 
   @step("Synchronize accounts")
   async syncAccounts() {
@@ -63,5 +64,11 @@ export class LedgerSyncDrawer extends Drawer {
   @step("Check if the backup deletion was successful")
   async expectBackupDeletion() {
     await expect(this.backupDeletionSuccessText).toBeVisible();
+  }
+
+  @step("Synchronize data")
+  async syncData() {
+    await expect(this.syncDataButton).toBeVisible();
+    await this.syncDataButton.click();
   }
 }
