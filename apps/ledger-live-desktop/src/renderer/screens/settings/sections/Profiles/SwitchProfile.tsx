@@ -48,6 +48,7 @@ const SwitchProfile = () => {
   };
 
   const errorName = new Error("Invalid name");
+  const shouldDisplayError = newProfileName != "" && nameDisabled;
 
   return (
     <>
@@ -76,7 +77,7 @@ const SwitchProfile = () => {
                 placeholder={"name"}
                 value={newProfileName}
                 onChange={checkNewProfileName}
-                error={nameDisabled && errorName}
+                error={shouldDisplayError && errorName}
               />
               <Input
                 placeholder={"description"}
