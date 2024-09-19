@@ -25,7 +25,7 @@ const SwitchProfile = () => {
     newProfileName,
     newProfileDescription,
     newProfileTransferSettings,
-    setNewProfileName,
+    nameDisabled,
     setNewProfileDescription,
     setNewProfileTransferSettings,
     setIsOpen,
@@ -35,6 +35,7 @@ const SwitchProfile = () => {
     switchProfile,
     shareProfile,
     setShareUrl,
+    checkNewProfileName,
   } = useProfile();
   // console.log({windowlocation: window.location.search})
   const startingProfile = { id: "", name: "starting profile", description: "starting profile" };
@@ -45,6 +46,8 @@ const SwitchProfile = () => {
       navigator.clipboard.writeText(text);
     }
   };
+
+  const errorName = new Error("Invalid name");
 
   return (
     <>
@@ -69,7 +72,12 @@ const SwitchProfile = () => {
         <Flex flexDirection={"row"} columnGap={3}>
           <Flex flexDirection={"column"} rowGap={3}>
             <Flex flexDirection={"row"} columnGap={3}>
-              <Input placeholder={"name"} value={newProfileName} onChange={setNewProfileName} />
+              <Input
+                placeholder={"name"}
+                value={newProfileName}
+                onChange={checkNewProfileName}
+                error={nameDisabled && errorName}
+              />
               <Input
                 placeholder={"description"}
                 value={newProfileDescription}
@@ -93,7 +101,7 @@ const SwitchProfile = () => {
             <Button
               small
               primary
-              disabled={newProfileName === ""}
+              disabled={nameDisabled}
               onClick={createProfile}
               data-testid="settings-save-profile"
             >
@@ -102,7 +110,7 @@ const SwitchProfile = () => {
             <Button
               small
               primary
-              disabled={newProfileName === ""}
+              disabled={nameDisabled}
               onClick={importProfile}
               data-testid="settings-import-profile"
             >

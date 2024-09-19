@@ -48,6 +48,7 @@ const useProfile = () => {
   const location = useLocation();
   console.log({ location });
   const [user, setUser] = useState<any>({});
+  const [nameDisabled, setNameDisabled] = useState(true);
   // const API_KEY = useEnv("FILESTORAGE_API_KEY");
   // console.log({API_KEY})
 
@@ -118,10 +119,11 @@ const useProfile = () => {
 
   const createProfile = async () => {
     console.log("Creating profile...");
-    if (newProfileName === "") return;
+    const newProfileNameTrim = newProfileName.trim();
+    if (newProfileNameTrim === "") return;
     const newProfile: ProfileInfos = {
       id: uuid(),
-      name: newProfileName,
+      name: newProfileNameTrim,
       description: newProfileDescription,
     };
     const updatedProfiles = [...(profiles ? profiles : []), newProfile];
@@ -241,6 +243,7 @@ const useProfile = () => {
 
   const importProfile = useCallback(async () => {
     console.log("Importing profile...");
+    const newProfileNameTrim = newProfileName.trim();
     const { filePaths } = await ipcRenderer.invoke("show-open-dialog", {
       title: "Import app.json profile",
       filters: [
@@ -258,7 +261,7 @@ const useProfile = () => {
         id: uuid(),
         // name: data.name, // NOTE: probably should use newProfileName instead
         // description: data.description, // NOTE: ditto ^
-        name: newProfileName,
+        name: newProfileNameTrim,
         description: newProfileDescription,
       };
 
@@ -337,6 +340,24 @@ const useProfile = () => {
     console.log("Profile switched.");
   };
 
+  const checkNewProfileName = useCallback(
+    (_name: string) => {
+      const name = _name.replace(/[^a-zA-Z0-9_\s]/g, "");
+      setNewProfileName(name);
+      setNameDisabled(false);
+      if (name.trim() === "") {
+        setNewProfileName(name.trim());
+        setNameDisabled(true);
+      }
+      (profiles || []).map((profile: any) => {
+        if (profile.name === name.trim()) {
+          setNameDisabled(true);
+        }
+      });
+    },
+    [profiles],
+  );
+
   console.log("Returning hook values...");
   return {
     profiles,
@@ -346,6 +367,7 @@ const useProfile = () => {
     newProfileDescription,
     newProfileTransferSettings,
     shareUrl,
+    nameDisabled,
     setNewProfileName,
     setNewProfileDescription,
     setNewProfileTransferSettings,
@@ -356,6 +378,8 @@ const useProfile = () => {
     switchProfile,
     shareProfile,
     setShareUrl,
+    setNameDisabled,
+    checkNewProfileName,
   };
 };
 
