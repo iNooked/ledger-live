@@ -41,7 +41,7 @@ test.describe.serial(`[${app.name}] Sync 1st Instance`, () => {
     },
   );
 });
-/*
+
 test.describe.serial(`[${app.name}] Sync 2nd Instance`, () => {
   test.use({
     userdata: "2instances_app", // Second json
@@ -91,4 +91,3 @@ test.describe.serial(`[${app.name}] Sync 2nd Instance`, () => {
   );
 });
 
-*/
