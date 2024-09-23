@@ -30,11 +30,9 @@ test.describe.serial(`[${app.name}] Sync 1st Instance`, () => {
       await app.ledgerSync.expectSyncAccountsButtonExist();
       await app.ledgerSync.syncAccounts();
       await app.speculos.clickNextUntilText("Make sure");
-      await app.speculos.clickNextUntilText("Connect with");
-      await app.speculos.pressBothButtonsOnDevice();
+      await app.speculos.confirmOperationOnDevice("Connect with");
       await app.speculos.clickNextUntilText("Your crypto accounts");
-      await app.speculos.clickNextUntilText("Turn on sync?");
-      await app.speculos.pressBothButtonsOnDevice();
+      await app.speculos.confirmOperationOnDevice("Turn on sync?");
       await app.ledgerSync.expectSynchronizationSuccess();
       await app.ledgerSync.closeLedgerSync();
       await app.ledgerSync.syncData();
@@ -64,18 +62,13 @@ test.describe.serial(`[${app.name}] Sync 2nd Instance`, () => {
       await app.ledgerSync.expectSyncAccountsButtonExist();
 
       await app.ledgerSync.syncAccounts();
-     // await app.speculos.clickNextUntilText("Make sure");
-      await app.speculos.clickNextUntilText("Connect with");
-      await app.speculos.clickNextUntilText("Make sure to use");
-      await app.speculos.clickNextUntilText("Connect with");
-      await app.speculos.pressBothButtonsOnDevice();
-      await app.speculos.clickNextUntilText("Turn on sync for this");
+     await app.speculos.clickNextUntilText("Make sure");
+      await app.speculos.confirmOperationOnDevice("Connect with");
       await app.speculos.clickNextUntilText("Your crypto accounts");
-      await app.speculos.clickNextUntilText("Turn on sync?");
-      await app.speculos.pressBothButtonsOnDevice();
+      await app.speculos.confirmOperationOnDevice("Turn on sync?");
       await app.ledgerSync.expectSynchronizationSuccess();
       await app.ledgerSync.closeLedgerSync();
-      await page.waitForTimeout(10000);
+      await app.ledgerSync.syncData();
       await app.layout.goToAccounts();
       const accountName = await app.accounts.getAccountsName();
       expect(accountName).toContain("Bitcoin 2 (legacy)");

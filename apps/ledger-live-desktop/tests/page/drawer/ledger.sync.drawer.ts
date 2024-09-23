@@ -68,7 +68,16 @@ export class LedgerSyncDrawer extends Drawer {
 
   @step("Synchronize data")
   async syncData() {
-    await expect(this.syncDataButton).toBeVisible();
-    await this.syncDataButton.click();
+
+await expect(this.page.getByTestId('topbar-synchronized')).toBeVisible();
+await this.page.getByTestId('topbar-synchronized').click();
+
+await expect(this.page.getByTestId('topbar-synchronize-button')).toBeVisible();
+
+
+await this.page.waitForSelector('[data-testid="topbar-synchronized"]', { state: 'visible' });
+await expect(this.page.getByTestId('topbar-synchronized')).toBeVisible();
+//await this.page.waitForTimeout(10000);
+
   }
 }
