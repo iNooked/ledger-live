@@ -12,7 +12,7 @@ let syncedAccountNames: string[] = []; // Store account names after first sync
 // First test block
 test.describe.serial(`[${app.name}] Sync 1st Instance`, () => {
   test.use({
-    userdata: "ledgerSync", // First json
+    userdata: "ledgerSync_with_accounts", // First json
     speculosApp: app,
   });
 
@@ -26,7 +26,6 @@ test.describe.serial(`[${app.name}] Sync 1st Instance`, () => {
     },
     async ({ app, page }) => {
       await addTmsLink(getDescription(test.info().annotations).split(", "));
-
       await app.layout.goToSettings();
       await app.settings.openManageLedgerSync();
       await app.ledgerSync.expectSyncAccountsButtonExist();
@@ -38,11 +37,8 @@ test.describe.serial(`[${app.name}] Sync 1st Instance`, () => {
       await app.ledgerSync.expectSynchronizationSuccess();
       await app.ledgerSync.closeLedgerSync();
       await app.ledgerSync.syncData();
-
-      // Save account names after sync
       await app.layout.goToAccounts();
-      syncedAccountNames = await app.accounts.getAccountsName(); // Adjust to match the method that fetches account names
-      console.log("Synced Account Names:", syncedAccountNames);
+      syncedAccountNames = await app.accounts.getAccountsName();
     },
   );
 });
@@ -50,7 +46,7 @@ test.describe.serial(`[${app.name}] Sync 1st Instance`, () => {
 // Second test block
 test.describe.serial(`[${app.name}] Sync 2nd Instance`, () => {
   test.use({
-    userdata: "2instances_app", // Second json
+    userdata: "ledgerSync_no_accounts", // Second json
     speculosApp: app,
   });
 
@@ -59,7 +55,7 @@ test.describe.serial(`[${app.name}] Sync 2nd Instance`, () => {
     {
       annotation: {
         type: "TMS",
-        description: "B2CQA-2292, B2CQA-2293, B2CQA-2296",
+        description: "B2CQA-2316, B2CQA-2303, B2CQA-2292, B2CQA-2314",
       },
     },
     async ({ app, page }) => {
@@ -78,16 +74,12 @@ test.describe.serial(`[${app.name}] Sync 2nd Instance`, () => {
       await app.ledgerSync.closeLedgerSync();
       await app.ledgerSync.syncData();
 
-      // Verify synchronized accounts
       await app.layout.goToAccounts();
-      page.waitForTimeout(2000);
-      const accountNamesAfterSync = await app.accounts.getAccountsName(); // Adjust to match the method that fetches account names
-      console.log("Account Names After 2nd Sync:", accountNamesAfterSync);
-
-      // Compare account names
+      const accountNamesAfterSync = await app.accounts.getAccountsName();
       for (const account of syncedAccountNames) {
         expect(accountNamesAfterSync).toContain(account);
       }
+      await app.layout.goToSettings();
 
       await app.settings.openManageLedgerSync();
       await app.ledgerSync.manageBackup();
