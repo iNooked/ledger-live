@@ -62,6 +62,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ inputs.ref || github.sha }}
+      - name: Fix Detox device registry
+        run: rm ~/Library/Detox/device.registry.json
       - name: setup caches
         id: caches
         uses: LedgerHQ/ledger-live/tools/actions/composites/setup-caches@develop
