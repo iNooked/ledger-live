@@ -8,11 +8,15 @@ export class LedgerSyncDrawer extends Drawer {
   private closeLedgerSyncButton = this.page.getByRole("button", { name: "Close" });
   private manageBackupButton = this.page.getByTestId("walletSync-manage-backup");
   private confirmBackupDeletionButton = this.page.getByRole("button", { name: "Delete" });
-  private successTextElement = this.page.locator("span", { hasText: "Ledger Sync turned on for" }).or(this.page.locator("span", { hasText: "Sync successful!" })).first();
+  private successTextElement = this.page
+    .locator("span", { hasText: "Ledger Sync turned on for" })
+    .or(this.page.locator("span", { hasText: "Sync successful!" }))
+    .first();
   private backupDeletionSuccessText = this.page.getByText(
     "Your Ledger Live apps are no longer synched",
   );
-  private syncDataButton = this.page.getByTestId('topbar-synchronized');
+  private syncDataButton = this.page.getByTestId("topbar-synchronized");
+  private membersList = this.page.locator(`[data-testid^="walletSync-manage-instance-"]`);
 
   @step("Synchronize accounts")
   async syncAccounts() {
@@ -40,7 +44,6 @@ export class LedgerSyncDrawer extends Drawer {
 
   @step("Destroy the trustchain - Delete the data")
   async destroyTrustchain() {
-    await this.manageBackup();
     await this.confirmBackupDeletion();
   }
 
@@ -68,16 +71,31 @@ export class LedgerSyncDrawer extends Drawer {
 
   @step("Synchronize data")
   async syncData() {
+    await expect(this.page.getByTestId("topbar-synchronized")).toBeVisible();
+    await this.page.getByTestId("topbar-synchronized").click();
 
-await expect(this.page.getByTestId('topbar-synchronized')).toBeVisible();
-await this.page.getByTestId('topbar-synchronized').click();
+    await expect(this.page.getByTestId("topbar-synchronize-button")).toBeVisible();
 
-await expect(this.page.getByTestId('topbar-synchronize-button')).toBeVisible();
+    await this.page.waitForSelector('[data-testid="topbar-synchronized"]', { state: "visible" });
+    await expect(this.page.getByTestId("topbar-synchronized")).toBeVisible();
+    //await this.page.waitForTimeout(10000);
+  }
 
+  @step("Check if the sync data button exists")
+  async doesSyncAccountsButtonExist() {
+    return await this.syncAccountsButton.isVisible();
+  }
 
-await this.page.waitForSelector('[data-testid="topbar-synchronized"]', { state: 'visible' });
-await expect(this.page.getByTestId('topbar-synchronized')).toBeVisible();
-//await this.page.waitForTimeout(10000);
-
+  async getMembers() {
+    const memberElements = await this.membersList.all();
+    const memberNames = [];
+    for (const element of memberElements) {
+      let memberName = await element.getAttribute("data-testid");
+      if (memberName) {
+        memberName = memberName.replace("walletSync-manage-instance-", "");
+        memberNames.push(memberName);
+      }
+    }
+    return memberNames;
   }
 }

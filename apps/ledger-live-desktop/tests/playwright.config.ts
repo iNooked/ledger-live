@@ -1,5 +1,12 @@
 import { PlaywrightTestConfig } from "@playwright/test";
 
+// Parse the workers environment variable correctly
+const defaultWorkers = process.env.PW_WORKERS
+  ? isNaN(Number(process.env.PW_WORKERS))
+    ? process.env.PW_WORKERS
+    : Number(process.env.PW_WORKERS)
+  : "50%";
+
 const config: PlaywrightTestConfig = {
   projects: [
     {
@@ -20,11 +27,6 @@ const config: PlaywrightTestConfig = {
   expect: {
     timeout: 41000,
     toHaveScreenshot: {
-      /**
-       * do not increase unless it makes most tests flaky
-       * if you need a less sensitive threshold for a given test,
-       * configure it for specific screenshots
-       * */
       maxDiffPixelRatio: 0.005,
     },
   },
@@ -40,8 +42,8 @@ const config: PlaywrightTestConfig = {
   maxFailures: process.env.CI ? 5 : undefined,
   reportSlowTests: process.env.CI ? { max: 0, threshold: 60000 } : null,
   fullyParallel: true,
-  workers: 1,//"50%", // NOTE: 'macos-latest' and 'windows-latest' can't run 3 concurrent workers
-  retries: 0, // We explicitly want to disable retries to be strict about avoiding flaky tests. (see https://github.com/LedgerHQ/ledger-live/pull/4918)
+  retries: 0,
+  workers: defaultWorkers, // Use the parsed value here
   reporter: process.env.CI
     ? [
         ["html", { open: "never", outputFolder: "artifacts/html-report" }],
