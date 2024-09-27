@@ -14,8 +14,8 @@ const getFilePath = (type: "apdu" | "message", filename: string): string => {
   }
 };
 
-jest.mock("@ledgerhq/cryptoassets/data/eip712", () => v1);
-jest.mock("@ledgerhq/cryptoassets/data/eip712_v2", () => v2);
+jest.mock("@ledgerhq/cryptoassets-evm-signatures/data/eip712", () => v1);
+jest.mock("@ledgerhq/cryptoassets-evm-signatures/data/eip712_v2", () => v2);
 nock.disableNetConnect();
 
 describe("EIP712", () => {
