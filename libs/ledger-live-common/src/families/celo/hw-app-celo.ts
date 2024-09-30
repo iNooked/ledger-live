@@ -24,8 +24,9 @@ export class CeloApp {
     const rawTx = Buffer.from(rawTxHex, "hex");
     let offset = 0;
     let response;
+    console.log("WithDEvice Celo Signature: ")
 
-    const rlpTx = decode(rawTx);
+    const rlpTx = decode(new Uint8Array(rawTx));
     let rlpOffset = 0;
     if (rlpTx.length > 6) {
       const rlpVrs = encode(rlpTx.slice(-3));
@@ -46,10 +47,12 @@ export class CeloApp {
         paths.forEach((element, index) => {
           buffer.writeUInt32BE(element, 1 + 4 * index);
         });
-        rawTx.copy(buffer, 1 + 4 * paths.length, offset, offset + chunkSize);
+        rawTx.copy(new Uint8Array(buffer), 1 + 4 * paths.length, offset, offset + chunkSize);
       } else {
-        rawTx.copy(buffer, 0, offset, offset + chunkSize);
+        rawTx.copy(new Uint8Array(buffer), 0, offset, offset + chunkSize);
       }
+
+      console.log("CELO SIGNATURE RAWBUFF: ", rawTx)
 
       response = await this.transport
         .send(0xe0, 0x04, first ? 0x00 : 0x80, 0x00, buffer)
@@ -59,6 +62,7 @@ export class CeloApp {
 
       offset += chunkSize;
     }
+    console.log("CELO response Send Sig: ", response)
 
     const v = response.slice(0, 1).toString("hex");
     const r = response.slice(1, 1 + 32).toString("hex");

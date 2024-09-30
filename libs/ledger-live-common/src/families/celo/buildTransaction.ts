@@ -25,6 +25,7 @@ const buildTransaction = async (account: CeloAccount, transaction: Transaction) 
     };
   } else if (transaction.mode === "unlock") {
     const lockedGold = await kit.contracts.getLockedGold();
+    console.log("lockedGold: ", lockedGold.unlock(value).txo.encodeABI())
     celoTransaction = {
       from: account.freshAddress,
       to: lockedGold.address,
@@ -45,6 +46,8 @@ const buildTransaction = async (account: CeloAccount, transaction: Transaction) 
         value: value.toFixed(),
       }),
     };
+    console.log("celoTransaction WITHDRAW: ", celoTransaction)
+
   } else if (transaction.mode === "vote") {
     const election = await kit.contracts.getElection();
     const vote = await election.vote(transaction.recipient, new BigNumber(value));

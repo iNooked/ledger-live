@@ -126,6 +126,7 @@ export default class Transport {
     _apdu: Buffer,
     { abortTimeoutMs: _abortTimeoutMs }: { abortTimeoutMs?: number } = {},
   ): Promise<Buffer> {
+    console.log("ERROR Exchange: ", new Error("exchange not implemented"));
     throw new Error("exchange not implemented");
   }
 
@@ -256,9 +257,11 @@ export default class Transport {
     statusList: Array<number> = [StatusCodes.OK],
     { abortTimeoutMs }: { abortTimeoutMs?: number } = {},
   ): Promise<Buffer> => {
+    console.log("CELO SEND START");
     const tracer = this.tracer.withUpdatedContext({ function: "send" });
 
     if (data.length >= 256) {
+      console.log("CELO SEND DATA ERROR");
       tracer.trace("data.length exceeded 256 bytes limit", { dataLength: data.length });
       throw new TransportError(
         "data.length exceed 256 bytes limit. Got: " + data.length,
@@ -272,10 +275,13 @@ export default class Transport {
       Buffer.concat([Buffer.from([cla, ins, p1, p2]), Buffer.from([data.length]), data]),
       { abortTimeoutMs },
     );
+    console.log("CELO Exchange response: ", response);
     tracer.trace("Received response from exchange");
     const sw = response.readUInt16BE(response.length - 2);
+    console.log("CELO readUInt16BE sw: ", sw);
 
     if (!statusList.some(s => s === sw)) {
+      console.log("CELO statusList ERROR: ", sw);
       throw new TransportStatusError(sw);
     }
 

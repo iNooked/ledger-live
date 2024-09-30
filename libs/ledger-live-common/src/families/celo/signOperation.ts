@@ -31,19 +31,27 @@ export const signOperation: AccountBridge<Transaction, CeloAccount>["signOperati
           const celo = new CeloApp(transport);
           const unsignedTransaction = await buildTransaction(account, transaction);
           const { chainId, to } = unsignedTransaction;
+          console.log("WithDEvice Celo: ", chainId)
           const rlpEncodedTransaction = rlpEncodedTx(unsignedTransaction);
+          console.log("WithDEvice Celo rlpEncodedTx: ", rlpEncodedTransaction)
 
           const tokenInfo = tokenInfoByAddressAndChainId(to!, chainId!);
+          console.log("WithDEvice Celo tokenInfo: ", tokenInfo)
+
           if (tokenInfo) {
             await celo.provideERC20TokenInformation(tokenInfo);
+            console.log("WithDEvice Celo ERC20: ")
+
           }
 
           o.next({ type: "device-signature-requested" });
+          console.log("WithDEvice Celo next: ")
 
           const response = await celo.signTransaction(
             account.freshAddressPath,
             trimLeading0x(rlpEncodedTransaction.rlpEncode),
           );
+          console.log("WithDEvice Celo Signature: ", response)
 
           if (cancelled) return;
 
