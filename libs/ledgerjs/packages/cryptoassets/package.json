@@ -1,7 +1,7 @@
 {
-  "name": "@ledgerhq/cryptoassets",
-  "version": "13.5.0",
-  "description": "Ledger crypto-assets list",
+  "name": "@ledgerhq/cryptoassets-evm-signatures",
+  "version": "13.4.0",
+  "description": "Ledger crypto-assets list, evm only",
   "keywords": [
     "Ledger"
   ],
@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/LedgerHQ/ledger-live/issues"
   },
-  "homepage": "https://github.com/LedgerHQ/ledger-live/tree/develop/libs/ledgerjs/packages/cryptoassets",
+  "homepage": "https://github.com/LedgerHQ/ledger-live/tree/develop/libs/ledgerjs/packages/cryptoassets-evm-signatures",
   "publishConfig": {
     "access": "public"
   },
@@ -24,7 +24,6 @@
     "build": "tsc && tsc -m ES6 --outDir lib-es",
     "prewatch": "pnpm build",
     "watch": "tsc --watch",
-    "doc": "documentation readme src/** --section=API --pe ts --re ts --re d.ts",
     "lint": "eslint ./src --no-error-on-unmatched-pattern --ext .ts,.tsx --cache",
     "lint:fix": "pnpm lint --fix",
     "test": "jest",
@@ -34,13 +33,10 @@
   },
   "dependencies": {
     "@ledgerhq/live-env": "workspace:^",
-    "axios": "1.7.7",
-    "bs58check": "^2.1.2",
-    "invariant": "2"
+    "axios": "1.7.7"
   },
   "devDependencies": {
     "@ledgerhq/types-cryptoassets": "workspace:^",
-    "@types/bs58check": "^2.1.0",
     "@types/jest": "^29.5.10",
     "@types/node": "^20.8.10",
     "documentation": "14.0.2",

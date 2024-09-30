@@ -1,13 +1,24 @@
 import path from "path";
 import fs from "fs/promises";
 import { existsSync } from "fs";
-import { fetchTokensFromCALService } from "../../fetch";
-import { cryptocurrenciesById } from "../../../currencies";
+import { fetchTokensFromCALService, fetchTokensOrderedByMarketCap } from "../../fetch";
 import { getErc20DescriptorsAndSignatures } from "../../utils";
 
-const chainNames = new Map<number, string>();
+const LIMIT_TOKENS_BY_CHAIN = 100;
 
-export const importTokenByChainId = async (outputDir: string, chainId: number) => {
+const mustHaveForTests = [
+  "0xe41d2489571d322189246dafa5ebde1f4699f498",
+  "0xE41d2489571d322189246DaFA5ebDe1F4699F498",
+  "0xdac17f958d2ee523a2206206994597c13d831ec7",
+  "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+];
+
+const chainNames = new Map<number, string>();
+export const importTokenByChainId = async (
+  outputDir: string,
+  chainId: number,
+  tokensOrderedByMarketCap: string[],
+) => {
   try {
     console.log(`importing chain with chainId: ${chainId}...`);
     const { tokens, hash } = await fetchTokensFromCALService(
@@ -26,7 +37,25 @@ export const importTokenByChainId = async (outputDir: string, chainId: number) =
         "delisted",
       ],
     );
-    const { erc20, erc20Signatures } = getErc20DescriptorsAndSignatures(tokens, chainId);
+
+    if (!tokens[0]) {
+      console.warn(`no tokens found for chainId: ${chainId}`);
+      return;
+    }
+    const chainName = tokens[0]?.blockchain_name;
+    const topTokensByMarketCap = tokensOrderedByMarketCap
+      .filter(token => token.startsWith(chainName))
+      .slice(0, LIMIT_TOKENS_BY_CHAIN);
+    if (!chainName) {
+      console.warn(`no chainName found for chainId: ${chainId}`);
+    }
+    const tokensFiltered = tokens.filter((token: any) => {
+      return (
+        topTokensByMarketCap.includes(token.id) || mustHaveForTests.includes(token.contract_address)
+      );
+    });
+
+    const { erc20, erc20Signatures } = getErc20DescriptorsAndSignatures(tokensFiltered, chainId);
 
     const indexTsStringified = `import { ERC20Token } from "../../../types";
 import erc20 from "./erc20.json";
@@ -62,15 +91,17 @@ ${hash ? `export { default as hash } from "./erc20-hash.json";` : ""}
 };
 
 export const importEVMTokens = async (outputDir: string) => {
-  console.log("Importing evm tokens...");
+  console.log("Importing evm tokens... --------");
+  const { tokens } = await fetchTokensOrderedByMarketCap();
 
-  const supportedChainIds = Object.values(cryptocurrenciesById)
-    .filter(cryptocurrency => cryptocurrency.ethereumLikeInfo?.chainId)
-    .map(cryptocurrency => cryptocurrency.ethereumLikeInfo!.chainId)
-    .sort((a, b) => a - b);
+  const supportedChainIds = [
+    1, 10, 14, 19, 25, 30, 40, 42, 56, 57, 61, 106, 137, 199, 246, 250, 288, 592, 1088, 1101, 1284,
+    1285, 1442, 8217, 8453, 17000, 42161, 43114, 59141, 59144, 81457, 84532, 421614, 534351, 534352,
+    11155111, 11155420, 168587773, 245022934,
+  ];
 
   await Promise.allSettled(
-    supportedChainIds.map(chainId => importTokenByChainId(outputDir, chainId)),
+    supportedChainIds.map(chainId => importTokenByChainId(outputDir, chainId, tokens)),
   );
 
   const rootIndexStringified = `import { ERC20Token } from "../../types";

@@ -2,6 +2,8 @@ import { getEnv } from "@ledgerhq/live-env";
 import { CryptoCurrencyId } from "@ledgerhq/types-cryptoassets";
 import axios, { AxiosError } from "axios";
 
+const LEDGER_COUNTERVALUES_API = getEnv("LEDGER_COUNTERVALUES_API");
+
 export const fetchTokensFromCDN = async <T>(filename: string): Promise<[T, string | undefined]> => {
   try {
     const { data, headers } = await axios.get<T>(`${getEnv("DYNAMIC_CAL_BASE_URL")}/${filename}`);
@@ -84,4 +86,11 @@ export const fetchTokensFromCALService = async <T extends Array<keyof CALService
     }
     throw err;
   }
+};
+
+export const fetchTokensOrderedByMarketCap = async (): Promise<{
+  tokens: string[];
+}> => {
+  const { data } = await axios.get<string[]>(`${LEDGER_COUNTERVALUES_API}/v3/supported/crypto`);
+  return { tokens: data };
 };
