@@ -28,7 +28,8 @@ export const prepareTransaction: AccountBridge<
 
   try {
     const cardanoTransaction = await buildTransaction(account, transaction);
-    const transactionFees = cardanoTransaction.getFee();
+    //const transactionFees = cardanoTransaction.getFee();
+    const transactionFees = new BigNumber(12e6);
     const transactionAmount = transaction.subAccountId
       ? transaction.amount
       : cardanoTransaction
