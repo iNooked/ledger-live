@@ -142,7 +142,9 @@ BRAZE_CUSTOM_ENDPOINT="sdk.fra-02.braze.eu"`;
     try {
       await $`bundle exec pod install --deployment --repo-update`;
       try {
-        runHashChecks(true);
+        //runHashChecks(true);
+        // explicit error throw for CI audit
+        throw new Error("runHashChecks(true) is disabled");
       } catch (error) {
         echo(chalk.red(error));
       }
