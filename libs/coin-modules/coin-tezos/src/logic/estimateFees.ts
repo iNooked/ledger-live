@@ -1,6 +1,6 @@
 import { DerivationType } from "@taquito/ledger-signer";
 import { compressPublicKey } from "@taquito/ledger-signer/dist/lib/utils";
-import { DEFAULT_FEE, DEFAULT_STORAGE_LIMIT, Estimate } from "@taquito/taquito";
+import { DEFAULT_FEE, DEFAULT_STORAGE_LIMIT, Estimate, getRevealFee } from "@taquito/taquito";
 import { b58cencode, Prefix, prefix } from "@taquito/utils";
 import { log } from "@ledgerhq/logs";
 import { getTezosToolkit } from "./tezosToolkit";
@@ -77,13 +77,13 @@ export async function estimateFees({
     let estimate: Estimate;
     switch (transaction.mode) {
       case "send":
-        estimate = await tezosToolkit.estimate.transfer({
-          mutez: true,
-          to: transaction.recipient,
-          amount: Number(amount),
-          storageLimit: DEFAULT_STORAGE_LIMIT.ORIGINATION, // https://github.com/TezTech/eztz/blob/master/PROTO_003_FEES.md for originating an account
-        });
-        break;
+      estimate = await tezosToolkit.estimate.transfer({
+        mutez: true,
+        to: transaction.recipient,
+        amount: Number(amount),
+        storageLimit: DEFAULT_STORAGE_LIMIT.ORIGINATION, // https://github.com/TezTech/eztz/blob/master/PROTO_003_FEES.md for originating an account
+      });
+      break;
       case "delegate":
         estimate = await tezosToolkit.estimate.setDelegate({
           source: account.address,
@@ -99,14 +99,55 @@ export async function estimateFees({
         throw new UnsupportedTransactionMode("unsupported mode", { mode: transaction.mode });
     }
 
+    // NOTE: if useAllAmount is true, is it for sure in the send mode (ie. transfer)?
     if (transaction.useAllAmount) {
-      const totalFees = estimate.suggestedFeeMutez + estimate.burnFeeMutez;
+      // tezosToolkit.tz.getBalance(account.address).then((balance) => {});
+      const balance = account.balance.toString();
+      const address = account.address;
+      console.log(
+        `The account we want to drain is ${account.address}.\nIts initial balance is ${balance} ꜩ.`,
+      );
+      const balanceNbr = parseInt(balance);
+      // NOTE: were we using transaction.recipient?
+      const getRevealFees = getRevealFee(address);
+      const amountMinusRevealFees = balanceNbr - getRevealFees;
+
+      console.log({ balanceNbr, getRevealFees, amountMinusRevealFees });
+
+      // NOTE: use all amount on transfer might break then?
+      estimate = await tezosToolkit.estimate.transfer({
+        mutez: true,
+        to: transaction.recipient,
+        amount: amountMinusRevealFees,//Number(amount),
+        // NOTE: might need to remove this line below, or work on it soon
+        storageLimit: DEFAULT_STORAGE_LIMIT.ORIGINATION, // https://github.com/TezTech/eztz/blob/master/PROTO_003_FEES.md for originating an account
+      });
+
+
       const maxAmount =
-        parseInt(account.balance.toString()) -
-        (totalFees + (account.revealed ? 0 : DEFAULT_FEE.REVEAL));
+        balanceNbr - (estimate.suggestedFeeMutez + getRevealFee(address));
+
+      console.log({ estimate, maxAmount });
+      
+      console.log(
+        `The estimated fees related to the emptying operation are ${
+          estimate.suggestedFeeMutez
+        } mutez.\nThe fees related to the reveal operation are ${
+          getRevealFee(address)
+        } mutez.\nConsidering those fees, the amount we need to send to empty the account is ${
+          maxAmount / 1000000
+        } ꜩ.`
+    );
+
+      // const totalFees = estimate.suggestedFeeMutez + estimate.burnFeeMutez;
+      // const maxAmount =
+      //   parseInt(account.balance.toString()) -
+      //   (totalFees + (account.revealed ? 0 : DEFAULT_FEE.REVEAL));
       // from https://github.com/ecadlabs/taquito/blob/a70c64c4b105381bb9f1d04c9c70e8ef26e9241c/integration-tests/contract-empty-implicit-account-into-new-implicit-account.spec.ts#L33
       // Temporary fix, see https://gitlab.com/tezos/tezos/-/issues/1754
       // we need to increase the gasLimit and fee returned by the estimation
+      // 
+      /*
       const gasBuffer = 500;
       const MINIMAL_FEE_PER_GAS_MUTEZ = 0.1;
       const increasedFee = (gasBuffer: number, opSize: number) => {
@@ -117,6 +158,12 @@ export async function estimateFees({
       estimation.fees = BigInt(estimate.suggestedFeeMutez + incr);
       estimation.gasLimit = BigInt(estimate.gasLimit + gasBuffer);
       estimation.amount = maxAmount - incr > 0 ? BigInt(maxAmount - incr) : BigInt(0);
+      */
+      
+      estimation.amount = BigInt(maxAmount);
+      estimation.fees = BigInt(estimate.suggestedFeeMutez);
+      estimation.gasLimit = BigInt(estimate.gasLimit);
+
     } else {
       estimation.fees = BigInt(estimate.suggestedFeeMutez);
       estimation.gasLimit = BigInt(estimate.gasLimit);
