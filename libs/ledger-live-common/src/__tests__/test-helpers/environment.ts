@@ -101,6 +101,7 @@ setSupportedCurrencies([
   "scroll_sepolia",
   "ton",
   "etherlink",
+  "zksync",
 ]);
 LiveConfig.setConfig(liveConfig);
 

@@ -4275,6 +4275,28 @@ export const cryptocurrenciesById: Record<CryptoCurrencyId, CryptoCurrency> = {
       },
     ],
   },
+  zksync: {
+    type: "CryptoCurrency",
+    id: "zksync",
+    coinType: CoinType.ETH,
+    name: "zkSync",
+    managerAppName: "Ethereum",
+    ticker: "ETH",
+    scheme: "zksync",
+    color: "#000000",
+    family: "evm",
+    units: ethereumUnits("ETH", "ETH"),
+    ethereumLikeInfo: {
+      chainId: 42161,
+    },
+    explorerViews: [
+      {
+        tx: "https://explorer.zksync.io/tx/$hash",
+        address: "https://explorer.zksync.io/address/$address",
+        token: "https://explorer.zksync.io/token/$contractAddress?a=$address",
+      },
+    ],
+  },
 };
 
 const cryptocurrenciesByScheme: Record<string, CryptoCurrency> = {};
