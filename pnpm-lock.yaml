@@ -10,6 +10,7 @@ overrides:
   remove-flow-types-loader>loader-utils: '*'
   '@ledgerhq/devices': workspace:*
   tslib: 2.6.2
+  node-abi: 3.68.0
   '@hashgraph/sdk>@grpc/grpc-js': 1.6.7
   '@hashgraph/sdk>@hashgraph/cryptography': 1.1.2
   '@ethersproject/providers>ws': 7.5.10
@@ -24387,8 +24388,8 @@ packages:
     resolution: {integrity: sha512-yAyTfdeNJGGBFxWdzSKCBYxs5FxLbCg5X5Q4ets974hcQzG1+qCxvIyOo4j2Ry6MUlhWVMX4OoYDefAIIwupjw==}
     engines: {node: '>= 10.13'}
 
-  node-abi@3.56.0:
-    resolution: {integrity: sha512-fZjdhDOeRcaS+rcpve7XuwHBmktS1nS1gzgghwKUQQ8nTy2FdSDr6ZT8k6YhvlJeHmmQMYiT/IH9hfco5zeW2Q==}
+  node-abi@3.68.0:
+    resolution: {integrity: sha512-7vbj10trelExNjFSBm5kTvZXXa7pZyKWx9RCKIyqe6I9Ev3IzGpQoqBP3a+cOdxY+pWj6VkP28n/2wWysBHD/A==}
     engines: {node: '>=10'}
 
   node-abort-controller@3.1.1:
@@ -34019,7 +34020,7 @@ snapshots:
       detect-libc: 2.0.3
       fs-extra: 10.1.0
       got: 11.8.6
-      node-abi: 3.56.0
+      node-abi: 3.68.0
       node-api-version: 0.2.0
       node-gyp: 9.4.1
       ora: 5.4.1
@@ -58148,7 +58149,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  node-abi@3.56.0:
+  node-abi@3.68.0:
     dependencies:
       semver: 7.6.3
 
@@ -59746,7 +59747,7 @@ snapshots:
       minimist: 1.2.8
       mkdirp-classic: 0.5.3
       napi-build-utils: 1.0.2
-      node-abi: 3.56.0
+      node-abi: 3.68.0
       pump: 3.0.0
       rc: 1.2.8
       simple-get: 4.0.1
