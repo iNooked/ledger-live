@@ -1,5 +1,38 @@
 # ledger-live-desktop
 
+## 2.88.0-nightly.3
+
+### Minor Changes
+
+- [#7870](https://github.com/LedgerHQ/ledger-live/pull/7870) [`1b3a21d`](https://github.com/LedgerHQ/ledger-live/commit/1b3a21d5d8496c42f4dec4116fdcf59ad6f038cd) Thanks [@marcotoniut-ledger](https://github.com/marcotoniut-ledger)! - ledger-live-desktop: Updated staking modal. Filtering per category. New copy and design
+  live-mobile: Updated staking modal. Filtering per category. New copy and design
+  @ledgerhq/icons-ui: Add book-graduation icon
+  @ledgerhq/types-live: Update schema of ethStakingProviders flag
+  @ledgerhq/native-ui: Add `xs` size to Button
+
+- [#8000](https://github.com/LedgerHQ/ledger-live/pull/8000) [`d962cf1`](https://github.com/LedgerHQ/ledger-live/commit/d962cf13667a383b77a1d30bf26bec27702d9af4) Thanks [@CremaFR](https://github.com/CremaFR)! - display name in swap history use cdn
+
+### Patch Changes
+
+- [#8014](https://github.com/LedgerHQ/ledger-live/pull/8014) [`b7311c4`](https://github.com/LedgerHQ/ledger-live/commit/b7311c4c773b188465560150932f0cdbceec42e0) Thanks [@beths-ledger](https://github.com/beths-ledger)! - Add the platform OS to the params passed to earn to enable the correct braze environment
+
+- [#8012](https://github.com/LedgerHQ/ledger-live/pull/8012) [`82beaa0`](https://github.com/LedgerHQ/ledger-live/commit/82beaa0be485a48c4b28791e3bb65d59208741b0) Thanks [@kallen-ledger](https://github.com/kallen-ledger)! - add default parent account where missing
+
+- Updated dependencies [[`1b3a21d`](https://github.com/LedgerHQ/ledger-live/commit/1b3a21d5d8496c42f4dec4116fdcf59ad6f038cd), [`d962cf1`](https://github.com/LedgerHQ/ledger-live/commit/d962cf13667a383b77a1d30bf26bec27702d9af4)]:
+  - @ledgerhq/types-live@6.52.0-nightly.2
+  - @ledgerhq/live-common@34.10.0-nightly.3
+  - @ledgerhq/react-ui@0.16.1-nightly.2
+  - @ledgerhq/coin-framework@0.18.2-nightly.2
+  - @ledgerhq/coin-bitcoin@0.8.2-nightly.2
+  - @ledgerhq/coin-cosmos@0.1.3-nightly.2
+  - @ledgerhq/coin-evm@2.4.0-nightly.2
+  - @ledgerhq/domain-service@1.2.6-nightly.2
+  - @ledgerhq/live-countervalues@0.2.7-nightly.2
+  - @ledgerhq/live-countervalues-react@0.2.7-nightly.2
+  - @ledgerhq/live-nft@0.4.7-nightly.2
+  - @ledgerhq/live-nft-react@0.4.7-nightly.2
+  - @ledgerhq/live-wallet@0.7.0-nightly.3
+
 ## 2.88.0-nightly.2
 
 ### Minor Changes

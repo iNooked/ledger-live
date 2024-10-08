@@ -1,5 +1,37 @@
 ## 34.5.0-next.4
 
+## 34.10.0-nightly.3
+
+### Minor Changes
+
+- [#8000](https://github.com/LedgerHQ/ledger-live/pull/8000) [`d962cf1`](https://github.com/LedgerHQ/ledger-live/commit/d962cf13667a383b77a1d30bf26bec27702d9af4) Thanks [@CremaFR](https://github.com/CremaFR)! - display name in swap history use cdn
+
+### Patch Changes
+
+- Updated dependencies [[`e3e46e5`](https://github.com/LedgerHQ/ledger-live/commit/e3e46e5efa4e7955ffc7a3bf1f7dd333aa6a5806), [`28ab0bc`](https://github.com/LedgerHQ/ledger-live/commit/28ab0bc6b441d8dac1d7c8dc4d5bd6b88031eeb5), [`b122a53`](https://github.com/LedgerHQ/ledger-live/commit/b122a536feb06cdf011fbbd2cc8d82d1c54a8439)]:
+  - @ledgerhq/coin-tezos@0.6.3-nightly.2
+  - @ledgerhq/coin-algorand@0.5.7-nightly.2
+  - @ledgerhq/coin-framework@0.18.2-nightly.2
+  - @ledgerhq/coin-bitcoin@0.8.2-nightly.2
+  - @ledgerhq/coin-cardano@0.2.2-nightly.2
+  - @ledgerhq/coin-cosmos@0.1.3-nightly.2
+  - @ledgerhq/coin-elrond@0.1.2-nightly.2
+  - @ledgerhq/coin-evm@2.4.0-nightly.2
+  - @ledgerhq/coin-icon@0.4.4-nightly.2
+  - @ledgerhq/coin-near@0.5.7-nightly.2
+  - @ledgerhq/coin-polkadot@1.3.0-nightly.3
+  - @ledgerhq/coin-solana@0.8.0-nightly.2
+  - @ledgerhq/coin-stellar@0.3.2-nightly.2
+  - @ledgerhq/coin-ton@0.3.15-nightly.2
+  - @ledgerhq/coin-tron@0.0.7-nightly.2
+  - @ledgerhq/coin-xrp@0.5.3-nightly.2
+  - @ledgerhq/device-core@0.4.1-nightly.2
+  - @ledgerhq/hw-app-eth@7.0.0-nightly.2
+  - @ledgerhq/live-countervalues@0.2.7-nightly.2
+  - @ledgerhq/live-countervalues-react@0.2.7-nightly.2
+  - @ledgerhq/live-nft@0.4.7-nightly.2
+  - @ledgerhq/live-wallet@0.7.0-nightly.3
+
 ## 34.10.0-nightly.2
 
 ### Minor Changes
