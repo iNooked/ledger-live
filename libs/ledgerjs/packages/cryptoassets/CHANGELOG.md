@@ -1,13 +1,12 @@
 # @ledgerhq/cryptoassets
 
-## 13.6.0-nightly.1
+## 13.6.0
 
-### Patch Changes
+### Minor Changes
 
-- Updated dependencies [[`ced792c`](https://github.com/LedgerHQ/ledger-live/commit/ced792c37b42135f2b7596228c14ccd0783a803f)]:
-  - @ledgerhq/live-env@2.4.0-nightly.0
+- [#7740](https://github.com/LedgerHQ/ledger-live/pull/7740) [`c83af75`](https://github.com/LedgerHQ/ledger-live/commit/c83af756fb388043c9f5a3862cae1231ec99a02c) Thanks [@hzheng-ledger](https://github.com/hzheng-ledger)! - Add etherlink evm currency
 
-## 13.6.0-nightly.0
+## 13.6.0-next.0
 
 ### Minor Changes
 

@@ -1,28 +1,26 @@
 # @ledgerhq/react-ui
 
-## 0.16.1-nightly.2
-
-### Patch Changes
-
-- Updated dependencies [[`1b3a21d`](https://github.com/LedgerHQ/ledger-live/commit/1b3a21d5d8496c42f4dec4116fdcf59ad6f038cd)]:
-  - @ledgerhq/icons-ui@0.8.0-nightly.1
-
-## 0.16.1-nightly.1
-
-### Patch Changes
-
-- Updated dependencies [[`c83af75`](https://github.com/LedgerHQ/ledger-live/commit/c83af756fb388043c9f5a3862cae1231ec99a02c)]:
-  - @ledgerhq/crypto-icons-ui@1.5.0-nightly.0
-
-## 0.16.1-nightly.0
+## 0.16.1
 
 ### Patch Changes
 
 - [#7941](https://github.com/LedgerHQ/ledger-live/pull/7941) [`2f90189`](https://github.com/LedgerHQ/ledger-live/commit/2f9018986102f23fa22d31605d0d9f99abd41892) Thanks [@thesan](https://github.com/thesan)! - Fix IDE go to definition feature for some libs
 
-- Updated dependencies [[`2f90189`](https://github.com/LedgerHQ/ledger-live/commit/2f9018986102f23fa22d31605d0d9f99abd41892)]:
-  - @ledgerhq/ui-shared@0.2.2-nightly.0
-  - @ledgerhq/icons-ui@0.7.4-nightly.0
+- Updated dependencies [[`c83af75`](https://github.com/LedgerHQ/ledger-live/commit/c83af756fb388043c9f5a3862cae1231ec99a02c), [`2f90189`](https://github.com/LedgerHQ/ledger-live/commit/2f9018986102f23fa22d31605d0d9f99abd41892)]:
+  - @ledgerhq/crypto-icons-ui@1.5.0
+  - @ledgerhq/ui-shared@0.2.2
+  - @ledgerhq/icons-ui@0.7.4
+
+## 0.16.1-next.0
+
+### Patch Changes
+
+- [#7941](https://github.com/LedgerHQ/ledger-live/pull/7941) [`2f90189`](https://github.com/LedgerHQ/ledger-live/commit/2f9018986102f23fa22d31605d0d9f99abd41892) Thanks [@thesan](https://github.com/thesan)! - Fix IDE go to definition feature for some libs
+
+- Updated dependencies [[`c83af75`](https://github.com/LedgerHQ/ledger-live/commit/c83af756fb388043c9f5a3862cae1231ec99a02c), [`2f90189`](https://github.com/LedgerHQ/ledger-live/commit/2f9018986102f23fa22d31605d0d9f99abd41892)]:
+  - @ledgerhq/crypto-icons-ui@1.5.0-next.0
+  - @ledgerhq/ui-shared@0.2.2-next.0
+  - @ledgerhq/icons-ui@0.7.4-next.0
 
 ## 0.16.0
 

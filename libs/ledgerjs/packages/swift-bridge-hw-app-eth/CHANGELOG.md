@@ -1,25 +1,18 @@
 # @ledgerhq/swift-bridge-hw-app-eth
 
-## 1.2.7-nightly.2
-
-### Patch Changes
-
-- Updated dependencies []:
-  - @ledgerhq/hw-app-eth@7.0.0-nightly.2
-
-## 1.2.7-nightly.1
-
-### Patch Changes
-
-- Updated dependencies [[`9c6e2c4`](https://github.com/LedgerHQ/ledger-live/commit/9c6e2c4969832d9d55188ed03bbdfd79b43b7e63), [`450c88c`](https://github.com/LedgerHQ/ledger-live/commit/450c88cefb01f11e6e3670b946f31fe160eebe33)]:
-  - @ledgerhq/hw-app-eth@7.0.0-nightly.1
-
-## 1.2.7-nightly.0
+## 1.2.7
 
 ### Patch Changes
 
 - Updated dependencies [[`07c584a`](https://github.com/LedgerHQ/ledger-live/commit/07c584a61573c53ff0d205d316d9195cd8f5399e), [`0698cbf`](https://github.com/LedgerHQ/ledger-live/commit/0698cbfdd6970ebb92992cb9d273cfb5508629f3)]:
-  - @ledgerhq/hw-app-eth@7.0.0-nightly.0
+  - @ledgerhq/hw-app-eth@6.39.0
+
+## 1.2.7-next.0
+
+### Patch Changes
+
+- Updated dependencies [[`07c584a`](https://github.com/LedgerHQ/ledger-live/commit/07c584a61573c53ff0d205d316d9195cd8f5399e), [`0698cbf`](https://github.com/LedgerHQ/ledger-live/commit/0698cbfdd6970ebb92992cb9d273cfb5508629f3)]:
+  - @ledgerhq/hw-app-eth@6.39.0-next.0
 
 ## 1.2.6
 

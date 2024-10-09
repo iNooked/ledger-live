@@ -1,22 +1,12 @@
 # @ledgerhq/types-live
 
-## 6.52.0-nightly.2
+## 6.52.0
 
-### Patch Changes
+### Minor Changes
 
-- [#7870](https://github.com/LedgerHQ/ledger-live/pull/7870) [`1b3a21d`](https://github.com/LedgerHQ/ledger-live/commit/1b3a21d5d8496c42f4dec4116fdcf59ad6f038cd) Thanks [@marcotoniut-ledger](https://github.com/marcotoniut-ledger)! - ledger-live-desktop: Updated staking modal. Filtering per category. New copy and design
-  live-mobile: Updated staking modal. Filtering per category. New copy and design
-  @ledgerhq/icons-ui: Add book-graduation icon
-  @ledgerhq/types-live: Update schema of ethStakingProviders flag
-  @ledgerhq/native-ui: Add `xs` size to Button
+- [#7740](https://github.com/LedgerHQ/ledger-live/pull/7740) [`c83af75`](https://github.com/LedgerHQ/ledger-live/commit/c83af756fb388043c9f5a3862cae1231ec99a02c) Thanks [@hzheng-ledger](https://github.com/hzheng-ledger)! - Add etherlink evm currency
 
-## 6.52.0-nightly.1
-
-### Patch Changes
-
-- [#7963](https://github.com/LedgerHQ/ledger-live/pull/7963) [`642c714`](https://github.com/LedgerHQ/ledger-live/commit/642c714d52eaaccb1b8ac3a2ee0391b641d19303) Thanks [@thesan](https://github.com/thesan)! - Create `llmMemoTag`
-
-## 6.52.0-nightly.0
+## 6.52.0-next.0
 
 ### Minor Changes
 

@@ -1,129 +1,114 @@
 ## 34.5.0-next.4
 
-## 34.10.0-nightly.3
-
-### Minor Changes
-
-- [#8000](https://github.com/LedgerHQ/ledger-live/pull/8000) [`d962cf1`](https://github.com/LedgerHQ/ledger-live/commit/d962cf13667a383b77a1d30bf26bec27702d9af4) Thanks [@CremaFR](https://github.com/CremaFR)! - display name in swap history use cdn
-
-### Patch Changes
-
-- Updated dependencies [[`e3e46e5`](https://github.com/LedgerHQ/ledger-live/commit/e3e46e5efa4e7955ffc7a3bf1f7dd333aa6a5806), [`28ab0bc`](https://github.com/LedgerHQ/ledger-live/commit/28ab0bc6b441d8dac1d7c8dc4d5bd6b88031eeb5), [`b122a53`](https://github.com/LedgerHQ/ledger-live/commit/b122a536feb06cdf011fbbd2cc8d82d1c54a8439)]:
-  - @ledgerhq/coin-tezos@0.6.3-nightly.2
-  - @ledgerhq/coin-algorand@0.5.7-nightly.2
-  - @ledgerhq/coin-framework@0.18.2-nightly.2
-  - @ledgerhq/coin-bitcoin@0.8.2-nightly.2
-  - @ledgerhq/coin-cardano@0.2.2-nightly.2
-  - @ledgerhq/coin-cosmos@0.1.3-nightly.2
-  - @ledgerhq/coin-elrond@0.1.2-nightly.2
-  - @ledgerhq/coin-evm@2.4.0-nightly.2
-  - @ledgerhq/coin-icon@0.4.4-nightly.2
-  - @ledgerhq/coin-near@0.5.7-nightly.2
-  - @ledgerhq/coin-polkadot@1.3.0-nightly.3
-  - @ledgerhq/coin-solana@0.8.0-nightly.2
-  - @ledgerhq/coin-stellar@0.3.2-nightly.2
-  - @ledgerhq/coin-ton@0.3.15-nightly.2
-  - @ledgerhq/coin-tron@0.0.7-nightly.2
-  - @ledgerhq/coin-xrp@0.5.3-nightly.2
-  - @ledgerhq/device-core@0.4.1-nightly.2
-  - @ledgerhq/hw-app-eth@7.0.0-nightly.2
-  - @ledgerhq/live-countervalues@0.2.7-nightly.2
-  - @ledgerhq/live-countervalues-react@0.2.7-nightly.2
-  - @ledgerhq/live-nft@0.4.7-nightly.2
-  - @ledgerhq/live-wallet@0.7.0-nightly.3
-
-## 34.10.0-nightly.2
-
-### Minor Changes
-
-- [#7917](https://github.com/LedgerHQ/ledger-live/pull/7917) [`87b706c`](https://github.com/LedgerHQ/ledger-live/commit/87b706c8a807f14c72c7d47206e9ee767f50a04c) Thanks [@hzheng-ledger](https://github.com/hzheng-ledger)! - fix: add priority fees for solana transaction
-
-### Patch Changes
-
-- [#7963](https://github.com/LedgerHQ/ledger-live/pull/7963) [`642c714`](https://github.com/LedgerHQ/ledger-live/commit/642c714d52eaaccb1b8ac3a2ee0391b641d19303) Thanks [@thesan](https://github.com/thesan)! - Create `llmMemoTag`
-
-- [#7998](https://github.com/LedgerHQ/ledger-live/pull/7998) [`6f0d39f`](https://github.com/LedgerHQ/ledger-live/commit/6f0d39f46ef5d3e24439421aa68dfe7aadcd1dbc) Thanks [@hzheng-ledger](https://github.com/hzheng-ledger)! - update xrp node url
-
-- [#7965](https://github.com/LedgerHQ/ledger-live/pull/7965) [`07a242d`](https://github.com/LedgerHQ/ledger-live/commit/07a242d9c54a4b70d9fec7ef390b8e8ab7de4df7) Thanks [@hedi-edelbloute](https://github.com/hedi-edelbloute)! - Cardano fees warning + fix high fees issue
-
-- [#7971](https://github.com/LedgerHQ/ledger-live/pull/7971) [`3824e06`](https://github.com/LedgerHQ/ledger-live/commit/3824e06ba2c94bc0697d2a40d865efe766d1f102) Thanks [@lpaquet-ledger](https://github.com/lpaquet-ledger)! - Add thorswap swap
-
-- Updated dependencies [[`ced792c`](https://github.com/LedgerHQ/ledger-live/commit/ced792c37b42135f2b7596228c14ccd0783a803f), [`87b706c`](https://github.com/LedgerHQ/ledger-live/commit/87b706c8a807f14c72c7d47206e9ee767f50a04c), [`9c6e2c4`](https://github.com/LedgerHQ/ledger-live/commit/9c6e2c4969832d9d55188ed03bbdfd79b43b7e63), [`9c6e2c4`](https://github.com/LedgerHQ/ledger-live/commit/9c6e2c4969832d9d55188ed03bbdfd79b43b7e63), [`4b0d0f8`](https://github.com/LedgerHQ/ledger-live/commit/4b0d0f8b3694491143ea9307460384471ca93cc2), [`9032845`](https://github.com/LedgerHQ/ledger-live/commit/9032845a3cbadf40d545d6832e0280880e0be3d7), [`450c88c`](https://github.com/LedgerHQ/ledger-live/commit/450c88cefb01f11e6e3670b946f31fe160eebe33), [`07a242d`](https://github.com/LedgerHQ/ledger-live/commit/07a242d9c54a4b70d9fec7ef390b8e8ab7de4df7), [`3824e06`](https://github.com/LedgerHQ/ledger-live/commit/3824e06ba2c94bc0697d2a40d865efe766d1f102)]:
-  - @ledgerhq/live-env@2.4.0-nightly.0
-  - @ledgerhq/coin-evm@2.4.0-nightly.1
-  - @ledgerhq/coin-solana@0.8.0-nightly.1
-  - @ledgerhq/hw-app-eth@7.0.0-nightly.1
-  - @ledgerhq/live-nft@0.4.7-nightly.1
-  - @ledgerhq/live-wallet@0.7.0-nightly.2
-  - @ledgerhq/coin-cardano@0.2.2-nightly.1
-  - @ledgerhq/coin-bitcoin@0.8.2-nightly.1
-  - @ledgerhq/coin-framework@0.18.2-nightly.1
-  - @ledgerhq/coin-algorand@0.5.7-nightly.1
-  - @ledgerhq/coin-cosmos@0.1.3-nightly.1
-  - @ledgerhq/coin-elrond@0.1.2-nightly.1
-  - @ledgerhq/coin-icon@0.4.4-nightly.1
-  - @ledgerhq/coin-near@0.5.7-nightly.1
-  - @ledgerhq/coin-polkadot@1.3.0-nightly.2
-  - @ledgerhq/coin-stellar@0.3.2-nightly.1
-  - @ledgerhq/coin-tezos@0.6.3-nightly.1
-  - @ledgerhq/coin-ton@0.3.15-nightly.1
-  - @ledgerhq/coin-tron@0.0.7-nightly.1
-  - @ledgerhq/coin-xrp@0.5.3-nightly.1
-  - @ledgerhq/device-core@0.4.1-nightly.1
-  - @ledgerhq/live-countervalues@0.2.7-nightly.1
-  - @ledgerhq/live-countervalues-react@0.2.7-nightly.1
-  - @ledgerhq/cryptoassets@13.6.0-nightly.1
-  - @ledgerhq/live-network@2.0.2-nightly.0
-  - @ledgerhq/speculos-transport@0.1.7-nightly.0
-  - @ledgerhq/hw-app-vet@0.2.7-nightly.1
-
-## 34.10.0-nightly.1
+## 34.10.0
 
 ### Minor Changes
 
 - [#7740](https://github.com/LedgerHQ/ledger-live/pull/7740) [`c83af75`](https://github.com/LedgerHQ/ledger-live/commit/c83af756fb388043c9f5a3862cae1231ec99a02c) Thanks [@hzheng-ledger](https://github.com/hzheng-ledger)! - Add etherlink evm currency
 
+- [#7812](https://github.com/LedgerHQ/ledger-live/pull/7812) [`307f467`](https://github.com/LedgerHQ/ledger-live/commit/307f4672ef4bf2020dff9d29e7f7227f2fb53901) Thanks [@hzheng-ledger](https://github.com/hzheng-ledger)! - polkadot code cleanup
+
 ### Patch Changes
 
-- Updated dependencies [[`07c584a`](https://github.com/LedgerHQ/ledger-live/commit/07c584a61573c53ff0d205d316d9195cd8f5399e), [`c83af75`](https://github.com/LedgerHQ/ledger-live/commit/c83af756fb388043c9f5a3862cae1231ec99a02c), [`92df3b4`](https://github.com/LedgerHQ/ledger-live/commit/92df3b415e765dc26bc69438ca26b6308e98aa26), [`a7696cc`](https://github.com/LedgerHQ/ledger-live/commit/a7696cc2487836f5c3e12e6279a2ab0ac34df415), [`8f8bf46`](https://github.com/LedgerHQ/ledger-live/commit/8f8bf46123750acc8dea29f367249806ff7bf737), [`0698cbf`](https://github.com/LedgerHQ/ledger-live/commit/0698cbfdd6970ebb92992cb9d273cfb5508629f3)]:
-  - @ledgerhq/hw-app-eth@7.0.0-nightly.0
-  - @ledgerhq/cryptoassets@13.6.0-nightly.0
-  - @ledgerhq/coin-polkadot@1.3.0-nightly.1
-  - @ledgerhq/crypto-icons-ui@1.5.0-nightly.0
-  - @ledgerhq/live-wallet@0.6.2-nightly.1
-  - @ledgerhq/live-nft@0.4.7-nightly.0
-  - @ledgerhq/coin-solana@0.7.7-nightly.0
-  - @ledgerhq/coin-evm@2.3.1-nightly.0
-  - @ledgerhq/coin-framework@0.18.2-nightly.0
-  - @ledgerhq/coin-algorand@0.5.7-nightly.0
-  - @ledgerhq/coin-bitcoin@0.8.2-nightly.0
-  - @ledgerhq/coin-cardano@0.2.2-nightly.0
-  - @ledgerhq/coin-cosmos@0.1.3-nightly.0
-  - @ledgerhq/coin-elrond@0.1.2-nightly.0
-  - @ledgerhq/coin-icon@0.4.4-nightly.0
-  - @ledgerhq/coin-near@0.5.7-nightly.0
-  - @ledgerhq/coin-stellar@0.3.2-nightly.0
-  - @ledgerhq/coin-tezos@0.6.3-nightly.0
-  - @ledgerhq/coin-ton@0.3.15-nightly.0
-  - @ledgerhq/coin-xrp@0.5.3-nightly.0
-  - @ledgerhq/live-countervalues@0.2.7-nightly.0
-  - @ledgerhq/live-countervalues-react@0.2.7-nightly.0
-  - @ledgerhq/coin-tron@0.0.7-nightly.0
-  - @ledgerhq/hw-app-vet@0.2.7-nightly.0
-  - @ledgerhq/device-core@0.4.1-nightly.0
+- [#7817](https://github.com/LedgerHQ/ledger-live/pull/7817) [`2f71fec`](https://github.com/LedgerHQ/ledger-live/commit/2f71fecc0e4bd2692277386931978242a25a364c) Thanks [@Wozacosta](https://github.com/Wozacosta)! - chore: update default explorer for local base & zkevm config, update evm bridge test
 
-## 34.10.0-nightly.0
+- [#7900](https://github.com/LedgerHQ/ledger-live/pull/7900) [`37d8fd9`](https://github.com/LedgerHQ/ledger-live/commit/37d8fd917bd2901e1005944d237656e562764818) Thanks [@qperrot](https://github.com/qperrot)! - remove rewards feature from near
+
+- [#7907](https://github.com/LedgerHQ/ledger-live/pull/7907) [`be18f81`](https://github.com/LedgerHQ/ledger-live/commit/be18f816fa098f8217420b8a875b7afb1be748b0) Thanks [@Justkant](https://github.com/Justkant)! - fix(LLM): allow wallet-connect live-app to open a deep-link at any time
+
+  Refactor by sharing a single constant for wallet-connect live-app manifest id
+
+- Updated dependencies [[`07c584a`](https://github.com/LedgerHQ/ledger-live/commit/07c584a61573c53ff0d205d316d9195cd8f5399e), [`c83af75`](https://github.com/LedgerHQ/ledger-live/commit/c83af756fb388043c9f5a3862cae1231ec99a02c), [`92df3b4`](https://github.com/LedgerHQ/ledger-live/commit/92df3b415e765dc26bc69438ca26b6308e98aa26), [`6cf1258`](https://github.com/LedgerHQ/ledger-live/commit/6cf125821cced8312557d5b8f8f0a7b5d0af537c), [`2f71fec`](https://github.com/LedgerHQ/ledger-live/commit/2f71fecc0e4bd2692277386931978242a25a364c), [`a7696cc`](https://github.com/LedgerHQ/ledger-live/commit/a7696cc2487836f5c3e12e6279a2ab0ac34df415), [`37d8fd9`](https://github.com/LedgerHQ/ledger-live/commit/37d8fd917bd2901e1005944d237656e562764818), [`8f8bf46`](https://github.com/LedgerHQ/ledger-live/commit/8f8bf46123750acc8dea29f367249806ff7bf737), [`307f467`](https://github.com/LedgerHQ/ledger-live/commit/307f4672ef4bf2020dff9d29e7f7227f2fb53901), [`0698cbf`](https://github.com/LedgerHQ/ledger-live/commit/0698cbfdd6970ebb92992cb9d273cfb5508629f3)]:
+  - @ledgerhq/hw-app-eth@6.39.0
+  - @ledgerhq/cryptoassets@13.6.0
+  - @ledgerhq/coin-polkadot@1.3.0
+  - @ledgerhq/crypto-icons-ui@1.5.0
+  - @ledgerhq/live-wallet@0.6.2
+  - @ledgerhq/live-nft@0.4.7
+  - @ledgerhq/coin-evm@2.3.1
+  - @ledgerhq/coin-near@0.5.7
+  - @ledgerhq/coin-solana@0.7.7
+  - @ledgerhq/hw-app-polkadot@6.32.0
+  - @ledgerhq/coin-framework@0.18.2
+  - @ledgerhq/coin-algorand@0.5.7
+  - @ledgerhq/coin-bitcoin@0.8.2
+  - @ledgerhq/coin-cardano@0.2.2
+  - @ledgerhq/coin-cosmos@0.1.3
+  - @ledgerhq/coin-elrond@0.1.2
+  - @ledgerhq/coin-icon@0.4.4
+  - @ledgerhq/coin-stellar@0.3.2
+  - @ledgerhq/coin-tezos@0.6.3
+  - @ledgerhq/coin-ton@0.3.15
+  - @ledgerhq/coin-xrp@0.5.3
+  - @ledgerhq/live-countervalues@0.2.7
+  - @ledgerhq/live-countervalues-react@0.2.7
+  - @ledgerhq/coin-tron@0.0.7
+  - @ledgerhq/hw-app-vet@0.2.7
+  - @ledgerhq/device-core@0.4.1
+
+## 34.10.0-next.0
 
 ### Minor Changes
+
+- [#7740](https://github.com/LedgerHQ/ledger-live/pull/7740) [`c83af75`](https://github.com/LedgerHQ/ledger-live/commit/c83af756fb388043c9f5a3862cae1231ec99a02c) Thanks [@hzheng-ledger](https://github.com/hzheng-ledger)! - Add etherlink evm currency
 
 - [#7812](https://github.com/LedgerHQ/ledger-live/pull/7812) [`307f467`](https://github.com/LedgerHQ/ledger-live/commit/307f4672ef4bf2020dff9d29e7f7227f2fb53901) Thanks [@hzheng-ledger](https://github.com/hzheng-ledger)! - polkadot code cleanup
 
 ### Patch Changes
 
-- Updated dependencies [[`307f467`](https://github.com/LedgerHQ/ledger-live/commit/307f4672ef4bf2020dff9d29e7f7227f2fb53901)]:
-  - @ledgerhq/hw-app-polkadot@6.32.0-nightly.0
-  - @ledgerhq/coin-polkadot@1.3.0-nightly.0
-  - @ledgerhq/live-wallet@0.6.2-nightly.0
+- [#7817](https://github.com/LedgerHQ/ledger-live/pull/7817) [`2f71fec`](https://github.com/LedgerHQ/ledger-live/commit/2f71fecc0e4bd2692277386931978242a25a364c) Thanks [@Wozacosta](https://github.com/Wozacosta)! - chore: update default explorer for local base & zkevm config, update evm bridge test
+
+- [#7900](https://github.com/LedgerHQ/ledger-live/pull/7900) [`37d8fd9`](https://github.com/LedgerHQ/ledger-live/commit/37d8fd917bd2901e1005944d237656e562764818) Thanks [@qperrot](https://github.com/qperrot)! - remove rewards feature from near
+
+- [#7907](https://github.com/LedgerHQ/ledger-live/pull/7907) [`be18f81`](https://github.com/LedgerHQ/ledger-live/commit/be18f816fa098f8217420b8a875b7afb1be748b0) Thanks [@Justkant](https://github.com/Justkant)! - fix(LLM): allow wallet-connect live-app to open a deep-link at any time
+
+  Refactor by sharing a single constant for wallet-connect live-app manifest id
+
+- Updated dependencies [[`07c584a`](https://github.com/LedgerHQ/ledger-live/commit/07c584a61573c53ff0d205d316d9195cd8f5399e), [`c83af75`](https://github.com/LedgerHQ/ledger-live/commit/c83af756fb388043c9f5a3862cae1231ec99a02c), [`92df3b4`](https://github.com/LedgerHQ/ledger-live/commit/92df3b415e765dc26bc69438ca26b6308e98aa26), [`6cf1258`](https://github.com/LedgerHQ/ledger-live/commit/6cf125821cced8312557d5b8f8f0a7b5d0af537c), [`2f71fec`](https://github.com/LedgerHQ/ledger-live/commit/2f71fecc0e4bd2692277386931978242a25a364c), [`a7696cc`](https://github.com/LedgerHQ/ledger-live/commit/a7696cc2487836f5c3e12e6279a2ab0ac34df415), [`37d8fd9`](https://github.com/LedgerHQ/ledger-live/commit/37d8fd917bd2901e1005944d237656e562764818), [`8f8bf46`](https://github.com/LedgerHQ/ledger-live/commit/8f8bf46123750acc8dea29f367249806ff7bf737), [`307f467`](https://github.com/LedgerHQ/ledger-live/commit/307f4672ef4bf2020dff9d29e7f7227f2fb53901), [`0698cbf`](https://github.com/LedgerHQ/ledger-live/commit/0698cbfdd6970ebb92992cb9d273cfb5508629f3)]:
+  - @ledgerhq/hw-app-eth@6.39.0-next.0
+  - @ledgerhq/cryptoassets@13.6.0-next.0
+  - @ledgerhq/coin-polkadot@1.3.0-next.0
+  - @ledgerhq/crypto-icons-ui@1.5.0-next.0
+  - @ledgerhq/live-wallet@0.6.2-next.0
+  - @ledgerhq/live-nft@0.4.7-next.0
+  - @ledgerhq/coin-evm@2.3.1-next.0
+  - @ledgerhq/coin-near@0.5.7-next.0
+  - @ledgerhq/coin-solana@0.7.7-next.0
+  - @ledgerhq/hw-app-polkadot@6.32.0-next.0
+  - @ledgerhq/coin-framework@0.18.2-next.0
+  - @ledgerhq/coin-algorand@0.5.7-next.0
+  - @ledgerhq/coin-bitcoin@0.8.2-next.0
+  - @ledgerhq/coin-cardano@0.2.2-next.0
+  - @ledgerhq/coin-cosmos@0.1.3-next.0
+  - @ledgerhq/coin-elrond@0.1.2-next.0
+  - @ledgerhq/coin-icon@0.4.4-next.0
+  - @ledgerhq/coin-stellar@0.3.2-next.0
+  - @ledgerhq/coin-tezos@0.6.3-next.0
+  - @ledgerhq/coin-ton@0.3.15-next.0
+  - @ledgerhq/coin-xrp@0.5.3-next.0
+  - @ledgerhq/live-countervalues@0.2.7-next.0
+  - @ledgerhq/live-countervalues-react@0.2.7-next.0
+  - @ledgerhq/coin-tron@0.0.7-next.0
+  - @ledgerhq/hw-app-vet@0.2.7-next.0
+  - @ledgerhq/device-core@0.4.1-next.0
+
+## 34.9.1
+
+### Patch Changes
+
+- [#7978](https://github.com/LedgerHQ/ledger-live/pull/7978) [`77adfc3`](https://github.com/LedgerHQ/ledger-live/commit/77adfc33d4fd7d8f39329f23a36a55029331feb0) Thanks [@hedi-edelbloute](https://github.com/hedi-edelbloute)! - Cardano fees warning + fix high fees issue
+
+- Updated dependencies [[`77adfc3`](https://github.com/LedgerHQ/ledger-live/commit/77adfc33d4fd7d8f39329f23a36a55029331feb0)]:
+  - @ledgerhq/coin-cardano@0.2.2
+
+## 34.9.1-hotfix.0
+
+### Patch Changes
+
+- [#7978](https://github.com/LedgerHQ/ledger-live/pull/7978) [`77adfc3`](https://github.com/LedgerHQ/ledger-live/commit/77adfc33d4fd7d8f39329f23a36a55029331feb0) Thanks [@hedi-edelbloute](https://github.com/hedi-edelbloute)! - Cardano fees warning + fix high fees issue
+
+- Updated dependencies [[`77adfc3`](https://github.com/LedgerHQ/ledger-live/commit/77adfc33d4fd7d8f39329f23a36a55029331feb0)]:
+  - @ledgerhq/coin-cardano@0.2.2-hotfix.0
 
 ## 34.9.0
 

@@ -1,33 +1,24 @@
 # @ledgerhq/live-nft-react
 
-## 0.4.7-nightly.2
+## 0.4.7
 
 ### Patch Changes
 
-- Updated dependencies [[`1b3a21d`](https://github.com/LedgerHQ/ledger-live/commit/1b3a21d5d8496c42f4dec4116fdcf59ad6f038cd)]:
-  - @ledgerhq/types-live@6.52.0-nightly.2
-  - @ledgerhq/live-nft@0.4.7-nightly.2
+- Updated dependencies [[`c83af75`](https://github.com/LedgerHQ/ledger-live/commit/c83af756fb388043c9f5a3862cae1231ec99a02c), [`6cf1258`](https://github.com/LedgerHQ/ledger-live/commit/6cf125821cced8312557d5b8f8f0a7b5d0af537c), [`a7696cc`](https://github.com/LedgerHQ/ledger-live/commit/a7696cc2487836f5c3e12e6279a2ab0ac34df415)]:
+  - @ledgerhq/types-cryptoassets@7.16.0
+  - @ledgerhq/cryptoassets@13.6.0
+  - @ledgerhq/types-live@6.52.0
+  - @ledgerhq/live-nft@0.4.7
 
-## 0.4.7-nightly.1
-
-### Patch Changes
-
-- [#7966](https://github.com/LedgerHQ/ledger-live/pull/7966) [`4b0d0f8`](https://github.com/LedgerHQ/ledger-live/commit/4b0d0f8b3694491143ea9307460384471ca93cc2) Thanks [@LucasWerey](https://github.com/LucasWerey)! - Add the hide inscription feature for ordinals
-
-- Updated dependencies [[`642c714`](https://github.com/LedgerHQ/ledger-live/commit/642c714d52eaaccb1b8ac3a2ee0391b641d19303), [`4b0d0f8`](https://github.com/LedgerHQ/ledger-live/commit/4b0d0f8b3694491143ea9307460384471ca93cc2)]:
-  - @ledgerhq/types-live@6.52.0-nightly.1
-  - @ledgerhq/live-nft@0.4.7-nightly.1
-  - @ledgerhq/cryptoassets@13.6.0-nightly.1
-
-## 0.4.7-nightly.0
+## 0.4.7-next.0
 
 ### Patch Changes
 
-- Updated dependencies [[`c83af75`](https://github.com/LedgerHQ/ledger-live/commit/c83af756fb388043c9f5a3862cae1231ec99a02c), [`a7696cc`](https://github.com/LedgerHQ/ledger-live/commit/a7696cc2487836f5c3e12e6279a2ab0ac34df415)]:
-  - @ledgerhq/types-cryptoassets@7.16.0-nightly.0
-  - @ledgerhq/cryptoassets@13.6.0-nightly.0
-  - @ledgerhq/types-live@6.52.0-nightly.0
-  - @ledgerhq/live-nft@0.4.7-nightly.0
+- Updated dependencies [[`c83af75`](https://github.com/LedgerHQ/ledger-live/commit/c83af756fb388043c9f5a3862cae1231ec99a02c), [`6cf1258`](https://github.com/LedgerHQ/ledger-live/commit/6cf125821cced8312557d5b8f8f0a7b5d0af537c), [`a7696cc`](https://github.com/LedgerHQ/ledger-live/commit/a7696cc2487836f5c3e12e6279a2ab0ac34df415)]:
+  - @ledgerhq/types-cryptoassets@7.16.0-next.0
+  - @ledgerhq/cryptoassets@13.6.0-next.0
+  - @ledgerhq/types-live@6.52.0-next.0
+  - @ledgerhq/live-nft@0.4.7-next.0
 
 ## 0.4.6
 

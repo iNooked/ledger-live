@@ -1,32 +1,28 @@
 # @ledgerhq/coin-near
 
-## 0.5.7-nightly.2
+## 0.5.7
 
 ### Patch Changes
 
-- Updated dependencies [[`1b3a21d`](https://github.com/LedgerHQ/ledger-live/commit/1b3a21d5d8496c42f4dec4116fdcf59ad6f038cd)]:
-  - @ledgerhq/types-live@6.52.0-nightly.2
-  - @ledgerhq/coin-framework@0.18.2-nightly.2
-
-## 0.5.7-nightly.1
-
-### Patch Changes
-
-- Updated dependencies [[`642c714`](https://github.com/LedgerHQ/ledger-live/commit/642c714d52eaaccb1b8ac3a2ee0391b641d19303)]:
-  - @ledgerhq/types-live@6.52.0-nightly.1
-  - @ledgerhq/coin-framework@0.18.2-nightly.1
-  - @ledgerhq/cryptoassets@13.6.0-nightly.1
-  - @ledgerhq/live-network@2.0.2-nightly.0
-
-## 0.5.7-nightly.0
-
-### Patch Changes
+- [#7900](https://github.com/LedgerHQ/ledger-live/pull/7900) [`37d8fd9`](https://github.com/LedgerHQ/ledger-live/commit/37d8fd917bd2901e1005944d237656e562764818) Thanks [@qperrot](https://github.com/qperrot)! - remove rewards feature from near
 
 - Updated dependencies [[`c83af75`](https://github.com/LedgerHQ/ledger-live/commit/c83af756fb388043c9f5a3862cae1231ec99a02c)]:
-  - @ledgerhq/types-cryptoassets@7.16.0-nightly.0
-  - @ledgerhq/cryptoassets@13.6.0-nightly.0
-  - @ledgerhq/types-live@6.52.0-nightly.0
-  - @ledgerhq/coin-framework@0.18.2-nightly.0
+  - @ledgerhq/types-cryptoassets@7.16.0
+  - @ledgerhq/cryptoassets@13.6.0
+  - @ledgerhq/types-live@6.52.0
+  - @ledgerhq/coin-framework@0.18.2
+
+## 0.5.7-next.0
+
+### Patch Changes
+
+- [#7900](https://github.com/LedgerHQ/ledger-live/pull/7900) [`37d8fd9`](https://github.com/LedgerHQ/ledger-live/commit/37d8fd917bd2901e1005944d237656e562764818) Thanks [@qperrot](https://github.com/qperrot)! - remove rewards feature from near
+
+- Updated dependencies [[`c83af75`](https://github.com/LedgerHQ/ledger-live/commit/c83af756fb388043c9f5a3862cae1231ec99a02c)]:
+  - @ledgerhq/types-cryptoassets@7.16.0-next.0
+  - @ledgerhq/cryptoassets@13.6.0-next.0
+  - @ledgerhq/types-live@6.52.0-next.0
+  - @ledgerhq/coin-framework@0.18.2-next.0
 
 ## 0.5.6
 

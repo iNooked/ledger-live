@@ -1,47 +1,36 @@
 # @ledgerhq/hw-app-eth
 
-## 7.0.0-nightly.2
-
-### Patch Changes
-
-- Updated dependencies [[`1b3a21d`](https://github.com/LedgerHQ/ledger-live/commit/1b3a21d5d8496c42f4dec4116fdcf59ad6f038cd)]:
-  - @ledgerhq/types-live@6.52.0-nightly.2
-  - @ledgerhq/domain-service@1.2.6-nightly.2
-  - @ledgerhq/evm-tools@1.2.3-nightly.1
-
-## 7.0.0-nightly.1
-
-### Minor Changes
-
-- [#7874](https://github.com/LedgerHQ/ledger-live/pull/7874) [`9c6e2c4`](https://github.com/LedgerHQ/ledger-live/commit/9c6e2c4969832d9d55188ed03bbdfd79b43b7e63) Thanks [@lambertkevin](https://github.com/lambertkevin)! - Add support for Uniswap plugin
-
-### Patch Changes
-
-- [#7992](https://github.com/LedgerHQ/ledger-live/pull/7992) [`450c88c`](https://github.com/LedgerHQ/ledger-live/commit/450c88cefb01f11e6e3670b946f31fe160eebe33) Thanks [@lambertkevin](https://github.com/lambertkevin)! - Force ws version even when bundled without pnpm from the monorepo
-
-- Updated dependencies [[`642c714`](https://github.com/LedgerHQ/ledger-live/commit/642c714d52eaaccb1b8ac3a2ee0391b641d19303)]:
-  - @ledgerhq/types-live@6.52.0-nightly.1
-  - @ledgerhq/domain-service@1.2.6-nightly.1
-  - @ledgerhq/evm-tools@1.2.3-nightly.1
-  - @ledgerhq/cryptoassets-evm-signatures@14.0.0-nightly.1
-
-## 7.0.0-nightly.0
-
-### Major Changes
-
-- [#7903](https://github.com/LedgerHQ/ledger-live/pull/7903) [`0698cbf`](https://github.com/LedgerHQ/ledger-live/commit/0698cbfdd6970ebb92992cb9d273cfb5508629f3) Thanks [@Wozacosta](https://github.com/Wozacosta)! - feat: uses lightweight token asset list
+## 6.39.0
 
 ### Minor Changes
 
 - [#7943](https://github.com/LedgerHQ/ledger-live/pull/7943) [`07c584a`](https://github.com/LedgerHQ/ledger-live/commit/07c584a61573c53ff0d205d316d9195cd8f5399e) Thanks [@lambertkevin](https://github.com/lambertkevin)! - Add support for filters for empty arrays / discarded paths
 
+- [#7903](https://github.com/LedgerHQ/ledger-live/pull/7903) [`0698cbf`](https://github.com/LedgerHQ/ledger-live/commit/0698cbfdd6970ebb92992cb9d273cfb5508629f3) Thanks [@Wozacosta](https://github.com/Wozacosta)! - feat: uses lightweight token asset list
+
 ### Patch Changes
 
 - Updated dependencies [[`c83af75`](https://github.com/LedgerHQ/ledger-live/commit/c83af756fb388043c9f5a3862cae1231ec99a02c), [`0698cbf`](https://github.com/LedgerHQ/ledger-live/commit/0698cbfdd6970ebb92992cb9d273cfb5508629f3)]:
-  - @ledgerhq/types-live@6.52.0-nightly.0
-  - @ledgerhq/cryptoassets-evm-signatures@14.0.0-nightly.0
-  - @ledgerhq/domain-service@1.2.6-nightly.0
-  - @ledgerhq/evm-tools@1.2.3-nightly.0
+  - @ledgerhq/types-live@6.52.0
+  - @ledgerhq/cryptoassets-evm-signatures@13.5.0
+  - @ledgerhq/domain-service@1.2.6
+  - @ledgerhq/evm-tools@1.2.3
+
+## 6.39.0-next.0
+
+### Minor Changes
+
+- [#7943](https://github.com/LedgerHQ/ledger-live/pull/7943) [`07c584a`](https://github.com/LedgerHQ/ledger-live/commit/07c584a61573c53ff0d205d316d9195cd8f5399e) Thanks [@lambertkevin](https://github.com/lambertkevin)! - Add support for filters for empty arrays / discarded paths
+
+- [#7903](https://github.com/LedgerHQ/ledger-live/pull/7903) [`0698cbf`](https://github.com/LedgerHQ/ledger-live/commit/0698cbfdd6970ebb92992cb9d273cfb5508629f3) Thanks [@Wozacosta](https://github.com/Wozacosta)! - feat: uses lightweight token asset list
+
+### Patch Changes
+
+- Updated dependencies [[`c83af75`](https://github.com/LedgerHQ/ledger-live/commit/c83af756fb388043c9f5a3862cae1231ec99a02c), [`0698cbf`](https://github.com/LedgerHQ/ledger-live/commit/0698cbfdd6970ebb92992cb9d273cfb5508629f3)]:
+  - @ledgerhq/types-live@6.52.0-next.0
+  - @ledgerhq/cryptoassets-evm-signatures@13.5.0-next.0
+  - @ledgerhq/domain-service@1.2.6-next.0
+  - @ledgerhq/evm-tools@1.2.3-next.0
 
 ## 6.38.2
 

@@ -1,82 +1,12 @@
 # live-mobile
 
-## 3.51.0-nightly.0
-
-### Minor Changes
-
-- [#7870](https://github.com/LedgerHQ/ledger-live/pull/7870) [`1b3a21d`](https://github.com/LedgerHQ/ledger-live/commit/1b3a21d5d8496c42f4dec4116fdcf59ad6f038cd) Thanks [@marcotoniut-ledger](https://github.com/marcotoniut-ledger)! - ledger-live-desktop: Updated staking modal. Filtering per category. New copy and design
-  live-mobile: Updated staking modal. Filtering per category. New copy and design
-  @ledgerhq/icons-ui: Add book-graduation icon
-  @ledgerhq/types-live: Update schema of ethStakingProviders flag
-  @ledgerhq/native-ui: Add `xs` size to Button
-
-- [#7989](https://github.com/LedgerHQ/ledger-live/pull/7989) [`191b105`](https://github.com/LedgerHQ/ledger-live/commit/191b105e6f1c76e674da6e9e109efe1b01937b99) Thanks [@thesan](https://github.com/thesan)! - Add the receive flow `NeedMemoTagModal`
-
-### Patch Changes
-
-- [#8014](https://github.com/LedgerHQ/ledger-live/pull/8014) [`b7311c4`](https://github.com/LedgerHQ/ledger-live/commit/b7311c4c773b188465560150932f0cdbceec42e0) Thanks [@beths-ledger](https://github.com/beths-ledger)! - Add the platform OS to the params passed to earn to enable the correct braze environment
-
-- Updated dependencies [[`1b3a21d`](https://github.com/LedgerHQ/ledger-live/commit/1b3a21d5d8496c42f4dec4116fdcf59ad6f038cd), [`191b105`](https://github.com/LedgerHQ/ledger-live/commit/191b105e6f1c76e674da6e9e109efe1b01937b99), [`d962cf1`](https://github.com/LedgerHQ/ledger-live/commit/d962cf13667a383b77a1d30bf26bec27702d9af4)]:
-  - @ledgerhq/icons-ui@0.8.0-nightly.1
-  - @ledgerhq/types-live@6.52.0-nightly.2
-  - @ledgerhq/native-ui@0.25.0-nightly.2
-  - @ledgerhq/live-common@34.10.0-nightly.3
-  - @ledgerhq/coin-framework@0.18.2-nightly.2
-  - @ledgerhq/coin-cosmos@0.1.3-nightly.2
-  - @ledgerhq/coin-elrond@0.1.2-nightly.2
-  - @ledgerhq/coin-evm@2.4.0-nightly.2
-  - @ledgerhq/domain-service@1.2.6-nightly.2
-  - @ledgerhq/live-countervalues@0.2.7-nightly.2
-  - @ledgerhq/live-countervalues-react@0.2.7-nightly.2
-  - @ledgerhq/live-nft@0.4.7-nightly.2
-  - @ledgerhq/live-nft-react@0.4.7-nightly.2
-  - @ledgerhq/live-wallet@0.7.0-nightly.3
-
-## 4.0.0-nightly.2
-
-### Minor Changes
-
-- [#7973](https://github.com/LedgerHQ/ledger-live/pull/7973) [`64d8546`](https://github.com/LedgerHQ/ledger-live/commit/64d854687369a63a77f3b31793b87af570e2f3c5) Thanks [@KVNLS](https://github.com/KVNLS)! - Fetch FF every 5 minutes for LLM & LLD
-
-- [#7964](https://github.com/LedgerHQ/ledger-live/pull/7964) [`9032845`](https://github.com/LedgerHQ/ledger-live/commit/9032845a3cbadf40d545d6832e0280880e0be3d7) Thanks [@KVNLS](https://github.com/KVNLS)! - Use Ledger Key Ring Protocol naming
-
-### Patch Changes
-
-- [#7963](https://github.com/LedgerHQ/ledger-live/pull/7963) [`642c714`](https://github.com/LedgerHQ/ledger-live/commit/642c714d52eaaccb1b8ac3a2ee0391b641d19303) Thanks [@thesan](https://github.com/thesan)! - Create `llmMemoTag`
-
-- [#8009](https://github.com/LedgerHQ/ledger-live/pull/8009) [`961f567`](https://github.com/LedgerHQ/ledger-live/commit/961f56747a156bb8c167f9aac76f204fd59a326f) Thanks [@LucasWerey](https://github.com/LucasWerey)! - When user has a lock password the app get locked when he wants to sync with another instance
-
-- [#7965](https://github.com/LedgerHQ/ledger-live/pull/7965) [`07a242d`](https://github.com/LedgerHQ/ledger-live/commit/07a242d9c54a4b70d9fec7ef390b8e8ab7de4df7) Thanks [@hedi-edelbloute](https://github.com/hedi-edelbloute)! - Cardano fees warning + fix high fees issue
-
-- [#7957](https://github.com/LedgerHQ/ledger-live/pull/7957) [`a4cd30a`](https://github.com/LedgerHQ/ledger-live/commit/a4cd30a6cf405a3fb647282a958210ded9ed0b21) Thanks [@cgrellard-ledger](https://github.com/cgrellard-ledger)! - LLM - Fixed a spacing issue when there was a category with all its content cards dismissed by the user
-
-- Updated dependencies [[`642c714`](https://github.com/LedgerHQ/ledger-live/commit/642c714d52eaaccb1b8ac3a2ee0391b641d19303), [`ced792c`](https://github.com/LedgerHQ/ledger-live/commit/ced792c37b42135f2b7596228c14ccd0783a803f), [`6f0d39f`](https://github.com/LedgerHQ/ledger-live/commit/6f0d39f46ef5d3e24439421aa68dfe7aadcd1dbc), [`87b706c`](https://github.com/LedgerHQ/ledger-live/commit/87b706c8a807f14c72c7d47206e9ee767f50a04c), [`9c6e2c4`](https://github.com/LedgerHQ/ledger-live/commit/9c6e2c4969832d9d55188ed03bbdfd79b43b7e63), [`4b0d0f8`](https://github.com/LedgerHQ/ledger-live/commit/4b0d0f8b3694491143ea9307460384471ca93cc2), [`9032845`](https://github.com/LedgerHQ/ledger-live/commit/9032845a3cbadf40d545d6832e0280880e0be3d7), [`07a242d`](https://github.com/LedgerHQ/ledger-live/commit/07a242d9c54a4b70d9fec7ef390b8e8ab7de4df7), [`3824e06`](https://github.com/LedgerHQ/ledger-live/commit/3824e06ba2c94bc0697d2a40d865efe766d1f102)]:
-  - @ledgerhq/types-live@6.52.0-nightly.1
-  - @ledgerhq/live-common@34.10.0-nightly.2
-  - @ledgerhq/live-env@2.4.0-nightly.0
-  - @ledgerhq/coin-evm@2.4.0-nightly.1
-  - @ledgerhq/live-nft-react@0.4.7-nightly.1
-  - @ledgerhq/live-nft@0.4.7-nightly.1
-  - @ledgerhq/hw-ledger-key-ring-protocol@0.2.0-nightly.0
-  - @ledgerhq/ledger-key-ring-protocol@0.5.0-nightly.0
-  - @ledgerhq/live-wallet@0.7.0-nightly.2
-  - @ledgerhq/coin-framework@0.18.2-nightly.1
-  - @ledgerhq/coin-cosmos@0.1.3-nightly.1
-  - @ledgerhq/coin-elrond@0.1.2-nightly.1
-  - @ledgerhq/domain-service@1.2.6-nightly.1
-  - @ledgerhq/live-countervalues@0.2.7-nightly.1
-  - @ledgerhq/live-countervalues-react@0.2.7-nightly.1
-  - @ledgerhq/live-network@2.0.2-nightly.0
-
-## 4.0.0-nightly.1
-
-### Major Changes
-
-- [#7909](https://github.com/LedgerHQ/ledger-live/pull/7909) [`59994d9`](https://github.com/LedgerHQ/ledger-live/commit/59994d9385fd8baab2eb54c4da63e475178a6ebb) Thanks [@cgrellard-ledger](https://github.com/cgrellard-ledger)! - LLM - use production firebase for ios nightly builds and rename local builds from staging to dev
+## 3.51.0
 
 ### Minor Changes
 
 - [#7740](https://github.com/LedgerHQ/ledger-live/pull/7740) [`c83af75`](https://github.com/LedgerHQ/ledger-live/commit/c83af756fb388043c9f5a3862cae1231ec99a02c) Thanks [@hzheng-ledger](https://github.com/hzheng-ledger)! - Add etherlink evm currency
+
+- [#7909](https://github.com/LedgerHQ/ledger-live/pull/7909) [`59994d9`](https://github.com/LedgerHQ/ledger-live/commit/59994d9385fd8baab2eb54c4da63e475178a6ebb) Thanks [@cgrellard-ledger](https://github.com/cgrellard-ledger)! - LLM - use production firebase for ios nightly builds and rename local builds from staging to dev
 
 - [#7955](https://github.com/LedgerHQ/ledger-live/pull/7955) [`5d825f2`](https://github.com/LedgerHQ/ledger-live/commit/5d825f2d38ec9c0407d3f3d0b5d13e2779ce4c3d) Thanks [@KVNLS](https://github.com/KVNLS)! - LLM - Fix wording for Ledger Sync on activation
 
@@ -84,34 +14,139 @@
 
 - [#7929](https://github.com/LedgerHQ/ledger-live/pull/7929) [`92df3b4`](https://github.com/LedgerHQ/ledger-live/commit/92df3b415e765dc26bc69438ca26b6308e98aa26) Thanks [@cgrellard-ledger](https://github.com/cgrellard-ledger)! - Ledger Sync - Fixed side effect that caused the synchronization to stop working
 
+- [#7905](https://github.com/LedgerHQ/ledger-live/pull/7905) [`f16375d`](https://github.com/LedgerHQ/ledger-live/commit/f16375ded204392f6e0e9af46e1c49362ce49561) Thanks [@Justkant](https://github.com/Justkant)! - fix(wallet-api): only call success and fail handlers when closing the flow on LLM
+
+  Allows to properly retry the sign message without sending an error through the wallet-api
+  We also only send the success when we actually close the last success screen
+
 - [#7959](https://github.com/LedgerHQ/ledger-live/pull/7959) [`94b2e3d`](https://github.com/LedgerHQ/ledger-live/commit/94b2e3df4e7f8004d195e6ab6e5447f5e0218567) Thanks [@thesan](https://github.com/thesan)! - Accept analytics during onboarding tests
 
-- Updated dependencies [[`c83af75`](https://github.com/LedgerHQ/ledger-live/commit/c83af756fb388043c9f5a3862cae1231ec99a02c), [`92df3b4`](https://github.com/LedgerHQ/ledger-live/commit/92df3b415e765dc26bc69438ca26b6308e98aa26), [`a7696cc`](https://github.com/LedgerHQ/ledger-live/commit/a7696cc2487836f5c3e12e6279a2ab0ac34df415)]:
-  - @ledgerhq/types-cryptoassets@7.16.0-nightly.0
-  - @ledgerhq/types-live@6.52.0-nightly.0
-  - @ledgerhq/live-common@34.10.0-nightly.1
-  - @ledgerhq/live-wallet@0.6.2-nightly.1
-  - @ledgerhq/live-nft@0.4.7-nightly.0
-  - @ledgerhq/coin-evm@2.3.1-nightly.0
-  - @ledgerhq/coin-framework@0.18.2-nightly.0
-  - @ledgerhq/coin-cosmos@0.1.3-nightly.0
-  - @ledgerhq/coin-elrond@0.1.2-nightly.0
-  - @ledgerhq/domain-service@1.2.6-nightly.0
-  - @ledgerhq/live-countervalues@0.2.7-nightly.0
-  - @ledgerhq/live-countervalues-react@0.2.7-nightly.0
-  - @ledgerhq/live-nft-react@0.4.7-nightly.0
-  - @ledgerhq/native-ui@0.24.1-nightly.1
+- [#7868](https://github.com/LedgerHQ/ledger-live/pull/7868) [`4847469`](https://github.com/LedgerHQ/ledger-live/commit/4847469680cdfdf6fde5b638aa51ecd3e4e71551) Thanks [@LucasWerey](https://github.com/LucasWerey)! - add change address disclaimer for utxos accounts
 
-## 3.50.1-nightly.0
+- [#8010](https://github.com/LedgerHQ/ledger-live/pull/8010) [`828e905`](https://github.com/LedgerHQ/ledger-live/commit/828e905db2cddeb0c754ac0b507d02dc6cc154f6) Thanks [@LucasWerey](https://github.com/LucasWerey)! - When user has a lock password the app get locked when he wants to sync with another instance
+
+- [#7884](https://github.com/LedgerHQ/ledger-live/pull/7884) [`f9811e0`](https://github.com/LedgerHQ/ledger-live/commit/f9811e02ffe68c4acb165d0932059d020bbca2f4) Thanks [@valpinkman](https://github.com/valpinkman)! - Update turbo.json to accept envs
+
+- [#7900](https://github.com/LedgerHQ/ledger-live/pull/7900) [`37d8fd9`](https://github.com/LedgerHQ/ledger-live/commit/37d8fd917bd2901e1005944d237656e562764818) Thanks [@qperrot](https://github.com/qperrot)! - remove rewards feature from near
+
+- [#7928](https://github.com/LedgerHQ/ledger-live/pull/7928) [`d304a32`](https://github.com/LedgerHQ/ledger-live/commit/d304a32aff3d4ace2ccb4487bb9fe4821814e067) Thanks [@thesan](https://github.com/thesan)! - Run tests files at `e2e/specs/*.spec.ts`
+
+- [#7907](https://github.com/LedgerHQ/ledger-live/pull/7907) [`be18f81`](https://github.com/LedgerHQ/ledger-live/commit/be18f816fa098f8217420b8a875b7afb1be748b0) Thanks [@Justkant](https://github.com/Justkant)! - fix(LLM): allow wallet-connect live-app to open a deep-link at any time
+
+  Refactor by sharing a single constant for wallet-connect live-app manifest id
+
+- [#7906](https://github.com/LedgerHQ/ledger-live/pull/7906) [`b7fa1bf`](https://github.com/LedgerHQ/ledger-live/commit/b7fa1bf9c34a665a97edaabdbd8649da9c1f060d) Thanks [@Justkant](https://github.com/Justkant)! - fix(LLM): wallet-connect deep-link from native app for a request would reload the page
+
+  Reloading the page would break the wallet-api flow shown when coming back to the app
+
+- [#7890](https://github.com/LedgerHQ/ledger-live/pull/7890) [`fa56035`](https://github.com/LedgerHQ/ledger-live/commit/fa56035ac15a36e5032efd9ce0036d13d4a30790) Thanks [@thesan](https://github.com/thesan)! - Always skip the analytics prompt in e2e tests
+
+- [#7872](https://github.com/LedgerHQ/ledger-live/pull/7872) [`7eb4f48`](https://github.com/LedgerHQ/ledger-live/commit/7eb4f48500d14d9ebde0374b239944cb9da9da56) Thanks [@Justkant](https://github.com/Justkant)! - fix(wallet-api): open any deep-link from the webview on LLM
+
+  Needed for wallet-connect-live-app deep-link back to mobile dApps
+
+- Updated dependencies [[`c83af75`](https://github.com/LedgerHQ/ledger-live/commit/c83af756fb388043c9f5a3862cae1231ec99a02c), [`92df3b4`](https://github.com/LedgerHQ/ledger-live/commit/92df3b415e765dc26bc69438ca26b6308e98aa26), [`2f90189`](https://github.com/LedgerHQ/ledger-live/commit/2f9018986102f23fa22d31605d0d9f99abd41892), [`6cf1258`](https://github.com/LedgerHQ/ledger-live/commit/6cf125821cced8312557d5b8f8f0a7b5d0af537c), [`2f71fec`](https://github.com/LedgerHQ/ledger-live/commit/2f71fecc0e4bd2692277386931978242a25a364c), [`a7696cc`](https://github.com/LedgerHQ/ledger-live/commit/a7696cc2487836f5c3e12e6279a2ab0ac34df415), [`37d8fd9`](https://github.com/LedgerHQ/ledger-live/commit/37d8fd917bd2901e1005944d237656e562764818), [`be18f81`](https://github.com/LedgerHQ/ledger-live/commit/be18f816fa098f8217420b8a875b7afb1be748b0), [`a47e68b`](https://github.com/LedgerHQ/ledger-live/commit/a47e68b568a3b888a241c30345b4935557404215), [`307f467`](https://github.com/LedgerHQ/ledger-live/commit/307f4672ef4bf2020dff9d29e7f7227f2fb53901)]:
+  - @ledgerhq/types-cryptoassets@7.16.0
+  - @ledgerhq/types-live@6.52.0
+  - @ledgerhq/live-common@34.10.0
+  - @ledgerhq/live-wallet@0.6.2
+  - @ledgerhq/native-ui@0.24.1
+  - @ledgerhq/icons-ui@0.7.4
+  - @ledgerhq/live-nft@0.4.7
+  - @ledgerhq/coin-evm@2.3.1
+  - @ledgerhq/trustchain@0.4.1
+  - @ledgerhq/coin-framework@0.18.2
+  - @ledgerhq/coin-cosmos@0.1.3
+  - @ledgerhq/coin-elrond@0.1.2
+  - @ledgerhq/domain-service@1.2.6
+  - @ledgerhq/live-countervalues@0.2.7
+  - @ledgerhq/live-countervalues-react@0.2.7
+  - @ledgerhq/live-nft-react@0.4.7
+
+## 3.51.0-next.1
 
 ### Patch Changes
 
-- Updated dependencies [[`2f90189`](https://github.com/LedgerHQ/ledger-live/commit/2f9018986102f23fa22d31605d0d9f99abd41892), [`a47e68b`](https://github.com/LedgerHQ/ledger-live/commit/a47e68b568a3b888a241c30345b4935557404215), [`307f467`](https://github.com/LedgerHQ/ledger-live/commit/307f4672ef4bf2020dff9d29e7f7227f2fb53901)]:
-  - @ledgerhq/native-ui@0.24.1-nightly.0
-  - @ledgerhq/icons-ui@0.7.4-nightly.0
-  - @ledgerhq/trustchain@0.4.1-nightly.0
-  - @ledgerhq/live-common@34.10.0-nightly.0
-  - @ledgerhq/live-wallet@0.6.2-nightly.0
+- [#8010](https://github.com/LedgerHQ/ledger-live/pull/8010) [`828e905`](https://github.com/LedgerHQ/ledger-live/commit/828e905db2cddeb0c754ac0b507d02dc6cc154f6) Thanks [@LucasWerey](https://github.com/LucasWerey)! - When user has a lock password the app get locked when he wants to sync with another instance
+
+## 3.51.0-next.0
+
+### Minor Changes
+
+- [#7740](https://github.com/LedgerHQ/ledger-live/pull/7740) [`c83af75`](https://github.com/LedgerHQ/ledger-live/commit/c83af756fb388043c9f5a3862cae1231ec99a02c) Thanks [@hzheng-ledger](https://github.com/hzheng-ledger)! - Add etherlink evm currency
+
+- [#7909](https://github.com/LedgerHQ/ledger-live/pull/7909) [`59994d9`](https://github.com/LedgerHQ/ledger-live/commit/59994d9385fd8baab2eb54c4da63e475178a6ebb) Thanks [@cgrellard-ledger](https://github.com/cgrellard-ledger)! - LLM - use production firebase for ios nightly builds and rename local builds from staging to dev
+
+- [#7955](https://github.com/LedgerHQ/ledger-live/pull/7955) [`5d825f2`](https://github.com/LedgerHQ/ledger-live/commit/5d825f2d38ec9c0407d3f3d0b5d13e2779ce4c3d) Thanks [@KVNLS](https://github.com/KVNLS)! - LLM - Fix wording for Ledger Sync on activation
+
+### Patch Changes
+
+- [#7929](https://github.com/LedgerHQ/ledger-live/pull/7929) [`92df3b4`](https://github.com/LedgerHQ/ledger-live/commit/92df3b415e765dc26bc69438ca26b6308e98aa26) Thanks [@cgrellard-ledger](https://github.com/cgrellard-ledger)! - Ledger Sync - Fixed side effect that caused the synchronization to stop working
+
+- [#7905](https://github.com/LedgerHQ/ledger-live/pull/7905) [`f16375d`](https://github.com/LedgerHQ/ledger-live/commit/f16375ded204392f6e0e9af46e1c49362ce49561) Thanks [@Justkant](https://github.com/Justkant)! - fix(wallet-api): only call success and fail handlers when closing the flow on LLM
+
+  Allows to properly retry the sign message without sending an error through the wallet-api
+  We also only send the success when we actually close the last success screen
+
+- [#7959](https://github.com/LedgerHQ/ledger-live/pull/7959) [`94b2e3d`](https://github.com/LedgerHQ/ledger-live/commit/94b2e3df4e7f8004d195e6ab6e5447f5e0218567) Thanks [@thesan](https://github.com/thesan)! - Accept analytics during onboarding tests
+
+- [#7868](https://github.com/LedgerHQ/ledger-live/pull/7868) [`4847469`](https://github.com/LedgerHQ/ledger-live/commit/4847469680cdfdf6fde5b638aa51ecd3e4e71551) Thanks [@LucasWerey](https://github.com/LucasWerey)! - add change address disclaimer for utxos accounts
+
+- [#7884](https://github.com/LedgerHQ/ledger-live/pull/7884) [`f9811e0`](https://github.com/LedgerHQ/ledger-live/commit/f9811e02ffe68c4acb165d0932059d020bbca2f4) Thanks [@valpinkman](https://github.com/valpinkman)! - Update turbo.json to accept envs
+
+- [#7900](https://github.com/LedgerHQ/ledger-live/pull/7900) [`37d8fd9`](https://github.com/LedgerHQ/ledger-live/commit/37d8fd917bd2901e1005944d237656e562764818) Thanks [@qperrot](https://github.com/qperrot)! - remove rewards feature from near
+
+- [#7928](https://github.com/LedgerHQ/ledger-live/pull/7928) [`d304a32`](https://github.com/LedgerHQ/ledger-live/commit/d304a32aff3d4ace2ccb4487bb9fe4821814e067) Thanks [@thesan](https://github.com/thesan)! - Run tests files at `e2e/specs/*.spec.ts`
+
+- [#7907](https://github.com/LedgerHQ/ledger-live/pull/7907) [`be18f81`](https://github.com/LedgerHQ/ledger-live/commit/be18f816fa098f8217420b8a875b7afb1be748b0) Thanks [@Justkant](https://github.com/Justkant)! - fix(LLM): allow wallet-connect live-app to open a deep-link at any time
+
+  Refactor by sharing a single constant for wallet-connect live-app manifest id
+
+- [#7906](https://github.com/LedgerHQ/ledger-live/pull/7906) [`b7fa1bf`](https://github.com/LedgerHQ/ledger-live/commit/b7fa1bf9c34a665a97edaabdbd8649da9c1f060d) Thanks [@Justkant](https://github.com/Justkant)! - fix(LLM): wallet-connect deep-link from native app for a request would reload the page
+
+  Reloading the page would break the wallet-api flow shown when coming back to the app
+
+- [#7890](https://github.com/LedgerHQ/ledger-live/pull/7890) [`fa56035`](https://github.com/LedgerHQ/ledger-live/commit/fa56035ac15a36e5032efd9ce0036d13d4a30790) Thanks [@thesan](https://github.com/thesan)! - Always skip the analytics prompt in e2e tests
+
+- [#7872](https://github.com/LedgerHQ/ledger-live/pull/7872) [`7eb4f48`](https://github.com/LedgerHQ/ledger-live/commit/7eb4f48500d14d9ebde0374b239944cb9da9da56) Thanks [@Justkant](https://github.com/Justkant)! - fix(wallet-api): open any deep-link from the webview on LLM
+
+  Needed for wallet-connect-live-app deep-link back to mobile dApps
+
+- Updated dependencies [[`c83af75`](https://github.com/LedgerHQ/ledger-live/commit/c83af756fb388043c9f5a3862cae1231ec99a02c), [`92df3b4`](https://github.com/LedgerHQ/ledger-live/commit/92df3b415e765dc26bc69438ca26b6308e98aa26), [`2f90189`](https://github.com/LedgerHQ/ledger-live/commit/2f9018986102f23fa22d31605d0d9f99abd41892), [`6cf1258`](https://github.com/LedgerHQ/ledger-live/commit/6cf125821cced8312557d5b8f8f0a7b5d0af537c), [`2f71fec`](https://github.com/LedgerHQ/ledger-live/commit/2f71fecc0e4bd2692277386931978242a25a364c), [`a7696cc`](https://github.com/LedgerHQ/ledger-live/commit/a7696cc2487836f5c3e12e6279a2ab0ac34df415), [`37d8fd9`](https://github.com/LedgerHQ/ledger-live/commit/37d8fd917bd2901e1005944d237656e562764818), [`be18f81`](https://github.com/LedgerHQ/ledger-live/commit/be18f816fa098f8217420b8a875b7afb1be748b0), [`a47e68b`](https://github.com/LedgerHQ/ledger-live/commit/a47e68b568a3b888a241c30345b4935557404215), [`307f467`](https://github.com/LedgerHQ/ledger-live/commit/307f4672ef4bf2020dff9d29e7f7227f2fb53901)]:
+  - @ledgerhq/types-cryptoassets@7.16.0-next.0
+  - @ledgerhq/types-live@6.52.0-next.0
+  - @ledgerhq/live-common@34.10.0-next.0
+  - @ledgerhq/live-wallet@0.6.2-next.0
+  - @ledgerhq/native-ui@0.24.1-next.0
+  - @ledgerhq/icons-ui@0.7.4-next.0
+  - @ledgerhq/live-nft@0.4.7-next.0
+  - @ledgerhq/coin-evm@2.3.1-next.0
+  - @ledgerhq/trustchain@0.4.1-next.0
+  - @ledgerhq/coin-framework@0.18.2-next.0
+  - @ledgerhq/coin-cosmos@0.1.3-next.0
+  - @ledgerhq/coin-elrond@0.1.2-next.0
+  - @ledgerhq/domain-service@1.2.6-next.0
+  - @ledgerhq/live-countervalues@0.2.7-next.0
+  - @ledgerhq/live-countervalues-react@0.2.7-next.0
+  - @ledgerhq/live-nft-react@0.4.7-next.0
+
+## 3.50.1
+
+### Patch Changes
+
+- [#7978](https://github.com/LedgerHQ/ledger-live/pull/7978) [`77adfc3`](https://github.com/LedgerHQ/ledger-live/commit/77adfc33d4fd7d8f39329f23a36a55029331feb0) Thanks [@hedi-edelbloute](https://github.com/hedi-edelbloute)! - Cardano fees warning + fix high fees issue
+
+- Updated dependencies [[`77adfc3`](https://github.com/LedgerHQ/ledger-live/commit/77adfc33d4fd7d8f39329f23a36a55029331feb0)]:
+  - @ledgerhq/live-common@34.9.1
+
+## 3.50.1-hotfix.0
+
+### Patch Changes
+
+- [#7978](https://github.com/LedgerHQ/ledger-live/pull/7978) [`77adfc3`](https://github.com/LedgerHQ/ledger-live/commit/77adfc33d4fd7d8f39329f23a36a55029331feb0) Thanks [@hedi-edelbloute](https://github.com/hedi-edelbloute)! - Cardano fees warning + fix high fees issue
+
+- Updated dependencies [[`77adfc3`](https://github.com/LedgerHQ/ledger-live/commit/77adfc33d4fd7d8f39329f23a36a55029331feb0)]:
+  - @ledgerhq/live-common@34.9.1-hotfix.0
 
 ## 3.50.0
 

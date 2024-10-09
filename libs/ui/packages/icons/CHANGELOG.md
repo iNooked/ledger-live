@@ -1,16 +1,12 @@
 # @ledgerhq/icons-ui
 
-## 0.8.0-nightly.1
+## 0.7.4
 
-### Minor Changes
+### Patch Changes
 
-- [#7870](https://github.com/LedgerHQ/ledger-live/pull/7870) [`1b3a21d`](https://github.com/LedgerHQ/ledger-live/commit/1b3a21d5d8496c42f4dec4116fdcf59ad6f038cd) Thanks [@marcotoniut-ledger](https://github.com/marcotoniut-ledger)! - ledger-live-desktop: Updated staking modal. Filtering per category. New copy and design
-  live-mobile: Updated staking modal. Filtering per category. New copy and design
-  @ledgerhq/icons-ui: Add book-graduation icon
-  @ledgerhq/types-live: Update schema of ethStakingProviders flag
-  @ledgerhq/native-ui: Add `xs` size to Button
+- [#7941](https://github.com/LedgerHQ/ledger-live/pull/7941) [`2f90189`](https://github.com/LedgerHQ/ledger-live/commit/2f9018986102f23fa22d31605d0d9f99abd41892) Thanks [@thesan](https://github.com/thesan)! - Fix IDE go to definition feature for some libs
 
-## 0.7.4-nightly.0
+## 0.7.4-next.0
 
 ### Patch Changes
 

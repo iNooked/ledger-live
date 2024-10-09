@@ -1,37 +1,26 @@
 # @ledgerhq/native-ui
 
-## 0.25.0-nightly.2
-
-### Minor Changes
-
-- [#7989](https://github.com/LedgerHQ/ledger-live/pull/7989) [`191b105`](https://github.com/LedgerHQ/ledger-live/commit/191b105e6f1c76e674da6e9e109efe1b01937b99) Thanks [@thesan](https://github.com/thesan)! - Add the receive flow `NeedMemoTagModal`
-
-### Patch Changes
-
-- [#7870](https://github.com/LedgerHQ/ledger-live/pull/7870) [`1b3a21d`](https://github.com/LedgerHQ/ledger-live/commit/1b3a21d5d8496c42f4dec4116fdcf59ad6f038cd) Thanks [@marcotoniut-ledger](https://github.com/marcotoniut-ledger)! - ledger-live-desktop: Updated staking modal. Filtering per category. New copy and design
-  live-mobile: Updated staking modal. Filtering per category. New copy and design
-  @ledgerhq/icons-ui: Add book-graduation icon
-  @ledgerhq/types-live: Update schema of ethStakingProviders flag
-  @ledgerhq/native-ui: Add `xs` size to Button
-- Updated dependencies [[`1b3a21d`](https://github.com/LedgerHQ/ledger-live/commit/1b3a21d5d8496c42f4dec4116fdcf59ad6f038cd)]:
-  - @ledgerhq/icons-ui@0.8.0-nightly.1
-
-## 0.24.1-nightly.1
-
-### Patch Changes
-
-- Updated dependencies [[`c83af75`](https://github.com/LedgerHQ/ledger-live/commit/c83af756fb388043c9f5a3862cae1231ec99a02c)]:
-  - @ledgerhq/crypto-icons-ui@1.5.0-nightly.0
-
-## 0.24.1-nightly.0
+## 0.24.1
 
 ### Patch Changes
 
 - [#7941](https://github.com/LedgerHQ/ledger-live/pull/7941) [`2f90189`](https://github.com/LedgerHQ/ledger-live/commit/2f9018986102f23fa22d31605d0d9f99abd41892) Thanks [@thesan](https://github.com/thesan)! - Fix IDE go to definition feature for some libs
 
-- Updated dependencies [[`2f90189`](https://github.com/LedgerHQ/ledger-live/commit/2f9018986102f23fa22d31605d0d9f99abd41892)]:
-  - @ledgerhq/ui-shared@0.2.2-nightly.0
-  - @ledgerhq/icons-ui@0.7.4-nightly.0
+- Updated dependencies [[`c83af75`](https://github.com/LedgerHQ/ledger-live/commit/c83af756fb388043c9f5a3862cae1231ec99a02c), [`2f90189`](https://github.com/LedgerHQ/ledger-live/commit/2f9018986102f23fa22d31605d0d9f99abd41892)]:
+  - @ledgerhq/crypto-icons-ui@1.5.0
+  - @ledgerhq/ui-shared@0.2.2
+  - @ledgerhq/icons-ui@0.7.4
+
+## 0.24.1-next.0
+
+### Patch Changes
+
+- [#7941](https://github.com/LedgerHQ/ledger-live/pull/7941) [`2f90189`](https://github.com/LedgerHQ/ledger-live/commit/2f9018986102f23fa22d31605d0d9f99abd41892) Thanks [@thesan](https://github.com/thesan)! - Fix IDE go to definition feature for some libs
+
+- Updated dependencies [[`c83af75`](https://github.com/LedgerHQ/ledger-live/commit/c83af756fb388043c9f5a3862cae1231ec99a02c), [`2f90189`](https://github.com/LedgerHQ/ledger-live/commit/2f9018986102f23fa22d31605d0d9f99abd41892)]:
+  - @ledgerhq/crypto-icons-ui@1.5.0-next.0
+  - @ledgerhq/ui-shared@0.2.2-next.0
+  - @ledgerhq/icons-ui@0.7.4-next.0
 
 ## 0.24.0
 
