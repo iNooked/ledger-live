@@ -1,5 +1,13 @@
 # @ledgerhq/types-live
 
+## 6.52.1-nightly.0
+
+### Patch Changes
+
+- [#8038](https://github.com/LedgerHQ/ledger-live/pull/8038) [`0a16ae4`](https://github.com/LedgerHQ/ledger-live/commit/0a16ae4cb58ad9f2e67c7f3494b0dc52cb7423a1) Thanks [@themooneer](https://github.com/themooneer)! - add memoTag FF for LLD
+
+- [#7891](https://github.com/LedgerHQ/ledger-live/pull/7891) [`00cab1d`](https://github.com/LedgerHQ/ledger-live/commit/00cab1db1d67eb0cf35059eeeb9e2d8bd328f8f3) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - Add useCheckNftAccount Hook
+
 ## 6.52.0
 
 ### Minor Changes

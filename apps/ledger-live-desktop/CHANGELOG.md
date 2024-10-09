@@ -1,5 +1,29 @@
 # ledger-live-desktop
 
+## 2.88.1-nightly.0
+
+### Patch Changes
+
+- [#8026](https://github.com/LedgerHQ/ledger-live/pull/8026) [`c7bc0d7`](https://github.com/LedgerHQ/ledger-live/commit/c7bc0d7ee558da193d60e692564dffca17f0287f) Thanks [@LucasWerey](https://github.com/LucasWerey)! - Add mocked generator braze CCs in dev settings
+
+- [#7891](https://github.com/LedgerHQ/ledger-live/pull/7891) [`00cab1d`](https://github.com/LedgerHQ/ledger-live/commit/00cab1db1d67eb0cf35059eeeb9e2d8bd328f8f3) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - Add useCheckNftAccount Hook
+
+- [#8036](https://github.com/LedgerHQ/ledger-live/pull/8036) [`592449a`](https://github.com/LedgerHQ/ledger-live/commit/592449ac49433397edc91fc2bd50256301e03945) Thanks [@lpaquet-ledger](https://github.com/lpaquet-ledger)! - add TOS thorchain
+
+- Updated dependencies [[`b0d535b`](https://github.com/LedgerHQ/ledger-live/commit/b0d535b72d9c6ac7e474de2b598bc4964a515d93), [`0a16ae4`](https://github.com/LedgerHQ/ledger-live/commit/0a16ae4cb58ad9f2e67c7f3494b0dc52cb7423a1), [`00cab1d`](https://github.com/LedgerHQ/ledger-live/commit/00cab1db1d67eb0cf35059eeeb9e2d8bd328f8f3), [`b0d535b`](https://github.com/LedgerHQ/ledger-live/commit/b0d535b72d9c6ac7e474de2b598bc4964a515d93), [`3652e83`](https://github.com/LedgerHQ/ledger-live/commit/3652e83e02876856f1370cccab47f4272b71a7d3)]:
+  - @ledgerhq/live-common@34.10.1-nightly.0
+  - @ledgerhq/types-live@6.52.1-nightly.0
+  - @ledgerhq/live-nft-react@0.4.8-nightly.0
+  - @ledgerhq/coin-framework@0.18.3-nightly.0
+  - @ledgerhq/coin-bitcoin@0.8.3-nightly.0
+  - @ledgerhq/coin-cosmos@0.1.4-nightly.0
+  - @ledgerhq/coin-evm@2.3.2-nightly.0
+  - @ledgerhq/domain-service@1.2.7-nightly.0
+  - @ledgerhq/live-countervalues@0.2.8-nightly.0
+  - @ledgerhq/live-countervalues-react@0.2.8-nightly.0
+  - @ledgerhq/live-nft@0.4.8-nightly.0
+  - @ledgerhq/live-wallet@0.6.3-nightly.0
+
 ## 2.88.0
 
 ### Minor Changes

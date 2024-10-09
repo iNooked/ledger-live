@@ -1,5 +1,43 @@
 ## 34.5.0-next.4
 
+## 34.10.1-nightly.0
+
+### Patch Changes
+
+- [#8040](https://github.com/LedgerHQ/ledger-live/pull/8040) [`b0d535b`](https://github.com/LedgerHQ/ledger-live/commit/b0d535b72d9c6ac7e474de2b598bc4964a515d93) Thanks [@lpaquet-ledger](https://github.com/lpaquet-ledger)! - Add operationID for thorswap history
+
+- [#8038](https://github.com/LedgerHQ/ledger-live/pull/8038) [`0a16ae4`](https://github.com/LedgerHQ/ledger-live/commit/0a16ae4cb58ad9f2e67c7f3494b0dc52cb7423a1) Thanks [@themooneer](https://github.com/themooneer)! - add memoTag FF for LLD
+
+- [#7891](https://github.com/LedgerHQ/ledger-live/pull/7891) [`00cab1d`](https://github.com/LedgerHQ/ledger-live/commit/00cab1db1d67eb0cf35059eeeb9e2d8bd328f8f3) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - Add useCheckNftAccount Hook
+
+- [#8040](https://github.com/LedgerHQ/ledger-live/pull/8040) [`b0d535b`](https://github.com/LedgerHQ/ledger-live/commit/b0d535b72d9c6ac7e474de2b598bc4964a515d93) Thanks [@lpaquet-ledger](https://github.com/lpaquet-ledger)! - fix crash demo 0
+
+- [#8042](https://github.com/LedgerHQ/ledger-live/pull/8042) [`3652e83`](https://github.com/LedgerHQ/ledger-live/commit/3652e83e02876856f1370cccab47f4272b71a7d3) Thanks [@LucasWerey](https://github.com/LucasWerey)! - Add errors handler in common to prepare the use of it in sendFlow
+
+- Updated dependencies []:
+  - @ledgerhq/coin-framework@0.18.3-nightly.0
+  - @ledgerhq/coin-algorand@0.5.8-nightly.0
+  - @ledgerhq/coin-bitcoin@0.8.3-nightly.0
+  - @ledgerhq/coin-cardano@0.2.3-nightly.0
+  - @ledgerhq/coin-cosmos@0.1.4-nightly.0
+  - @ledgerhq/coin-elrond@0.1.3-nightly.0
+  - @ledgerhq/coin-evm@2.3.2-nightly.0
+  - @ledgerhq/coin-icon@0.4.5-nightly.0
+  - @ledgerhq/coin-near@0.5.8-nightly.0
+  - @ledgerhq/coin-polkadot@1.3.1-nightly.0
+  - @ledgerhq/coin-solana@0.7.8-nightly.0
+  - @ledgerhq/coin-stellar@0.3.3-nightly.0
+  - @ledgerhq/coin-tezos@0.6.4-nightly.0
+  - @ledgerhq/coin-ton@0.3.16-nightly.0
+  - @ledgerhq/coin-tron@0.0.8-nightly.0
+  - @ledgerhq/coin-xrp@0.5.4-nightly.0
+  - @ledgerhq/device-core@0.4.2-nightly.0
+  - @ledgerhq/hw-app-eth@6.39.1-nightly.0
+  - @ledgerhq/live-countervalues@0.2.8-nightly.0
+  - @ledgerhq/live-countervalues-react@0.2.8-nightly.0
+  - @ledgerhq/live-nft@0.4.8-nightly.0
+  - @ledgerhq/live-wallet@0.6.3-nightly.0
+
 ## 34.10.0
 
 ### Minor Changes

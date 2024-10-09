@@ -1,5 +1,27 @@
 # live-mobile
 
+## 3.51.1-nightly.0
+
+### Patch Changes
+
+- [#8034](https://github.com/LedgerHQ/ledger-live/pull/8034) [`c8903e6`](https://github.com/LedgerHQ/ledger-live/commit/c8903e66468f6c6f28a23d61b2cf9cbb863e08d6) Thanks [@qperrot](https://github.com/qperrot)! - User can enter text for Gas Limit value for ETH
+
+- [#7994](https://github.com/LedgerHQ/ledger-live/pull/7994) [`67ed92a`](https://github.com/LedgerHQ/ledger-live/commit/67ed92a8d63f6baa636e7522ae0d93b0a9ddacb4) Thanks [@themooneer](https://github.com/themooneer)! - In order to easily monitor and debug futur ios build failures on the CI , we need to add --verbose in the pod install process.
+
+- Updated dependencies [[`b0d535b`](https://github.com/LedgerHQ/ledger-live/commit/b0d535b72d9c6ac7e474de2b598bc4964a515d93), [`0a16ae4`](https://github.com/LedgerHQ/ledger-live/commit/0a16ae4cb58ad9f2e67c7f3494b0dc52cb7423a1), [`00cab1d`](https://github.com/LedgerHQ/ledger-live/commit/00cab1db1d67eb0cf35059eeeb9e2d8bd328f8f3), [`b0d535b`](https://github.com/LedgerHQ/ledger-live/commit/b0d535b72d9c6ac7e474de2b598bc4964a515d93), [`3652e83`](https://github.com/LedgerHQ/ledger-live/commit/3652e83e02876856f1370cccab47f4272b71a7d3)]:
+  - @ledgerhq/live-common@34.10.1-nightly.0
+  - @ledgerhq/types-live@6.52.1-nightly.0
+  - @ledgerhq/live-nft-react@0.4.8-nightly.0
+  - @ledgerhq/coin-framework@0.18.3-nightly.0
+  - @ledgerhq/coin-cosmos@0.1.4-nightly.0
+  - @ledgerhq/coin-elrond@0.1.3-nightly.0
+  - @ledgerhq/coin-evm@2.3.2-nightly.0
+  - @ledgerhq/domain-service@1.2.7-nightly.0
+  - @ledgerhq/live-countervalues@0.2.8-nightly.0
+  - @ledgerhq/live-countervalues-react@0.2.8-nightly.0
+  - @ledgerhq/live-nft@0.4.8-nightly.0
+  - @ledgerhq/live-wallet@0.6.3-nightly.0
+
 ## 3.51.0
 
 ### Minor Changes
