@@ -1,5 +1,29 @@
 # ledger-live-desktop
 
+## 2.89.0-nightly.1
+
+### Minor Changes
+
+- [#8055](https://github.com/LedgerHQ/ledger-live/pull/8055) [`b961229`](https://github.com/LedgerHQ/ledger-live/commit/b961229545a2f759c6890685abd80f85334d291c) Thanks [@themooneer](https://github.com/themooneer)! - Add Memo tag info section in LLD
+
+### Patch Changes
+
+- [#7981](https://github.com/LedgerHQ/ledger-live/pull/7981) [`81cd773`](https://github.com/LedgerHQ/ledger-live/commit/81cd7735a3c94628b6d4825b736ef12a0b74d3a3) Thanks [@ofreyssinet-ledger](https://github.com/ofreyssinet-ledger)! - Add support to new language packs: de, pt-br, ru, tr
+
+- Updated dependencies [[`81cd773`](https://github.com/LedgerHQ/ledger-live/commit/81cd7735a3c94628b6d4825b736ef12a0b74d3a3), [`f644636`](https://github.com/LedgerHQ/ledger-live/commit/f644636cf1f744e8aecff5b75d3aa1b7b4caf865)]:
+  - @ledgerhq/types-live@6.52.1-nightly.1
+  - @ledgerhq/live-common@34.10.1-nightly.1
+  - @ledgerhq/coin-framework@0.18.3-nightly.1
+  - @ledgerhq/coin-bitcoin@0.8.3-nightly.1
+  - @ledgerhq/coin-cosmos@0.1.4-nightly.1
+  - @ledgerhq/coin-evm@2.3.2-nightly.1
+  - @ledgerhq/domain-service@1.2.7-nightly.1
+  - @ledgerhq/live-countervalues@0.2.8-nightly.1
+  - @ledgerhq/live-countervalues-react@0.2.8-nightly.1
+  - @ledgerhq/live-nft@0.4.8-nightly.1
+  - @ledgerhq/live-nft-react@0.4.8-nightly.1
+  - @ledgerhq/live-wallet@0.6.3-nightly.1
+
 ## 2.88.1-nightly.0
 
 ### Patch Changes

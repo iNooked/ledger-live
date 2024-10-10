@@ -1,5 +1,35 @@
 ## 34.5.0-next.4
 
+## 34.10.1-nightly.1
+
+### Patch Changes
+
+- [#8016](https://github.com/LedgerHQ/ledger-live/pull/8016) [`f644636`](https://github.com/LedgerHQ/ledger-live/commit/f644636cf1f744e8aecff5b75d3aa1b7b4caf865) Thanks [@qperrot](https://github.com/qperrot)! - Update Metis explorer through Firebase to support CORs
+
+- Updated dependencies []:
+  - @ledgerhq/coin-framework@0.18.3-nightly.1
+  - @ledgerhq/coin-algorand@0.5.8-nightly.1
+  - @ledgerhq/coin-bitcoin@0.8.3-nightly.1
+  - @ledgerhq/coin-cardano@0.2.3-nightly.1
+  - @ledgerhq/coin-cosmos@0.1.4-nightly.1
+  - @ledgerhq/coin-elrond@0.1.3-nightly.1
+  - @ledgerhq/coin-evm@2.3.2-nightly.1
+  - @ledgerhq/coin-icon@0.4.5-nightly.1
+  - @ledgerhq/coin-near@0.5.8-nightly.1
+  - @ledgerhq/coin-polkadot@1.3.1-nightly.1
+  - @ledgerhq/coin-solana@0.7.8-nightly.1
+  - @ledgerhq/coin-stellar@0.3.3-nightly.1
+  - @ledgerhq/coin-tezos@0.6.4-nightly.1
+  - @ledgerhq/coin-ton@0.3.16-nightly.1
+  - @ledgerhq/coin-tron@0.0.8-nightly.1
+  - @ledgerhq/coin-xrp@0.5.4-nightly.1
+  - @ledgerhq/device-core@0.4.2-nightly.1
+  - @ledgerhq/hw-app-eth@6.39.1-nightly.1
+  - @ledgerhq/live-countervalues@0.2.8-nightly.1
+  - @ledgerhq/live-countervalues-react@0.2.8-nightly.1
+  - @ledgerhq/live-nft@0.4.8-nightly.1
+  - @ledgerhq/live-wallet@0.6.3-nightly.1
+
 ## 34.10.1-nightly.0
 
 ### Patch Changes

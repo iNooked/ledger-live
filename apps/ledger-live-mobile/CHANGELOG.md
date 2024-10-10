@@ -1,5 +1,27 @@
 # live-mobile
 
+## 3.51.1-nightly.1
+
+### Patch Changes
+
+- [#7981](https://github.com/LedgerHQ/ledger-live/pull/7981) [`81cd773`](https://github.com/LedgerHQ/ledger-live/commit/81cd7735a3c94628b6d4825b736ef12a0b74d3a3) Thanks [@ofreyssinet-ledger](https://github.com/ofreyssinet-ledger)! - Add support to new language packs: de, pt-br, ru, tr
+
+- [#8032](https://github.com/LedgerHQ/ledger-live/pull/8032) [`998a3ba`](https://github.com/LedgerHQ/ledger-live/commit/998a3baaae17e53af5e3d8802ab9ffd057b4196d) Thanks [@qperrot](https://github.com/qperrot)! - LLM Custom validator button translation
+
+- Updated dependencies [[`81cd773`](https://github.com/LedgerHQ/ledger-live/commit/81cd7735a3c94628b6d4825b736ef12a0b74d3a3), [`f644636`](https://github.com/LedgerHQ/ledger-live/commit/f644636cf1f744e8aecff5b75d3aa1b7b4caf865)]:
+  - @ledgerhq/types-live@6.52.1-nightly.1
+  - @ledgerhq/live-common@34.10.1-nightly.1
+  - @ledgerhq/coin-framework@0.18.3-nightly.1
+  - @ledgerhq/coin-cosmos@0.1.4-nightly.1
+  - @ledgerhq/coin-elrond@0.1.3-nightly.1
+  - @ledgerhq/coin-evm@2.3.2-nightly.1
+  - @ledgerhq/domain-service@1.2.7-nightly.1
+  - @ledgerhq/live-countervalues@0.2.8-nightly.1
+  - @ledgerhq/live-countervalues-react@0.2.8-nightly.1
+  - @ledgerhq/live-nft@0.4.8-nightly.1
+  - @ledgerhq/live-nft-react@0.4.8-nightly.1
+  - @ledgerhq/live-wallet@0.6.3-nightly.1
+
 ## 3.51.1-nightly.0
 
 ### Patch Changes

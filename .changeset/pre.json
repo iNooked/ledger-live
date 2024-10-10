@@ -158,10 +158,12 @@
     "@ledgerhq/ledger-key-ring-protocol": "0.4.0"
   },
   "changesets": [
+    "big-apples-smash",
     "bright-months-fold",
     "cool-cougars-push",
     "curly-bats-work",
     "curvy-hornets-change",
+    "early-seas-love",
     "eighty-sheep-join",
     "fifty-rats-perform",
     "gold-cherries-work",
@@ -169,8 +171,10 @@
     "honest-plants-promise",
     "kind-numbers-travel",
     "lazy-oranges-retire",
+    "lemon-ducks-hammer",
     "little-comics-help",
     "nervous-pumpkins-remain",
+    "new-cougars-develop",
     "nice-plants-complain",
     "old-bats-swim",
     "pink-pugs-press",
