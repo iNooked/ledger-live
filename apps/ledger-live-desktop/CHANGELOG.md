@@ -1,5 +1,25 @@
 # ledger-live-desktop
 
+## 2.89.0-nightly.3
+
+### Patch Changes
+
+- [#8039](https://github.com/LedgerHQ/ledger-live/pull/8039) [`1a0fa20`](https://github.com/LedgerHQ/ledger-live/commit/1a0fa20da7509cdde1141002a2be8e9d8458b27d) Thanks [@liviuciulinaru](https://github.com/liviuciulinaru)! - add ptxSwapCoreExperiment flag
+
+- Updated dependencies [[`1a0fa20`](https://github.com/LedgerHQ/ledger-live/commit/1a0fa20da7509cdde1141002a2be8e9d8458b27d)]:
+  - @ledgerhq/types-live@6.52.1-nightly.2
+  - @ledgerhq/live-common@34.10.1-nightly.3
+  - @ledgerhq/coin-framework@0.18.3-nightly.2
+  - @ledgerhq/coin-bitcoin@0.8.3-nightly.3
+  - @ledgerhq/coin-cosmos@0.1.4-nightly.2
+  - @ledgerhq/coin-evm@2.3.2-nightly.2
+  - @ledgerhq/domain-service@1.2.7-nightly.2
+  - @ledgerhq/live-countervalues@0.2.8-nightly.3
+  - @ledgerhq/live-countervalues-react@0.2.8-nightly.3
+  - @ledgerhq/live-nft@0.4.8-nightly.2
+  - @ledgerhq/live-nft-react@0.4.8-nightly.2
+  - @ledgerhq/live-wallet@0.6.3-nightly.2
+
 ## 2.89.0-nightly.2
 
 ### Patch Changes

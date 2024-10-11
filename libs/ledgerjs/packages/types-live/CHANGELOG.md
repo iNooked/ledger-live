@@ -1,5 +1,11 @@
 # @ledgerhq/types-live
 
+## 6.52.1-nightly.2
+
+### Patch Changes
+
+- [#8039](https://github.com/LedgerHQ/ledger-live/pull/8039) [`1a0fa20`](https://github.com/LedgerHQ/ledger-live/commit/1a0fa20da7509cdde1141002a2be8e9d8458b27d) Thanks [@liviuciulinaru](https://github.com/liviuciulinaru)! - add ptxSwapCoreExperiment flag
+
 ## 6.52.1-nightly.1
 
 ### Patch Changes

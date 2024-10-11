@@ -1,5 +1,26 @@
 # live-mobile
 
+## 3.51.1-nightly.3
+
+### Patch Changes
+
+- [#8067](https://github.com/LedgerHQ/ledger-live/pull/8067) [`bde70f9`](https://github.com/LedgerHQ/ledger-live/commit/bde70f93227bfb7c421536b4c60392c87d3d2a26) Thanks [@marcotoniut-ledger](https://github.com/marcotoniut-ledger)! - On Earn's Staking Modal, it makes it so that a category filter will only show up if there's at least one provider of that category.
+  Small visual fix to the gap in the options' spacing
+- Updated dependencies [[`bde70f9`](https://github.com/LedgerHQ/ledger-live/commit/bde70f93227bfb7c421536b4c60392c87d3d2a26), [`1a0fa20`](https://github.com/LedgerHQ/ledger-live/commit/1a0fa20da7509cdde1141002a2be8e9d8458b27d)]:
+  - @ledgerhq/native-ui@0.24.2-nightly.0
+  - @ledgerhq/types-live@6.52.1-nightly.2
+  - @ledgerhq/live-common@34.10.1-nightly.3
+  - @ledgerhq/coin-framework@0.18.3-nightly.2
+  - @ledgerhq/coin-cosmos@0.1.4-nightly.2
+  - @ledgerhq/coin-elrond@0.1.3-nightly.2
+  - @ledgerhq/coin-evm@2.3.2-nightly.2
+  - @ledgerhq/domain-service@1.2.7-nightly.2
+  - @ledgerhq/live-countervalues@0.2.8-nightly.3
+  - @ledgerhq/live-countervalues-react@0.2.8-nightly.3
+  - @ledgerhq/live-nft@0.4.8-nightly.2
+  - @ledgerhq/live-nft-react@0.4.8-nightly.2
+  - @ledgerhq/live-wallet@0.6.3-nightly.2
+
 ## 3.51.1-nightly.2
 
 ### Patch Changes

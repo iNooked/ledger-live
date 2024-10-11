@@ -1,5 +1,12 @@
 # @ledgerhq/native-ui
 
+## 0.24.2-nightly.0
+
+### Patch Changes
+
+- [#8067](https://github.com/LedgerHQ/ledger-live/pull/8067) [`bde70f9`](https://github.com/LedgerHQ/ledger-live/commit/bde70f93227bfb7c421536b4c60392c87d3d2a26) Thanks [@marcotoniut-ledger](https://github.com/marcotoniut-ledger)! - On Earn's Staking Modal, it makes it so that a category filter will only show up if there's at least one provider of that category.
+  Small visual fix to the gap in the options' spacing
+
 ## 0.24.1
 
 ### Patch Changes

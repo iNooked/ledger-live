@@ -1,5 +1,13 @@
 # @ledgerhq/coin-stellar
 
+## 0.3.3-nightly.2
+
+### Patch Changes
+
+- Updated dependencies [[`1a0fa20`](https://github.com/LedgerHQ/ledger-live/commit/1a0fa20da7509cdde1141002a2be8e9d8458b27d)]:
+  - @ledgerhq/types-live@6.52.1-nightly.2
+  - @ledgerhq/coin-framework@0.18.3-nightly.2
+
 ## 0.3.3-nightly.1
 
 ### Patch Changes

@@ -158,6 +158,7 @@
     "@ledgerhq/ledger-key-ring-protocol": "0.4.0"
   },
   "changesets": [
+    "beige-planes-shake",
     "big-apples-smash",
     "bright-months-fold",
     "cool-cougars-push",
@@ -181,6 +182,7 @@
     "pink-pugs-press",
     "popular-flies-perform",
     "popular-keys-collect",
+    "pretty-penguins-hang",
     "quiet-feet-wink",
     "rich-dryers-crash",
     "slow-cows-mate",

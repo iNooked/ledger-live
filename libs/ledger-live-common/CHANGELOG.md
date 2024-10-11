@@ -1,5 +1,35 @@
 ## 34.5.0-next.4
 
+## 34.10.1-nightly.3
+
+### Patch Changes
+
+- [#8039](https://github.com/LedgerHQ/ledger-live/pull/8039) [`1a0fa20`](https://github.com/LedgerHQ/ledger-live/commit/1a0fa20da7509cdde1141002a2be8e9d8458b27d) Thanks [@liviuciulinaru](https://github.com/liviuciulinaru)! - add ptxSwapCoreExperiment flag
+
+- Updated dependencies []:
+  - @ledgerhq/coin-framework@0.18.3-nightly.2
+  - @ledgerhq/coin-algorand@0.5.8-nightly.2
+  - @ledgerhq/coin-bitcoin@0.8.3-nightly.3
+  - @ledgerhq/coin-cardano@0.2.3-nightly.2
+  - @ledgerhq/coin-cosmos@0.1.4-nightly.2
+  - @ledgerhq/coin-elrond@0.1.3-nightly.2
+  - @ledgerhq/coin-evm@2.3.2-nightly.2
+  - @ledgerhq/coin-icon@0.4.5-nightly.2
+  - @ledgerhq/coin-near@0.5.8-nightly.2
+  - @ledgerhq/coin-polkadot@1.3.1-nightly.2
+  - @ledgerhq/coin-solana@0.7.8-nightly.2
+  - @ledgerhq/coin-stellar@0.3.3-nightly.2
+  - @ledgerhq/coin-tezos@0.6.4-nightly.2
+  - @ledgerhq/coin-ton@0.3.16-nightly.2
+  - @ledgerhq/coin-tron@0.0.8-nightly.2
+  - @ledgerhq/coin-xrp@0.5.4-nightly.2
+  - @ledgerhq/device-core@0.4.2-nightly.2
+  - @ledgerhq/hw-app-eth@6.39.1-nightly.2
+  - @ledgerhq/live-countervalues@0.2.8-nightly.3
+  - @ledgerhq/live-countervalues-react@0.2.8-nightly.3
+  - @ledgerhq/live-nft@0.4.8-nightly.2
+  - @ledgerhq/live-wallet@0.6.3-nightly.2
+
 ## 34.10.1-nightly.2
 
 ### Patch Changes
