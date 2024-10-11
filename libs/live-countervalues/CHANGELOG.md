@@ -1,5 +1,11 @@
 # @ledgerhq/live-countervalues
 
+## 0.2.8-nightly.2
+
+### Patch Changes
+
+- [#8056](https://github.com/LedgerHQ/ledger-live/pull/8056) [`9c92854`](https://github.com/LedgerHQ/ledger-live/commit/9c928544f1631917eb2c2f9e150d070537bb93b7) Thanks [@qperrot](https://github.com/qperrot)! - Portfolio all time display fix for Polkadot account
+
 ## 0.2.8-nightly.1
 
 ### Patch Changes

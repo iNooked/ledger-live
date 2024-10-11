@@ -1,5 +1,16 @@
 # live-mobile
 
+## 3.51.1-nightly.2
+
+### Patch Changes
+
+- [#8066](https://github.com/LedgerHQ/ledger-live/pull/8066) [`462dbf1`](https://github.com/LedgerHQ/ledger-live/commit/462dbf120794ca7ebfea9567e9d963ae222194ea) Thanks [@cgrellard-ledger](https://github.com/cgrellard-ledger)! - LLM - Fix ledger sync error : Text strings must be rendered within a <Text> component.
+
+- Updated dependencies [[`9c92854`](https://github.com/LedgerHQ/ledger-live/commit/9c928544f1631917eb2c2f9e150d070537bb93b7)]:
+  - @ledgerhq/live-countervalues@0.2.8-nightly.2
+  - @ledgerhq/live-common@34.10.1-nightly.2
+  - @ledgerhq/live-countervalues-react@0.2.8-nightly.2
+
 ## 3.51.1-nightly.1
 
 ### Patch Changes

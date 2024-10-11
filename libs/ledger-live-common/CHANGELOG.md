@@ -1,5 +1,14 @@
 ## 34.5.0-next.4
 
+## 34.10.1-nightly.2
+
+### Patch Changes
+
+- Updated dependencies [[`9c92854`](https://github.com/LedgerHQ/ledger-live/commit/9c928544f1631917eb2c2f9e150d070537bb93b7), [`d0eec9f`](https://github.com/LedgerHQ/ledger-live/commit/d0eec9f6fc61a915119f0b9bf087ff270687ff30)]:
+  - @ledgerhq/live-countervalues@0.2.8-nightly.2
+  - @ledgerhq/coin-bitcoin@0.8.3-nightly.2
+  - @ledgerhq/live-countervalues-react@0.2.8-nightly.2
+
 ## 34.10.1-nightly.1
 
 ### Patch Changes

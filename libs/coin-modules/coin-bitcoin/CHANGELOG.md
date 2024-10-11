@@ -1,5 +1,11 @@
 # @ledgerhq/coin-bitcoin
 
+## 0.8.3-nightly.2
+
+### Patch Changes
+
+- [#8047](https://github.com/LedgerHQ/ledger-live/pull/8047) [`d0eec9f`](https://github.com/LedgerHQ/ledger-live/commit/d0eec9f6fc61a915119f0b9bf087ff270687ff30) Thanks [@LucasWerey](https://github.com/LucasWerey)! - rework of the coin control modal ui
+
 ## 0.8.3-nightly.1
 
 ### Patch Changes
