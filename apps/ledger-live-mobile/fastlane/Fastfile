@@ -188,7 +188,7 @@ platform :ios do
       if (options[:ci])
         sh(
           <<-SHELL
-          echo "IOS_BUILD_NUMBER=#{build_number+1}" >> $GITHUB_ENV
+          echo "IOS_BUILD_NUMBER=#{build_number+1}" >> $env:GITHUB_ENV
           SHELL
         )
       end
@@ -459,7 +459,7 @@ platform :android do
     if(options[:ci])
       sh(
           <<-SHELL
-          echo "ANDROID_BUILD_NUMBER=#{infer_android_version_code()}" >> $GITHUB_ENV
+          echo "ANDROID_BUILD_NUMBER=#{infer_android_version_code()}" >> $env:GITHUB_ENV
           SHELL
         )
     end
