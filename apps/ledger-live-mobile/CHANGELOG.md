@@ -1,5 +1,14 @@
 # live-mobile
 
+## 3.51.1-nightly.4
+
+### Patch Changes
+
+- [#8078](https://github.com/LedgerHQ/ledger-live/pull/8078) [`9eba0d5`](https://github.com/LedgerHQ/ledger-live/commit/9eba0d51d500778924d9a9ba05129f63e7daa516) Thanks [@themooneer](https://github.com/themooneer)! - avoid sh: $GITHUB_ENV: ambiguous redirect problems on ad-hoc ipa build process
+
+- Updated dependencies [[`bfbbe66`](https://github.com/LedgerHQ/ledger-live/commit/bfbbe6611eb1f6e10272a8accce31d24779da533)]:
+  - @ledgerhq/live-common@34.10.1-nightly.4
+
 ## 3.51.1-nightly.3
 
 ### Patch Changes

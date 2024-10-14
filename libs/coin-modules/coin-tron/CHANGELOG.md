@@ -1,5 +1,11 @@
 # @ledgerhq/coin-tron
 
+## 0.0.8-nightly.3
+
+### Patch Changes
+
+- [#8070](https://github.com/LedgerHQ/ledger-live/pull/8070) [`bfbbe66`](https://github.com/LedgerHQ/ledger-live/commit/bfbbe6611eb1f6e10272a8accce31d24779da533) Thanks [@Wozacosta](https://github.com/Wozacosta)! - test: update stellar and tron bridge expected values
+
 ## 0.0.8-nightly.2
 
 ### Patch Changes

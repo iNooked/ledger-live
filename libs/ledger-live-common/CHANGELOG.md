@@ -1,5 +1,15 @@
 ## 34.5.0-next.4
 
+## 34.10.1-nightly.4
+
+### Patch Changes
+
+- [#8070](https://github.com/LedgerHQ/ledger-live/pull/8070) [`bfbbe66`](https://github.com/LedgerHQ/ledger-live/commit/bfbbe6611eb1f6e10272a8accce31d24779da533) Thanks [@Wozacosta](https://github.com/Wozacosta)! - test: update stellar and tron bridge expected values
+
+- Updated dependencies [[`bfbbe66`](https://github.com/LedgerHQ/ledger-live/commit/bfbbe6611eb1f6e10272a8accce31d24779da533)]:
+  - @ledgerhq/coin-stellar@0.3.3-nightly.3
+  - @ledgerhq/coin-tron@0.0.8-nightly.3
+
 ## 34.10.1-nightly.3
 
 ### Patch Changes

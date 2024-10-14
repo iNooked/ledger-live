@@ -1,5 +1,14 @@
 # ledger-live-desktop
 
+## 2.89.0-nightly.4
+
+### Patch Changes
+
+- [#8080](https://github.com/LedgerHQ/ledger-live/pull/8080) [`e3a6d75`](https://github.com/LedgerHQ/ledger-live/commit/e3a6d75b8a326afa46bc88699f73274b312aa194) Thanks [@LucasWerey](https://github.com/LucasWerey)! - fix toast never disappearing + fix duration bar of toast
+
+- Updated dependencies [[`bfbbe66`](https://github.com/LedgerHQ/ledger-live/commit/bfbbe6611eb1f6e10272a8accce31d24779da533)]:
+  - @ledgerhq/live-common@34.10.1-nightly.4
+
 ## 2.89.0-nightly.3
 
 ### Patch Changes
