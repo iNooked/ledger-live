@@ -1,5 +1,13 @@
 # @ledgerhq/coin-tezos
 
+## 0.6.5-nightly.0
+
+### Patch Changes
+
+- Updated dependencies [[`f275f48`](https://github.com/LedgerHQ/ledger-live/commit/f275f48a17eeba2bdd3119e478975c8d4c7183be)]:
+  - @ledgerhq/cryptoassets@13.6.2-nightly.0
+  - @ledgerhq/coin-framework@0.18.4-nightly.0
+
 ## 0.6.4
 
 ### Patch Changes
