@@ -110,6 +110,39 @@ const swaps = [
   },*/
   {
     swap: new Swap(
+      Account.SOL_1,
+      Account.ETH_1,
+      "0.25",
+      Fee.MEDIUM,
+      Provider.CHANGELLY,
+      Rate.FLOAT,
+    ),
+    xrayTicket: "B2CQA-01234",
+  },
+  {
+    swap: new Swap(
+      Account.SOL_1,
+      Account.BTC_NATIVE_SEGWIT_1,
+      "0.25",
+      Fee.MEDIUM,
+      Provider.CHANGELLY,
+      Rate.FLOAT,
+    ),
+    xrayTicket: "B2CQA-01234",
+  },
+  {
+    swap: new Swap(
+      Account.SOL_1,
+      Account.ETH_USDT_1,
+      "0.25",
+      Fee.MEDIUM,
+      Provider.CHANGELLY,
+      Rate.FLOAT,
+    ),
+    xrayTicket: "B2CQA-01234",
+  },
+  {
+    swap: new Swap(
       Account.ETH_USDC_1,
       Account.ETH_1,
       "40",
