@@ -29,6 +29,7 @@ export class Currency {
   static readonly BSC = new Currency("Binance Smart Chain", "BNB", AppInfos.BINANCE_SMART_CHAIN);
   static readonly TON = new Currency("Ton", "TON", AppInfos.TON);
   static readonly ETH_USDT = new Currency("Tether USD", "USDT", AppInfos.ETHEREUM);
+  static readonly ETH_USDC = new Currency ("USD Coin", "USDC", AppInfos.ETHEREUM);
   static readonly ETH_LIDO = new Currency("LIDO Staked ETH", "STETH", AppInfos.ETHEREUM);
   static readonly XLM_USCD = new Currency("USDC", "usdc", AppInfos.STELLAR);
   static readonly ALGO_USDT = new Currency("Tether USDt", "USDT", AppInfos.ALGORAND);

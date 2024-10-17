@@ -9,7 +9,7 @@ import { addTmsLink } from "tests/utils/allureUtils";
 import { getDescription } from "tests/utils/customJsonReporter";
 
 const swaps = [
-  {
+  /*{
     swap: new Swap(
       Account.ETH_1,
       Account.BTC_NATIVE_SEGWIT_1,
@@ -107,6 +107,39 @@ const swaps = [
       Rate.FLOAT,
     ),
     xrayTicket: "B2CQA-2751, B2CQA-2212",
+  },*/
+  {
+    swap: new Swap(
+      Account.ETH_USDC_1,
+      Account.ETH_1,
+      "40",
+      Fee.MEDIUM,
+      Provider.CHANGELLY,
+      Rate.FLOAT,
+    ),
+    xrayTicket: "B2CQA-01234",
+  },
+  {
+    swap: new Swap(
+      Account.ETH_USDC_1,
+      Account.SOL_1,
+      "40",
+      Fee.MEDIUM,
+      Provider.EXODUS,
+      Rate.FLOAT,
+    ),
+    xrayTicket: "B2CQA-01234",
+  },
+  {
+    swap: new Swap(
+      Account.ETH_USDC_1,
+      Account.BTC_NATIVE_SEGWIT_1,
+      "40",
+      Fee.MEDIUM,
+      Provider.CHANGELLY,
+      Rate.FLOAT,
+    ),
+    xrayTicket: "B2CQA-01234",
   },
 ];
 

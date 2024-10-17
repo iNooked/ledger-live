@@ -303,6 +303,13 @@ export class Account {
     AccountType.ERC20,
   );
 
+  static readonly ETH_USDC_1 = new Account(
+    Currency.ETH_USDC,
+    "Ethereum 1",
+    "0xB9051f83AC6e147924377BBEebd1Aa7aB43a67F6",
+    AccountType.ERC20,
+  );
+
   static readonly ETH_USDT_2 = new Account(
     Currency.ETH_USDT,
     "Ethereum 2",
