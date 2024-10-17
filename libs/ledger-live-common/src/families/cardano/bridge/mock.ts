@@ -117,7 +117,7 @@ const getTransactionStatus = async (
         amount: new BigNumber(CARDANO_MAX_SUPPLY),
         tokens: tokensToSend,
       },
-      new BigNumber(account.cardanoResources.protocolParams.utxoCostPerByte),
+      new BigNumber(""),
     );
   }
 
