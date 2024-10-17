@@ -1,5 +1,19 @@
 ## 34.5.0-next.4
 
+## 34.11.2-nightly.0
+
+### Patch Changes
+
+- [#8114](https://github.com/LedgerHQ/ledger-live/pull/8114) [`3d8cd98`](https://github.com/LedgerHQ/ledger-live/commit/3d8cd98486402b69de7e1dcacdfe864f3d135ec9) Thanks [@LucasWerey](https://github.com/LucasWerey)! - when exporting account we were not displaying parent account inside account name but the coin name
+
+- [#8111](https://github.com/LedgerHQ/ledger-live/pull/8111) [`a8dff0f`](https://github.com/LedgerHQ/ledger-live/commit/a8dff0fee7496b9a79ae5c6866ffe0715299695c) Thanks [@Justkant](https://github.com/Justkant)! - fix(wallet-api): avoid sending an error when retrying a transaction.sign on LLM
+
+  Fix some of the navigation types
+  Added a done boolean to avoid sending wrong analytics when leaving the screen
+
+- Updated dependencies [[`867b2ba`](https://github.com/LedgerHQ/ledger-live/commit/867b2ba1e467bcd5585b3e670f735520529036aa)]:
+  - @ledgerhq/coin-cosmos@0.1.6-nightly.0
+
 ## 34.11.1
 
 ### Patch Changes

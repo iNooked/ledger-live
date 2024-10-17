@@ -1,5 +1,21 @@
 # ledger-live-desktop
 
+## 2.90.0-nightly.0
+
+### Minor Changes
+
+- [#8104](https://github.com/LedgerHQ/ledger-live/pull/8104) [`2a9b922`](https://github.com/LedgerHQ/ledger-live/commit/2a9b9228eff229a302e24ef7823285ea2e1a55f6) Thanks [@CremaFR](https://github.com/CremaFR)! - exposed getTransaction to swapliveapp
+
+### Patch Changes
+
+- [#8028](https://github.com/LedgerHQ/ledger-live/pull/8028) [`5b39289`](https://github.com/LedgerHQ/ledger-live/commit/5b39289d834564d627181e062bc548dd85127acc) Thanks [@Wozacosta](https://github.com/Wozacosta)! - feat: display team link if available
+
+- [#8097](https://github.com/LedgerHQ/ledger-live/pull/8097) [`0fca8ff`](https://github.com/LedgerHQ/ledger-live/commit/0fca8fff2cf494708ff70462ce7fab9acd67dd00) Thanks [@adammino-ledger](https://github.com/adammino-ledger)! - providerTestId added to allow partners to test in different envs
+
+- Updated dependencies [[`3d8cd98`](https://github.com/LedgerHQ/ledger-live/commit/3d8cd98486402b69de7e1dcacdfe864f3d135ec9), [`867b2ba`](https://github.com/LedgerHQ/ledger-live/commit/867b2ba1e467bcd5585b3e670f735520529036aa), [`a8dff0f`](https://github.com/LedgerHQ/ledger-live/commit/a8dff0fee7496b9a79ae5c6866ffe0715299695c)]:
+  - @ledgerhq/live-common@34.11.2-nightly.0
+  - @ledgerhq/coin-cosmos@0.1.6-nightly.0
+
 ## 2.89.1
 
 ### Patch Changes

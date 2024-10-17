@@ -159,17 +159,24 @@
     "@ledgerhq/wallet-api-acre-module": "0.0.0"
   },
   "changesets": [
+    "beige-cats-travel",
     "beige-planes-shake",
     "big-apples-smash",
     "brave-wasps-sleep",
     "early-seas-love",
     "flat-comics-know",
     "good-mugs-pump",
+    "loud-donkeys-smash",
+    "lucky-otters-think",
+    "moody-geckos-fix",
     "new-cougars-develop",
+    "new-rings-collect",
     "olive-planes-greet",
     "pink-apricots-yell",
     "pretty-penguins-hang",
     "shy-lobsters-report",
+    "six-ligers-jam",
+    "smooth-mangos-worry",
     "thin-timers-beg",
     "wet-socks-film"
   ]

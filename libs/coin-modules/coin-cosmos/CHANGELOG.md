@@ -1,5 +1,11 @@
 # @ledgerhq/coin-cosmos
 
+## 0.1.6-nightly.0
+
+### Patch Changes
+
+- [#8072](https://github.com/LedgerHQ/ledger-live/pull/8072) [`867b2ba`](https://github.com/LedgerHQ/ledger-live/commit/867b2ba1e467bcd5585b3e670f735520529036aa) Thanks [@hedi-edelbloute](https://github.com/hedi-edelbloute)! - Update dydx default node
+
 ## 0.1.5
 
 ### Patch Changes
