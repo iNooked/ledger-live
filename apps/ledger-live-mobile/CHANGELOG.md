@@ -1,5 +1,23 @@
 # live-mobile
 
+## 3.52.2-nightly.1
+
+### Patch Changes
+
+- Updated dependencies [[`65c3322`](https://github.com/LedgerHQ/ledger-live/commit/65c3322bf3871659f078148ab4b5c12b0fd53dc1), [`d6c9096`](https://github.com/LedgerHQ/ledger-live/commit/d6c9096968692b64d12c6bd81e8daa48f55793b9)]:
+  - @ledgerhq/types-live@6.52.3-nightly.0
+  - @ledgerhq/live-common@34.11.2-nightly.1
+  - @ledgerhq/coin-framework@0.18.5-nightly.0
+  - @ledgerhq/coin-cosmos@0.1.6-nightly.1
+  - @ledgerhq/coin-elrond@0.1.5-nightly.0
+  - @ledgerhq/coin-evm@2.4.2-nightly.0
+  - @ledgerhq/domain-service@1.2.9-nightly.0
+  - @ledgerhq/live-countervalues@0.2.10-nightly.0
+  - @ledgerhq/live-countervalues-react@0.2.10-nightly.0
+  - @ledgerhq/live-nft@0.4.10-nightly.0
+  - @ledgerhq/live-nft-react@0.4.10-nightly.0
+  - @ledgerhq/live-wallet@0.7.2-nightly.0
+
 ## 3.52.2-nightly.0
 
 ### Patch Changes

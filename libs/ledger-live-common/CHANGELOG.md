@@ -1,5 +1,38 @@
 ## 34.5.0-next.4
 
+## 34.11.2-nightly.1
+
+### Patch Changes
+
+- [#8125](https://github.com/LedgerHQ/ledger-live/pull/8125) [`65c3322`](https://github.com/LedgerHQ/ledger-live/commit/65c3322bf3871659f078148ab4b5c12b0fd53dc1) Thanks [@LucasWerey](https://github.com/LucasWerey)! - Remove LLD objkt feature flag because we don't support the webview anymore
+
+- [#7952](https://github.com/LedgerHQ/ledger-live/pull/7952) [`d6c9096`](https://github.com/LedgerHQ/ledger-live/commit/d6c9096968692b64d12c6bd81e8daa48f55793b9) Thanks [@sprohaszka-ledger](https://github.com/sprohaszka-ledger)! - Fix issue with infinite loader during swap with legacy swap ui
+  Add additionnal test to hw-app-exchange
+- Updated dependencies [[`d6c9096`](https://github.com/LedgerHQ/ledger-live/commit/d6c9096968692b64d12c6bd81e8daa48f55793b9)]:
+  - @ledgerhq/hw-app-exchange@0.6.2-nightly.0
+  - @ledgerhq/coin-framework@0.18.5-nightly.0
+  - @ledgerhq/coin-algorand@0.5.10-nightly.0
+  - @ledgerhq/coin-bitcoin@0.8.5-nightly.0
+  - @ledgerhq/coin-cardano@0.2.5-nightly.0
+  - @ledgerhq/coin-cosmos@0.1.6-nightly.1
+  - @ledgerhq/coin-elrond@0.1.5-nightly.0
+  - @ledgerhq/coin-evm@2.4.2-nightly.0
+  - @ledgerhq/coin-icon@0.4.7-nightly.0
+  - @ledgerhq/coin-near@0.5.10-nightly.0
+  - @ledgerhq/coin-polkadot@1.3.3-nightly.0
+  - @ledgerhq/coin-solana@0.8.2-nightly.0
+  - @ledgerhq/coin-stellar@0.3.5-nightly.0
+  - @ledgerhq/coin-tezos@0.6.6-nightly.0
+  - @ledgerhq/coin-ton@0.3.18-nightly.0
+  - @ledgerhq/coin-tron@0.0.10-nightly.0
+  - @ledgerhq/coin-xrp@0.5.6-nightly.0
+  - @ledgerhq/device-core@0.4.4-nightly.0
+  - @ledgerhq/hw-app-eth@6.40.2-nightly.0
+  - @ledgerhq/live-countervalues@0.2.10-nightly.0
+  - @ledgerhq/live-countervalues-react@0.2.10-nightly.0
+  - @ledgerhq/live-nft@0.4.10-nightly.0
+  - @ledgerhq/live-wallet@0.7.2-nightly.0
+
 ## 34.11.2-nightly.0
 
 ### Patch Changes
