@@ -1,5 +1,11 @@
 ## 34.5.0-next.4
 
+## 34.12.0-nightly.2
+
+### Minor Changes
+
+- [#8146](https://github.com/LedgerHQ/ledger-live/pull/8146) [`e66d371`](https://github.com/LedgerHQ/ledger-live/commit/e66d3714e5e4fd6a8e3f5980a463b3bb61f40c4b) Thanks [@CremaFR](https://github.com/CremaFR)! - swap Thorswap ERC20 token exception
+
 ## 34.11.2-nightly.1
 
 ### Patch Changes

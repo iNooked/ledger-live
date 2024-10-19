@@ -1,5 +1,20 @@
 # live-mobile
 
+## 3.53.0-nightly.2
+
+### Minor Changes
+
+- [#8147](https://github.com/LedgerHQ/ledger-live/pull/8147) [`0885c49`](https://github.com/LedgerHQ/ledger-live/commit/0885c4901a5516fad9a7b2563c5bac8e8ba6efa3) Thanks [@KVNLS](https://github.com/KVNLS)! - Improve QRCode flow for Ledger Sync allowing use to automate tests
+
+### Patch Changes
+
+- [#8143](https://github.com/LedgerHQ/ledger-live/pull/8143) [`9ecde3a`](https://github.com/LedgerHQ/ledger-live/commit/9ecde3a021d391d0b1cdb0cc5f16cc37f5a77ebd) Thanks [@themooneer](https://github.com/themooneer)! - Fix UI for ledger sync instances and drawer + fix on plural case support for synchronizedInstances
+
+- [#8144](https://github.com/LedgerHQ/ledger-live/pull/8144) [`a691bcd`](https://github.com/LedgerHQ/ledger-live/commit/a691bcda45e7b8d6cfd9540f22e678fae2ecbea4) Thanks [@themooneer](https://github.com/themooneer)! - add "tryAgain" wording key for scannedInvalidQrCode CTA
+
+- Updated dependencies [[`e66d371`](https://github.com/LedgerHQ/ledger-live/commit/e66d3714e5e4fd6a8e3f5980a463b3bb61f40c4b)]:
+  - @ledgerhq/live-common@34.12.0-nightly.2
+
 ## 3.52.2-nightly.1
 
 ### Patch Changes
