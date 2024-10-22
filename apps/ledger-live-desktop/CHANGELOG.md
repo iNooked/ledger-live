@@ -1,5 +1,27 @@
 # ledger-live-desktop
 
+## 2.90.1-nightly.0
+
+### Patch Changes
+
+- [#8152](https://github.com/LedgerHQ/ledger-live/pull/8152) [`17732b4`](https://github.com/LedgerHQ/ledger-live/commit/17732b4f3c8fbde9c2fcb51079779dad23af72f2) Thanks [@lpaquet-ledger](https://github.com/lpaquet-ledger)! - add save to history live app
+
+- [#7867](https://github.com/LedgerHQ/ledger-live/pull/7867) [`d5bbf11`](https://github.com/LedgerHQ/ledger-live/commit/d5bbf11403c740b1e529001a008233b2f19e3418) Thanks [@fAnselmi-Ledger](https://github.com/fAnselmi-Ledger)! - added timeout during Allow Manager on Genuine check flow to avoid stale states
+
+- [#8075](https://github.com/LedgerHQ/ledger-live/pull/8075) [`77846a0`](https://github.com/LedgerHQ/ledger-live/commit/77846a0be4c2a08dfef0e938e1af1479ad3787b7) Thanks [@LucasWerey](https://github.com/LucasWerey)! - Change node errors UI on send flow when a tx failed
+
+- [#7894](https://github.com/LedgerHQ/ledger-live/pull/7894) [`a08c16f`](https://github.com/LedgerHQ/ledger-live/commit/a08c16ffb420b35eaedb4f76de9c0751b32911de) Thanks [@fAnselmi-Ledger](https://github.com/fAnselmi-Ledger)! - Throwing DeviceShouldStayInApp when device is not in app during AddAccount stepImport
+
+- [#8140](https://github.com/LedgerHQ/ledger-live/pull/8140) [`b3746c3`](https://github.com/LedgerHQ/ledger-live/commit/b3746c35af33db0e4a84887d2917511a137218b3) Thanks [@LucasWerey](https://github.com/LucasWerey)! - Update the ui of the tooltip when there is some sync errors. We now display the name of the accounts that failed to sync
+
+- [#7843](https://github.com/LedgerHQ/ledger-live/pull/7843) [`4bcd00b`](https://github.com/LedgerHQ/ledger-live/commit/4bcd00bcbc5e22db857347a1405965ff06de4b87) Thanks [@fAnselmi-Ledger](https://github.com/fAnselmi-Ledger)! - LLD will retry CLS installation on Stax and Flex after locking & unlocking device while CLS image in being uploaded
+
+- [#8149](https://github.com/LedgerHQ/ledger-live/pull/8149) [`110b0fc`](https://github.com/LedgerHQ/ledger-live/commit/110b0fc6c1a1be7e74f2db2ebdaeb92076e877c5) Thanks [@LucasWerey](https://github.com/LucasWerey)! - Add nftspamfilter for the breadcrumb
+
+- Updated dependencies [[`17732b4`](https://github.com/LedgerHQ/ledger-live/commit/17732b4f3c8fbde9c2fcb51079779dad23af72f2), [`d5bbf11`](https://github.com/LedgerHQ/ledger-live/commit/d5bbf11403c740b1e529001a008233b2f19e3418), [`b3746c3`](https://github.com/LedgerHQ/ledger-live/commit/b3746c35af33db0e4a84887d2917511a137218b3)]:
+  - @ledgerhq/live-common@34.12.1-nightly.0
+  - @ledgerhq/react-ui@0.16.4-nightly.0
+
 ## 2.90.0
 
 ### Minor Changes

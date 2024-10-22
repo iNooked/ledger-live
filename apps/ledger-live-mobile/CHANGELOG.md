@@ -1,5 +1,18 @@
 # live-mobile
 
+## 3.53.1-nightly.0
+
+### Patch Changes
+
+- [#8013](https://github.com/LedgerHQ/ledger-live/pull/8013) [`bc5048e`](https://github.com/LedgerHQ/ledger-live/commit/bc5048e0fda29b49a16b9e529fe0ace042267e8d) Thanks [@thesan](https://github.com/thesan)! - Align the receive screen with Figma designs
+
+- [#8139](https://github.com/LedgerHQ/ledger-live/pull/8139) [`c594af6`](https://github.com/LedgerHQ/ledger-live/commit/c594af60c87c2044e8b1a96ac1dfc5acdb0b23dd) Thanks [@cgrellard-ledger](https://github.com/cgrellard-ledger)! - LLM - Ledger Sync triggers a unhandled error warning when scanning old import qr code
+
+- Updated dependencies [[`17732b4`](https://github.com/LedgerHQ/ledger-live/commit/17732b4f3c8fbde9c2fcb51079779dad23af72f2), [`d5bbf11`](https://github.com/LedgerHQ/ledger-live/commit/d5bbf11403c740b1e529001a008233b2f19e3418), [`bc5048e`](https://github.com/LedgerHQ/ledger-live/commit/bc5048e0fda29b49a16b9e529fe0ace042267e8d), [`b3746c3`](https://github.com/LedgerHQ/ledger-live/commit/b3746c35af33db0e4a84887d2917511a137218b3)]:
+  - @ledgerhq/live-common@34.12.1-nightly.0
+  - @ledgerhq/icons-ui@0.8.1-nightly.0
+  - @ledgerhq/native-ui@0.25.2-nightly.0
+
 ## 3.53.0
 
 ### Minor Changes
