@@ -1,66 +1,78 @@
 # ledger-live-desktop
 
-## 2.90.0-nightly.2
+## 2.90.0
 
 ### Minor Changes
 
-- [#8135](https://github.com/LedgerHQ/ledger-live/pull/8135) [`872a34e`](https://github.com/LedgerHQ/ledger-live/commit/872a34e6d5152ac86f68c8216d86f73ec051ea5d) Thanks [@themooneer](https://github.com/themooneer)! - New UI to handle No Such App On Provider Error
+- [#7944](https://github.com/LedgerHQ/ledger-live/pull/7944) [`abe4dcc`](https://github.com/LedgerHQ/ledger-live/commit/abe4dcc0cc839a860228d5d89f769546cde7fdcb) Thanks [@Justkant](https://github.com/Justkant)! - feat: bootstrap wallet-api custom ACRE module and handlers
 
-- [#8141](https://github.com/LedgerHQ/ledger-live/pull/8141) [`0383f16`](https://github.com/LedgerHQ/ledger-live/commit/0383f16dc98253eebb6dab15494825840eafe3ae) Thanks [@CremaFR](https://github.com/CremaFR)! - passing dev mode to swap live app
-
-- [#8133](https://github.com/LedgerHQ/ledger-live/pull/8133) [`6f8b339`](https://github.com/LedgerHQ/ledger-live/commit/6f8b3390232f9e18516f2071bb59047d9942b3d4) Thanks [@CremaFR](https://github.com/CremaFR)! - port demo1 changes to demo3
-
-### Patch Changes
-
-- [#8148](https://github.com/LedgerHQ/ledger-live/pull/8148) [`5d7e67e`](https://github.com/LedgerHQ/ledger-live/commit/5d7e67e870de8a1134f92f555a4641608675f00f) Thanks [@themooneer](https://github.com/themooneer)! - Fix long wording display on button inside a 500px width modal
-
-- [#8088](https://github.com/LedgerHQ/ledger-live/pull/8088) [`168b482`](https://github.com/LedgerHQ/ledger-live/commit/168b482ec4928c270c538a0dea99eef5053288cd) Thanks [@LucasWerey](https://github.com/LucasWerey)! - Update sync account entry point from accounts
-
-- Updated dependencies [[`e66d371`](https://github.com/LedgerHQ/ledger-live/commit/e66d3714e5e4fd6a8e3f5980a463b3bb61f40c4b)]:
-  - @ledgerhq/live-common@34.12.0-nightly.2
-
-## 2.90.0-nightly.1
-
-### Patch Changes
-
-- [#8121](https://github.com/LedgerHQ/ledger-live/pull/8121) [`00b34ee`](https://github.com/LedgerHQ/ledger-live/commit/00b34ee97789a7d399afe8213697ecfef758fcf4) Thanks [@Wozacosta](https://github.com/Wozacosta)! - test: fix by waiting for response of page.evaluate in confirmTransaction e2e test
-
-- [#8125](https://github.com/LedgerHQ/ledger-live/pull/8125) [`65c3322`](https://github.com/LedgerHQ/ledger-live/commit/65c3322bf3871659f078148ab4b5c12b0fd53dc1) Thanks [@LucasWerey](https://github.com/LucasWerey)! - Remove LLD objkt feature flag because we don't support the webview anymore
-
-- [#7952](https://github.com/LedgerHQ/ledger-live/pull/7952) [`d6c9096`](https://github.com/LedgerHQ/ledger-live/commit/d6c9096968692b64d12c6bd81e8daa48f55793b9) Thanks [@sprohaszka-ledger](https://github.com/sprohaszka-ledger)! - Fix issue with infinite loader during swap with legacy swap ui
-  Add additionnal test to hw-app-exchange
-
-- [#8124](https://github.com/LedgerHQ/ledger-live/pull/8124) [`3b7bb92`](https://github.com/LedgerHQ/ledger-live/commit/3b7bb922038bd98613f65c9267fa52446617cdf6) Thanks [@LucasWerey](https://github.com/LucasWerey)! - Add the description from ledgerstatus to currencydownstatusalert so we have a better description of the error
-
-- Updated dependencies [[`65c3322`](https://github.com/LedgerHQ/ledger-live/commit/65c3322bf3871659f078148ab4b5c12b0fd53dc1), [`d6c9096`](https://github.com/LedgerHQ/ledger-live/commit/d6c9096968692b64d12c6bd81e8daa48f55793b9)]:
-  - @ledgerhq/types-live@6.52.3-nightly.0
-  - @ledgerhq/live-common@34.11.2-nightly.1
-  - @ledgerhq/coin-framework@0.18.5-nightly.0
-  - @ledgerhq/coin-bitcoin@0.8.5-nightly.0
-  - @ledgerhq/coin-cosmos@0.1.6-nightly.1
-  - @ledgerhq/coin-evm@2.4.2-nightly.0
-  - @ledgerhq/domain-service@1.2.9-nightly.0
-  - @ledgerhq/live-countervalues@0.2.10-nightly.0
-  - @ledgerhq/live-countervalues-react@0.2.10-nightly.0
-  - @ledgerhq/live-nft@0.4.10-nightly.0
-  - @ledgerhq/live-nft-react@0.4.10-nightly.0
-  - @ledgerhq/live-wallet@0.7.2-nightly.0
-
-## 2.90.0-nightly.0
-
-### Minor Changes
+- [#8055](https://github.com/LedgerHQ/ledger-live/pull/8055) [`b961229`](https://github.com/LedgerHQ/ledger-live/commit/b961229545a2f759c6890685abd80f85334d291c) Thanks [@themooneer](https://github.com/themooneer)! - Add Memo tag info section in LLD
 
 - [#8104](https://github.com/LedgerHQ/ledger-live/pull/8104) [`2a9b922`](https://github.com/LedgerHQ/ledger-live/commit/2a9b9228eff229a302e24ef7823285ea2e1a55f6) Thanks [@CremaFR](https://github.com/CremaFR)! - exposed getTransaction to swapliveapp
 
 ### Patch Changes
 
-- [#8028](https://github.com/LedgerHQ/ledger-live/pull/8028) [`5b39289`](https://github.com/LedgerHQ/ledger-live/commit/5b39289d834564d627181e062bc548dd85127acc) Thanks [@Wozacosta](https://github.com/Wozacosta)! - feat: display team link if available
+- [#7981](https://github.com/LedgerHQ/ledger-live/pull/7981) [`81cd773`](https://github.com/LedgerHQ/ledger-live/commit/81cd7735a3c94628b6d4825b736ef12a0b74d3a3) Thanks [@ofreyssinet-ledger](https://github.com/ofreyssinet-ledger)! - Add support to new language packs: de, pt-br, ru, tr
 
-- [#8097](https://github.com/LedgerHQ/ledger-live/pull/8097) [`0fca8ff`](https://github.com/LedgerHQ/ledger-live/commit/0fca8fff2cf494708ff70462ce7fab9acd67dd00) Thanks [@adammino-ledger](https://github.com/adammino-ledger)! - providerTestId added to allow partners to test in different envs
+- [#7566](https://github.com/LedgerHQ/ledger-live/pull/7566) [`f275f48`](https://github.com/LedgerHQ/ledger-live/commit/f275f48a17eeba2bdd3119e478975c8d4c7183be) Thanks [@albertov19](https://github.com/albertov19)! - Updated logos for Moonbeam/Moonriver
 
-- Updated dependencies [[`3d8cd98`](https://github.com/LedgerHQ/ledger-live/commit/3d8cd98486402b69de7e1dcacdfe864f3d135ec9), [`867b2ba`](https://github.com/LedgerHQ/ledger-live/commit/867b2ba1e467bcd5585b3e670f735520529036aa), [`a8dff0f`](https://github.com/LedgerHQ/ledger-live/commit/a8dff0fee7496b9a79ae5c6866ffe0715299695c)]:
-  - @ledgerhq/live-common@34.11.2-nightly.0
-  - @ledgerhq/coin-cosmos@0.1.6-nightly.0
+- [#8039](https://github.com/LedgerHQ/ledger-live/pull/8039) [`1a0fa20`](https://github.com/LedgerHQ/ledger-live/commit/1a0fa20da7509cdde1141002a2be8e9d8458b27d) Thanks [@liviuciulinaru](https://github.com/liviuciulinaru)! - add ptxSwapCoreExperiment flag
+
+- [#8080](https://github.com/LedgerHQ/ledger-live/pull/8080) [`e3a6d75`](https://github.com/LedgerHQ/ledger-live/commit/e3a6d75b8a326afa46bc88699f73274b312aa194) Thanks [@LucasWerey](https://github.com/LucasWerey)! - fix toast never disappearing + fix duration bar of toast
+
+- [#8047](https://github.com/LedgerHQ/ledger-live/pull/8047) [`d0eec9f`](https://github.com/LedgerHQ/ledger-live/commit/d0eec9f6fc61a915119f0b9bf087ff270687ff30) Thanks [@LucasWerey](https://github.com/LucasWerey)! - rework of the coin control modal ui
+
+- Updated dependencies [[`81cd773`](https://github.com/LedgerHQ/ledger-live/commit/81cd7735a3c94628b6d4825b736ef12a0b74d3a3), [`f644636`](https://github.com/LedgerHQ/ledger-live/commit/f644636cf1f744e8aecff5b75d3aa1b7b4caf865), [`abe4dcc`](https://github.com/LedgerHQ/ledger-live/commit/abe4dcc0cc839a860228d5d89f769546cde7fdcb), [`bfbbe66`](https://github.com/LedgerHQ/ledger-live/commit/bfbbe6611eb1f6e10272a8accce31d24779da533), [`867b2ba`](https://github.com/LedgerHQ/ledger-live/commit/867b2ba1e467bcd5585b3e670f735520529036aa), [`9c92854`](https://github.com/LedgerHQ/ledger-live/commit/9c928544f1631917eb2c2f9e150d070537bb93b7), [`1a0fa20`](https://github.com/LedgerHQ/ledger-live/commit/1a0fa20da7509cdde1141002a2be8e9d8458b27d), [`a8dff0f`](https://github.com/LedgerHQ/ledger-live/commit/a8dff0fee7496b9a79ae5c6866ffe0715299695c), [`d0eec9f`](https://github.com/LedgerHQ/ledger-live/commit/d0eec9f6fc61a915119f0b9bf087ff270687ff30)]:
+  - @ledgerhq/types-live@6.52.3
+  - @ledgerhq/live-common@34.12.0
+  - @ledgerhq/coin-cosmos@0.1.6
+  - @ledgerhq/live-countervalues@0.2.10
+  - @ledgerhq/coin-bitcoin@0.8.5
+  - @ledgerhq/coin-framework@0.18.5
+  - @ledgerhq/coin-evm@2.4.2
+  - @ledgerhq/domain-service@1.2.9
+  - @ledgerhq/live-countervalues-react@0.2.10
+  - @ledgerhq/live-nft@0.4.10
+  - @ledgerhq/live-nft-react@0.4.10
+  - @ledgerhq/live-wallet@0.7.2
+  - @ledgerhq/react-ui@0.16.3
+
+## 2.90.0-next.0
+
+### Minor Changes
+
+- [#7944](https://github.com/LedgerHQ/ledger-live/pull/7944) [`abe4dcc`](https://github.com/LedgerHQ/ledger-live/commit/abe4dcc0cc839a860228d5d89f769546cde7fdcb) Thanks [@Justkant](https://github.com/Justkant)! - feat: bootstrap wallet-api custom ACRE module and handlers
+
+- [#8055](https://github.com/LedgerHQ/ledger-live/pull/8055) [`b961229`](https://github.com/LedgerHQ/ledger-live/commit/b961229545a2f759c6890685abd80f85334d291c) Thanks [@themooneer](https://github.com/themooneer)! - Add Memo tag info section in LLD
+
+- [#8104](https://github.com/LedgerHQ/ledger-live/pull/8104) [`2a9b922`](https://github.com/LedgerHQ/ledger-live/commit/2a9b9228eff229a302e24ef7823285ea2e1a55f6) Thanks [@CremaFR](https://github.com/CremaFR)! - exposed getTransaction to swapliveapp
+
+### Patch Changes
+
+- [#7981](https://github.com/LedgerHQ/ledger-live/pull/7981) [`81cd773`](https://github.com/LedgerHQ/ledger-live/commit/81cd7735a3c94628b6d4825b736ef12a0b74d3a3) Thanks [@ofreyssinet-ledger](https://github.com/ofreyssinet-ledger)! - Add support to new language packs: de, pt-br, ru, tr
+
+- [#7566](https://github.com/LedgerHQ/ledger-live/pull/7566) [`f275f48`](https://github.com/LedgerHQ/ledger-live/commit/f275f48a17eeba2bdd3119e478975c8d4c7183be) Thanks [@albertov19](https://github.com/albertov19)! - Updated logos for Moonbeam/Moonriver
+
+- [#8039](https://github.com/LedgerHQ/ledger-live/pull/8039) [`1a0fa20`](https://github.com/LedgerHQ/ledger-live/commit/1a0fa20da7509cdde1141002a2be8e9d8458b27d) Thanks [@liviuciulinaru](https://github.com/liviuciulinaru)! - add ptxSwapCoreExperiment flag
+
+- [#8080](https://github.com/LedgerHQ/ledger-live/pull/8080) [`e3a6d75`](https://github.com/LedgerHQ/ledger-live/commit/e3a6d75b8a326afa46bc88699f73274b312aa194) Thanks [@LucasWerey](https://github.com/LucasWerey)! - fix toast never disappearing + fix duration bar of toast
+
+- [#8047](https://github.com/LedgerHQ/ledger-live/pull/8047) [`d0eec9f`](https://github.com/LedgerHQ/ledger-live/commit/d0eec9f6fc61a915119f0b9bf087ff270687ff30) Thanks [@LucasWerey](https://github.com/LucasWerey)! - rework of the coin control modal ui
+
+- Updated dependencies [[`81cd773`](https://github.com/LedgerHQ/ledger-live/commit/81cd7735a3c94628b6d4825b736ef12a0b74d3a3), [`f644636`](https://github.com/LedgerHQ/ledger-live/commit/f644636cf1f744e8aecff5b75d3aa1b7b4caf865), [`abe4dcc`](https://github.com/LedgerHQ/ledger-live/commit/abe4dcc0cc839a860228d5d89f769546cde7fdcb), [`bfbbe66`](https://github.com/LedgerHQ/ledger-live/commit/bfbbe6611eb1f6e10272a8accce31d24779da533), [`867b2ba`](https://github.com/LedgerHQ/ledger-live/commit/867b2ba1e467bcd5585b3e670f735520529036aa), [`9c92854`](https://github.com/LedgerHQ/ledger-live/commit/9c928544f1631917eb2c2f9e150d070537bb93b7), [`1a0fa20`](https://github.com/LedgerHQ/ledger-live/commit/1a0fa20da7509cdde1141002a2be8e9d8458b27d), [`a8dff0f`](https://github.com/LedgerHQ/ledger-live/commit/a8dff0fee7496b9a79ae5c6866ffe0715299695c), [`d0eec9f`](https://github.com/LedgerHQ/ledger-live/commit/d0eec9f6fc61a915119f0b9bf087ff270687ff30)]:
+  - @ledgerhq/types-live@6.52.3-next.0
+  - @ledgerhq/live-common@34.12.0-next.0
+  - @ledgerhq/coin-cosmos@0.1.6-next.0
+  - @ledgerhq/live-countervalues@0.2.10-next.0
+  - @ledgerhq/coin-bitcoin@0.8.5-next.0
+  - @ledgerhq/coin-framework@0.18.5-next.0
+  - @ledgerhq/coin-evm@2.4.2-next.0
+  - @ledgerhq/domain-service@1.2.9-next.0
+  - @ledgerhq/live-countervalues-react@0.2.10-next.0
+  - @ledgerhq/live-nft@0.4.10-next.0
+  - @ledgerhq/live-nft-react@0.4.10-next.0
+  - @ledgerhq/live-wallet@0.7.2-next.0
+  - @ledgerhq/react-ui@0.16.3-next.0
 
 ## 2.89.1
 
