@@ -1,5 +1,11 @@
 # @ledgerhq/native-ui
 
+## 0.25.2-nightly.1
+
+### Patch Changes
+
+- [#8167](https://github.com/LedgerHQ/ledger-live/pull/8167) [`9834c5e`](https://github.com/LedgerHQ/ledger-live/commit/9834c5ead567dea37b9ba7e85470dead48fe4844) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - Add new AnimatedInputSelect in DS
+
 ## 0.25.2-nightly.0
 
 ### Patch Changes

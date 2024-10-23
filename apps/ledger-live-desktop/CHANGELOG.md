@@ -1,5 +1,31 @@
 # ledger-live-desktop
 
+## 2.90.1-nightly.1
+
+### Patch Changes
+
+- [#7926](https://github.com/LedgerHQ/ledger-live/pull/7926) [`5c13c7b`](https://github.com/LedgerHQ/ledger-live/commit/5c13c7bf743333f09cbfee720d275dfae7e157d2) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - Add new EVMs to NFT support
+
+- [#7940](https://github.com/LedgerHQ/ledger-live/pull/7940) [`e5f8a8b`](https://github.com/LedgerHQ/ledger-live/commit/e5f8a8b85b42516dd43ed44723be4fe594624b28) Thanks [@kallen-ledger](https://github.com/kallen-ledger)! - close drawer after cancel with disable broadcast
+
+- [#7946](https://github.com/LedgerHQ/ledger-live/pull/7946) [`df23c6f`](https://github.com/LedgerHQ/ledger-live/commit/df23c6fb0fc0fe5719ebe899a29df7c5cd0c1357) Thanks [@fAnselmi-Ledger](https://github.com/fAnselmi-Ledger)! - Retry app installation upon device disconnection
+
+- Updated dependencies [[`5c13c7b`](https://github.com/LedgerHQ/ledger-live/commit/5c13c7bf743333f09cbfee720d275dfae7e157d2), [`fc6a4f9`](https://github.com/LedgerHQ/ledger-live/commit/fc6a4f93ef3c9101c20e54d8ec6a53e7a86c25f1)]:
+  - @ledgerhq/live-nft@0.4.11-nightly.0
+  - @ledgerhq/live-env@2.4.1-nightly.0
+  - @ledgerhq/live-common@34.12.1-nightly.1
+  - @ledgerhq/live-nft-react@0.4.11-nightly.0
+  - @ledgerhq/coin-framework@0.18.6-nightly.0
+  - @ledgerhq/coin-bitcoin@0.8.6-nightly.0
+  - @ledgerhq/coin-cosmos@0.1.7-nightly.0
+  - @ledgerhq/coin-evm@2.4.3-nightly.0
+  - @ledgerhq/hw-ledger-key-ring-protocol@0.2.1-nightly.0
+  - @ledgerhq/ledger-key-ring-protocol@0.5.1-nightly.0
+  - @ledgerhq/live-countervalues@0.2.11-nightly.0
+  - @ledgerhq/live-network@2.0.3-nightly.0
+  - @ledgerhq/live-wallet@0.7.3-nightly.0
+  - @ledgerhq/live-countervalues-react@0.2.11-nightly.0
+
 ## 2.90.1-nightly.0
 
 ### Patch Changes

@@ -1,5 +1,40 @@
 ## 34.5.0-next.4
 
+## 34.12.1-nightly.1
+
+### Patch Changes
+
+- [#8160](https://github.com/LedgerHQ/ledger-live/pull/8160) [`fc6a4f9`](https://github.com/LedgerHQ/ledger-live/commit/fc6a4f93ef3c9101c20e54d8ec6a53e7a86c25f1) Thanks [@Wozacosta](https://github.com/Wozacosta)! - test: update tron bridge snap
+
+- Updated dependencies [[`5c13c7b`](https://github.com/LedgerHQ/ledger-live/commit/5c13c7bf743333f09cbfee720d275dfae7e157d2)]:
+  - @ledgerhq/live-nft@0.4.11-nightly.0
+  - @ledgerhq/live-env@2.4.1-nightly.0
+  - @ledgerhq/coin-framework@0.18.6-nightly.0
+  - @ledgerhq/coin-algorand@0.5.11-nightly.0
+  - @ledgerhq/coin-bitcoin@0.8.6-nightly.0
+  - @ledgerhq/coin-cardano@0.2.6-nightly.0
+  - @ledgerhq/coin-cosmos@0.1.7-nightly.0
+  - @ledgerhq/coin-elrond@0.1.6-nightly.0
+  - @ledgerhq/coin-evm@2.4.3-nightly.0
+  - @ledgerhq/coin-icon@0.4.8-nightly.0
+  - @ledgerhq/coin-polkadot@1.3.4-nightly.0
+  - @ledgerhq/coin-solana@0.8.3-nightly.0
+  - @ledgerhq/coin-ton@0.3.19-nightly.0
+  - @ledgerhq/coin-tron@0.0.11-nightly.0
+  - @ledgerhq/cryptoassets@13.6.3-nightly.0
+  - @ledgerhq/live-countervalues@0.2.11-nightly.0
+  - @ledgerhq/live-network@2.0.3-nightly.0
+  - @ledgerhq/live-wallet@0.7.3-nightly.0
+  - @ledgerhq/speculos-transport@0.1.8-nightly.0
+  - @ledgerhq/coin-near@0.5.11-nightly.0
+  - @ledgerhq/coin-stellar@0.3.6-nightly.0
+  - @ledgerhq/coin-tezos@0.6.7-nightly.0
+  - @ledgerhq/coin-xrp@0.5.7-nightly.0
+  - @ledgerhq/live-countervalues-react@0.2.11-nightly.0
+  - @ledgerhq/hw-app-eth@6.40.3-nightly.0
+  - @ledgerhq/hw-app-vet@0.2.10-nightly.0
+  - @ledgerhq/device-core@0.4.5-nightly.0
+
 ## 34.12.1-nightly.0
 
 ### Patch Changes

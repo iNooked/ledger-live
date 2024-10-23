@@ -1,5 +1,19 @@
 # web-tools
 
+## 0.10.3-nightly.1
+
+### Patch Changes
+
+- Updated dependencies [[`5c13c7b`](https://github.com/LedgerHQ/ledger-live/commit/5c13c7bf743333f09cbfee720d275dfae7e157d2), [`fc6a4f9`](https://github.com/LedgerHQ/ledger-live/commit/fc6a4f93ef3c9101c20e54d8ec6a53e7a86c25f1)]:
+  - @ledgerhq/live-env@2.4.1-nightly.0
+  - @ledgerhq/live-common@34.12.1-nightly.1
+  - @ledgerhq/coin-framework@0.18.6-nightly.0
+  - @ledgerhq/hw-ledger-key-ring-protocol@0.2.1-nightly.0
+  - @ledgerhq/ledger-key-ring-protocol@0.5.1-nightly.0
+  - @ledgerhq/cryptoassets@13.6.3-nightly.0
+  - @ledgerhq/live-wallet@0.7.3-nightly.0
+  - @ledgerhq/hw-app-eth@6.40.3-nightly.0
+
 ## 0.10.3-nightly.0
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @ledgerhq/hw-app-eth
 
+## 6.40.3-nightly.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @ledgerhq/evm-tools@1.2.5-nightly.0
+  - @ledgerhq/cryptoassets-evm-signatures@13.5.2-nightly.0
+
 ## 6.40.2
 
 ### Patch Changes

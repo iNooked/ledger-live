@@ -1,5 +1,11 @@
 # @ledgerhq/live-env
 
+## 2.4.1-nightly.0
+
+### Patch Changes
+
+- [#7926](https://github.com/LedgerHQ/ledger-live/pull/7926) [`5c13c7b`](https://github.com/LedgerHQ/ledger-live/commit/5c13c7bf743333f09cbfee720d275dfae7e157d2) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - Add new EVMs to NFT support
+
 ## 2.4.0
 
 ### Minor Changes

@@ -1,5 +1,40 @@
 # live-mobile
 
+## 3.53.1-nightly.1
+
+### Patch Changes
+
+- [#8169](https://github.com/LedgerHQ/ledger-live/pull/8169) [`ab08489`](https://github.com/LedgerHQ/ledger-live/commit/ab0848952d32af8c06d908d605c02fde7d121f7b) Thanks [@Justkant](https://github.com/Justkant)! - fix(iOS): Solana error after broadcast on WebSockets
+
+  We are adding a missing user-agent header on the websocket for iOS with RN
+  https://github.com/facebook/react-native/issues/28450
+  https://github.com/facebook/react-native/issues/30727
+  We need to use the interceptor as we don't control the code initiating the websocket
+  Updating the options passed in by the interceptor works fine
+  https://github.com/facebook/react-native/blob/3dfe22bd27429a43b4648c597b71f7965f31ca65/packages/react-native/Libraries/WebSocket/WebSocketInterceptor.js#L148-L163
+  Another solution could be to use pnpm to patch react native WebSocket linked below
+  https://github.com/facebook/react-native/blob/3dfe22bd27429a43b4648c597b71f7965f31ca65/packages/react-native/Libraries/WebSocket/WebSocket.js
+  But the interceptor seems lean enough and a simple hack vs patching a lib seems preferable
+
+- [#7926](https://github.com/LedgerHQ/ledger-live/pull/7926) [`5c13c7b`](https://github.com/LedgerHQ/ledger-live/commit/5c13c7bf743333f09cbfee720d275dfae7e157d2) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - Add new EVMs to NFT support
+
+- Updated dependencies [[`5c13c7b`](https://github.com/LedgerHQ/ledger-live/commit/5c13c7bf743333f09cbfee720d275dfae7e157d2), [`fc6a4f9`](https://github.com/LedgerHQ/ledger-live/commit/fc6a4f93ef3c9101c20e54d8ec6a53e7a86c25f1), [`9834c5e`](https://github.com/LedgerHQ/ledger-live/commit/9834c5ead567dea37b9ba7e85470dead48fe4844)]:
+  - @ledgerhq/live-nft@0.4.11-nightly.0
+  - @ledgerhq/live-env@2.4.1-nightly.0
+  - @ledgerhq/live-common@34.12.1-nightly.1
+  - @ledgerhq/native-ui@0.25.2-nightly.1
+  - @ledgerhq/live-nft-react@0.4.11-nightly.0
+  - @ledgerhq/coin-framework@0.18.6-nightly.0
+  - @ledgerhq/coin-cosmos@0.1.7-nightly.0
+  - @ledgerhq/coin-elrond@0.1.6-nightly.0
+  - @ledgerhq/coin-evm@2.4.3-nightly.0
+  - @ledgerhq/hw-ledger-key-ring-protocol@0.2.1-nightly.0
+  - @ledgerhq/ledger-key-ring-protocol@0.5.1-nightly.0
+  - @ledgerhq/live-countervalues@0.2.11-nightly.0
+  - @ledgerhq/live-network@2.0.3-nightly.0
+  - @ledgerhq/live-wallet@0.7.3-nightly.0
+  - @ledgerhq/live-countervalues-react@0.2.11-nightly.0
+
 ## 3.53.1-nightly.0
 
 ### Patch Changes
