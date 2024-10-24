@@ -158,6 +158,16 @@ export const cosmosConfig: CosmosConfig = {
       },
     },
   },
+  config_currency_xion: {
+    type: "object",
+    default: {
+      lcd: "https://xion-testnet-api.polkachu.com",
+      minGasPrice: 0.04,
+      status: {
+        type: "active",
+      },
+    },
+  },
 };
 
 import buildCoinConfig, { type CurrencyConfig } from "@ledgerhq/coin-framework/config";
