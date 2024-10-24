@@ -2,13 +2,35 @@ import { test } from "../../fixtures/common";
 import { AppInfos } from "@ledgerhq/live-common/e2e/enum/AppInfos";
 import { addTmsLink } from "tests/utils/allureUtils";
 import { getDescription } from "../../utils/customJsonReporter";
+import { commandCLI } from "tests/utils/cliUtils";
 
 const app: AppInfos = AppInfos.LS;
 
 test.describe(`[${app.name}] Sync Accounts`, () => {
+  const ledgerKeyRingProtocolArgs = {
+    getKeyRingTree: true,
+    pubKey: null,
+    privateKey: null,
+  };
   test.use({
-    userdata: "ledgerSync",
+    userdata: "skip-onboarding",
     speculosApp: app,
+    cliCommands: [
+      {
+        command: commandCLI.ledgerKeyRingProtocol,
+        args: {
+          initMemberCredentials: true,
+        },
+        output: output => {
+          ledgerKeyRingProtocolArgs.pubKey = output.pubkey;
+          ledgerKeyRingProtocolArgs.privateKey = output.privatekey;
+        },
+      },
+      {
+        command: commandCLI.ledgerKeyRingProtocol,
+        args: ledgerKeyRingProtocolArgs,
+      },
+    ],
   });
 
   test(
