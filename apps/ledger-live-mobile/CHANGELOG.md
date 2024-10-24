@@ -1,5 +1,20 @@
 # live-mobile
 
+## 3.54.0-nightly.2
+
+### Minor Changes
+
+- [#8155](https://github.com/LedgerHQ/ledger-live/pull/8155) [`bb6dfe4`](https://github.com/LedgerHQ/ledger-live/commit/bb6dfe4d01cfc45be0e6765e69f15a10b8b468d4) Thanks [@thesan](https://github.com/thesan)! - Add memo/tag input in some coins send flow
+
+### Patch Changes
+
+- [#8123](https://github.com/LedgerHQ/ledger-live/pull/8123) [`7909d23`](https://github.com/LedgerHQ/ledger-live/commit/7909d2331f3b820b8de2a001133efa8a67f43fe6) Thanks [@fAnselmi-Ledger](https://github.com/fAnselmi-Ledger)! - Close apps modal upon errors
+
+- [#7979](https://github.com/LedgerHQ/ledger-live/pull/7979) [`b89d1e1`](https://github.com/LedgerHQ/ledger-live/commit/b89d1e1a9152b7eb3e7c2dcbe6145ca1e0e2ec9e) Thanks [@fAnselmi-Ledger](https://github.com/fAnselmi-Ledger)! - Triggering proper errors on CLS
+
+- Updated dependencies [[`b89d1e1`](https://github.com/LedgerHQ/ledger-live/commit/b89d1e1a9152b7eb3e7c2dcbe6145ca1e0e2ec9e)]:
+  - @ledgerhq/live-common@34.12.1-nightly.2
+
 ## 3.53.1-nightly.1
 
 ### Patch Changes

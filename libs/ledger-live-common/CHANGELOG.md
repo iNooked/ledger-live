@@ -1,5 +1,11 @@
 ## 34.5.0-next.4
 
+## 34.12.1-nightly.2
+
+### Patch Changes
+
+- [#7979](https://github.com/LedgerHQ/ledger-live/pull/7979) [`b89d1e1`](https://github.com/LedgerHQ/ledger-live/commit/b89d1e1a9152b7eb3e7c2dcbe6145ca1e0e2ec9e) Thanks [@fAnselmi-Ledger](https://github.com/fAnselmi-Ledger)! - Triggering proper errors on CLS
+
 ## 34.12.1-nightly.1
 
 ### Patch Changes

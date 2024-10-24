@@ -1,5 +1,14 @@
 # ledger-live-desktop
 
+## 2.90.1-nightly.2
+
+### Patch Changes
+
+- [#7927](https://github.com/LedgerHQ/ledger-live/pull/7927) [`d1d3df6`](https://github.com/LedgerHQ/ledger-live/commit/d1d3df6dfcc65abe2eee578bd74c5c06c60063f2) Thanks [@fAnselmi-Ledger](https://github.com/fAnselmi-Ledger)! - Fixed navigation in onboarding/ledger-lecover
+
+- Updated dependencies [[`b89d1e1`](https://github.com/LedgerHQ/ledger-live/commit/b89d1e1a9152b7eb3e7c2dcbe6145ca1e0e2ec9e)]:
+  - @ledgerhq/live-common@34.12.1-nightly.2
+
 ## 2.90.1-nightly.1
 
 ### Patch Changes
