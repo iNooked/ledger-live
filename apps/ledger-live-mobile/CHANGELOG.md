@@ -1,5 +1,13 @@
 # live-mobile
 
+## 3.54.0-nightly.3
+
+### Patch Changes
+
+- [#8193](https://github.com/LedgerHQ/ledger-live/pull/8193) [`1975628`](https://github.com/LedgerHQ/ledger-live/commit/1975628b1c1ddb5adbda9411a643a130a810995c) Thanks [@marcotoniut-ledger](https://github.com/marcotoniut-ledger)! - Add new Provider `react-native-svg` icons for Acre, Midas, ChorusOne, Babylon, EigenLayer
+
+- [#8191](https://github.com/LedgerHQ/ledger-live/pull/8191) [`de89b29`](https://github.com/LedgerHQ/ledger-live/commit/de89b291d7204b786a6925a09987906c8a27644d) Thanks [@thesan](https://github.com/thesan)! - Infer memo tag support on receive flow from send flow implementations
+
 ## 3.54.0-nightly.2
 
 ### Minor Changes

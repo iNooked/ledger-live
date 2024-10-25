@@ -1,5 +1,11 @@
 # ledger-live-desktop
 
+## 2.90.1-nightly.3
+
+### Patch Changes
+
+- [#8091](https://github.com/LedgerHQ/ledger-live/pull/8091) [`244a73f`](https://github.com/LedgerHQ/ledger-live/commit/244a73f53b5d89777a6c0f70ad5ce6a1fedad322) Thanks [@fAnselmi-Ledger](https://github.com/fAnselmi-Ledger)! - Added window lifecycle event listeners for ldmk transport
+
 ## 2.90.1-nightly.2
 
 ### Patch Changes
