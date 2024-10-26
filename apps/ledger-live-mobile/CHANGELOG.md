@@ -1,5 +1,29 @@
 # live-mobile
 
+## 3.54.0-nightly.4
+
+### Patch Changes
+
+- [#8151](https://github.com/LedgerHQ/ledger-live/pull/8151) [`047b6d9`](https://github.com/LedgerHQ/ledger-live/commit/047b6d9067fbffa4e09844b6648961c0716aaa8b) Thanks [@LucasWerey](https://github.com/LucasWerey)! - Add alert when can't undelegate due to not enought balance for fees
+
+- Updated dependencies [[`35d6de2`](https://github.com/LedgerHQ/ledger-live/commit/35d6de2ace269f30fc39a3f022673a82d0c48193), [`95fbec9`](https://github.com/LedgerHQ/ledger-live/commit/95fbec9fdff75cd6d4ac23e189e876efffc81906)]:
+  - @ledgerhq/types-live@6.52.4-nightly.0
+  - @ledgerhq/live-common@34.12.1-nightly.3
+  - @ledgerhq/live-env@2.4.1-nightly.1
+  - @ledgerhq/coin-framework@0.18.6-nightly.1
+  - @ledgerhq/coin-cosmos@0.1.7-nightly.1
+  - @ledgerhq/coin-elrond@0.1.6-nightly.1
+  - @ledgerhq/coin-evm@2.4.3-nightly.1
+  - @ledgerhq/domain-service@1.2.10-nightly.0
+  - @ledgerhq/live-countervalues@0.2.11-nightly.1
+  - @ledgerhq/live-countervalues-react@0.2.11-nightly.1
+  - @ledgerhq/live-nft@0.4.11-nightly.1
+  - @ledgerhq/live-nft-react@0.4.11-nightly.1
+  - @ledgerhq/live-wallet@0.7.3-nightly.1
+  - @ledgerhq/hw-ledger-key-ring-protocol@0.2.1-nightly.1
+  - @ledgerhq/ledger-key-ring-protocol@0.5.1-nightly.1
+  - @ledgerhq/live-network@2.0.3-nightly.1
+
 ## 3.54.0-nightly.3
 
 ### Patch Changes

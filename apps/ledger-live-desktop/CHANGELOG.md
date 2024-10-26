@@ -1,5 +1,35 @@
 # ledger-live-desktop
 
+## 2.91.0-nightly.4
+
+### Minor Changes
+
+- [#8172](https://github.com/LedgerHQ/ledger-live/pull/8172) [`4eb7628`](https://github.com/LedgerHQ/ledger-live/commit/4eb76289d9f940dc8cdb1edc7cc7a677126de53d) Thanks [@cgrellard-ledger](https://github.com/cgrellard-ledger)! - LLD - Add new error banner when unsufficient funds to undelegate or unstake a coin
+
+### Patch Changes
+
+- [#8093](https://github.com/LedgerHQ/ledger-live/pull/8093) [`35d6de2`](https://github.com/LedgerHQ/ledger-live/commit/35d6de2ace269f30fc39a3f022673a82d0c48193) Thanks [@fAnselmi-Ledger](https://github.com/fAnselmi-Ledger)! - Add feature flag for LDMK transport
+
+- [#8208](https://github.com/LedgerHQ/ledger-live/pull/8208) [`429072a`](https://github.com/LedgerHQ/ledger-live/commit/429072ae8f0f620886794a93fce51ad7c1b2edb9) Thanks [@LucasWerey](https://github.com/LucasWerey)! - center check, close icons on in the send breadcrumb
+
+- Updated dependencies [[`35d6de2`](https://github.com/LedgerHQ/ledger-live/commit/35d6de2ace269f30fc39a3f022673a82d0c48193), [`95fbec9`](https://github.com/LedgerHQ/ledger-live/commit/95fbec9fdff75cd6d4ac23e189e876efffc81906)]:
+  - @ledgerhq/types-live@6.52.4-nightly.0
+  - @ledgerhq/live-common@34.12.1-nightly.3
+  - @ledgerhq/live-env@2.4.1-nightly.1
+  - @ledgerhq/coin-framework@0.18.6-nightly.1
+  - @ledgerhq/coin-bitcoin@0.8.6-nightly.1
+  - @ledgerhq/coin-cosmos@0.1.7-nightly.1
+  - @ledgerhq/coin-evm@2.4.3-nightly.1
+  - @ledgerhq/domain-service@1.2.10-nightly.0
+  - @ledgerhq/live-countervalues@0.2.11-nightly.1
+  - @ledgerhq/live-countervalues-react@0.2.11-nightly.1
+  - @ledgerhq/live-nft@0.4.11-nightly.1
+  - @ledgerhq/live-nft-react@0.4.11-nightly.1
+  - @ledgerhq/live-wallet@0.7.3-nightly.1
+  - @ledgerhq/hw-ledger-key-ring-protocol@0.2.1-nightly.1
+  - @ledgerhq/ledger-key-ring-protocol@0.5.1-nightly.1
+  - @ledgerhq/live-network@2.0.3-nightly.1
+
 ## 2.90.1-nightly.3
 
 ### Patch Changes

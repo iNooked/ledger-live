@@ -1,5 +1,11 @@
 # @ledgerhq/types-live
 
+## 6.52.4-nightly.0
+
+### Patch Changes
+
+- [#8093](https://github.com/LedgerHQ/ledger-live/pull/8093) [`35d6de2`](https://github.com/LedgerHQ/ledger-live/commit/35d6de2ace269f30fc39a3f022673a82d0c48193) Thanks [@fAnselmi-Ledger](https://github.com/fAnselmi-Ledger)! - Add feature flag for LDMK transport
+
 ## 6.52.3
 
 ### Patch Changes

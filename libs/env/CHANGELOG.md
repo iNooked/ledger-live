@@ -1,5 +1,11 @@
 # @ledgerhq/live-env
 
+## 2.4.1-nightly.1
+
+### Patch Changes
+
+- [#8184](https://github.com/LedgerHQ/ledger-live/pull/8184) [`95fbec9`](https://github.com/LedgerHQ/ledger-live/commit/95fbec9fdff75cd6d4ac23e189e876efffc81906) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - Revert some NFTs support waiting for new API support
+
 ## 2.4.1-nightly.0
 
 ### Patch Changes
