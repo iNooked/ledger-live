@@ -98,4 +98,13 @@ const metroConfig = {
   },
 };
 
-module.exports = mergeConfig(getDefaultConfig(__dirname), metroConfig);
+const sbConfig = !process.env.STORYBOOK_ENABLED
+  ? undefined
+  : {
+      resolver: {
+        // sourceExts: ["storybook.tsx", ...(metroConfig.resolver.sourceExts ?? [])],
+        resolverMainFields: ["sbmodern", ...(metroConfig.resolver.resolverMainFields ?? [])],
+      },
+    };
+
+module.exports = mergeConfig(getDefaultConfig(__dirname), metroConfig, sbConfig);

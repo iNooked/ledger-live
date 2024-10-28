@@ -299,7 +299,9 @@ const StylesProvider = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default class Root extends Component {
+export { default } from "../.storybook";
+
+export class Root extends Component {
   initTimeout: ReturnType<typeof setTimeout> | undefined;
 
   componentWillUnmount() {
