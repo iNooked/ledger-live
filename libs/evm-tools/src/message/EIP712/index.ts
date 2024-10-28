@@ -1,6 +1,7 @@
 import { ethers } from "ethers";
 import axios from "axios";
 import SHA224 from "crypto-js/sha224";
+import { BigNumber } from "bignumber.js";
 import { getEnv } from "@ledgerhq/live-env";
 import { EIP712Message } from "@ledgerhq/types-live";
 import EIP712CAL from "@ledgerhq/cryptoassets-evm-signatures/data/eip712";
@@ -65,7 +66,7 @@ export const getFiltersForMessage = async (
         params: {
           output: "eip712_signatures",
           eip712_signatures_version: shouldUseV1Filters ? "v1" : "v2",
-          chain_id: message.domain?.chainId,
+          chain_id: new BigNumber(message.domain?.chainId).toFixed(),
           contracts: verifyingContract,
         },
       });
