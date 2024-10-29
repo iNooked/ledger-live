@@ -1,5 +1,15 @@
 # ledger-live-desktop
 
+## 2.91.1-nightly.0
+
+### Patch Changes
+
+- [#8177](https://github.com/LedgerHQ/ledger-live/pull/8177) [`2975b83`](https://github.com/LedgerHQ/ledger-live/commit/2975b830573f52260daafdd78a7e4c0f730b7da0) Thanks [@fAnselmi-Ledger](https://github.com/fAnselmi-Ledger)! - Localised CLS string
+
+- Updated dependencies [[`9059f4b`](https://github.com/LedgerHQ/ledger-live/commit/9059f4bb1dd540f28e2e16d85d701d70a99b6c96), [`9059f4b`](https://github.com/LedgerHQ/ledger-live/commit/9059f4bb1dd540f28e2e16d85d701d70a99b6c96)]:
+  - @ledgerhq/coin-evm@2.4.4-nightly.0
+  - @ledgerhq/live-common@34.13.1-nightly.0
+
 ## 2.91.0
 
 ### Minor Changes

@@ -1,5 +1,15 @@
 # live-mobile
 
+## 3.54.1-nightly.0
+
+### Patch Changes
+
+- [#8142](https://github.com/LedgerHQ/ledger-live/pull/8142) [`a00a1cb`](https://github.com/LedgerHQ/ledger-live/commit/a00a1cb03724e49867a232a482a6f1a46a7d119e) Thanks [@fAnselmi-Ledger](https://github.com/fAnselmi-Ledger)! - Patched onRetryGenuineCheck
+
+- Updated dependencies [[`9059f4b`](https://github.com/LedgerHQ/ledger-live/commit/9059f4bb1dd540f28e2e16d85d701d70a99b6c96), [`9059f4b`](https://github.com/LedgerHQ/ledger-live/commit/9059f4bb1dd540f28e2e16d85d701d70a99b6c96)]:
+  - @ledgerhq/coin-evm@2.4.4-nightly.0
+  - @ledgerhq/live-common@34.13.1-nightly.0
+
 ## 3.54.0
 
 ### Minor Changes

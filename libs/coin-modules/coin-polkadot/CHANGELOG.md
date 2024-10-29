@@ -1,5 +1,11 @@
 # @ledgerhq/coin-polkadot
 
+## 1.3.5-nightly.0
+
+### Patch Changes
+
+- [#8206](https://github.com/LedgerHQ/ledger-live/pull/8206) [`9059f4b`](https://github.com/LedgerHQ/ledger-live/commit/9059f4bb1dd540f28e2e16d85d701d70a99b6c96) Thanks [@lambertkevin](https://github.com/lambertkevin)! - Make coin-tester script run tests sequentially
+
 ## 1.3.4
 
 ### Patch Changes
