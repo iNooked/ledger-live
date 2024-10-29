@@ -159,6 +159,7 @@ const StepSummary = (props: StepProps) => {
                   data-testid="recipient-address"
                 >
                   {transaction.recipient}
+                  test
                 </Text>
               </Ellipsis>
             </Box>

@@ -10,6 +10,11 @@
   "bugs": {
     "url": "https://github.com/LedgerHQ/ledger-live/issues"
   },
+  "config": {
+    "commitizen": {
+      "path": "./commitizen.jira.config.js"
+    }
+  },
   "scripts": {
     "bump": "changeset version",
     "clean": "git clean -fdX",
@@ -154,19 +159,23 @@
     "ui:example:next": "pnpm  --filter=\"next.js-example\"",
     "ui:example:webpack": "pnpm  --filter=\"webpack.js-example\"",
     "actions": "pnpm --filter @actions/*",
-    "import:cal-tokens": "pnpm --filter=\"@ledgerhq/cryptoassets\" import:cal-tokens"
+    "import:cal-tokens": "pnpm --filter=\"@ledgerhq/cryptoassets\" import:cal-tokens",
+    "commit": "cz"
   },
   "devDependencies": {
     "@changesets/changelog-github": "0.5.0",
     "@changesets/cli": "2.27.7",
     "@commitlint/cli": "17.8.1",
     "@commitlint/config-conventional": "17.8.1",
+    "@commitlint/cz-commitlint": "19.5.0",
     "@commitlint/prompt-cli": "17.8.1",
+    "@digitalroute/cz-conventional-changelog-for-jira": "8.0.1",
     "@ledgerhq/create-release-hash": "workspace:*",
     "@ledgerhq/pnpm-utils": "workspace:*",
     "@typescript-eslint/eslint-plugin": "6.21.0",
     "@typescript-eslint/parser": "6.21.0",
     "chalk": "4.1.2",
+    "commitizen": "4.3.1",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-json": "3.1.0",
