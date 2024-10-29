@@ -1,25 +1,20 @@
 # @ledgerhq/coin-polkadot
 
-## 1.3.4-nightly.1
+## 1.3.4
 
 ### Patch Changes
 
-- Updated dependencies [[`35d6de2`](https://github.com/LedgerHQ/ledger-live/commit/35d6de2ace269f30fc39a3f022673a82d0c48193), [`95fbec9`](https://github.com/LedgerHQ/ledger-live/commit/95fbec9fdff75cd6d4ac23e189e876efffc81906)]:
-  - @ledgerhq/types-live@6.52.4-nightly.0
-  - @ledgerhq/live-env@2.4.1-nightly.1
-  - @ledgerhq/coin-framework@0.18.6-nightly.1
-  - @ledgerhq/cryptoassets@13.6.3-nightly.1
-  - @ledgerhq/live-network@2.0.3-nightly.1
+- Updated dependencies [[`65c3322`](https://github.com/LedgerHQ/ledger-live/commit/65c3322bf3871659f078148ab4b5c12b0fd53dc1)]:
+  - @ledgerhq/types-live@6.52.4
+  - @ledgerhq/coin-framework@0.18.6
 
-## 1.3.4-nightly.0
+## 1.3.4-next.0
 
 ### Patch Changes
 
-- Updated dependencies [[`5c13c7b`](https://github.com/LedgerHQ/ledger-live/commit/5c13c7bf743333f09cbfee720d275dfae7e157d2)]:
-  - @ledgerhq/live-env@2.4.1-nightly.0
-  - @ledgerhq/coin-framework@0.18.6-nightly.0
-  - @ledgerhq/cryptoassets@13.6.3-nightly.0
-  - @ledgerhq/live-network@2.0.3-nightly.0
+- Updated dependencies [[`65c3322`](https://github.com/LedgerHQ/ledger-live/commit/65c3322bf3871659f078148ab4b5c12b0fd53dc1)]:
+  - @ledgerhq/types-live@6.52.4-next.0
+  - @ledgerhq/coin-framework@0.18.6-next.0
 
 ## 1.3.3
 

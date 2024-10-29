@@ -1,99 +1,76 @@
 # live-mobile
 
-## 3.54.0-nightly.4
-
-### Patch Changes
-
-- [#8151](https://github.com/LedgerHQ/ledger-live/pull/8151) [`047b6d9`](https://github.com/LedgerHQ/ledger-live/commit/047b6d9067fbffa4e09844b6648961c0716aaa8b) Thanks [@LucasWerey](https://github.com/LucasWerey)! - Add alert when can't undelegate due to not enought balance for fees
-
-- Updated dependencies [[`35d6de2`](https://github.com/LedgerHQ/ledger-live/commit/35d6de2ace269f30fc39a3f022673a82d0c48193), [`95fbec9`](https://github.com/LedgerHQ/ledger-live/commit/95fbec9fdff75cd6d4ac23e189e876efffc81906)]:
-  - @ledgerhq/types-live@6.52.4-nightly.0
-  - @ledgerhq/live-common@34.12.1-nightly.3
-  - @ledgerhq/live-env@2.4.1-nightly.1
-  - @ledgerhq/coin-framework@0.18.6-nightly.1
-  - @ledgerhq/coin-cosmos@0.1.7-nightly.1
-  - @ledgerhq/coin-elrond@0.1.6-nightly.1
-  - @ledgerhq/coin-evm@2.4.3-nightly.1
-  - @ledgerhq/domain-service@1.2.10-nightly.0
-  - @ledgerhq/live-countervalues@0.2.11-nightly.1
-  - @ledgerhq/live-countervalues-react@0.2.11-nightly.1
-  - @ledgerhq/live-nft@0.4.11-nightly.1
-  - @ledgerhq/live-nft-react@0.4.11-nightly.1
-  - @ledgerhq/live-wallet@0.7.3-nightly.1
-  - @ledgerhq/hw-ledger-key-ring-protocol@0.2.1-nightly.1
-  - @ledgerhq/ledger-key-ring-protocol@0.5.1-nightly.1
-  - @ledgerhq/live-network@2.0.3-nightly.1
-
-## 3.54.0-nightly.3
-
-### Patch Changes
-
-- [#8193](https://github.com/LedgerHQ/ledger-live/pull/8193) [`1975628`](https://github.com/LedgerHQ/ledger-live/commit/1975628b1c1ddb5adbda9411a643a130a810995c) Thanks [@marcotoniut-ledger](https://github.com/marcotoniut-ledger)! - Add new Provider `react-native-svg` icons for Acre, Midas, ChorusOne, Babylon, EigenLayer
-
-- [#8191](https://github.com/LedgerHQ/ledger-live/pull/8191) [`de89b29`](https://github.com/LedgerHQ/ledger-live/commit/de89b291d7204b786a6925a09987906c8a27644d) Thanks [@thesan](https://github.com/thesan)! - Infer memo tag support on receive flow from send flow implementations
-
-## 3.54.0-nightly.2
+## 3.54.0
 
 ### Minor Changes
 
-- [#8155](https://github.com/LedgerHQ/ledger-live/pull/8155) [`bb6dfe4`](https://github.com/LedgerHQ/ledger-live/commit/bb6dfe4d01cfc45be0e6765e69f15a10b8b468d4) Thanks [@thesan](https://github.com/thesan)! - Add memo/tag input in some coins send flow
-
-### Patch Changes
-
-- [#8123](https://github.com/LedgerHQ/ledger-live/pull/8123) [`7909d23`](https://github.com/LedgerHQ/ledger-live/commit/7909d2331f3b820b8de2a001133efa8a67f43fe6) Thanks [@fAnselmi-Ledger](https://github.com/fAnselmi-Ledger)! - Close apps modal upon errors
-
-- [#7979](https://github.com/LedgerHQ/ledger-live/pull/7979) [`b89d1e1`](https://github.com/LedgerHQ/ledger-live/commit/b89d1e1a9152b7eb3e7c2dcbe6145ca1e0e2ec9e) Thanks [@fAnselmi-Ledger](https://github.com/fAnselmi-Ledger)! - Triggering proper errors on CLS
-
-- Updated dependencies [[`b89d1e1`](https://github.com/LedgerHQ/ledger-live/commit/b89d1e1a9152b7eb3e7c2dcbe6145ca1e0e2ec9e)]:
-  - @ledgerhq/live-common@34.12.1-nightly.2
-
-## 3.53.1-nightly.1
-
-### Patch Changes
-
-- [#8169](https://github.com/LedgerHQ/ledger-live/pull/8169) [`ab08489`](https://github.com/LedgerHQ/ledger-live/commit/ab0848952d32af8c06d908d605c02fde7d121f7b) Thanks [@Justkant](https://github.com/Justkant)! - fix(iOS): Solana error after broadcast on WebSockets
-
-  We are adding a missing user-agent header on the websocket for iOS with RN
-  https://github.com/facebook/react-native/issues/28450
-  https://github.com/facebook/react-native/issues/30727
-  We need to use the interceptor as we don't control the code initiating the websocket
-  Updating the options passed in by the interceptor works fine
-  https://github.com/facebook/react-native/blob/3dfe22bd27429a43b4648c597b71f7965f31ca65/packages/react-native/Libraries/WebSocket/WebSocketInterceptor.js#L148-L163
-  Another solution could be to use pnpm to patch react native WebSocket linked below
-  https://github.com/facebook/react-native/blob/3dfe22bd27429a43b4648c597b71f7965f31ca65/packages/react-native/Libraries/WebSocket/WebSocket.js
-  But the interceptor seems lean enough and a simple hack vs patching a lib seems preferable
-
-- [#7926](https://github.com/LedgerHQ/ledger-live/pull/7926) [`5c13c7b`](https://github.com/LedgerHQ/ledger-live/commit/5c13c7bf743333f09cbfee720d275dfae7e157d2) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - Add new EVMs to NFT support
-
-- Updated dependencies [[`5c13c7b`](https://github.com/LedgerHQ/ledger-live/commit/5c13c7bf743333f09cbfee720d275dfae7e157d2), [`fc6a4f9`](https://github.com/LedgerHQ/ledger-live/commit/fc6a4f93ef3c9101c20e54d8ec6a53e7a86c25f1), [`9834c5e`](https://github.com/LedgerHQ/ledger-live/commit/9834c5ead567dea37b9ba7e85470dead48fe4844)]:
-  - @ledgerhq/live-nft@0.4.11-nightly.0
-  - @ledgerhq/live-env@2.4.1-nightly.0
-  - @ledgerhq/live-common@34.12.1-nightly.1
-  - @ledgerhq/native-ui@0.25.2-nightly.1
-  - @ledgerhq/live-nft-react@0.4.11-nightly.0
-  - @ledgerhq/coin-framework@0.18.6-nightly.0
-  - @ledgerhq/coin-cosmos@0.1.7-nightly.0
-  - @ledgerhq/coin-elrond@0.1.6-nightly.0
-  - @ledgerhq/coin-evm@2.4.3-nightly.0
-  - @ledgerhq/hw-ledger-key-ring-protocol@0.2.1-nightly.0
-  - @ledgerhq/ledger-key-ring-protocol@0.5.1-nightly.0
-  - @ledgerhq/live-countervalues@0.2.11-nightly.0
-  - @ledgerhq/live-network@2.0.3-nightly.0
-  - @ledgerhq/live-wallet@0.7.3-nightly.0
-  - @ledgerhq/live-countervalues-react@0.2.11-nightly.0
-
-## 3.53.1-nightly.0
+- [#8147](https://github.com/LedgerHQ/ledger-live/pull/8147) [`0885c49`](https://github.com/LedgerHQ/ledger-live/commit/0885c4901a5516fad9a7b2563c5bac8e8ba6efa3) Thanks [@KVNLS](https://github.com/KVNLS)! - Improve QRCode flow for Ledger Sync allowing use to automate tests
 
 ### Patch Changes
 
 - [#8013](https://github.com/LedgerHQ/ledger-live/pull/8013) [`bc5048e`](https://github.com/LedgerHQ/ledger-live/commit/bc5048e0fda29b49a16b9e529fe0ace042267e8d) Thanks [@thesan](https://github.com/thesan)! - Align the receive screen with Figma designs
 
+- [#8143](https://github.com/LedgerHQ/ledger-live/pull/8143) [`9ecde3a`](https://github.com/LedgerHQ/ledger-live/commit/9ecde3a021d391d0b1cdb0cc5f16cc37f5a77ebd) Thanks [@themooneer](https://github.com/themooneer)! - Fix UI for ledger sync instances and drawer + fix on plural case support for synchronizedInstances
+
+- [#8028](https://github.com/LedgerHQ/ledger-live/pull/8028) [`5b39289`](https://github.com/LedgerHQ/ledger-live/commit/5b39289d834564d627181e062bc548dd85127acc) Thanks [@Wozacosta](https://github.com/Wozacosta)! - feat: display team link if available
+
+- [#8097](https://github.com/LedgerHQ/ledger-live/pull/8097) [`0fca8ff`](https://github.com/LedgerHQ/ledger-live/commit/0fca8fff2cf494708ff70462ce7fab9acd67dd00) Thanks [@adammino-ledger](https://github.com/adammino-ledger)! - providerTestId added to allow partners to test in different envs
+
 - [#8139](https://github.com/LedgerHQ/ledger-live/pull/8139) [`c594af6`](https://github.com/LedgerHQ/ledger-live/commit/c594af60c87c2044e8b1a96ac1dfc5acdb0b23dd) Thanks [@cgrellard-ledger](https://github.com/cgrellard-ledger)! - LLM - Ledger Sync triggers a unhandled error warning when scanning old import qr code
 
-- Updated dependencies [[`17732b4`](https://github.com/LedgerHQ/ledger-live/commit/17732b4f3c8fbde9c2fcb51079779dad23af72f2), [`d5bbf11`](https://github.com/LedgerHQ/ledger-live/commit/d5bbf11403c740b1e529001a008233b2f19e3418), [`bc5048e`](https://github.com/LedgerHQ/ledger-live/commit/bc5048e0fda29b49a16b9e529fe0ace042267e8d), [`b3746c3`](https://github.com/LedgerHQ/ledger-live/commit/b3746c35af33db0e4a84887d2917511a137218b3)]:
-  - @ledgerhq/live-common@34.12.1-nightly.0
-  - @ledgerhq/icons-ui@0.8.1-nightly.0
-  - @ledgerhq/native-ui@0.25.2-nightly.0
+- [#8144](https://github.com/LedgerHQ/ledger-live/pull/8144) [`a691bcd`](https://github.com/LedgerHQ/ledger-live/commit/a691bcda45e7b8d6cfd9540f22e678fae2ecbea4) Thanks [@themooneer](https://github.com/themooneer)! - add "tryAgain" wording key for scannedInvalidQrCode CTA
+
+- Updated dependencies [[`17732b4`](https://github.com/LedgerHQ/ledger-live/commit/17732b4f3c8fbde9c2fcb51079779dad23af72f2), [`d5bbf11`](https://github.com/LedgerHQ/ledger-live/commit/d5bbf11403c740b1e529001a008233b2f19e3418), [`bc5048e`](https://github.com/LedgerHQ/ledger-live/commit/bc5048e0fda29b49a16b9e529fe0ace042267e8d), [`b3746c3`](https://github.com/LedgerHQ/ledger-live/commit/b3746c35af33db0e4a84887d2917511a137218b3), [`65c3322`](https://github.com/LedgerHQ/ledger-live/commit/65c3322bf3871659f078148ab4b5c12b0fd53dc1), [`3d8cd98`](https://github.com/LedgerHQ/ledger-live/commit/3d8cd98486402b69de7e1dcacdfe864f3d135ec9), [`e66d371`](https://github.com/LedgerHQ/ledger-live/commit/e66d3714e5e4fd6a8e3f5980a463b3bb61f40c4b), [`fc6a4f9`](https://github.com/LedgerHQ/ledger-live/commit/fc6a4f93ef3c9101c20e54d8ec6a53e7a86c25f1), [`d6c9096`](https://github.com/LedgerHQ/ledger-live/commit/d6c9096968692b64d12c6bd81e8daa48f55793b9)]:
+  - @ledgerhq/live-common@34.13.0
+  - @ledgerhq/icons-ui@0.8.1
+  - @ledgerhq/types-live@6.52.4
+  - @ledgerhq/native-ui@0.25.2
+  - @ledgerhq/coin-framework@0.18.6
+  - @ledgerhq/coin-cosmos@0.1.7
+  - @ledgerhq/coin-elrond@0.1.6
+  - @ledgerhq/coin-evm@2.4.3
+  - @ledgerhq/domain-service@1.2.10
+  - @ledgerhq/live-countervalues@0.2.11
+  - @ledgerhq/live-countervalues-react@0.2.11
+  - @ledgerhq/live-nft@0.4.11
+  - @ledgerhq/live-nft-react@0.4.11
+  - @ledgerhq/live-wallet@0.7.3
+
+## 3.54.0-next.0
+
+### Minor Changes
+
+- [#8147](https://github.com/LedgerHQ/ledger-live/pull/8147) [`0885c49`](https://github.com/LedgerHQ/ledger-live/commit/0885c4901a5516fad9a7b2563c5bac8e8ba6efa3) Thanks [@KVNLS](https://github.com/KVNLS)! - Improve QRCode flow for Ledger Sync allowing use to automate tests
+
+### Patch Changes
+
+- [#8013](https://github.com/LedgerHQ/ledger-live/pull/8013) [`bc5048e`](https://github.com/LedgerHQ/ledger-live/commit/bc5048e0fda29b49a16b9e529fe0ace042267e8d) Thanks [@thesan](https://github.com/thesan)! - Align the receive screen with Figma designs
+
+- [#8143](https://github.com/LedgerHQ/ledger-live/pull/8143) [`9ecde3a`](https://github.com/LedgerHQ/ledger-live/commit/9ecde3a021d391d0b1cdb0cc5f16cc37f5a77ebd) Thanks [@themooneer](https://github.com/themooneer)! - Fix UI for ledger sync instances and drawer + fix on plural case support for synchronizedInstances
+
+- [#8028](https://github.com/LedgerHQ/ledger-live/pull/8028) [`5b39289`](https://github.com/LedgerHQ/ledger-live/commit/5b39289d834564d627181e062bc548dd85127acc) Thanks [@Wozacosta](https://github.com/Wozacosta)! - feat: display team link if available
+
+- [#8097](https://github.com/LedgerHQ/ledger-live/pull/8097) [`0fca8ff`](https://github.com/LedgerHQ/ledger-live/commit/0fca8fff2cf494708ff70462ce7fab9acd67dd00) Thanks [@adammino-ledger](https://github.com/adammino-ledger)! - providerTestId added to allow partners to test in different envs
+
+- [#8139](https://github.com/LedgerHQ/ledger-live/pull/8139) [`c594af6`](https://github.com/LedgerHQ/ledger-live/commit/c594af60c87c2044e8b1a96ac1dfc5acdb0b23dd) Thanks [@cgrellard-ledger](https://github.com/cgrellard-ledger)! - LLM - Ledger Sync triggers a unhandled error warning when scanning old import qr code
+
+- [#8144](https://github.com/LedgerHQ/ledger-live/pull/8144) [`a691bcd`](https://github.com/LedgerHQ/ledger-live/commit/a691bcda45e7b8d6cfd9540f22e678fae2ecbea4) Thanks [@themooneer](https://github.com/themooneer)! - add "tryAgain" wording key for scannedInvalidQrCode CTA
+
+- Updated dependencies [[`17732b4`](https://github.com/LedgerHQ/ledger-live/commit/17732b4f3c8fbde9c2fcb51079779dad23af72f2), [`d5bbf11`](https://github.com/LedgerHQ/ledger-live/commit/d5bbf11403c740b1e529001a008233b2f19e3418), [`bc5048e`](https://github.com/LedgerHQ/ledger-live/commit/bc5048e0fda29b49a16b9e529fe0ace042267e8d), [`b3746c3`](https://github.com/LedgerHQ/ledger-live/commit/b3746c35af33db0e4a84887d2917511a137218b3), [`65c3322`](https://github.com/LedgerHQ/ledger-live/commit/65c3322bf3871659f078148ab4b5c12b0fd53dc1), [`3d8cd98`](https://github.com/LedgerHQ/ledger-live/commit/3d8cd98486402b69de7e1dcacdfe864f3d135ec9), [`e66d371`](https://github.com/LedgerHQ/ledger-live/commit/e66d3714e5e4fd6a8e3f5980a463b3bb61f40c4b), [`fc6a4f9`](https://github.com/LedgerHQ/ledger-live/commit/fc6a4f93ef3c9101c20e54d8ec6a53e7a86c25f1), [`d6c9096`](https://github.com/LedgerHQ/ledger-live/commit/d6c9096968692b64d12c6bd81e8daa48f55793b9)]:
+  - @ledgerhq/live-common@34.13.0-next.0
+  - @ledgerhq/icons-ui@0.8.1-next.0
+  - @ledgerhq/types-live@6.52.4-next.0
+  - @ledgerhq/native-ui@0.25.2-next.0
+  - @ledgerhq/coin-framework@0.18.6-next.0
+  - @ledgerhq/coin-cosmos@0.1.7-next.0
+  - @ledgerhq/coin-elrond@0.1.6-next.0
+  - @ledgerhq/coin-evm@2.4.3-next.0
+  - @ledgerhq/domain-service@1.2.10-next.0
+  - @ledgerhq/live-countervalues@0.2.11-next.0
+  - @ledgerhq/live-countervalues-react@0.2.11-next.0
+  - @ledgerhq/live-nft@0.4.11-next.0
+  - @ledgerhq/live-nft-react@0.4.11-next.0
+  - @ledgerhq/live-wallet@0.7.3-next.0
 
 ## 3.53.0
 
