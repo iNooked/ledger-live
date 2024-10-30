@@ -159,15 +159,20 @@
     "@ledgerhq/wallet-api-acre-module": "0.0.0"
   },
   "changesets": [
+    "big-lions-refuse",
     "breezy-deers-scream",
     "dull-geckos-remain",
     "early-garlics-rhyme",
+    "eleven-tomatoes-approve",
     "giant-peas-unite",
     "gorgeous-parents-join",
     "great-forks-sip",
     "healthy-houses-smell",
     "mean-phones-sip",
+    "nervous-baboons-allow",
+    "ninety-days-wait",
     "olive-mangos-repeat",
+    "real-donuts-occur",
     "rude-dancers-fry",
     "selfish-rocks-greet",
     "silly-timers-burn",
@@ -177,7 +182,10 @@
     "strong-spiders-do",
     "tame-brooms-breathe",
     "thirty-ants-report",
+    "tiny-cobras-refuse",
+    "tiny-eagles-teach",
     "tiny-turkeys-doubt",
-    "wicked-swans-raise"
+    "wicked-swans-raise",
+    "wicked-trains-ring"
   ]
 }

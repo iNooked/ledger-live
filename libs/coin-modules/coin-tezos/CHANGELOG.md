@@ -1,5 +1,14 @@
 # @ledgerhq/coin-tezos
 
+## 0.6.8-nightly.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @ledgerhq/coin-framework@0.18.7-nightly.0
+  - @ledgerhq/cryptoassets@13.6.3-nightly.2
+  - @ledgerhq/live-network@2.0.3-nightly.2
+
 ## 0.6.7
 
 ### Patch Changes

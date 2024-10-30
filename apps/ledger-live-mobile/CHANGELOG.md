@@ -1,5 +1,27 @@
 # live-mobile
 
+## 3.54.1-nightly.1
+
+### Patch Changes
+
+- [#8232](https://github.com/LedgerHQ/ledger-live/pull/8232) [`7ef2a7d`](https://github.com/LedgerHQ/ledger-live/commit/7ef2a7d985567c1aad267b2889cd9601b713fc98) Thanks [@cgrellard-ledger](https://github.com/cgrellard-ledger)! - LLM - Flushes all analytics events when the app goes in the background
+
+- Updated dependencies [[`b93a421`](https://github.com/LedgerHQ/ledger-live/commit/b93a421866519b80fdd8a029caea97323eceae93), [`ca75de9`](https://github.com/LedgerHQ/ledger-live/commit/ca75de951c5701d3649b70969a27f70963d4c063)]:
+  - @ledgerhq/coin-evm@2.4.4-nightly.1
+  - @ledgerhq/live-env@2.4.1-nightly.2
+  - @ledgerhq/live-common@34.13.1-nightly.1
+  - @ledgerhq/coin-framework@0.18.7-nightly.0
+  - @ledgerhq/coin-cosmos@0.1.8-nightly.0
+  - @ledgerhq/coin-elrond@0.1.7-nightly.0
+  - @ledgerhq/hw-ledger-key-ring-protocol@0.2.1-nightly.2
+  - @ledgerhq/ledger-key-ring-protocol@0.5.1-nightly.2
+  - @ledgerhq/live-countervalues@0.2.12-nightly.0
+  - @ledgerhq/live-network@2.0.3-nightly.2
+  - @ledgerhq/live-nft@0.4.12-nightly.0
+  - @ledgerhq/live-wallet@0.7.4-nightly.0
+  - @ledgerhq/live-countervalues-react@0.2.12-nightly.0
+  - @ledgerhq/live-nft-react@0.4.12-nightly.0
+
 ## 3.54.1-nightly.0
 
 ### Patch Changes

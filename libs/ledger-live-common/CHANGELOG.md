@@ -1,5 +1,40 @@
 ## 34.5.0-next.4
 
+## 34.13.1-nightly.1
+
+### Patch Changes
+
+- [#8211](https://github.com/LedgerHQ/ledger-live/pull/8211) [`ca75de9`](https://github.com/LedgerHQ/ledger-live/commit/ca75de951c5701d3649b70969a27f70963d4c063) Thanks [@Justkant](https://github.com/Justkant)! - fix(swap): install Ethereum app if at least one evm family in the swap and not already present in the deps
+
+- Updated dependencies [[`b93a421`](https://github.com/LedgerHQ/ledger-live/commit/b93a421866519b80fdd8a029caea97323eceae93), [`b93a421`](https://github.com/LedgerHQ/ledger-live/commit/b93a421866519b80fdd8a029caea97323eceae93)]:
+  - @ledgerhq/hw-app-eth@6.41.0-nightly.0
+  - @ledgerhq/coin-evm@2.4.4-nightly.1
+  - @ledgerhq/live-env@2.4.1-nightly.2
+  - @ledgerhq/coin-framework@0.18.7-nightly.0
+  - @ledgerhq/coin-algorand@0.5.12-nightly.0
+  - @ledgerhq/coin-bitcoin@0.8.7-nightly.0
+  - @ledgerhq/coin-cardano@0.2.7-nightly.0
+  - @ledgerhq/coin-cosmos@0.1.8-nightly.0
+  - @ledgerhq/coin-elrond@0.1.7-nightly.0
+  - @ledgerhq/coin-icon@0.4.9-nightly.0
+  - @ledgerhq/coin-polkadot@1.3.5-nightly.1
+  - @ledgerhq/coin-solana@0.8.4-nightly.0
+  - @ledgerhq/coin-ton@0.3.20-nightly.0
+  - @ledgerhq/coin-tron@0.0.12-nightly.0
+  - @ledgerhq/cryptoassets@13.6.3-nightly.2
+  - @ledgerhq/live-countervalues@0.2.12-nightly.0
+  - @ledgerhq/live-network@2.0.3-nightly.2
+  - @ledgerhq/live-nft@0.4.12-nightly.0
+  - @ledgerhq/live-wallet@0.7.4-nightly.0
+  - @ledgerhq/speculos-transport@0.1.8-nightly.2
+  - @ledgerhq/coin-near@0.5.12-nightly.0
+  - @ledgerhq/coin-stellar@0.3.7-nightly.0
+  - @ledgerhq/coin-tezos@0.6.8-nightly.0
+  - @ledgerhq/coin-xrp@0.5.8-nightly.0
+  - @ledgerhq/live-countervalues-react@0.2.12-nightly.0
+  - @ledgerhq/hw-app-vet@0.2.10-nightly.2
+  - @ledgerhq/device-core@0.4.6-nightly.0
+
 ## 34.13.1-nightly.0
 
 ### Patch Changes

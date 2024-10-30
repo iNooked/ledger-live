@@ -1,5 +1,17 @@
 # @ledgerhq/hw-app-eth
 
+## 6.41.0-nightly.0
+
+### Minor Changes
+
+- [#8175](https://github.com/LedgerHQ/ledger-live/pull/8175) [`b93a421`](https://github.com/LedgerHQ/ledger-live/commit/b93a421866519b80fdd8a029caea97323eceae93) Thanks [@lambertkevin](https://github.com/lambertkevin)! - Refactoring of transaction decoding and fix EIP-155 applied incorrectly for legacy transactions (type 0). The `v` can now be used as is, representing either the EIP-155 value or the parity (0/1) for transactions using EIP-2718. Ethers full library has now also been removes from dependencies to decrease install and bundle sizes.
+
+### Patch Changes
+
+- Updated dependencies [[`b93a421`](https://github.com/LedgerHQ/ledger-live/commit/b93a421866519b80fdd8a029caea97323eceae93)]:
+  - @ledgerhq/evm-tools@1.3.0-nightly.2
+  - @ledgerhq/cryptoassets-evm-signatures@13.5.2-nightly.2
+
 ## 6.40.3
 
 ### Patch Changes

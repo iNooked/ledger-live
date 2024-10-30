@@ -1,5 +1,14 @@
 # @ledgerhq/coin-xrp
 
+## 0.5.8-nightly.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @ledgerhq/coin-framework@0.18.7-nightly.0
+  - @ledgerhq/cryptoassets@13.6.3-nightly.2
+  - @ledgerhq/live-network@2.0.3-nightly.2
+
 ## 0.5.7
 
 ### Patch Changes

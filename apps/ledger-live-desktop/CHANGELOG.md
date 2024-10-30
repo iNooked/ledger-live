@@ -1,5 +1,33 @@
 # ledger-live-desktop
 
+## 2.92.0-nightly.1
+
+### Minor Changes
+
+- [#8237](https://github.com/LedgerHQ/ledger-live/pull/8237) [`0a03f2f`](https://github.com/LedgerHQ/ledger-live/commit/0a03f2f8468e7f5a0ddd5fd58c47fd6c3ac57bd8) Thanks [@KVNLS](https://github.com/KVNLS)! - Fix Ledger Sync loading drawer during activation
+
+- [#8245](https://github.com/LedgerHQ/ledger-live/pull/8245) [`a50e05b`](https://github.com/LedgerHQ/ledger-live/commit/a50e05b933bec78096a6261dbda026c00b1ecd33) Thanks [@KVNLS](https://github.com/KVNLS)! - Fix Select placeholder styles
+
+### Patch Changes
+
+- [#8239](https://github.com/LedgerHQ/ledger-live/pull/8239) [`f63c04f`](https://github.com/LedgerHQ/ledger-live/commit/f63c04f9c76c3ac2f7f7d1ee2dd49977314cf3f1) Thanks [@LucasWerey](https://github.com/LucasWerey)! - update max estimated fee support url and typo
+
+- Updated dependencies [[`b93a421`](https://github.com/LedgerHQ/ledger-live/commit/b93a421866519b80fdd8a029caea97323eceae93), [`ca75de9`](https://github.com/LedgerHQ/ledger-live/commit/ca75de951c5701d3649b70969a27f70963d4c063)]:
+  - @ledgerhq/coin-evm@2.4.4-nightly.1
+  - @ledgerhq/live-env@2.4.1-nightly.2
+  - @ledgerhq/live-common@34.13.1-nightly.1
+  - @ledgerhq/coin-framework@0.18.7-nightly.0
+  - @ledgerhq/coin-bitcoin@0.8.7-nightly.0
+  - @ledgerhq/coin-cosmos@0.1.8-nightly.0
+  - @ledgerhq/hw-ledger-key-ring-protocol@0.2.1-nightly.2
+  - @ledgerhq/ledger-key-ring-protocol@0.5.1-nightly.2
+  - @ledgerhq/live-countervalues@0.2.12-nightly.0
+  - @ledgerhq/live-network@2.0.3-nightly.2
+  - @ledgerhq/live-nft@0.4.12-nightly.0
+  - @ledgerhq/live-wallet@0.7.4-nightly.0
+  - @ledgerhq/live-countervalues-react@0.2.12-nightly.0
+  - @ledgerhq/live-nft-react@0.4.12-nightly.0
+
 ## 2.91.1-nightly.0
 
 ### Patch Changes

@@ -1,5 +1,17 @@
 # @ledgerhq/evm-tools
 
+## 1.3.0-nightly.2
+
+### Minor Changes
+
+- [#8175](https://github.com/LedgerHQ/ledger-live/pull/8175) [`b93a421`](https://github.com/LedgerHQ/ledger-live/commit/b93a421866519b80fdd8a029caea97323eceae93) Thanks [@lambertkevin](https://github.com/lambertkevin)! - Remove `ethers` from dependencies and use sub-librairies instead to reduce the package size.
+
+### Patch Changes
+
+- Updated dependencies [[`b93a421`](https://github.com/LedgerHQ/ledger-live/commit/b93a421866519b80fdd8a029caea97323eceae93)]:
+  - @ledgerhq/live-env@2.4.1-nightly.2
+  - @ledgerhq/cryptoassets-evm-signatures@13.5.2-nightly.2
+
 ## 1.2.5-nightly.1
 
 ### Patch Changes
