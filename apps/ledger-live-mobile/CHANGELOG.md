@@ -1,5 +1,24 @@
 # live-mobile
 
+## 3.55.0-nightly.2
+
+### Minor Changes
+
+- [#8178](https://github.com/LedgerHQ/ledger-live/pull/8178) [`96094ea`](https://github.com/LedgerHQ/ledger-live/commit/96094ea41a9a7f82500e1cb91feea103cb5b4438) Thanks [@thesan](https://github.com/thesan)! - Add Stellar memo input on the recipient selection step
+
+- [#8081](https://github.com/LedgerHQ/ledger-live/pull/8081) [`ed24bfd`](https://github.com/LedgerHQ/ledger-live/commit/ed24bfd7952481adebb5385936d86f84c39d64a1) Thanks [@thesan](https://github.com/thesan)! - Display human readable errors when the send flow fails
+
+### Patch Changes
+
+- [#8246](https://github.com/LedgerHQ/ledger-live/pull/8246) [`5e84c61`](https://github.com/LedgerHQ/ledger-live/commit/5e84c611823dd867f64e74756ecc28f52704f804) Thanks [@cgrellard-ledger](https://github.com/cgrellard-ledger)! - LLM - Updated iOS Privacy Info file
+
+- [#8243](https://github.com/LedgerHQ/ledger-live/pull/8243) [`633c50d`](https://github.com/LedgerHQ/ledger-live/commit/633c50d6d282e136b07dfd2303984d80be99780b) Thanks [@cgrellard-ledger](https://github.com/cgrellard-ledger)! - LLM / LLD - Update Analytics Opt In Prompt wording
+
+- Updated dependencies [[`96094ea`](https://github.com/LedgerHQ/ledger-live/commit/96094ea41a9a7f82500e1cb91feea103cb5b4438), [`ed24bfd`](https://github.com/LedgerHQ/ledger-live/commit/ed24bfd7952481adebb5385936d86f84c39d64a1), [`52d6621`](https://github.com/LedgerHQ/ledger-live/commit/52d662147c5c45622795c54c6088de1f9f64f46c), [`56fa61d`](https://github.com/LedgerHQ/ledger-live/commit/56fa61d0b45c7d87ec762ed1c97f9b70ab0e4fce)]:
+  - @ledgerhq/live-common@34.14.0-nightly.2
+  - @ledgerhq/live-nft@0.4.12-nightly.1
+  - @ledgerhq/live-nft-react@0.4.12-nightly.1
+
 ## 3.54.1-nightly.1
 
 ### Patch Changes

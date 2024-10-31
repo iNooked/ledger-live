@@ -1,5 +1,11 @@
 # @ledgerhq/live-nft
 
+## 0.4.12-nightly.1
+
+### Patch Changes
+
+- [#8236](https://github.com/LedgerHQ/ledger-live/pull/8236) [`52d6621`](https://github.com/LedgerHQ/ledger-live/commit/52d662147c5c45622795c54c6088de1f9f64f46c) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - Fix NFT gallery filters
+
 ## 0.4.12-nightly.0
 
 ### Patch Changes

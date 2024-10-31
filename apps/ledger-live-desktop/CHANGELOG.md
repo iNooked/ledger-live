@@ -1,5 +1,20 @@
 # ledger-live-desktop
 
+## 2.92.0-nightly.2
+
+### Minor Changes
+
+- [#8227](https://github.com/LedgerHQ/ledger-live/pull/8227) [`22f700c`](https://github.com/LedgerHQ/ledger-live/commit/22f700c37f80b50c985b2e96469ea1d1567708a9) Thanks [@CremaFR](https://github.com/CremaFR)! - fixed: swap history for tokens explorer link
+
+### Patch Changes
+
+- [#8243](https://github.com/LedgerHQ/ledger-live/pull/8243) [`633c50d`](https://github.com/LedgerHQ/ledger-live/commit/633c50d6d282e136b07dfd2303984d80be99780b) Thanks [@cgrellard-ledger](https://github.com/cgrellard-ledger)! - LLM / LLD - Update Analytics Opt In Prompt wording
+
+- Updated dependencies [[`96094ea`](https://github.com/LedgerHQ/ledger-live/commit/96094ea41a9a7f82500e1cb91feea103cb5b4438), [`ed24bfd`](https://github.com/LedgerHQ/ledger-live/commit/ed24bfd7952481adebb5385936d86f84c39d64a1), [`52d6621`](https://github.com/LedgerHQ/ledger-live/commit/52d662147c5c45622795c54c6088de1f9f64f46c), [`56fa61d`](https://github.com/LedgerHQ/ledger-live/commit/56fa61d0b45c7d87ec762ed1c97f9b70ab0e4fce)]:
+  - @ledgerhq/live-common@34.14.0-nightly.2
+  - @ledgerhq/live-nft@0.4.12-nightly.1
+  - @ledgerhq/live-nft-react@0.4.12-nightly.1
+
 ## 2.92.0-nightly.1
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # @ledgerhq/coin-stellar
 
+## 0.3.7-nightly.1
+
+### Patch Changes
+
+- [#8178](https://github.com/LedgerHQ/ledger-live/pull/8178) [`96094ea`](https://github.com/LedgerHQ/ledger-live/commit/96094ea41a9a7f82500e1cb91feea103cb5b4438) Thanks [@thesan](https://github.com/thesan)! - Add Stellar memo input on the recipient selection step
+
 ## 0.3.7-nightly.0
 
 ### Patch Changes

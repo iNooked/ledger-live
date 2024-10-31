@@ -1,5 +1,11 @@
 # @ledgerhq/coin-xrp
 
+## 0.5.8-nightly.1
+
+### Patch Changes
+
+- [#8242](https://github.com/LedgerHQ/ledger-live/pull/8242) [`901cdd5`](https://github.com/LedgerHQ/ledger-live/commit/901cdd5006c5a591e56819cb674d2f70e76e4a5d) Thanks [@jcchevalier-ledger](https://github.com/jcchevalier-ledger)! - Fix Cardano getAccountInfo
+
 ## 0.5.8-nightly.0
 
 ### Patch Changes

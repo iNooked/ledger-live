@@ -1,5 +1,22 @@
 ## 34.5.0-next.4
 
+## 34.14.0-nightly.2
+
+### Minor Changes
+
+- [#8228](https://github.com/LedgerHQ/ledger-live/pull/8228) [`56fa61d`](https://github.com/LedgerHQ/ledger-live/commit/56fa61d0b45c7d87ec762ed1c97f9b70ab0e4fce) Thanks [@CremaFR](https://github.com/CremaFR)! - fixed: thorswap get status send transactionId instead of LL ids
+
+### Patch Changes
+
+- [#8178](https://github.com/LedgerHQ/ledger-live/pull/8178) [`96094ea`](https://github.com/LedgerHQ/ledger-live/commit/96094ea41a9a7f82500e1cb91feea103cb5b4438) Thanks [@thesan](https://github.com/thesan)! - Add Stellar memo input on the recipient selection step
+
+- [#8081](https://github.com/LedgerHQ/ledger-live/pull/8081) [`ed24bfd`](https://github.com/LedgerHQ/ledger-live/commit/ed24bfd7952481adebb5385936d86f84c39d64a1) Thanks [@thesan](https://github.com/thesan)! - Display human readable errors when the send flow fails
+
+- Updated dependencies [[`96094ea`](https://github.com/LedgerHQ/ledger-live/commit/96094ea41a9a7f82500e1cb91feea103cb5b4438), [`52d6621`](https://github.com/LedgerHQ/ledger-live/commit/52d662147c5c45622795c54c6088de1f9f64f46c), [`901cdd5`](https://github.com/LedgerHQ/ledger-live/commit/901cdd5006c5a591e56819cb674d2f70e76e4a5d)]:
+  - @ledgerhq/coin-stellar@0.3.7-nightly.1
+  - @ledgerhq/live-nft@0.4.12-nightly.1
+  - @ledgerhq/coin-xrp@0.5.8-nightly.1
+
 ## 34.13.1-nightly.1
 
 ### Patch Changes
