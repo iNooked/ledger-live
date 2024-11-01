@@ -1,5 +1,39 @@
 ## 34.5.0-next.4
 
+## 34.14.0-nightly.3
+
+### Patch Changes
+
+- [#7911](https://github.com/LedgerHQ/ledger-live/pull/7911) [`87218b1`](https://github.com/LedgerHQ/ledger-live/commit/87218b17b86eaea9daa23c4c9cdf644c7ad2f65a) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - Add useCheckNftAccount Hook
+
+- [#7911](https://github.com/LedgerHQ/ledger-live/pull/7911) [`87218b1`](https://github.com/LedgerHQ/ledger-live/commit/87218b17b86eaea9daa23c4c9cdf644c7ad2f65a) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - use Hook CheckNft in Default and handle global sync of NFTs every 12 hours
+
+- [#8226](https://github.com/LedgerHQ/ledger-live/pull/8226) [`42e27f2`](https://github.com/LedgerHQ/ledger-live/commit/42e27f229ee2c1302258b6cc27d165c7b638cf3b) Thanks [@ofreyssinet-ledger](https://github.com/ofreyssinet-ledger)! - Add recoverUpsellRedirection feature flag
+
+- Updated dependencies [[`4384c4c`](https://github.com/LedgerHQ/ledger-live/commit/4384c4ce06856c6a5e9124f9f158c3757e5cde8a)]:
+  - @ledgerhq/coin-polkadot@1.3.5-nightly.2
+  - @ledgerhq/coin-framework@0.18.7-nightly.1
+  - @ledgerhq/coin-algorand@0.5.12-nightly.1
+  - @ledgerhq/coin-bitcoin@0.8.7-nightly.1
+  - @ledgerhq/coin-cardano@0.2.7-nightly.1
+  - @ledgerhq/coin-cosmos@0.1.8-nightly.1
+  - @ledgerhq/coin-elrond@0.1.7-nightly.1
+  - @ledgerhq/coin-evm@2.4.4-nightly.2
+  - @ledgerhq/coin-icon@0.4.9-nightly.1
+  - @ledgerhq/coin-near@0.5.12-nightly.1
+  - @ledgerhq/coin-solana@0.8.4-nightly.1
+  - @ledgerhq/coin-stellar@0.3.7-nightly.2
+  - @ledgerhq/coin-tezos@0.6.8-nightly.1
+  - @ledgerhq/coin-ton@0.3.20-nightly.1
+  - @ledgerhq/coin-tron@0.0.12-nightly.1
+  - @ledgerhq/coin-xrp@0.5.8-nightly.2
+  - @ledgerhq/device-core@0.4.6-nightly.1
+  - @ledgerhq/hw-app-eth@6.41.0-nightly.1
+  - @ledgerhq/live-countervalues@0.2.12-nightly.1
+  - @ledgerhq/live-countervalues-react@0.2.12-nightly.1
+  - @ledgerhq/live-nft@0.4.12-nightly.2
+  - @ledgerhq/live-wallet@0.7.4-nightly.1
+
 ## 34.14.0-nightly.2
 
 ### Minor Changes

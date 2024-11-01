@@ -1,5 +1,37 @@
 # ledger-live-desktop
 
+## 2.92.0-nightly.3
+
+### Minor Changes
+
+- [#8200](https://github.com/LedgerHQ/ledger-live/pull/8200) [`3fad47a`](https://github.com/LedgerHQ/ledger-live/commit/3fad47a2525fa2c3edc0903471dbd60305f0c66f) Thanks [@themooneer](https://github.com/themooneer)! - Unify the Memo/Tag input wording, tooltip for coins that support memo tag except (solana, ton, stellar -> at this scoping level we decided not to touch the flow/wording of memo for those coins)
+
+- [#8252](https://github.com/LedgerHQ/ledger-live/pull/8252) [`95b7261`](https://github.com/LedgerHQ/ledger-live/commit/95b726150b3aa96cfa470483a6069d0fb225b8bd) Thanks [@KVNLS](https://github.com/KVNLS)! - Fix overflow issues in Add account flow
+
+### Patch Changes
+
+- [#8253](https://github.com/LedgerHQ/ledger-live/pull/8253) [`db7b05b`](https://github.com/LedgerHQ/ledger-live/commit/db7b05b1a5b6a694754fde2f15d5982b27847cec) Thanks [@Couto](https://github.com/Couto)! - Do not set `ptxSwapCoreExperiment` as `false` in analytics
+
+- [#7911](https://github.com/LedgerHQ/ledger-live/pull/7911) [`87218b1`](https://github.com/LedgerHQ/ledger-live/commit/87218b17b86eaea9daa23c4c9cdf644c7ad2f65a) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - Add useCheckNftAccount Hook
+
+- [#7911](https://github.com/LedgerHQ/ledger-live/pull/7911) [`87218b1`](https://github.com/LedgerHQ/ledger-live/commit/87218b17b86eaea9daa23c4c9cdf644c7ad2f65a) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - UX/UI Improvements on HiddenCollections section
+
+- [#7911](https://github.com/LedgerHQ/ledger-live/pull/7911) [`87218b1`](https://github.com/LedgerHQ/ledger-live/commit/87218b17b86eaea9daa23c4c9cdf644c7ad2f65a) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - use Hook CheckNft in Default and handle global sync of NFTs every 12 hours
+
+- Updated dependencies [[`87218b1`](https://github.com/LedgerHQ/ledger-live/commit/87218b17b86eaea9daa23c4c9cdf644c7ad2f65a), [`87218b1`](https://github.com/LedgerHQ/ledger-live/commit/87218b17b86eaea9daa23c4c9cdf644c7ad2f65a), [`42e27f2`](https://github.com/LedgerHQ/ledger-live/commit/42e27f229ee2c1302258b6cc27d165c7b638cf3b)]:
+  - @ledgerhq/types-live@6.52.5-nightly.0
+  - @ledgerhq/live-common@34.14.0-nightly.3
+  - @ledgerhq/live-nft-react@0.4.12-nightly.2
+  - @ledgerhq/coin-framework@0.18.7-nightly.1
+  - @ledgerhq/coin-bitcoin@0.8.7-nightly.1
+  - @ledgerhq/coin-cosmos@0.1.8-nightly.1
+  - @ledgerhq/coin-evm@2.4.4-nightly.2
+  - @ledgerhq/domain-service@1.2.11-nightly.0
+  - @ledgerhq/live-countervalues@0.2.12-nightly.1
+  - @ledgerhq/live-countervalues-react@0.2.12-nightly.1
+  - @ledgerhq/live-nft@0.4.12-nightly.2
+  - @ledgerhq/live-wallet@0.7.4-nightly.1
+
 ## 2.92.0-nightly.2
 
 ### Minor Changes

@@ -1,5 +1,34 @@
 # live-mobile
 
+## 3.55.0-nightly.3
+
+### Minor Changes
+
+- [#8248](https://github.com/LedgerHQ/ledger-live/pull/8248) [`6def77a`](https://github.com/LedgerHQ/ledger-live/commit/6def77a59680f9b75c954d32b89255ed93c52e4b) Thanks [@cgrellard-ledger](https://github.com/cgrellard-ledger)! - LLM - Remove react-native-adjust SDK and all adjust related parts from the codebase
+
+### Patch Changes
+
+- [#8241](https://github.com/LedgerHQ/ledger-live/pull/8241) [`d260291`](https://github.com/LedgerHQ/ledger-live/commit/d26029197b8cb11a0fac1eac00570e98816ed1c8) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - Add Spam Filtering for NFTs in TX history
+
+- [#8201](https://github.com/LedgerHQ/ledger-live/pull/8201) [`10e9853`](https://github.com/LedgerHQ/ledger-live/commit/10e98531932661e2693277e726f894ab61809c7e) Thanks [@thesan](https://github.com/thesan)! - Fix the memo on the Solana send flow
+
+- [#8226](https://github.com/LedgerHQ/ledger-live/pull/8226) [`739ec4f`](https://github.com/LedgerHQ/ledger-live/commit/739ec4f7c8946b72de969ff134eb02e880bfa4b0) Thanks [@ofreyssinet-ledger](https://github.com/ofreyssinet-ledger)! - Stax/Flex onboarding:
+  - Hide "Backup with Recover" section
+  - Auto redirect to Recover upsell between the onboarding and the post onboarding
+- Updated dependencies [[`87218b1`](https://github.com/LedgerHQ/ledger-live/commit/87218b17b86eaea9daa23c4c9cdf644c7ad2f65a), [`87218b1`](https://github.com/LedgerHQ/ledger-live/commit/87218b17b86eaea9daa23c4c9cdf644c7ad2f65a), [`42e27f2`](https://github.com/LedgerHQ/ledger-live/commit/42e27f229ee2c1302258b6cc27d165c7b638cf3b)]:
+  - @ledgerhq/types-live@6.52.5-nightly.0
+  - @ledgerhq/live-common@34.14.0-nightly.3
+  - @ledgerhq/live-nft-react@0.4.12-nightly.2
+  - @ledgerhq/coin-framework@0.18.7-nightly.1
+  - @ledgerhq/coin-cosmos@0.1.8-nightly.1
+  - @ledgerhq/coin-elrond@0.1.7-nightly.1
+  - @ledgerhq/coin-evm@2.4.4-nightly.2
+  - @ledgerhq/domain-service@1.2.11-nightly.0
+  - @ledgerhq/live-countervalues@0.2.12-nightly.1
+  - @ledgerhq/live-countervalues-react@0.2.12-nightly.1
+  - @ledgerhq/live-nft@0.4.12-nightly.2
+  - @ledgerhq/live-wallet@0.7.4-nightly.1
+
 ## 3.55.0-nightly.2
 
 ### Minor Changes
