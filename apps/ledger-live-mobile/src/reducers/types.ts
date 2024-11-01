@@ -213,6 +213,7 @@ export type SettingsState = {
   filterTokenOperationsZeroAmount: boolean;
   blacklistedTokenIds: string[];
   hiddenNftCollections: string[];
+  whitelistedNftCollections: string[];
   dismissedBanners: string[];
   hasAvailableUpdate: boolean;
   theme: Theme;
@@ -255,6 +256,7 @@ export type SettingsState = {
   debugAppLevelDrawerOpened: boolean;
   dateFormat: string;
   hasBeenUpsoldProtect: boolean;
+  hasBeenRedirectedToPostOnboarding: boolean;
   generalTermsVersionAccepted?: string;
   depositFlow: {
     hasClosedNetworkBanner: boolean;
