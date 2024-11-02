@@ -1,5 +1,11 @@
 # ledger-live-desktop
 
+## 2.92.0-nightly.4
+
+### Minor Changes
+
+- [#8256](https://github.com/LedgerHQ/ledger-live/pull/8256) [`afecc56`](https://github.com/LedgerHQ/ledger-live/commit/afecc56357b6637b43ac91725616001ca7e5e043) Thanks [@CremaFR](https://github.com/CremaFR)! - fix: allow tracking to be disabled for swap
+
 ## 2.92.0-nightly.3
 
 ### Minor Changes
