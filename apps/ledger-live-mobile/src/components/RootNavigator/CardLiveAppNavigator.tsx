@@ -1,23 +1,23 @@
-import React, { useMemo } from "react";
+import React, { useMemo, lazy, Suspense } from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { useTheme } from "styled-components/native";
 import { CARD_APP_ID } from "@ledgerhq/live-common/wallet-api/constants";
 import { NavigatorName, ScreenName } from "~/const";
 import { getStackNavigatorConfig } from "~/navigation/navigatorConfig";
-
 import styles from "~/navigation/styles";
 import type { StackNavigatorProps } from "./types/helpers";
-import { PtxScreen } from "~/screens/PTX";
 import { useTranslation } from "react-i18next";
 import { PtxNavigatorParamList } from "~/components/RootNavigator/types/PtxNavigator";
 
 const Stack = createStackNavigator<PtxNavigatorParamList>();
 
-const Card = (props: StackNavigatorProps<PtxNavigatorParamList, ScreenName.Card>) => {
+const Card = lazy(() => import("~/screens/PTX").then(module => ({ default: module.PtxScreen })));
+
+const CardComponent = (props: StackNavigatorProps<PtxNavigatorParamList, ScreenName.Card>) => {
   const { t } = useTranslation();
   const { goToURL, lastScreen, platform, referrer } = props.route.params || {};
   return (
-    <PtxScreen
+    <Card
       {...props}
       config={{
         screen: ScreenName.Card,
@@ -39,19 +39,21 @@ const Card = (props: StackNavigatorProps<PtxNavigatorParamList, ScreenName.Card>
 
 export default function CardLiveAppNavigator() {
   const { colors } = useTheme();
-
   const stackNavigationConfig = useMemo(() => getStackNavigatorConfig(colors, true), [colors]);
+
   return (
-    <Stack.Navigator {...stackNavigationConfig}>
-      <Stack.Screen
-        name={ScreenName.Card}
-        options={{
-          headerStyle: styles.headerNoShadow,
-          title: "",
-        }}
-      >
-        {props => <Card {...props} />}
-      </Stack.Screen>
-    </Stack.Navigator>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Stack.Navigator screenOptions={stackNavigationConfig}>
+        <Stack.Screen
+          name={ScreenName.Card}
+          options={{
+            headerStyle: styles.headerNoShadow,
+            title: "",
+          }}
+        >
+          {props => <CardComponent {...props} />}
+        </Stack.Screen>
+      </Stack.Navigator>
+    </Suspense>
   );
 }

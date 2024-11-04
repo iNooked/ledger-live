@@ -1,18 +1,27 @@
-import React, { useMemo } from "react";
+import React, { useMemo, lazy, Suspense } from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { useTheme } from "styled-components/native";
 import { useFeature } from "@ledgerhq/live-common/featureFlags/index";
 import { ABTestingVariants } from "@ledgerhq/types-live";
 import { NavigatorName, ScreenName } from "~/const";
 import { getStackNavigatorConfig } from "~/navigation/navigatorConfig";
-import AnalyticsOptInPromptMainA from "~/screens/AnalyticsOptInPrompt/variantA/Main";
-import AnalyticsOptInPromptDetailsA from "~/screens/AnalyticsOptInPrompt/variantA/Details";
-import AnalyticsOptInPromptMainB from "~/screens/AnalyticsOptInPrompt/variantB/Main";
-import AnalyticsOptInPromptDetailsB from "~/screens/AnalyticsOptInPrompt/variantB/Details";
 import { AnalyticsOptInPromptNavigatorParamList } from "./types/AnalyticsOptInPromptNavigator";
 import { useRoute } from "@react-navigation/core";
 import { RootComposite, StackNavigatorProps } from "./types/helpers";
 import { BaseNavigatorStackParamList } from "./types/BaseNavigator";
+
+const AnalyticsOptInPromptMainA = lazy(
+  () => import("~/screens/AnalyticsOptInPrompt/variantA/Main"),
+);
+const AnalyticsOptInPromptDetailsA = lazy(
+  () => import("~/screens/AnalyticsOptInPrompt/variantA/Details"),
+);
+const AnalyticsOptInPromptMainB = lazy(
+  () => import("~/screens/AnalyticsOptInPrompt/variantB/Main"),
+);
+const AnalyticsOptInPromptDetailsB = lazy(
+  () => import("~/screens/AnalyticsOptInPrompt/variantB/Details"),
+);
 
 const screensByVariant = {
   [ABTestingVariants.variantA]: {
@@ -24,6 +33,7 @@ const screensByVariant = {
     details: AnalyticsOptInPromptDetailsB,
   },
 };
+
 type NavigationProps = RootComposite<
   StackNavigatorProps<BaseNavigatorStackParamList, NavigatorName.AnalyticsOptInPrompt>
 >;
@@ -48,17 +58,19 @@ export default function AnalyticsOptInPromptNavigator() {
       : ABTestingVariants.variantA;
 
   return (
-    <Stack.Navigator screenOptions={stackNavigationConfig}>
-      <Stack.Screen
-        name={ScreenName.AnalyticsOptInPromptMain}
-        component={screensByVariant[activeVariant].main}
-        options={navigationOptions}
-      />
-      <Stack.Screen
-        name={ScreenName.AnalyticsOptInPromptDetails}
-        component={screensByVariant[activeVariant].details}
-        options={{ title: "" }}
-      />
-    </Stack.Navigator>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Stack.Navigator screenOptions={stackNavigationConfig}>
+        <Stack.Screen
+          name={ScreenName.AnalyticsOptInPromptMain}
+          component={screensByVariant[activeVariant].main}
+          options={navigationOptions}
+        />
+        <Stack.Screen
+          name={ScreenName.AnalyticsOptInPromptDetails}
+          component={screensByVariant[activeVariant].details}
+          options={{ title: "" }}
+        />
+      </Stack.Navigator>
+    </Suspense>
   );
 }

@@ -1,11 +1,9 @@
-import React, { useCallback, useMemo } from "react";
+import React, { useCallback, useMemo, lazy, Suspense } from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "styled-components/native";
 import { TouchableOpacity } from "react-native";
 import { ScreenName, NavigatorName } from "~/const";
-import PairDevices from "~/screens/PairDevices";
-import EditDeviceName from "~/screens/EditDeviceName";
 import OnboardingNavigator from "./OnboardingNavigator";
 import { SyncOnboardingNavigator } from "./SyncOnboardingNavigator";
 import ImportAccountsNavigator from "./ImportAccountsNavigator";
@@ -31,6 +29,9 @@ type ErrorHeaderInfoNavigatorProps = RootComposite<
   | StackNavigatorProps<BaseNavigatorStackParamList, ScreenName.PairDevices>
   | StackNavigatorProps<BaseOnboardingNavigatorParamList, ScreenName.PairDevices>
 >;
+
+const PairDevices = lazy(() => import("~/screens/PairDevices"));
+const EditDeviceName = lazy(() => import("~/screens/EditDeviceName"));
 
 export const ErrorHeaderInfo = ({ route, navigation }: ErrorHeaderInfoNavigatorProps) => {
   const { colors } = useTheme();
@@ -60,52 +61,54 @@ export default function BaseOnboardingNavigator() {
   const { colors } = useTheme();
   const stackNavigationConfig = useMemo(() => getStackNavigatorConfig(colors, true), [colors]);
   return (
-    <Stack.Navigator
-      screenOptions={{
-        ...stackNavigationConfig,
-        headerShown: false,
-      }}
-    >
-      <Stack.Screen name={NavigatorName.Onboarding} component={OnboardingNavigator} />
-      <Stack.Screen name={NavigatorName.SyncOnboarding} component={SyncOnboardingNavigator} />
-      <Stack.Screen name={NavigatorName.ImportAccounts} component={ImportAccountsNavigator} />
-      <Stack.Screen
-        name={NavigatorName.BuyDevice}
-        component={BuyDeviceNavigator}
-        options={{
+    <Suspense>
+      <Stack.Navigator
+        screenOptions={{
+          ...stackNavigationConfig,
           headerShown: false,
         }}
-      />
-      <Stack.Screen
-        name={ScreenName.PairDevices}
-        component={PairDevices}
-        options={{
-          title: "",
-          headerLeft: () => <NavigationHeaderBackButton />,
-          headerRight: () => null,
-          headerShown: true,
-        }}
-      />
-      <Stack.Screen
-        name={ScreenName.EditDeviceName}
-        component={EditDeviceName}
-        options={{
-          title: t("EditDeviceName.title"),
-          headerLeft: () => null,
-          headerShown: true,
-        }}
-      />
-      <Stack.Screen name={NavigatorName.PasswordAddFlow} component={PasswordAddFlowNavigator} />
-      <Stack.Screen
-        name={NavigatorName.PasswordModifyFlow}
-        component={PasswordModifyFlowNavigator}
-      />
-      <Stack.Screen
-        name={NavigatorName.WalletSync}
-        component={WalletSyncNavigator}
-        options={{ headerShown: false, gestureEnabled: false }}
-      />
-    </Stack.Navigator>
+      >
+        <Stack.Screen name={NavigatorName.Onboarding} component={OnboardingNavigator} />
+        <Stack.Screen name={NavigatorName.SyncOnboarding} component={SyncOnboardingNavigator} />
+        <Stack.Screen name={NavigatorName.ImportAccounts} component={ImportAccountsNavigator} />
+        <Stack.Screen
+          name={NavigatorName.BuyDevice}
+          component={BuyDeviceNavigator}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name={ScreenName.PairDevices}
+          component={PairDevices}
+          options={{
+            title: "",
+            headerLeft: () => <NavigationHeaderBackButton />,
+            headerRight: () => null,
+            headerShown: true,
+          }}
+        />
+        <Stack.Screen
+          name={ScreenName.EditDeviceName}
+          component={EditDeviceName}
+          options={{
+            title: t("EditDeviceName.title"),
+            headerLeft: () => null,
+            headerShown: true,
+          }}
+        />
+        <Stack.Screen name={NavigatorName.PasswordAddFlow} component={PasswordAddFlowNavigator} />
+        <Stack.Screen
+          name={NavigatorName.PasswordModifyFlow}
+          component={PasswordModifyFlowNavigator}
+        />
+        <Stack.Screen
+          name={NavigatorName.WalletSync}
+          component={WalletSyncNavigator}
+          options={{ headerShown: false, gestureEnabled: false }}
+        />
+      </Stack.Navigator>
+    </Suspense>
   );
 }
 const Stack = createStackNavigator<BaseOnboardingNavigatorParamList>();
