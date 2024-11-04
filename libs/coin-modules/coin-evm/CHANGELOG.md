@@ -1,5 +1,23 @@
 # @ledgerhq/coin-evm
 
+## 2.4.4-spl-tokens-test.0
+
+### Patch Changes
+
+- [#8206](https://github.com/LedgerHQ/ledger-live/pull/8206) [`9059f4b`](https://github.com/LedgerHQ/ledger-live/commit/9059f4bb1dd540f28e2e16d85d701d70a99b6c96) Thanks [@lambertkevin](https://github.com/lambertkevin)! - Add new coin-tester helper `callMyDealer` capable of providing any token or NFT without the need to know a previous owner. Also adds 2 new scenarii for Blast & Scroll.
+
+- [#8206](https://github.com/LedgerHQ/ledger-live/pull/8206) [`9059f4b`](https://github.com/LedgerHQ/ledger-live/commit/9059f4bb1dd540f28e2e16d85d701d70a99b6c96) Thanks [@lambertkevin](https://github.com/lambertkevin)! - Make coin-tester script run tests sequentially
+
+- [#8175](https://github.com/LedgerHQ/ledger-live/pull/8175) [`b93a421`](https://github.com/LedgerHQ/ledger-live/commit/b93a421866519b80fdd8a029caea97323eceae93) Thanks [@lambertkevin](https://github.com/lambertkevin)! - Remove helper `applyEIP155` now that `hw-app-eth` is fixed and returns a valid `v` in all possible cases. Adding a env var `EVM_FORCE_LEGACY_TRANSACTIONS` to force transaction type 0, making this change QA compatible.
+
+- Updated dependencies [[`5c13c7b`](https://github.com/LedgerHQ/ledger-live/commit/5c13c7bf743333f09cbfee720d275dfae7e157d2), [`95fbec9`](https://github.com/LedgerHQ/ledger-live/commit/95fbec9fdff75cd6d4ac23e189e876efffc81906), [`7fa6bcf`](https://github.com/LedgerHQ/ledger-live/commit/7fa6bcf46bb387293cd00359f51955c1cb1e09de), [`b93a421`](https://github.com/LedgerHQ/ledger-live/commit/b93a421866519b80fdd8a029caea97323eceae93), [`b93a421`](https://github.com/LedgerHQ/ledger-live/commit/b93a421866519b80fdd8a029caea97323eceae93)]:
+  - @ledgerhq/live-env@2.4.1-spl-tokens-test.0
+  - @ledgerhq/cryptoassets@13.7.0-spl-tokens-test.0
+  - @ledgerhq/coin-framework@0.19.0-spl-tokens-test.0
+  - @ledgerhq/evm-tools@1.3.0-spl-tokens-test.0
+  - @ledgerhq/live-network@2.0.3-spl-tokens-test.0
+  - @ledgerhq/domain-service@1.2.11-spl-tokens-test.0
+
 ## 2.4.3
 
 ### Patch Changes

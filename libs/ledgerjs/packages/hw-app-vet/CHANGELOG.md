@@ -1,5 +1,12 @@
 # @ledgerhq/hw-app-vet
 
+## 0.2.10-spl-tokens-test.0
+
+### Patch Changes
+
+- Updated dependencies [[`7fa6bcf`](https://github.com/LedgerHQ/ledger-live/commit/7fa6bcf46bb387293cd00359f51955c1cb1e09de)]:
+  - @ledgerhq/cryptoassets@13.7.0-spl-tokens-test.0
+
 ## 0.2.9
 
 ### Patch Changes

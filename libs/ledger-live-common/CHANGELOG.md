@@ -1,5 +1,60 @@
 ## 34.5.0-next.4
 
+## 34.14.0-spl-tokens-test.0
+
+### Minor Changes
+
+- [`7fa6bcf`](https://github.com/LedgerHQ/ledger-live/commit/7fa6bcf46bb387293cd00359f51955c1cb1e09de) Thanks [@mikhd](https://github.com/mikhd)! - Solana spl tokens support
+
+- [#8228](https://github.com/LedgerHQ/ledger-live/pull/8228) [`56fa61d`](https://github.com/LedgerHQ/ledger-live/commit/56fa61d0b45c7d87ec762ed1c97f9b70ab0e4fce) Thanks [@CremaFR](https://github.com/CremaFR)! - fixed: thorswap get status send transactionId instead of LL ids
+
+### Patch Changes
+
+- [#8178](https://github.com/LedgerHQ/ledger-live/pull/8178) [`96094ea`](https://github.com/LedgerHQ/ledger-live/commit/96094ea41a9a7f82500e1cb91feea103cb5b4438) Thanks [@thesan](https://github.com/thesan)! - Add Stellar memo input on the recipient selection step
+
+- [#8081](https://github.com/LedgerHQ/ledger-live/pull/8081) [`ed24bfd`](https://github.com/LedgerHQ/ledger-live/commit/ed24bfd7952481adebb5385936d86f84c39d64a1) Thanks [@thesan](https://github.com/thesan)! - Display human readable errors when the send flow fails
+
+- [#8093](https://github.com/LedgerHQ/ledger-live/pull/8093) [`35d6de2`](https://github.com/LedgerHQ/ledger-live/commit/35d6de2ace269f30fc39a3f022673a82d0c48193) Thanks [@fAnselmi-Ledger](https://github.com/fAnselmi-Ledger)! - Add feature flag for LDMK transport
+
+- [#7911](https://github.com/LedgerHQ/ledger-live/pull/7911) [`87218b1`](https://github.com/LedgerHQ/ledger-live/commit/87218b17b86eaea9daa23c4c9cdf644c7ad2f65a) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - Add useCheckNftAccount Hook
+
+- [#7911](https://github.com/LedgerHQ/ledger-live/pull/7911) [`87218b1`](https://github.com/LedgerHQ/ledger-live/commit/87218b17b86eaea9daa23c4c9cdf644c7ad2f65a) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - use Hook CheckNft in Default and handle global sync of NFTs every 12 hours
+
+- [#8226](https://github.com/LedgerHQ/ledger-live/pull/8226) [`42e27f2`](https://github.com/LedgerHQ/ledger-live/commit/42e27f229ee2c1302258b6cc27d165c7b638cf3b) Thanks [@ofreyssinet-ledger](https://github.com/ofreyssinet-ledger)! - Add recoverUpsellRedirection feature flag
+
+- [#7979](https://github.com/LedgerHQ/ledger-live/pull/7979) [`b89d1e1`](https://github.com/LedgerHQ/ledger-live/commit/b89d1e1a9152b7eb3e7c2dcbe6145ca1e0e2ec9e) Thanks [@fAnselmi-Ledger](https://github.com/fAnselmi-Ledger)! - Triggering proper errors on CLS
+
+- [#8211](https://github.com/LedgerHQ/ledger-live/pull/8211) [`ca75de9`](https://github.com/LedgerHQ/ledger-live/commit/ca75de951c5701d3649b70969a27f70963d4c063) Thanks [@Justkant](https://github.com/Justkant)! - fix(swap): install Ethereum app if at least one evm family in the swap and not already present in the deps
+
+- Updated dependencies [[`96094ea`](https://github.com/LedgerHQ/ledger-live/commit/96094ea41a9a7f82500e1cb91feea103cb5b4438), [`5c13c7b`](https://github.com/LedgerHQ/ledger-live/commit/5c13c7bf743333f09cbfee720d275dfae7e157d2), [`b93a421`](https://github.com/LedgerHQ/ledger-live/commit/b93a421866519b80fdd8a029caea97323eceae93), [`52d6621`](https://github.com/LedgerHQ/ledger-live/commit/52d662147c5c45622795c54c6088de1f9f64f46c), [`95fbec9`](https://github.com/LedgerHQ/ledger-live/commit/95fbec9fdff75cd6d4ac23e189e876efffc81906), [`7fa6bcf`](https://github.com/LedgerHQ/ledger-live/commit/7fa6bcf46bb387293cd00359f51955c1cb1e09de), [`9059f4b`](https://github.com/LedgerHQ/ledger-live/commit/9059f4bb1dd540f28e2e16d85d701d70a99b6c96), [`901cdd5`](https://github.com/LedgerHQ/ledger-live/commit/901cdd5006c5a591e56819cb674d2f70e76e4a5d), [`9059f4b`](https://github.com/LedgerHQ/ledger-live/commit/9059f4bb1dd540f28e2e16d85d701d70a99b6c96), [`b93a421`](https://github.com/LedgerHQ/ledger-live/commit/b93a421866519b80fdd8a029caea97323eceae93), [`4384c4c`](https://github.com/LedgerHQ/ledger-live/commit/4384c4ce06856c6a5e9124f9f158c3757e5cde8a)]:
+  - @ledgerhq/coin-stellar@0.3.7-spl-tokens-test.0
+  - @ledgerhq/live-nft@0.4.12-spl-tokens-test.0
+  - @ledgerhq/live-env@2.4.1-spl-tokens-test.0
+  - @ledgerhq/hw-app-eth@6.41.0-spl-tokens-test.0
+  - @ledgerhq/cryptoassets@13.7.0-spl-tokens-test.0
+  - @ledgerhq/coin-solana@0.9.0-spl-tokens-test.0
+  - @ledgerhq/coin-framework@0.19.0-spl-tokens-test.0
+  - @ledgerhq/coin-evm@2.4.4-spl-tokens-test.0
+  - @ledgerhq/coin-xrp@0.5.8-spl-tokens-test.0
+  - @ledgerhq/coin-polkadot@1.3.5-spl-tokens-test.0
+  - @ledgerhq/coin-algorand@0.5.12-spl-tokens-test.0
+  - @ledgerhq/coin-bitcoin@0.8.7-spl-tokens-test.0
+  - @ledgerhq/coin-cardano@0.2.7-spl-tokens-test.0
+  - @ledgerhq/coin-cosmos@0.1.8-spl-tokens-test.0
+  - @ledgerhq/coin-elrond@0.1.7-spl-tokens-test.0
+  - @ledgerhq/coin-icon@0.4.9-spl-tokens-test.0
+  - @ledgerhq/coin-ton@0.3.20-spl-tokens-test.0
+  - @ledgerhq/coin-tron@0.0.12-spl-tokens-test.0
+  - @ledgerhq/live-countervalues@0.2.12-spl-tokens-test.0
+  - @ledgerhq/live-network@2.0.3-spl-tokens-test.0
+  - @ledgerhq/live-wallet@0.7.4-spl-tokens-test.0
+  - @ledgerhq/speculos-transport@0.1.8-spl-tokens-test.0
+  - @ledgerhq/coin-near@0.5.12-spl-tokens-test.0
+  - @ledgerhq/coin-tezos@0.6.8-spl-tokens-test.0
+  - @ledgerhq/device-core@0.4.6-spl-tokens-test.0
+  - @ledgerhq/live-countervalues-react@0.2.12-spl-tokens-test.0
+  - @ledgerhq/hw-app-vet@0.2.10-spl-tokens-test.0
+
 ## 34.13.0
 
 ### Minor Changes

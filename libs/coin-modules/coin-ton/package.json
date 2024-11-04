@@ -1,6 +1,6 @@
 {
   "name": "@ledgerhq/coin-ton",
-  "version": "0.3.19",
+  "version": "0.3.20-spl-tokens-test.0",
   "description": "Ton Coin integration",
   "keywords": [
     "Ledger",

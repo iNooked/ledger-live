@@ -1,5 +1,15 @@
 # @ledgerhq/live-countervalues-react
 
+## 0.2.12-spl-tokens-test.0
+
+### Patch Changes
+
+- Updated dependencies [[`35d6de2`](https://github.com/LedgerHQ/ledger-live/commit/35d6de2ace269f30fc39a3f022673a82d0c48193), [`7fa6bcf`](https://github.com/LedgerHQ/ledger-live/commit/7fa6bcf46bb387293cd00359f51955c1cb1e09de), [`87218b1`](https://github.com/LedgerHQ/ledger-live/commit/87218b17b86eaea9daa23c4c9cdf644c7ad2f65a), [`42e27f2`](https://github.com/LedgerHQ/ledger-live/commit/42e27f229ee2c1302258b6cc27d165c7b638cf3b)]:
+  - @ledgerhq/types-live@6.53.0-spl-tokens-test.0
+  - @ledgerhq/cryptoassets@13.7.0-spl-tokens-test.0
+  - @ledgerhq/coin-framework@0.19.0-spl-tokens-test.0
+  - @ledgerhq/live-countervalues@0.2.12-spl-tokens-test.0
+
 ## 0.2.11
 
 ### Patch Changes
