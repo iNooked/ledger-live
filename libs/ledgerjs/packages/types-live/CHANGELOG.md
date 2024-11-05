@@ -1,5 +1,11 @@
 # @ledgerhq/types-live
 
+## 6.53.0-nightly.1
+
+### Minor Changes
+
+- [#8182](https://github.com/LedgerHQ/ledger-live/pull/8182) [`63e5392`](https://github.com/LedgerHQ/ledger-live/commit/63e5392a108f1bec7cfc9c413db1550e7b5c9a25) Thanks [@lambertkevin](https://github.com/lambertkevin)! - Add support for ZKsync currency
+
 ## 6.52.5-nightly.0
 
 ### Patch Changes

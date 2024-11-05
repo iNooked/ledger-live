@@ -1,5 +1,22 @@
 # @ledgerhq/live-cli
 
+## 24.8.0-nightly.4
+
+### Minor Changes
+
+- [#8182](https://github.com/LedgerHQ/ledger-live/pull/8182) [`63e5392`](https://github.com/LedgerHQ/ledger-live/commit/63e5392a108f1bec7cfc9c413db1550e7b5c9a25) Thanks [@lambertkevin](https://github.com/lambertkevin)! - Add support for ZKsync currency
+
+### Patch Changes
+
+- Updated dependencies [[`63e5392`](https://github.com/LedgerHQ/ledger-live/commit/63e5392a108f1bec7cfc9c413db1550e7b5c9a25)]:
+  - @ledgerhq/cryptoassets@13.7.0-nightly.3
+  - @ledgerhq/live-common@34.14.0-nightly.4
+  - @ledgerhq/coin-framework@0.18.7-nightly.2
+  - @ledgerhq/coin-bitcoin@0.8.7-nightly.2
+  - @ledgerhq/live-countervalues@0.2.12-nightly.2
+  - @ledgerhq/live-wallet@0.7.4-nightly.2
+  - @ledgerhq/device-core@0.4.6-nightly.2
+
 ## 24.7.5-nightly.3
 
 ### Patch Changes

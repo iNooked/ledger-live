@@ -1,5 +1,29 @@
 # live-mobile
 
+## 3.55.0-nightly.4
+
+### Minor Changes
+
+- [#8182](https://github.com/LedgerHQ/ledger-live/pull/8182) [`63e5392`](https://github.com/LedgerHQ/ledger-live/commit/63e5392a108f1bec7cfc9c413db1550e7b5c9a25) Thanks [@lambertkevin](https://github.com/lambertkevin)! - Add support for ZKsync currency
+
+### Patch Changes
+
+- Updated dependencies [[`63e5392`](https://github.com/LedgerHQ/ledger-live/commit/63e5392a108f1bec7cfc9c413db1550e7b5c9a25)]:
+  - @ledgerhq/types-cryptoassets@7.17.0-nightly.0
+  - @ledgerhq/types-live@6.53.0-nightly.1
+  - @ledgerhq/live-common@34.14.0-nightly.4
+  - @ledgerhq/coin-framework@0.18.7-nightly.2
+  - @ledgerhq/coin-cosmos@0.1.8-nightly.2
+  - @ledgerhq/coin-elrond@0.1.7-nightly.2
+  - @ledgerhq/coin-evm@2.4.4-nightly.3
+  - @ledgerhq/domain-service@1.2.11-nightly.1
+  - @ledgerhq/live-countervalues@0.2.12-nightly.2
+  - @ledgerhq/live-countervalues-react@0.2.12-nightly.2
+  - @ledgerhq/live-nft@0.4.12-nightly.3
+  - @ledgerhq/live-nft-react@0.4.12-nightly.3
+  - @ledgerhq/live-wallet@0.7.4-nightly.2
+  - @ledgerhq/native-ui@0.25.3-nightly.0
+
 ## 3.55.0-nightly.3
 
 ### Minor Changes

@@ -1,5 +1,40 @@
 ## 34.5.0-next.4
 
+## 34.14.0-nightly.4
+
+### Minor Changes
+
+- [#8182](https://github.com/LedgerHQ/ledger-live/pull/8182) [`63e5392`](https://github.com/LedgerHQ/ledger-live/commit/63e5392a108f1bec7cfc9c413db1550e7b5c9a25) Thanks [@lambertkevin](https://github.com/lambertkevin)! - Add support for ZKsync currency
+
+### Patch Changes
+
+- Updated dependencies [[`63e5392`](https://github.com/LedgerHQ/ledger-live/commit/63e5392a108f1bec7cfc9c413db1550e7b5c9a25)]:
+  - @ledgerhq/cryptoassets@13.7.0-nightly.3
+  - @ledgerhq/crypto-icons-ui@1.6.0-nightly.0
+  - @ledgerhq/coin-framework@0.18.7-nightly.2
+  - @ledgerhq/coin-algorand@0.5.12-nightly.2
+  - @ledgerhq/coin-bitcoin@0.8.7-nightly.2
+  - @ledgerhq/coin-cardano@0.2.7-nightly.2
+  - @ledgerhq/coin-cosmos@0.1.8-nightly.2
+  - @ledgerhq/coin-elrond@0.1.7-nightly.2
+  - @ledgerhq/coin-evm@2.4.4-nightly.3
+  - @ledgerhq/coin-icon@0.4.9-nightly.2
+  - @ledgerhq/coin-near@0.5.12-nightly.2
+  - @ledgerhq/coin-polkadot@1.3.5-nightly.3
+  - @ledgerhq/coin-solana@0.8.4-nightly.2
+  - @ledgerhq/coin-stellar@0.3.7-nightly.3
+  - @ledgerhq/coin-tezos@0.6.8-nightly.2
+  - @ledgerhq/coin-ton@0.3.20-nightly.2
+  - @ledgerhq/coin-xrp@0.5.8-nightly.3
+  - @ledgerhq/live-countervalues@0.2.12-nightly.2
+  - @ledgerhq/live-countervalues-react@0.2.12-nightly.2
+  - @ledgerhq/live-nft@0.4.12-nightly.3
+  - @ledgerhq/live-wallet@0.7.4-nightly.2
+  - @ledgerhq/coin-tron@0.0.12-nightly.2
+  - @ledgerhq/hw-app-vet@0.2.10-nightly.3
+  - @ledgerhq/device-core@0.4.6-nightly.2
+  - @ledgerhq/hw-app-eth@6.41.0-nightly.2
+
 ## 34.14.0-nightly.3
 
 ### Patch Changes
