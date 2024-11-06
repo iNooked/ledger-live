@@ -1,5 +1,15 @@
 # ledger-live-desktop
 
+## 2.91.2-nightly.0
+
+### Patch Changes
+
+- [#8294](https://github.com/LedgerHQ/ledger-live/pull/8294) [`e635142`](https://github.com/LedgerHQ/ledger-live/commit/e6351421dc3a426d6f42a2072f6013238e26443e) Thanks [@Wozacosta](https://github.com/Wozacosta)! - feat: cache busting liveapp webviews
+
+- Updated dependencies [[`96e9015`](https://github.com/LedgerHQ/ledger-live/commit/96e90156aa16bdb72f9f746569f6d196aa29757f), [`e635142`](https://github.com/LedgerHQ/ledger-live/commit/e6351421dc3a426d6f42a2072f6013238e26443e), [`a8c4369`](https://github.com/LedgerHQ/ledger-live/commit/a8c436934f18518883c6e1ef658c8df354fde5e6)]:
+  - @ledgerhq/live-common@34.13.2-nightly.0
+  - @ledgerhq/live-wallet@0.7.4-nightly.3
+
 ## 2.91.1
 
 ### Patch Changes

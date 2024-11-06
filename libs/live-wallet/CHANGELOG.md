@@ -1,5 +1,11 @@
 # @ledgerhq/live-wallet
 
+## 0.7.4-nightly.3
+
+### Patch Changes
+
+- [#8302](https://github.com/LedgerHQ/ledger-live/pull/8302) [`a8c4369`](https://github.com/LedgerHQ/ledger-live/commit/a8c436934f18518883c6e1ef658c8df354fde5e6) Thanks [@thesan](https://github.com/thesan)! - Remove circular dependencies from walletsync
+
 ## 0.7.4-nightly.2
 
 ### Patch Changes
