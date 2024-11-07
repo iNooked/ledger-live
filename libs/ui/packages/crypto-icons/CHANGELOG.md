@@ -1,5 +1,11 @@
 # @ledgerhq/icons-ui
 
+## 1.6.0-nightly.1
+
+### Minor Changes
+
+- [#8205](https://github.com/LedgerHQ/ledger-live/pull/8205) [`2013b0f`](https://github.com/LedgerHQ/ledger-live/commit/2013b0f23d7f5bccff58dfd93fd45333194b8ae0) Thanks [@Canestin](https://github.com/Canestin)! - add mantra currency
+
 ## 1.6.0-nightly.0
 
 ### Minor Changes

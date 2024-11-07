@@ -1,5 +1,19 @@
 # @ledgerhq/coin-evm
 
+## 2.5.0-nightly.4
+
+### Minor Changes
+
+- [#8305](https://github.com/LedgerHQ/ledger-live/pull/8305) [`408dd7d`](https://github.com/LedgerHQ/ledger-live/commit/408dd7d7a25f6c9b99e8e4a35180f08ad0ac4b26) Thanks [@lambertkevin](https://github.com/lambertkevin)! - Change preload cache duration from 1 hour to 1 day in order to delay new synchronizations from block 0
+
+### Patch Changes
+
+- Updated dependencies [[`2013b0f`](https://github.com/LedgerHQ/ledger-live/commit/2013b0f23d7f5bccff58dfd93fd45333194b8ae0), [`2013b0f`](https://github.com/LedgerHQ/ledger-live/commit/2013b0f23d7f5bccff58dfd93fd45333194b8ae0), [`a40c525`](https://github.com/LedgerHQ/ledger-live/commit/a40c5256b80574aaaf17651d195832668b9796f5)]:
+  - @ledgerhq/coin-framework@0.19.0-nightly.3
+  - @ledgerhq/cryptoassets@13.7.0-nightly.4
+  - @ledgerhq/domain-service@1.2.11-nightly.2
+  - @ledgerhq/evm-tools@1.3.0-nightly.2
+
 ## 2.4.4-nightly.3
 
 ### Patch Changes

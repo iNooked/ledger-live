@@ -1,5 +1,46 @@
 ## 34.5.0-next.4
 
+## 34.14.0-nightly.1
+
+### Minor Changes
+
+- [#8205](https://github.com/LedgerHQ/ledger-live/pull/8205) [`2013b0f`](https://github.com/LedgerHQ/ledger-live/commit/2013b0f23d7f5bccff58dfd93fd45333194b8ae0) Thanks [@Canestin](https://github.com/Canestin)! - add mantra currency
+
+### Patch Changes
+
+- [#8209](https://github.com/LedgerHQ/ledger-live/pull/8209) [`010ebd8`](https://github.com/LedgerHQ/ledger-live/commit/010ebd8241248ad1d0e93ea27a96a145afd9ea93) Thanks [@Justkant](https://github.com/Justkant)! - fix(ACRE): messageSign correctly sends appName and dependencies params to the connect action
+
+- [#8118](https://github.com/LedgerHQ/ledger-live/pull/8118) [`17d52ce`](https://github.com/LedgerHQ/ledger-live/commit/17d52ce37dd642a1d01aac2268e1b9623dc8a260) Thanks [@Wozacosta](https://github.com/Wozacosta)! - Creation of coin-hedera package
+
+- Updated dependencies [[`408dd7d`](https://github.com/LedgerHQ/ledger-live/commit/408dd7d7a25f6c9b99e8e4a35180f08ad0ac4b26), [`2013b0f`](https://github.com/LedgerHQ/ledger-live/commit/2013b0f23d7f5bccff58dfd93fd45333194b8ae0), [`2013b0f`](https://github.com/LedgerHQ/ledger-live/commit/2013b0f23d7f5bccff58dfd93fd45333194b8ae0), [`17d52ce`](https://github.com/LedgerHQ/ledger-live/commit/17d52ce37dd642a1d01aac2268e1b9623dc8a260), [`a40c525`](https://github.com/LedgerHQ/ledger-live/commit/a40c5256b80574aaaf17651d195832668b9796f5)]:
+  - @ledgerhq/coin-evm@2.5.0-nightly.4
+  - @ledgerhq/coin-framework@0.19.0-nightly.3
+  - @ledgerhq/cryptoassets@13.7.0-nightly.4
+  - @ledgerhq/coin-cosmos@0.2.0-nightly.3
+  - @ledgerhq/crypto-icons-ui@1.6.0-nightly.1
+  - @ledgerhq/coin-hedera@1.1.0-nightly.0
+  - @ledgerhq/hw-app-hedera@1.0.1-nightly.0
+  - @ledgerhq/coin-xrp@0.6.0-nightly.4
+  - @ledgerhq/coin-algorand@0.5.12-nightly.3
+  - @ledgerhq/coin-bitcoin@0.8.7-nightly.3
+  - @ledgerhq/coin-cardano@0.2.7-nightly.3
+  - @ledgerhq/coin-elrond@0.1.7-nightly.3
+  - @ledgerhq/coin-icon@0.4.9-nightly.3
+  - @ledgerhq/coin-near@0.5.12-nightly.3
+  - @ledgerhq/coin-polkadot@1.3.5-nightly.4
+  - @ledgerhq/coin-solana@0.8.4-nightly.3
+  - @ledgerhq/coin-stellar@0.3.7-nightly.4
+  - @ledgerhq/coin-tezos@0.6.8-nightly.3
+  - @ledgerhq/coin-ton@0.3.20-nightly.3
+  - @ledgerhq/coin-tron@0.0.12-nightly.3
+  - @ledgerhq/live-countervalues@0.2.12-nightly.3
+  - @ledgerhq/live-countervalues-react@0.2.12-nightly.3
+  - @ledgerhq/live-nft@0.4.12-nightly.4
+  - @ledgerhq/live-wallet@0.7.4-nightly.4
+  - @ledgerhq/hw-app-vet@0.2.10-nightly.4
+  - @ledgerhq/device-core@0.4.6-nightly.3
+  - @ledgerhq/hw-app-eth@6.41.0-nightly.3
+
 ## 34.13.2-nightly.0
 
 ### Patch Changes

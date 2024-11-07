@@ -1,5 +1,11 @@
 # @ledgerhq/cryptoassets
 
+## 13.7.0-nightly.4
+
+### Minor Changes
+
+- [#8205](https://github.com/LedgerHQ/ledger-live/pull/8205) [`2013b0f`](https://github.com/LedgerHQ/ledger-live/commit/2013b0f23d7f5bccff58dfd93fd45333194b8ae0) Thanks [@Canestin](https://github.com/Canestin)! - add mantra currency
+
 ## 13.7.0-nightly.3
 
 ### Minor Changes

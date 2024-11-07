@@ -1,5 +1,23 @@
 # web-tools
 
+## 0.11.0-nightly.1
+
+### Minor Changes
+
+- [#8205](https://github.com/LedgerHQ/ledger-live/pull/8205) [`2013b0f`](https://github.com/LedgerHQ/ledger-live/commit/2013b0f23d7f5bccff58dfd93fd45333194b8ae0) Thanks [@Canestin](https://github.com/Canestin)! - add mantra currency
+
+### Patch Changes
+
+- Updated dependencies [[`2013b0f`](https://github.com/LedgerHQ/ledger-live/commit/2013b0f23d7f5bccff58dfd93fd45333194b8ae0), [`2013b0f`](https://github.com/LedgerHQ/ledger-live/commit/2013b0f23d7f5bccff58dfd93fd45333194b8ae0), [`010ebd8`](https://github.com/LedgerHQ/ledger-live/commit/010ebd8241248ad1d0e93ea27a96a145afd9ea93), [`17d52ce`](https://github.com/LedgerHQ/ledger-live/commit/17d52ce37dd642a1d01aac2268e1b9623dc8a260), [`a40c525`](https://github.com/LedgerHQ/ledger-live/commit/a40c5256b80574aaaf17651d195832668b9796f5)]:
+  - @ledgerhq/coin-framework@0.19.0-nightly.3
+  - @ledgerhq/types-cryptoassets@7.17.0-nightly.1
+  - @ledgerhq/cryptoassets@13.7.0-nightly.4
+  - @ledgerhq/types-live@6.53.0-nightly.2
+  - @ledgerhq/live-common@34.14.0-nightly.1
+  - @ledgerhq/live-wallet@0.7.4-nightly.4
+  - @ledgerhq/domain-service@1.2.11-nightly.2
+  - @ledgerhq/hw-app-eth@6.41.0-nightly.3
+
 ## 0.10.5-nightly.0
 
 ### Patch Changes

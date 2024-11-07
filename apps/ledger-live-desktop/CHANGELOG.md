@@ -1,5 +1,37 @@
 # ledger-live-desktop
 
+## 2.92.0-nightly.1
+
+### Minor Changes
+
+- [#8205](https://github.com/LedgerHQ/ledger-live/pull/8205) [`2013b0f`](https://github.com/LedgerHQ/ledger-live/commit/2013b0f23d7f5bccff58dfd93fd45333194b8ae0) Thanks [@Canestin](https://github.com/Canestin)! - add mantra currency
+
+- [#8283](https://github.com/LedgerHQ/ledger-live/pull/8283) [`d6c4a18`](https://github.com/LedgerHQ/ledger-live/commit/d6c4a18f07705229a000be2fa5cbe6f205d023b7) Thanks [@thesan](https://github.com/thesan)! - Track users creating, joining, and leaving Ledger keyrings on LLD
+
+### Patch Changes
+
+- [#8209](https://github.com/LedgerHQ/ledger-live/pull/8209) [`010ebd8`](https://github.com/LedgerHQ/ledger-live/commit/010ebd8241248ad1d0e93ea27a96a145afd9ea93) Thanks [@Justkant](https://github.com/Justkant)! - fix(ACRE): messageSign correctly sends appName and dependencies params to the connect action
+
+- [#8209](https://github.com/LedgerHQ/ledger-live/pull/8209) [`4c75eb6`](https://github.com/LedgerHQ/ledger-live/commit/4c75eb676bfb81267b685475869ad210a1407fb1) Thanks [@Justkant](https://github.com/Justkant)! - fix: ACRE withdraw message support in UI
+
+- [#8293](https://github.com/LedgerHQ/ledger-live/pull/8293) [`45c88b6`](https://github.com/LedgerHQ/ledger-live/commit/45c88b6d76eae48a99142b096279ad589d915167) Thanks [@LucasWerey](https://github.com/LucasWerey)! - Add default analytics for deeplinks
+
+- Updated dependencies [[`408dd7d`](https://github.com/LedgerHQ/ledger-live/commit/408dd7d7a25f6c9b99e8e4a35180f08ad0ac4b26), [`2013b0f`](https://github.com/LedgerHQ/ledger-live/commit/2013b0f23d7f5bccff58dfd93fd45333194b8ae0), [`2013b0f`](https://github.com/LedgerHQ/ledger-live/commit/2013b0f23d7f5bccff58dfd93fd45333194b8ae0), [`010ebd8`](https://github.com/LedgerHQ/ledger-live/commit/010ebd8241248ad1d0e93ea27a96a145afd9ea93), [`17d52ce`](https://github.com/LedgerHQ/ledger-live/commit/17d52ce37dd642a1d01aac2268e1b9623dc8a260), [`a40c525`](https://github.com/LedgerHQ/ledger-live/commit/a40c5256b80574aaaf17651d195832668b9796f5)]:
+  - @ledgerhq/coin-evm@2.5.0-nightly.4
+  - @ledgerhq/coin-framework@0.19.0-nightly.3
+  - @ledgerhq/types-cryptoassets@7.17.0-nightly.1
+  - @ledgerhq/types-live@6.53.0-nightly.2
+  - @ledgerhq/coin-cosmos@0.2.0-nightly.3
+  - @ledgerhq/live-common@34.14.0-nightly.1
+  - @ledgerhq/coin-bitcoin@0.8.7-nightly.3
+  - @ledgerhq/live-countervalues@0.2.12-nightly.3
+  - @ledgerhq/live-countervalues-react@0.2.12-nightly.3
+  - @ledgerhq/live-nft@0.4.12-nightly.4
+  - @ledgerhq/live-nft-react@0.4.12-nightly.4
+  - @ledgerhq/live-wallet@0.7.4-nightly.4
+  - @ledgerhq/domain-service@1.2.11-nightly.2
+  - @ledgerhq/react-ui@0.16.5-nightly.1
+
 ## 2.91.2-nightly.0
 
 ### Patch Changes
