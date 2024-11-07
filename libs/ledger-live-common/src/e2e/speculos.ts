@@ -346,7 +346,9 @@ export async function waitFor(text: string, maxAttempts: number = 10): Promise<s
     attempts++;
     await waitForTimeOut(500);
   }
-  return [];
+  throw new Error(
+    `ElementNotFoundException: Element with text "${text}" not found on speculos screen`,
+  );
 }
 
 export async function pressBoth() {
@@ -378,7 +380,7 @@ export async function pressUntilTextFound(
   );
 }
 
-async function fetchCurrentScreenTexts(speculosApiPort: number): Promise<string> {
+export async function fetchCurrentScreenTexts(speculosApiPort: number): Promise<string> {
   const response = await axios.get<ResponseData>(
     `http://127.0.0.1:${speculosApiPort}/events?stream=false&currentscreenonly=true`,
   );
@@ -392,10 +394,11 @@ async function fetchAllEvents(speculosApiPort: number): Promise<string[]> {
   return response.data.events.map(event => event.text);
 }
 
-async function pressRightButton(speculosApiPort: number): Promise<void> {
-  await axios.post(`http://127.0.0.1:${speculosApiPort}/button/right`, {
+export async function pressRightButton(speculosApiPort: number): Promise<any> {
+  const response = await axios.post(`http://127.0.0.1:${speculosApiPort}/button/right`, {
     action: "press-and-release",
   });
+  return response;
 }
 
 export function containsSubstringInEvent(targetString: string, events: string[]): boolean {
