@@ -173,6 +173,10 @@ platform :ios do
         :DEVELOPMENT_TEAM => MY_TEAM,
       }
 
+      
+      sh "echo #{ENV['APP_IDENTIFIER']}"
+      sh "echo #{package['version']}"
+      
       build_number = latest_testflight_build_number(
         version: trim_version_number(package["version"]),
         # we are moving to using ENV["APP_IDENTIFIER"] but staging still overrides its own app identifier to 
