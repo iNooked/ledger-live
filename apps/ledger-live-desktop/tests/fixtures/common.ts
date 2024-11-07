@@ -15,10 +15,13 @@ import { AppInfos } from "tests/enum/AppInfos";
 import { lastValueFrom, Observable } from "rxjs";
 import { commandCLI } from "tests/utils/cliUtils";
 import { registerSpeculosTransport } from "@ledgerhq/live-cli/src/live-common-setup";
+import { pressBoth, pressUntilTextFound, waitFor } from "@ledgerhq/live-common/e2e/speculos";
+import { DeviceLabels } from "tests/enum/DeviceLabels";
 
 type Command<T extends (...args: any) => Observable<any> | Promise<any> | string> = {
   command: T;
   args: Parameters<T>[0]; // Infer the first argument type
+  output?: (output: any) => void;
 };
 
 type TestFixtures = {
@@ -125,7 +128,22 @@ export const test = base.extend<TestFixtures>({
             if (command.args && "appjson" in command.args) {
               command.args.appjson = `${userdataDestinationPath}/app.json`;
             }
-            const result = await handleResult(command.command(command.args as any));
+
+            const resultPromise = handleResult(command.command(command.args as any));
+
+            if (command.args && "getKeyRingTree" in command.args) {
+              await waitFor(DeviceLabels.CONNECT_WITH);
+              await pressUntilTextFound(DeviceLabels.MAKE_SURE_TO_USE);
+              await pressUntilTextFound(DeviceLabels.CONNECT_WITH);
+              await pressBoth();
+              await waitFor("Turn on");
+              await pressUntilTextFound(DeviceLabels.YOUR_CRYPTO_ACCOUNTS);
+              await pressUntilTextFound(DeviceLabels.TURN_ON_SYNC);
+              await pressBoth();
+            }
+
+            const result = await resultPromise;
+            command?.output?.(result);
             console.log("CLI result: ", result);
           }
         }
