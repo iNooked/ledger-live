@@ -392,6 +392,7 @@ export const PlatformAPIWebview = forwardRef<WebviewAPI, WebviewProps>(
       <>
         <webview
           ref={webviewRef}
+          data-testid="webview"
           /**
            * There seems to be an issue between Electron webview and styled-components
            * (and React more broadly, cf. comment below).
