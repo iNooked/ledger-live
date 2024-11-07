@@ -17,6 +17,42 @@ const accounts = [
   { account: Account.BSC_1, xrayTicket: "B2CQA-2686, B2CQA-2696, B2CQA-2698" },
 ];
 
+enum CommandsId {
+  COMMAND_KEYRING_1,
+  COMMAND_KEYRING_2,
+}
+
+type Keyring1COmmand = {
+  commandId: CommandsId.COMMAND_KEYRING_1;
+  args: {
+    arg: boolean;
+    arg2: string;
+  };
+};
+
+type Keyring2COmmand = {
+  commandId: CommandsId.COMMAND_KEYRING_2;
+  args: {
+    jiofezjfz: boolean;
+    fefezfez: string;
+  };
+};
+
+type Command = Keyring1COmmand | Keyring2COmmand;
+
+function makeSmethingWithCommand(command: Command) {
+  switch (command.commandId) {
+    case CommandsId.COMMAND_KEYRING_1:
+      command.args.arg;
+      command.args.arg2;
+      break;
+    case CommandsId.COMMAND_KEYRING_2:
+      command.args.jiofezjfz;
+      command.args.fefezfez;
+      break;
+  }
+}
+
 //Warning 🚨: Test may fail due to the GetAppAndVersion issue - Jira: LIVE-12581
 for (const account of accounts) {
   test.describe("Receive", () => {
