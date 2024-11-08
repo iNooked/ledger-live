@@ -29,7 +29,6 @@ export abstract class Component extends PageHolder {
 
   @step("Wait for network calls to be completed")
   async waitForPageNetworkIdleState() {
-    console.log("aaa");
     return await this.page.waitForLoadState("networkidle");
   }
 }

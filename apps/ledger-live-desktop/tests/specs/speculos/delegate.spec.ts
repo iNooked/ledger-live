@@ -46,7 +46,22 @@ const validators = [
     xrayTicket: "B2CQA-2768",
   },
 ];
-/*
+
+const validatorsForETH = [
+  {
+    delegate: new Delegate(Account.ETH_1, "0.0001", "lido"),
+    xrayTicket: "B2CQA-2452.1",
+  },
+  {
+    delegate: new Delegate(Account.ETH_1, "0.0001", "stader-eth"),
+    xrayTicket: "B2CQA-2452.2",
+  },
+  {
+    delegate: new Delegate(Account.ETH_1, "0.0001", "kiln_pooling"),
+    xrayTicket: "B2CQA-2452.3",
+  },
+];
+
 for (const account of e2eDelegationAccounts) {
   test.describe("Delegate", () => {
     test.use({
@@ -204,41 +219,44 @@ test.describe("Staking flow from different entry point", () => {
       await app.delegate.continueDelegate();
     },
   );
-});*/
+});
 
-test.describe("Stacking ETH from EARN dashboard", () => {
-  const delegateAccount = new Delegate(Account.ETH_1, "0.0001", "Lido");
-  test.use({
-    userdata: "skip-onboarding",
-    speculosApp: delegateAccount.account.currency.speculosApp,
-    cliCommands: [
+for (const validator of validatorsForETH) {
+  test.describe("Stacking ETH from EARN dashboard", () => {
+    test.use({
+      userdata: "skip-onboarding",
+      speculosApp: validator.delegate.account.currency.speculosApp,
+      cliCommands: [
+        {
+          command: commandCLI.liveData,
+          args: {
+            currency: validator.delegate.account.currency.ticker,
+            index: validator.delegate.account.index,
+            add: true,
+            appjson: "",
+          },
+        },
+      ],
+    });
+
+    test(
+      `[${validator.delegate.provider}] - Staking ETH from EARN dashboard`,
       {
-        command: commandCLI.liveData,
-        args: {
-          currency: delegateAccount.account.currency.ticker,
-          index: delegateAccount.account.index,
-          add: true,
-          appjson: "",
+        annotation: {
+          type: "TMS",
+          description: validator.xrayTicket,
         },
       },
-    ],
-  });
-
-  test(
-    "Staking ETH from EARN dashboard",
-    {
-      annotation: {
-        type: "TMS",
-        description: "B2CQA-2452",
+      async ({ app, electronApp }) => {
+        await addTmsLink(getDescription(test.info().annotations).split(", "));
+        await app.layout.goToEarn();
+        await app.earn.waitForPageNetworkIdleState();
+        await app.earn.selectAccountToStake2(electronApp);
+        await app.delegate.chooseStakeProvider(validator.delegate.provider);
+        await app.earn.waitForPageNetworkIdleState();
+        await app.earn.checkWebview();
+        //Ajouter check dans la webview du provider (address ETH = correcte) ?
       },
-    },
-    async ({ app, electronApp }) => {
-      await addTmsLink(getDescription(test.info().annotations).split(", "));
-      await app.layout.goToEarn();
-      await app.earn.waitForPageNetworkIdleState();
-      await app.earn.selectAccountToStake2(electronApp);
-      await app.delegate.chooseStakeProvider(delegateAccount.provider);
-      await app.earn.checkWebview(electronApp);
-    },
-  );
-});
+    );
+  });
+}

@@ -4,13 +4,15 @@ import { ElectronApplication, expect } from "@playwright/test";
 import { Account } from "tests/enum/Account";
 
 export class EarnPage extends AppPage {
+  private webview = this.page.locator("webview");
+
   @step("Select account to stake")
   async selectAccountToStake(electronApp: ElectronApplication, account: Account) {
     const [, webview] = electronApp.windows();
 
-    if (await webview.locator("text= Earn more rewards").isVisible()) {
+    /*if (await webview.locator("text= Earn more rewards").isVisible()) {
       await webview.locator("text= Earn more rewards").click();
-    }
+    }*/
     await expect(webview.locator(`text= ${account}`)).toBeVisible();
     await webview.getByRole("button", { name: "Stake" }).first().click();
   }
@@ -25,8 +27,7 @@ export class EarnPage extends AppPage {
   }
 
   @step("check Webview is visble")
-  async checkWebview(electronApp: ElectronApplication) {
-    const [, webview] = electronApp.windows();
-    await expect(webview.getByTestId("webview")).toBeVisible();
+  async checkWebview() {
+    await expect(this.webview).toBeVisible();
   }
 }
