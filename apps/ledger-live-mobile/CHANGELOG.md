@@ -1,5 +1,14 @@
 # live-mobile
 
+## 3.55.0-nightly.2
+
+### Patch Changes
+
+- [#8309](https://github.com/LedgerHQ/ledger-live/pull/8309) [`61b35c1`](https://github.com/LedgerHQ/ledger-live/commit/61b35c165f47196791150117b4bc70f0d0e06a31) Thanks [@Wozacosta](https://github.com/Wozacosta)! - feat: handle cacheBusting params in manifests to force cache clearing in liveApps
+
+- Updated dependencies [[`61b35c1`](https://github.com/LedgerHQ/ledger-live/commit/61b35c165f47196791150117b4bc70f0d0e06a31)]:
+  - @ledgerhq/live-common@34.14.0-nightly.2
+
 ## 3.55.0-nightly.1
 
 ### Minor Changes

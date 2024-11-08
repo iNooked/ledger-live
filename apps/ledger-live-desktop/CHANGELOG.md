@@ -1,5 +1,19 @@
 # ledger-live-desktop
 
+## 2.92.0-nightly.2
+
+### Patch Changes
+
+- [#8311](https://github.com/LedgerHQ/ledger-live/pull/8311) [`3c86e90`](https://github.com/LedgerHQ/ledger-live/commit/3c86e90596e74f4df021fc0b1d95087debbdc486) Thanks [@ofreyssinet-ledger](https://github.com/ofreyssinet-ledger)! - Flex & Stax onboarding:
+
+  - hide Backup section during onboarding on Flex and Stax
+  - add Ledger Recover upsell between onboarding and post onboarding
+
+- [#8300](https://github.com/LedgerHQ/ledger-live/pull/8300) [`33f485a`](https://github.com/LedgerHQ/ledger-live/commit/33f485a8913a5bec0ef59377a4530817d6731223) Thanks [@lpaquet-ledger](https://github.com/lpaquet-ledger)! - add drawer change device
+
+- Updated dependencies [[`61b35c1`](https://github.com/LedgerHQ/ledger-live/commit/61b35c165f47196791150117b4bc70f0d0e06a31)]:
+  - @ledgerhq/live-common@34.14.0-nightly.2
+
 ## 2.92.0-nightly.1
 
 ### Minor Changes
