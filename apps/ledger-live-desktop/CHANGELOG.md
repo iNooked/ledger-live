@@ -1,5 +1,18 @@
 # ledger-live-desktop
 
+## 2.92.0-nightly.3
+
+### Patch Changes
+
+- [#8326](https://github.com/LedgerHQ/ledger-live/pull/8326) [`a5748f9`](https://github.com/LedgerHQ/ledger-live/commit/a5748f9bc07435abb5351b6ed2278af294ba324c) Thanks [@mwiercinska](https://github.com/mwiercinska)! - Add discreetMode param for buy/sell
+
+- [#8337](https://github.com/LedgerHQ/ledger-live/pull/8337) [`be27e15`](https://github.com/LedgerHQ/ledger-live/commit/be27e1505a99f9ecbbd1b9d45b53e80d66053055) Thanks [@LucasWerey](https://github.com/LucasWerey)! - Add translation for troubleshooting network
+
+- [#8290](https://github.com/LedgerHQ/ledger-live/pull/8290) [`d3a67ab`](https://github.com/LedgerHQ/ledger-live/commit/d3a67ab302db9aa99ad4d2c6d91ef01a97de69e0) Thanks [@cksanders](https://github.com/cksanders)! - Redirect users to Recover Login if they have an account as they may be logged out
+
+- Updated dependencies [[`be27e15`](https://github.com/LedgerHQ/ledger-live/commit/be27e1505a99f9ecbbd1b9d45b53e80d66053055), [`c7535cc`](https://github.com/LedgerHQ/ledger-live/commit/c7535cc1af80dd5374a233f76998883e082b38bc)]:
+  - @ledgerhq/live-common@34.14.0-nightly.3
+
 ## 2.92.0-nightly.2
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 ## 34.5.0-next.4
 
+## 34.14.0-nightly.3
+
+### Patch Changes
+
+- [#8337](https://github.com/LedgerHQ/ledger-live/pull/8337) [`be27e15`](https://github.com/LedgerHQ/ledger-live/commit/be27e1505a99f9ecbbd1b9d45b53e80d66053055) Thanks [@LucasWerey](https://github.com/LucasWerey)! - Add translation for troubleshooting network
+
+- [#8332](https://github.com/LedgerHQ/ledger-live/pull/8332) [`c7535cc`](https://github.com/LedgerHQ/ledger-live/commit/c7535cc1af80dd5374a233f76998883e082b38bc) Thanks [@Wozacosta](https://github.com/Wozacosta)! - fix: better logic and guard against accessing null db
+
 ## 34.14.0-nightly.2
 
 ### Patch Changes

@@ -1,5 +1,20 @@
 # live-mobile
 
+## 3.55.0-nightly.3
+
+### Minor Changes
+
+- [#8320](https://github.com/LedgerHQ/ledger-live/pull/8320) [`4cd70ed`](https://github.com/LedgerHQ/ledger-live/commit/4cd70ed743fadf07545a7e45396d93126cb40d15) Thanks [@thesan](https://github.com/thesan)! - Track users creating, joining, and leaving Ledger keyrings on LLM
+
+### Patch Changes
+
+- [#8326](https://github.com/LedgerHQ/ledger-live/pull/8326) [`a5748f9`](https://github.com/LedgerHQ/ledger-live/commit/a5748f9bc07435abb5351b6ed2278af294ba324c) Thanks [@mwiercinska](https://github.com/mwiercinska)! - Add discreetMode param for buy/sell
+
+- [#8332](https://github.com/LedgerHQ/ledger-live/pull/8332) [`c7535cc`](https://github.com/LedgerHQ/ledger-live/commit/c7535cc1af80dd5374a233f76998883e082b38bc) Thanks [@Wozacosta](https://github.com/Wozacosta)! - fix: better logic and guard against accessing null db
+
+- Updated dependencies [[`be27e15`](https://github.com/LedgerHQ/ledger-live/commit/be27e1505a99f9ecbbd1b9d45b53e80d66053055), [`c7535cc`](https://github.com/LedgerHQ/ledger-live/commit/c7535cc1af80dd5374a233f76998883e082b38bc)]:
+  - @ledgerhq/live-common@34.14.0-nightly.3
+
 ## 3.55.0-nightly.2
 
 ### Patch Changes
