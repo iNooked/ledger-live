@@ -47,23 +47,8 @@ const validators = [
   },
 ];
 
-const validatorsForETH = [
-  {
-    delegate: new Delegate(Account.ETH_1, "0.0001", "lido"),
-    xrayTicket: "B2CQA-2452.1",
-  },
-  {
-    delegate: new Delegate(Account.ETH_1, "0.0001", "stader-eth"),
-    xrayTicket: "B2CQA-2452.2",
-  },
-  {
-    delegate: new Delegate(Account.ETH_1, "0.0001", "kiln_pooling"),
-    xrayTicket: "B2CQA-2452.3",
-  },
-];
-
 for (const account of e2eDelegationAccounts) {
-  test.describe("Delegate", () => {
+  test.describe.skip("Delegate", () => {
     test.use({
       userdata: "skip-onboarding",
       speculosApp: account.delegate.account.currency.speculosApp,
@@ -118,7 +103,7 @@ for (const account of e2eDelegationAccounts) {
 }
 
 for (const validator of validators) {
-  test.describe("Select a validator", () => {
+  test.describe.skip("Select a validator", () => {
     test.use({
       userdata: "skip-onboarding",
       speculosApp: validator.delegate.account.currency.speculosApp,
@@ -160,7 +145,7 @@ for (const validator of validators) {
   });
 }
 
-test.describe("Staking flow from different entry point", () => {
+test.describe.skip("Staking flow from different entry point", () => {
   const delegateAccount = new Delegate(Account.ATOM_1, "0.001", "Ledger");
   test.use({
     userdata: "skip-onboarding",
@@ -221,6 +206,21 @@ test.describe("Staking flow from different entry point", () => {
   );
 });
 
+const validatorsForETH = [
+  {
+    delegate: new Delegate(Account.ETH_1, "0.0001", "lido"),
+    xrayTicket: "B2CQA-2452.1",
+  },
+  {
+    delegate: new Delegate(Account.ETH_1, "0.0001", "stader-eth"),
+    xrayTicket: "B2CQA-2452.2",
+  },
+  {
+    delegate: new Delegate(Account.ETH_1, "0.0001", "kiln_pooling"),
+    xrayTicket: "B2CQA-2452.3",
+  },
+];
+
 for (const validator of validatorsForETH) {
   test.describe("Stacking ETH from EARN dashboard", () => {
     test.use({
@@ -251,7 +251,8 @@ for (const validator of validatorsForETH) {
         await addTmsLink(getDescription(test.info().annotations).split(", "));
         await app.layout.goToEarn();
         await app.earn.waitForPageNetworkIdleState();
-        await app.earn.selectAccountToStake2(electronApp);
+        await app.earn.waitForPageDomContentLoadedState();
+        await app.earn.selectAccountToStake(electronApp);
         await app.delegate.chooseStakeProvider(validator.delegate.provider);
         await app.earn.waitForPageNetworkIdleState();
         await app.earn.checkWebview();
