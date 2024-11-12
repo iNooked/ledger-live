@@ -7,12 +7,16 @@ import { useNftCollectionMetadata, useNftMetadata } from "@ledgerhq/live-nft-rea
 import { TouchableOpacity } from "react-native-gesture-handler";
 import styled from "styled-components/native";
 import { NFTResource, NFTResourceLoaded } from "@ledgerhq/live-nft/types";
-import { hiddenNftCollectionsSelector } from "~/reducers/settings";
 import { accountSelector } from "~/reducers/accounts";
 import NftMedia from "~/components/Nft/NftMedia";
 import Skeleton from "~/components/Skeleton";
-import { unhideNftCollection, whitelistNftCollection } from "~/actions/settings";
 import { State } from "~/reducers/types";
+
+import {
+  hiddenNftCollectionsSelector,
+  unhideCollection,
+  whitelistCollection,
+} from "@ledgerhq/live-wallet/store";
 
 const MAX_COLLECTIONS_FIRST_RENDER = 10;
 const COLLECTIONS_TO_ADD_ON_LIST_END_REACHED = 6;
@@ -95,8 +99,8 @@ const HiddenNftCollections = () => {
 
   const onUnhideCollection = useCallback(
     (collectionId: string) => {
-      dispatch(unhideNftCollection(collectionId));
-      dispatch(whitelistNftCollection(collectionId));
+      dispatch(unhideCollection(collectionId));
+      dispatch(whitelistCollection(collectionId));
     },
     [dispatch],
   );
@@ -118,7 +122,7 @@ const HiddenNftCollections = () => {
   const keyExtractor = useCallback((item: string) => item, []);
 
   const collectionsSliced: string[] = useMemo(
-    () => hiddenCollections.slice(0, collectionsCount),
+    () => Array.from(hiddenCollections).slice(0, collectionsCount),
     [collectionsCount, hiddenCollections],
   );
 

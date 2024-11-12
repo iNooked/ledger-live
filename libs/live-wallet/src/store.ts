@@ -22,6 +22,11 @@ export type WalletState = {
   // a set of all the account ids that are starred (NB: token accounts can also be starred)
   starredAccountIds: Set<string>;
 
+  // a list of collection contract NFTs that are hidden
+  hiddenNftCollections: Set<string>;
+  // a list of collection contract NFTs that are whitelisted
+  whitelistedNftCollections: Set<string>;
+
   nonImportedAccountInfos: NonImportedAccountInfo[];
 
   // local copy of the wallet sync data last synchronized with the backend of wallet sync, in order to be able to diff what we need to do when we apply an incremental update
@@ -31,10 +36,14 @@ export type WalletState = {
 export type ExportedWalletState = {
   walletSyncState: WSState;
   nonImportedAccountInfos: NonImportedAccountInfo[];
+  hiddenNftCollections: Set<string>;
+  whitelistedNftCollections: Set<string>;
 };
 
 export const initialState: WalletState = {
   accountNames: new Map(),
+  hiddenNftCollections: new Set([]),
+  whitelistedNftCollections: new Set([]),
   starredAccountIds: new Set(),
   nonImportedAccountInfos: [],
   walletSyncState: { data: null, version: 0 },
@@ -49,6 +58,12 @@ export enum WalletHandlerType {
   WALLET_SYNC_UPDATE = "WALLET_SYNC_UPDATE",
   IMPORT_WALLET_SYNC = "IMPORT_WALLET_SYNC",
   SET_NON_IMPORTED_ACCOUNTS = "SET_NON_IMPORTED_ACCOUNTS",
+  HIDE_COLLECTION = "HIDE_COLLECTION",
+  UNHIDE_COLLECTION = "UNHIDE_COLLECTION",
+  BULK_SET_HIDDEN_COLLECTIONS = "BULK_SET_HIDDEN_COLLECTIONS",
+  WHITELIST_COLLECTION = "WHITELIST_COLLECTION",
+  UNWHITELIST_COLLECTION_COLLECTION = "UNWHITELIST_COLLECTION_COLLECTION",
+  BULK_SET_WHITE_LIST_COLLECTIONS = "BULK_SET_WHITE_LIST_COLLECTIONS",
 }
 
 export type HandlersPayloads = {
@@ -63,6 +78,13 @@ export type HandlersPayloads = {
   };
   IMPORT_WALLET_SYNC: Partial<ExportedWalletState>;
   SET_NON_IMPORTED_ACCOUNTS: NonImportedAccountInfo[];
+  HIDE_COLLECTION: { collectionId: string };
+  UNHIDE_COLLECTION: { collectionId: string };
+  BULK_SET_HIDDEN_COLLECTIONS: { hiddenNftCollections: Set<string> };
+
+  WHITELIST_COLLECTION: { collectionId: string };
+  UNWHITELIST_COLLECTION_COLLECTION: { collectionId: string };
+  BULK_SET_WHITE_LIST_COLLECTIONS: { collections: Set<string> };
 };
 
 type Handlers<State, Types, PreciseKey = true> = {
@@ -128,6 +150,34 @@ export const handlers: WalletHandlers = {
     }
     return { ...state, accountNames };
   },
+  HIDE_COLLECTION: (state, { payload: { collectionId } }) => {
+    const hiddenNftCollections = new Set(state.hiddenNftCollections);
+    hiddenNftCollections.add(collectionId);
+    return { ...state, hiddenNftCollections };
+  },
+  UNHIDE_COLLECTION: (state, { payload: { collectionId } }) => {
+    const hiddenNftCollections = new Set(state.hiddenNftCollections);
+    hiddenNftCollections.delete(collectionId);
+    return { ...state, hiddenNftCollections };
+  },
+  BULK_SET_HIDDEN_COLLECTIONS: (state, { payload: { hiddenNftCollections } }) => {
+    return { ...state, hiddenNftCollections };
+  },
+
+  WHITELIST_COLLECTION: (state, { payload: { collectionId } }) => {
+    const whitelistedNftCollections = new Set(state.whitelistedNftCollections);
+    whitelistedNftCollections.add(collectionId);
+    return { ...state, whitelistedNftCollections };
+  },
+  UNWHITELIST_COLLECTION_COLLECTION: (state, { payload: { collectionId } }) => {
+    const whitelistedNftCollections = new Set(state.whitelistedNftCollections);
+    whitelistedNftCollections.delete(collectionId);
+    return { ...state, whitelistedNftCollections };
+  },
+  BULK_SET_WHITE_LIST_COLLECTIONS: (state, { payload: { collections } }) => {
+    return { ...state, whitelistedNftCollections: collections };
+  },
+
   WALLET_SYNC_UPDATE: (state, { payload }) => {
     return { ...state, walletSyncState: payload };
   },
@@ -162,6 +212,36 @@ export const setAccountStarred = (accountId: string, starred: boolean) => ({
 export const initAccounts = (accounts: Account[], accountsUserData: AccountUserData[]) => ({
   type: "INIT_ACCOUNTS",
   payload: { accounts, accountsUserData },
+});
+
+export const hideCollection = (collectionId: string) => ({
+  type: "HIDE_COLLECTION",
+  payload: { collectionId },
+});
+
+export const unhideCollection = (collectionId: string) => ({
+  type: "UNHIDE_COLLECTION",
+  payload: { collectionId },
+});
+
+export const sethiddenNftCollections = (hiddenNftCollections: Set<string>) => ({
+  type: "BULK_SET_HIDDEN_COLLECTIONS",
+  payload: { hiddenNftCollections },
+});
+
+export const whitelistCollection = (collectionId: string) => ({
+  type: "WHITELIST_COLLECTION",
+  payload: { collectionId },
+});
+
+export const unwhitelistCollection = (collectionId: string) => ({
+  type: "UNWHITELIST_COLLECTION_COLLECTION",
+  payload: { collectionId },
+});
+
+export const setwhitelistedNftCollections = (collections: Set<string>) => ({
+  type: "BULK_SET_WHITE_LIST_COLLECTIONS",
+  payload: { collections },
 });
 
 /**
@@ -246,6 +326,8 @@ export const accountRawToAccountUserData = (raw: AccountRaw): AccountUserData =>
 export const exportWalletState = (state: WalletState): ExportedWalletState => ({
   walletSyncState: state.walletSyncState,
   nonImportedAccountInfos: state.nonImportedAccountInfos,
+  hiddenNftCollections: state.hiddenNftCollections,
+  whitelistedNftCollections: state.whitelistedNftCollections,
 });
 
 export const walletStateExportShouldDiffer = (a: WalletState, b: WalletState): boolean => {
@@ -256,3 +338,7 @@ export const walletStateExportShouldDiffer = (a: WalletState, b: WalletState): b
 };
 
 export const walletSyncStateSelector = (state: WalletState): WSState => state.walletSyncState;
+
+export const hiddenNftCollectionsSelector = (state: WalletState) => state.hiddenNftCollections;
+export const whiteListedNftCollectionsSelector = (state: WalletState) =>
+  state.whitelistedNftCollections;

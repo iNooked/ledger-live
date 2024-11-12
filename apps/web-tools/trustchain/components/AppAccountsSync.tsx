@@ -50,6 +50,10 @@ const localStateSelector = (state: State) => ({
     nonImportedAccountInfos: state.nonImportedAccounts,
   },
   accountNames: state.walletState.accountNames,
+  nftCollections: {
+    hiddenCollections: state.walletState.hiddenCollections,
+    whiteListedCollections: state.walletState.whiteListedCollections,
+  },
 });
 
 const latestDistantStateSelector = (state: State) => state.walletState.walletSyncState.data;
@@ -125,6 +129,7 @@ export default function AppAccountsSync({
             accounts: newLocalState.accounts.list, // save new accounts
             nonImportedAccounts: newLocalState.accounts.nonImportedAccountInfos,
             walletState,
+            nftCollections: newLocalState.nftCollections,
           };
         }
         return {

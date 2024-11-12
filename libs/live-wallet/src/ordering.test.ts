@@ -95,6 +95,8 @@ const walletState: WalletState = {
     version: 0,
   },
   nonImportedAccountInfos: [],
+  hiddenNftCollections: new Set(),
+  whitelistedNftCollections: new Set(),
 };
 
 for (const raw of raws) {

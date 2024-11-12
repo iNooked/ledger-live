@@ -2,8 +2,12 @@ import React, { useState, useCallback, useMemo } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
-import { unhideNftCollection, whitelistNftCollection } from "~/renderer/actions/settings";
-import { hiddenNftCollectionsSelector } from "~/renderer/reducers/settings";
+
+import {
+  hiddenNftCollectionsSelector,
+  unhideCollection,
+  whitelistCollection,
+} from "@ledgerhq/live-wallet/store";
 
 import { SettingsSection as Section, SettingsSectionRow as Row } from "../../../SettingsSection";
 import Box from "~/renderer/components/Box";
@@ -39,14 +43,14 @@ export default function HiddenNftCollections() {
   const dispatch = useDispatch();
   const [sectionVisible, setSectionVisible] = useState(false);
 
-  const hiddenNftCollections = useSelector(hiddenNftCollectionsSelector);
-
+  const hiddenNftCollectionsSet = useSelector(hiddenNftCollectionsSelector);
+  const hiddenNftCollections = Array.from(hiddenNftCollectionsSet);
   const [numberOfVisibleCollections, setNumberOfVisibleCollections] = useState(INCREMENT);
 
   const onUnhideCollection = useCallback(
     (collectionId: string) => {
-      dispatch(unhideNftCollection(collectionId));
-      dispatch(whitelistNftCollection(collectionId));
+      dispatch(unhideCollection(collectionId));
+      dispatch(whitelistCollection(collectionId));
     },
     [dispatch],
   );

@@ -19,7 +19,9 @@ import {
 } from "@ledgerhq/ledger-key-ring-protocol/store";
 import {
   setAccountNames,
+  setHiddenCollections,
   setNonImportedAccounts,
+  setWhitelistedCollections,
   walletSyncStateSelector,
   walletSyncUpdate,
   WSState,
@@ -46,6 +48,10 @@ function localStateSelector(state: State): LocalState {
       nonImportedAccountInfos: state.wallet.nonImportedAccountInfos,
     },
     accountNames: state.wallet.accountNames,
+    nftCollections: {
+      hiddenCollections: state.wallet.hiddenCollections,
+      whiteListedCollections: state.wallet.whiteListedCollections,
+    },
   };
 }
 
@@ -60,6 +66,8 @@ async function save(
   if (newLocalState) {
     dispatch(setNonImportedAccounts(newLocalState.accounts.nonImportedAccountInfos));
     dispatch(setAccountNames(newLocalState.accountNames));
+    dispatch(setHiddenCollections(newLocalState.nftCollections.hiddenCollections));
+    dispatch(setWhitelistedCollections(newLocalState.nftCollections.whiteListedCollections));
     dispatch(replaceAccounts(newLocalState.accounts.list)); // IMPORTANT: keep this one last, it's doing the DB:* trigger to save the data
   }
 }
