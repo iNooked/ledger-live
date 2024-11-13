@@ -158,11 +158,13 @@
     "@ledgerhq/ledger-key-ring-protocol": "0.4.0",
     "@ledgerhq/wallet-api-acre-module": "0.0.0",
     "@ledgerhq/coin-hedera": "1.0.0",
-    "@ledgerhq/hw-app-hedera": "1.0.0"
+    "@ledgerhq/hw-app-hedera": "1.0.0",
+    "@ledgerhq/coin-filecoin": "1.3.2"
   },
   "changesets": [
     "big-lions-refuse",
     "breezy-deers-scream",
+    "bright-icons-explode",
     "chilled-points-argue",
     "clean-nails-laugh",
     "cold-rivers-raise",
@@ -180,6 +182,7 @@
     "friendly-socks-hunt",
     "fuzzy-boxes-confess",
     "giant-peas-unite",
+    "good-boxes-boil",
     "gorgeous-parents-join",
     "great-forks-sip",
     "green-rice-cheer",
@@ -189,6 +192,7 @@
     "lazy-mayflies-talk",
     "lemon-news-chew",
     "light-oranges-serve",
+    "long-fireants-cheer",
     "mean-eyes-lay",
     "mean-phones-sip",
     "mean-pugs-hang",
@@ -201,11 +205,13 @@
     "ninety-days-wait",
     "ninety-moles-listen",
     "olive-mangos-repeat",
+    "orange-radios-thank",
     "pink-candles-happen",
     "plenty-dolphins-sneeze",
     "popular-jobs-occur",
     "purple-peaches-cross",
     "real-donuts-occur",
+    "rotten-months-glow",
     "rude-dancers-fry",
     "selfish-rocks-greet",
     "shaggy-shoes-beg",
@@ -221,6 +227,7 @@
     "smart-items-laugh",
     "strong-spiders-do",
     "sweet-needles-kiss",
+    "tall-moons-invent",
     "tame-brooms-breathe",
     "ten-mangos-hide",
     "thirty-ants-report",
@@ -230,9 +237,11 @@
     "tiny-turkeys-doubt",
     "twelve-ads-retire",
     "twenty-ligers-compare",
+    "two-icons-jog",
     "two-seas-push",
     "wicked-fireants-pay",
     "wicked-swans-raise",
-    "wicked-trains-ring"
+    "wicked-trains-ring",
+    "wild-chefs-smash"
   ]
 }

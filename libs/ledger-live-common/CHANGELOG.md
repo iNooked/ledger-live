@@ -1,5 +1,43 @@
 ## 34.5.0-next.4
 
+## 34.14.0-nightly.4
+
+### Patch Changes
+
+- [#8330](https://github.com/LedgerHQ/ledger-live/pull/8330) [`e859f37`](https://github.com/LedgerHQ/ledger-live/commit/e859f37bfeacf27cb243980f03ab8f8f8d6fa630) Thanks [@lpaquet-ledger](https://github.com/lpaquet-ledger)! - add uniswap data
+
+- [#8327](https://github.com/LedgerHQ/ledger-live/pull/8327) [`5ce33a4`](https://github.com/LedgerHQ/ledger-live/commit/5ce33a417ecc87face54c1864aa49476c5f394b9) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - MEV Protection feature
+
+- [#8314](https://github.com/LedgerHQ/ledger-live/pull/8314) [`a52f6ae`](https://github.com/LedgerHQ/ledger-live/commit/a52f6ae3d49ea8daea42d9cdc24e9dd0d6d0f371) Thanks [@kallen-ledger](https://github.com/kallen-ledger)! - Add swap live app webview behind feature flag
+
+- [#8210](https://github.com/LedgerHQ/ledger-live/pull/8210) [`6a83c72`](https://github.com/LedgerHQ/ledger-live/commit/6a83c72b67fa0aed627a8610b202b2c3fb177c3f) Thanks [@qperrot](https://github.com/qperrot)! - support: move filecoin to its own coin module
+
+- Updated dependencies [[`6a83c72`](https://github.com/LedgerHQ/ledger-live/commit/6a83c72b67fa0aed627a8610b202b2c3fb177c3f)]:
+  - @ledgerhq/coin-filecoin@1.3.3-nightly.0
+  - @ledgerhq/coin-framework@0.19.0-nightly.4
+  - @ledgerhq/coin-algorand@0.5.12-nightly.4
+  - @ledgerhq/coin-bitcoin@0.8.7-nightly.4
+  - @ledgerhq/coin-cardano@0.2.7-nightly.4
+  - @ledgerhq/coin-cosmos@0.2.0-nightly.4
+  - @ledgerhq/coin-elrond@0.1.7-nightly.4
+  - @ledgerhq/coin-evm@2.5.0-nightly.5
+  - @ledgerhq/coin-hedera@1.1.0-nightly.1
+  - @ledgerhq/coin-icon@0.4.9-nightly.4
+  - @ledgerhq/coin-near@0.5.12-nightly.4
+  - @ledgerhq/coin-polkadot@1.3.5-nightly.5
+  - @ledgerhq/coin-solana@0.8.4-nightly.4
+  - @ledgerhq/coin-stellar@0.3.7-nightly.5
+  - @ledgerhq/coin-tezos@0.6.8-nightly.4
+  - @ledgerhq/coin-ton@0.3.20-nightly.4
+  - @ledgerhq/coin-tron@0.0.12-nightly.4
+  - @ledgerhq/coin-xrp@0.6.0-nightly.5
+  - @ledgerhq/device-core@0.4.6-nightly.4
+  - @ledgerhq/hw-app-eth@6.41.0-nightly.4
+  - @ledgerhq/live-countervalues@0.2.12-nightly.4
+  - @ledgerhq/live-countervalues-react@0.2.12-nightly.4
+  - @ledgerhq/live-nft@0.4.12-nightly.5
+  - @ledgerhq/live-wallet@0.7.4-nightly.5
+
 ## 34.14.0-nightly.3
 
 ### Patch Changes

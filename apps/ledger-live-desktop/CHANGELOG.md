@@ -1,5 +1,30 @@
 # ledger-live-desktop
 
+## 2.92.0-nightly.4
+
+### Patch Changes
+
+- [#8327](https://github.com/LedgerHQ/ledger-live/pull/8327) [`5ce33a4`](https://github.com/LedgerHQ/ledger-live/commit/5ce33a417ecc87face54c1864aa49476c5f394b9) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - MEV Protection feature
+
+- [#8297](https://github.com/LedgerHQ/ledger-live/pull/8297) [`1441226`](https://github.com/LedgerHQ/ledger-live/commit/144122609c45da96c2b0bce9b65ba2ba6df74eaa) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - Persistent sync error on LLD after backup deletion from LLM
+
+- [#8210](https://github.com/LedgerHQ/ledger-live/pull/8210) [`6a83c72`](https://github.com/LedgerHQ/ledger-live/commit/6a83c72b67fa0aed627a8610b202b2c3fb177c3f) Thanks [@qperrot](https://github.com/qperrot)! - support: move filecoin to its own coin module
+
+- Updated dependencies [[`e859f37`](https://github.com/LedgerHQ/ledger-live/commit/e859f37bfeacf27cb243980f03ab8f8f8d6fa630), [`5ce33a4`](https://github.com/LedgerHQ/ledger-live/commit/5ce33a417ecc87face54c1864aa49476c5f394b9), [`a52f6ae`](https://github.com/LedgerHQ/ledger-live/commit/a52f6ae3d49ea8daea42d9cdc24e9dd0d6d0f371), [`6a83c72`](https://github.com/LedgerHQ/ledger-live/commit/6a83c72b67fa0aed627a8610b202b2c3fb177c3f)]:
+  - @ledgerhq/live-common@34.14.0-nightly.4
+  - @ledgerhq/types-live@6.53.0-nightly.3
+  - @ledgerhq/coin-filecoin@1.3.3-nightly.0
+  - @ledgerhq/coin-framework@0.19.0-nightly.4
+  - @ledgerhq/coin-bitcoin@0.8.7-nightly.4
+  - @ledgerhq/coin-cosmos@0.2.0-nightly.4
+  - @ledgerhq/coin-evm@2.5.0-nightly.5
+  - @ledgerhq/domain-service@1.2.11-nightly.3
+  - @ledgerhq/live-countervalues@0.2.12-nightly.4
+  - @ledgerhq/live-countervalues-react@0.2.12-nightly.4
+  - @ledgerhq/live-nft@0.4.12-nightly.5
+  - @ledgerhq/live-nft-react@0.4.12-nightly.5
+  - @ledgerhq/live-wallet@0.7.4-nightly.5
+
 ## 2.92.0-nightly.3
 
 ### Patch Changes
