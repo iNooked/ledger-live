@@ -223,6 +223,20 @@ const validatorsForETH = [
 
 for (const validator of validatorsForETH) {
   test.describe("Stacking ETH from EARN dashboard", () => {
+    let context: BrowserContext;
+    let page: Page;
+
+    test.beforeEach(async ({ browser }) => {
+      // Create a new browser context for each test
+      context = await browser.newContext();
+      page = await context.newPage();
+    });
+
+    test.afterEach(async () => {
+      // Close the browser context after each test
+      await context.close();
+    });
+
     test.use({
       userdata: "skip-onboarding",
       speculosApp: validator.delegate.account.currency.speculosApp,
