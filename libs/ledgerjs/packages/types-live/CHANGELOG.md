@@ -1,5 +1,11 @@
 # @ledgerhq/types-live
 
+## 6.53.0-nightly.4
+
+### Patch Changes
+
+- [#8360](https://github.com/LedgerHQ/ledger-live/pull/8360) [`748cf14`](https://github.com/LedgerHQ/ledger-live/commit/748cf146b3e903172831e7e5ddbc29a3565c8932) Thanks [@themooneer](https://github.com/themooneer)! - New feature flag for new add account workflow
+
 ## 6.53.0-nightly.3
 
 ### Patch Changes

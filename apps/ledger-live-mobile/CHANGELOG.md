@@ -1,5 +1,28 @@
 # live-mobile
 
+## 3.55.0-nightly.5
+
+### Patch Changes
+
+- [#8331](https://github.com/LedgerHQ/ledger-live/pull/8331) [`387f182`](https://github.com/LedgerHQ/ledger-live/commit/387f182cb5a45935399425e0c62634760c43af6c) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - MEV Protection
+
+- [#8343](https://github.com/LedgerHQ/ledger-live/pull/8343) [`a99d671`](https://github.com/LedgerHQ/ledger-live/commit/a99d67166b917dd2bdb40c04aa498c59ad446a2d) Thanks [@beths-ledger](https://github.com/beths-ledger)! - Add a fallback to the provider display name from the firebase JSON if there is no translated title for the given provider. Required to add new providers like Coinbase to EVM staking.
+
+- Updated dependencies [[`cad783e`](https://github.com/LedgerHQ/ledger-live/commit/cad783e9d17bd1063b76959672b5a28380d6475b), [`748cf14`](https://github.com/LedgerHQ/ledger-live/commit/748cf146b3e903172831e7e5ddbc29a3565c8932)]:
+  - @ledgerhq/live-common@34.14.0-nightly.5
+  - @ledgerhq/types-live@6.53.0-nightly.4
+  - @ledgerhq/coin-framework@0.19.0-nightly.5
+  - @ledgerhq/coin-cosmos@0.2.0-nightly.5
+  - @ledgerhq/coin-elrond@0.1.7-nightly.5
+  - @ledgerhq/coin-evm@2.5.0-nightly.6
+  - @ledgerhq/coin-filecoin@1.3.3-nightly.1
+  - @ledgerhq/domain-service@1.2.11-nightly.4
+  - @ledgerhq/live-countervalues@0.2.12-nightly.5
+  - @ledgerhq/live-countervalues-react@0.2.12-nightly.5
+  - @ledgerhq/live-nft@0.4.12-nightly.6
+  - @ledgerhq/live-nft-react@0.4.12-nightly.6
+  - @ledgerhq/live-wallet@0.7.4-nightly.6
+
 ## 3.55.0-nightly.4
 
 ### Minor Changes

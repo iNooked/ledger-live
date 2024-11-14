@@ -1,5 +1,15 @@
 # @ledgerhq/coin-solana
 
+## 0.8.4-nightly.5
+
+### Patch Changes
+
+- [#8234](https://github.com/LedgerHQ/ledger-live/pull/8234) [`cad783e`](https://github.com/LedgerHQ/ledger-live/commit/cad783e9d17bd1063b76959672b5a28380d6475b) Thanks [@Justkant](https://github.com/Justkant)! - fix: solana priority fees
+
+- Updated dependencies [[`748cf14`](https://github.com/LedgerHQ/ledger-live/commit/748cf146b3e903172831e7e5ddbc29a3565c8932)]:
+  - @ledgerhq/types-live@6.53.0-nightly.4
+  - @ledgerhq/coin-framework@0.19.0-nightly.5
+
 ## 0.8.4-nightly.4
 
 ### Patch Changes
