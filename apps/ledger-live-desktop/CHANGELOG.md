@@ -1,5 +1,14 @@
 # ledger-live-desktop
 
+## 2.92.0-nightly.6
+
+### Patch Changes
+
+- [#8194](https://github.com/LedgerHQ/ledger-live/pull/8194) [`060c9df`](https://github.com/LedgerHQ/ledger-live/commit/060c9df25730fbfd7fde85b64ef0da8f8dd41421) Thanks [@fAnselmi-Ledger](https://github.com/fAnselmi-Ledger)! - Localised URL
+
+- Updated dependencies [[`11340f4`](https://github.com/LedgerHQ/ledger-live/commit/11340f401252541de676cba4b4804214a2b8cc8b), [`4bee69b`](https://github.com/LedgerHQ/ledger-live/commit/4bee69b05e9bea4c50110a9411b8c47915e38021), [`cab4737`](https://github.com/LedgerHQ/ledger-live/commit/cab4737345a646f93661992f1a68179280c904fc)]:
+  - @ledgerhq/live-common@34.14.0-nightly.6
+
 ## 2.92.0-nightly.5
 
 ### Patch Changes
