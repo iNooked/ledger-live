@@ -1,5 +1,15 @@
 # @ledgerhq/live-countervalues
 
+## 0.2.13-nightly.0
+
+### Patch Changes
+
+- [#8368](https://github.com/LedgerHQ/ledger-live/pull/8368) [`61f8b03`](https://github.com/LedgerHQ/ledger-live/commit/61f8b033f710369171e277f5c0faede636207160) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - Add Granularity rate for Countervalues historical requests cache optimization
+
+- Updated dependencies [[`61f8b03`](https://github.com/LedgerHQ/ledger-live/commit/61f8b033f710369171e277f5c0faede636207160)]:
+  - @ledgerhq/types-live@6.53.1-nightly.0
+  - @ledgerhq/coin-framework@0.19.1-nightly.0
+
 ## 0.2.12
 
 ### Patch Changes

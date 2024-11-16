@@ -1,5 +1,38 @@
 ## 34.5.0-next.4
 
+## 34.14.1-nightly.0
+
+### Patch Changes
+
+- [#8368](https://github.com/LedgerHQ/ledger-live/pull/8368) [`61f8b03`](https://github.com/LedgerHQ/ledger-live/commit/61f8b033f710369171e277f5c0faede636207160) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - Add Granularity rate for Countervalues historical requests cache optimization
+
+- Updated dependencies [[`61f8b03`](https://github.com/LedgerHQ/ledger-live/commit/61f8b033f710369171e277f5c0faede636207160)]:
+  - @ledgerhq/live-countervalues-react@0.2.13-nightly.0
+  - @ledgerhq/live-countervalues@0.2.13-nightly.0
+  - @ledgerhq/coin-framework@0.19.1-nightly.0
+  - @ledgerhq/coin-algorand@0.5.13-nightly.0
+  - @ledgerhq/coin-bitcoin@0.8.8-nightly.0
+  - @ledgerhq/coin-cardano@0.2.8-nightly.0
+  - @ledgerhq/coin-cosmos@0.2.1-nightly.0
+  - @ledgerhq/coin-elrond@0.1.8-nightly.0
+  - @ledgerhq/coin-evm@2.5.1-nightly.0
+  - @ledgerhq/coin-filecoin@1.3.3-nightly.0
+  - @ledgerhq/coin-hedera@1.1.1-nightly.0
+  - @ledgerhq/coin-icon@0.4.10-nightly.0
+  - @ledgerhq/coin-near@0.5.13-nightly.0
+  - @ledgerhq/coin-polkadot@1.3.6-nightly.0
+  - @ledgerhq/coin-solana@0.8.5-nightly.0
+  - @ledgerhq/coin-stacks@0.1.1-nightly.1
+  - @ledgerhq/coin-stellar@0.3.8-nightly.0
+  - @ledgerhq/coin-tezos@0.6.9-nightly.0
+  - @ledgerhq/coin-ton@0.3.21-nightly.0
+  - @ledgerhq/coin-tron@0.0.13-nightly.0
+  - @ledgerhq/coin-xrp@0.6.1-nightly.0
+  - @ledgerhq/device-core@0.4.7-nightly.0
+  - @ledgerhq/hw-app-eth@6.41.1-nightly.0
+  - @ledgerhq/live-nft@0.4.13-nightly.0
+  - @ledgerhq/live-wallet@0.7.5-nightly.0
+
 ## 34.14.0
 
 ### Minor Changes

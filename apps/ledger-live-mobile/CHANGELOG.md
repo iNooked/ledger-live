@@ -1,5 +1,27 @@
 # live-mobile
 
+## 3.55.1-nightly.0
+
+### Patch Changes
+
+- [#8368](https://github.com/LedgerHQ/ledger-live/pull/8368) [`61f8b03`](https://github.com/LedgerHQ/ledger-live/commit/61f8b033f710369171e277f5c0faede636207160) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - Add Granularity rate for Countervalues historical requests cache optimization
+
+- Updated dependencies [[`61f8b03`](https://github.com/LedgerHQ/ledger-live/commit/61f8b033f710369171e277f5c0faede636207160)]:
+  - @ledgerhq/types-live@6.53.1-nightly.0
+  - @ledgerhq/live-countervalues-react@0.2.13-nightly.0
+  - @ledgerhq/live-common@34.14.1-nightly.0
+  - @ledgerhq/live-countervalues@0.2.13-nightly.0
+  - @ledgerhq/coin-framework@0.19.1-nightly.0
+  - @ledgerhq/coin-cosmos@0.2.1-nightly.0
+  - @ledgerhq/coin-elrond@0.1.8-nightly.0
+  - @ledgerhq/coin-evm@2.5.1-nightly.0
+  - @ledgerhq/coin-filecoin@1.3.3-nightly.0
+  - @ledgerhq/coin-stacks@0.1.1-nightly.1
+  - @ledgerhq/domain-service@1.2.12-nightly.0
+  - @ledgerhq/live-nft@0.4.13-nightly.0
+  - @ledgerhq/live-nft-react@0.4.13-nightly.0
+  - @ledgerhq/live-wallet@0.7.5-nightly.0
+
 ## 3.55.0
 
 ### Minor Changes
