@@ -1,34 +1,24 @@
 # @ledgerhq/live-wallet
 
-## 0.5.1-nightly.2
+## 0.5.1
 
 ### Patch Changes
 
-- Updated dependencies [[`b93a421`](https://github.com/LedgerHQ/ledger-live/commit/b93a421866519b80fdd8a029caea97323eceae93)]:
-  - @ledgerhq/live-env@2.4.1-nightly.2
-  - @ledgerhq/hw-ledger-key-ring-protocol@0.2.1-nightly.2
-  - @ledgerhq/live-network@2.0.3-nightly.2
-  - @ledgerhq/speculos-transport@0.1.8-nightly.2
+- Updated dependencies [[`5c13c7b`](https://github.com/LedgerHQ/ledger-live/commit/5c13c7bf743333f09cbfee720d275dfae7e157d2), [`95fbec9`](https://github.com/LedgerHQ/ledger-live/commit/95fbec9fdff75cd6d4ac23e189e876efffc81906), [`b93a421`](https://github.com/LedgerHQ/ledger-live/commit/b93a421866519b80fdd8a029caea97323eceae93)]:
+  - @ledgerhq/live-env@2.4.1
+  - @ledgerhq/hw-ledger-key-ring-protocol@0.2.1
+  - @ledgerhq/live-network@2.0.3
+  - @ledgerhq/speculos-transport@0.1.8
 
-## 0.5.1-nightly.1
-
-### Patch Changes
-
-- Updated dependencies [[`95fbec9`](https://github.com/LedgerHQ/ledger-live/commit/95fbec9fdff75cd6d4ac23e189e876efffc81906)]:
-  - @ledgerhq/live-env@2.4.1-nightly.1
-  - @ledgerhq/hw-ledger-key-ring-protocol@0.2.1-nightly.1
-  - @ledgerhq/live-network@2.0.3-nightly.1
-  - @ledgerhq/speculos-transport@0.1.8-nightly.1
-
-## 0.5.1-nightly.0
+## 0.5.1-next.0
 
 ### Patch Changes
 
-- Updated dependencies [[`5c13c7b`](https://github.com/LedgerHQ/ledger-live/commit/5c13c7bf743333f09cbfee720d275dfae7e157d2)]:
-  - @ledgerhq/live-env@2.4.1-nightly.0
-  - @ledgerhq/hw-ledger-key-ring-protocol@0.2.1-nightly.0
-  - @ledgerhq/live-network@2.0.3-nightly.0
-  - @ledgerhq/speculos-transport@0.1.8-nightly.0
+- Updated dependencies [[`5c13c7b`](https://github.com/LedgerHQ/ledger-live/commit/5c13c7bf743333f09cbfee720d275dfae7e157d2), [`95fbec9`](https://github.com/LedgerHQ/ledger-live/commit/95fbec9fdff75cd6d4ac23e189e876efffc81906), [`b93a421`](https://github.com/LedgerHQ/ledger-live/commit/b93a421866519b80fdd8a029caea97323eceae93)]:
+  - @ledgerhq/live-env@2.4.1-next.0
+  - @ledgerhq/hw-ledger-key-ring-protocol@0.2.1-next.0
+  - @ledgerhq/live-network@2.0.3-next.0
+  - @ledgerhq/speculos-transport@0.1.8-next.0
 
 ## 0.5.0
 

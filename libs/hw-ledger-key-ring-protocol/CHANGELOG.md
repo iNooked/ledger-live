@@ -1,25 +1,18 @@
 # @ledgerhq/live-wallet
 
-## 0.2.1-nightly.2
+## 0.2.1
 
 ### Patch Changes
 
-- Updated dependencies [[`b93a421`](https://github.com/LedgerHQ/ledger-live/commit/b93a421866519b80fdd8a029caea97323eceae93)]:
-  - @ledgerhq/live-env@2.4.1-nightly.2
+- Updated dependencies [[`5c13c7b`](https://github.com/LedgerHQ/ledger-live/commit/5c13c7bf743333f09cbfee720d275dfae7e157d2), [`95fbec9`](https://github.com/LedgerHQ/ledger-live/commit/95fbec9fdff75cd6d4ac23e189e876efffc81906), [`b93a421`](https://github.com/LedgerHQ/ledger-live/commit/b93a421866519b80fdd8a029caea97323eceae93)]:
+  - @ledgerhq/live-env@2.4.1
 
-## 0.2.1-nightly.1
-
-### Patch Changes
-
-- Updated dependencies [[`95fbec9`](https://github.com/LedgerHQ/ledger-live/commit/95fbec9fdff75cd6d4ac23e189e876efffc81906)]:
-  - @ledgerhq/live-env@2.4.1-nightly.1
-
-## 0.2.1-nightly.0
+## 0.2.1-next.0
 
 ### Patch Changes
 
-- Updated dependencies [[`5c13c7b`](https://github.com/LedgerHQ/ledger-live/commit/5c13c7bf743333f09cbfee720d275dfae7e157d2)]:
-  - @ledgerhq/live-env@2.4.1-nightly.0
+- Updated dependencies [[`5c13c7b`](https://github.com/LedgerHQ/ledger-live/commit/5c13c7bf743333f09cbfee720d275dfae7e157d2), [`95fbec9`](https://github.com/LedgerHQ/ledger-live/commit/95fbec9fdff75cd6d4ac23e189e876efffc81906), [`b93a421`](https://github.com/LedgerHQ/ledger-live/commit/b93a421866519b80fdd8a029caea97323eceae93)]:
+  - @ledgerhq/live-env@2.4.1-next.0
 
 ## 0.2.0
 
