@@ -28,14 +28,31 @@ import WalletTabNavigatorPage from "./wallet/walletTabNavigator.page";
 import type { Account } from "@ledgerhq/types-live";
 import { DeviceLike } from "~/reducers/types";
 import { loadAccounts, loadBleState, loadConfig } from "../bridge/server";
+import { registerSpeculosProxy } from "@ledgerhq/live-cli/src/live-common-setup";
 import { AppInfos } from "@ledgerhq/live-common/e2e/enum/AppInfos";
+import { lastValueFrom, Observable } from "rxjs";
+import { commandCLI } from "../utils/cliUtils";
+import path from "path";
+
+type Command<T extends (...args: any) => Observable<any> | Promise<any> | string> = {
+  command: T;
+  args: Parameters<T>[0]; // Infer the first argument type
+};
 
 type ApplicationOptions = {
   speculosApp?: AppInfos;
+  cliCommands?: Command<(typeof commandCLI)[keyof typeof commandCLI]>[];
   userdata?: string;
   knownDevices?: DeviceLike[];
   testAccounts?: Account[];
 };
+
+async function handleResult(result: Promise<any> | Observable<any> | string): Promise<any> {
+  if (result instanceof Observable) {
+    return lastValueFrom(result); // Converts Observable to Promise
+  }
+  return result; // Return Promise directly
+}
 
 export class Application {
   public account = new AccountPage();
@@ -65,12 +82,34 @@ export class Application {
   public transfertMenu = new TransfertMenuDrawer();
   public walletTabNavigator = new WalletTabNavigatorPage();
 
-  static async init({ speculosApp, userdata, knownDevices, testAccounts }: ApplicationOptions) {
+  static async init({
+    speculosApp,
+    cliCommands,
+    userdata,
+    knownDevices,
+    testAccounts,
+  }: ApplicationOptions) {
     const app = new Application();
+    let proxyPort = 0;
+    speculosApp && (proxyPort = await app.common.addSpeculos(speculosApp.name));
+
+    if (cliCommands?.length) {
+      proxyPort && registerSpeculosProxy(`ws://localhost:${proxyPort}`);
+      await Promise.all(
+        cliCommands.map(async command => {
+          if (command.args && "appjson" in command.args) {
+            command.args.appjson = path.resolve("e2e", "userdata", `${userdata}.json`);
+          }
+          const result = await handleResult(command.command(command.args as any));
+          // eslint-disable-next-line no-console
+          console.warn("CLI result: ", result);
+        }),
+      );
+    }
+
     userdata && (await loadConfig(userdata, true));
     knownDevices && (await loadBleState({ knownDevices }));
     testAccounts && (await loadAccounts(testAccounts));
-    speculosApp && (await app.common.addSpeculos(speculosApp.name));
 
     return app;
   }
