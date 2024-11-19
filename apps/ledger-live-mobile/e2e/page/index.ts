@@ -32,6 +32,7 @@ import { AppInfos } from "@ledgerhq/live-common/e2e/enum/AppInfos";
 import { lastValueFrom, Observable } from "rxjs";
 import { commandCLI } from "../utils/cliUtils";
 import path from "path";
+import fs from "fs";
 
 type Command<T extends (...args: any) => Observable<any> | Promise<any> | string> = {
   command: T;
@@ -90,7 +91,7 @@ export class Application {
   }: ApplicationOptions) {
     const app = new Application();
     let proxyPort = 0;
-    let tempFilePath = "";
+    let tempUserdataPath = "";
     if (speculosApp) {
       proxyPort = await app.common.addSpeculos(speculosApp.name);
       process.env.DEVICE_PROXY_URL = `ws://localhost:${proxyPort}`;
@@ -101,11 +102,18 @@ export class Application {
       await Promise.all(
         cliCommands.map(async command => {
           if (command.args && "appjson" in command.args) {
-            command.args.appjson = path.resolve("e2e", "userdata", `${userdata}.json`);
+            // Create a temporary userdata file
+            const orginalUserdata = userdata;
+            userdata = `temp-userdata-${Date.now()}.json`;
+
+            tempUserdataPath = path.resolve("e2e", "userdata", `${userdata}.json`);
+            const originalFilePath = path.resolve("e2e", "userdata", `${orginalUserdata}.json`);
+            fs.copyFileSync(originalFilePath, tempUserdataPath);
+            command.args.appjson = tempUserdataPath;
           }
           const result = await handleResult(command.command(command.args as any));
           // eslint-disable-next-line no-console
-          console.warn("CLI result: ", result);
+          console.log("CLI result: ", result);
         }),
       );
     }
@@ -113,6 +121,10 @@ export class Application {
     userdata && (await loadConfig(userdata, true));
     knownDevices && (await loadBleState({ knownDevices }));
     testAccounts && (await loadAccounts(testAccounts));
+
+    if (fs.existsSync(tempUserdataPath)) {
+      fs.unlinkSync(tempUserdataPath);
+    }
 
     return app;
   }
