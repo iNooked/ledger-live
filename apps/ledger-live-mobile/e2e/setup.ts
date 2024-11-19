@@ -11,7 +11,11 @@ import { setEnv } from "@ledgerhq/live-env";
 const currentDate = new Date();
 const date = format(currentDate, "MM-dd");
 const directoryPath = `artifacts/${date}_LLM`;
-setEnv("MOCK", process.env.MOCK == "0" ? "" : "1");
+
+if (process.env.MOCK == "0") {
+  setEnv("MOCK", "");
+  process.env.MOCK = "";
+}
 
 beforeAll(
   async () => {
