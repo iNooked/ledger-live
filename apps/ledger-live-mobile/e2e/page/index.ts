@@ -28,7 +28,6 @@ import WalletTabNavigatorPage from "./wallet/walletTabNavigator.page";
 import type { Account } from "@ledgerhq/types-live";
 import { DeviceLike } from "~/reducers/types";
 import { loadAccounts, loadBleState, loadConfig } from "../bridge/server";
-import { registerSpeculosProxy } from "@ledgerhq/live-cli/src/live-common-setup";
 import { AppInfos } from "@ledgerhq/live-common/e2e/enum/AppInfos";
 import { lastValueFrom, Observable } from "rxjs";
 import { commandCLI } from "../utils/cliUtils";
@@ -91,10 +90,14 @@ export class Application {
   }: ApplicationOptions) {
     const app = new Application();
     let proxyPort = 0;
-    speculosApp && (proxyPort = await app.common.addSpeculos(speculosApp.name));
+    let tempFilePath = "";
+    if (speculosApp) {
+      proxyPort = await app.common.addSpeculos(speculosApp.name);
+      process.env.DEVICE_PROXY_URL = `ws://localhost:${proxyPort}`;
+      require("@ledgerhq/live-cli/src/live-common-setup");
+    }
 
     if (cliCommands?.length) {
-      proxyPort && registerSpeculosProxy(`ws://localhost:${proxyPort}`);
       await Promise.all(
         cliCommands.map(async command => {
           if (command.args && "appjson" in command.args) {
