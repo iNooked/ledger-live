@@ -1,5 +1,11 @@
 # live-mobile
 
+## 3.56.1-nightly.0
+
+### Patch Changes
+
+- [#8382](https://github.com/LedgerHQ/ledger-live/pull/8382) [`eda2042`](https://github.com/LedgerHQ/ledger-live/commit/eda204261f30e5a4784ed9af1376f64d8d86155e) Thanks [@LucasWerey](https://github.com/LucasWerey)! - Fix splashscreen on launch
+
 ## 3.56.0
 
 ### Minor Changes

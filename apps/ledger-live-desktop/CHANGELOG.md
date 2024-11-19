@@ -1,5 +1,11 @@
 # ledger-live-desktop
 
+## 2.92.1-nightly.1
+
+### Patch Changes
+
+- [#8388](https://github.com/LedgerHQ/ledger-live/pull/8388) [`3d3c032`](https://github.com/LedgerHQ/ledger-live/commit/3d3c0320fb0cf8508e91128eb597d63b9669e9d7) Thanks [@themooneer](https://github.com/themooneer)! - use feature flag for send flow intermediary screen memo tag
+
 ## 2.92.1-nightly.0
 
 ### Patch Changes

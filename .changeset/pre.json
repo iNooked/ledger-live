@@ -163,6 +163,7 @@
     "@ledgerhq/coin-stacks": "0.1.0"
   },
   "changesets": [
+    "blue-files-train",
     "bright-icons-explode",
     "chilly-eggs-hammer",
     "cyan-experts-raise",
@@ -175,6 +176,7 @@
     "mean-pugs-hang",
     "metal-walls-rush",
     "mighty-points-hope",
+    "moody-deers-marry",
     "orange-radios-thank",
     "red-bobcats-leave",
     "rotten-months-glow",
