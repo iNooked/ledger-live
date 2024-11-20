@@ -2,4 +2,4 @@
 "ledger-live-desktop": minor
 ---
 
-Localised URL
+tests: adding new e2e test
