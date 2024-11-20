@@ -1,5 +1,18 @@
 # ledger-live-desktop
 
+## 2.93.0-nightly.2
+
+### Minor Changes
+
+- [#8378](https://github.com/LedgerHQ/ledger-live/pull/8378) [`adff5ed`](https://github.com/LedgerHQ/ledger-live/commit/adff5ed938549bd31a2ced20f3f924e63c76af45) Thanks [@VicAlbr](https://github.com/VicAlbr)! - tests: adding new e2e test
+
+- [#8391](https://github.com/LedgerHQ/ledger-live/pull/8391) [`2747ffb`](https://github.com/LedgerHQ/ledger-live/commit/2747ffb4cf5a9756eed992015ce9204da232aeab) Thanks [@qperrot](https://github.com/qperrot)! - fix: import from stacks, playwright test selecting 7d timerange
+
+### Patch Changes
+
+- Updated dependencies [[`2747ffb`](https://github.com/LedgerHQ/ledger-live/commit/2747ffb4cf5a9756eed992015ce9204da232aeab)]:
+  - @ledgerhq/live-common@34.15.0-nightly.1
+
 ## 2.92.1-nightly.1
 
 ### Patch Changes

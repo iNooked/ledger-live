@@ -1,5 +1,11 @@
 # @ledgerhq/coin-stacks
 
+## 0.2.0-nightly.2
+
+### Minor Changes
+
+- [#8391](https://github.com/LedgerHQ/ledger-live/pull/8391) [`2747ffb`](https://github.com/LedgerHQ/ledger-live/commit/2747ffb4cf5a9756eed992015ce9204da232aeab) Thanks [@qperrot](https://github.com/qperrot)! - fix: import from stacks, playwright test selecting 7d timerange
+
 ## 0.1.1-nightly.1
 
 ### Patch Changes

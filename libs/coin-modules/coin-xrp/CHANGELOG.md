@@ -1,5 +1,11 @@
 # @ledgerhq/coin-xrp
 
+## 0.7.0-nightly.1
+
+### Minor Changes
+
+- [#8328](https://github.com/LedgerHQ/ledger-live/pull/8328) [`32a5e45`](https://github.com/LedgerHQ/ledger-live/commit/32a5e453e06c3c432fcb7e5d8e385f7677c3db64) Thanks [@sprohaszka-ledger](https://github.com/sprohaszka-ledger)! - Xrp listOp returns only Payment method to avoid Destination value undefined
+
 ## 0.6.1-nightly.0
 
 ### Patch Changes

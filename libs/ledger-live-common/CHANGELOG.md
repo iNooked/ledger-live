@@ -1,5 +1,17 @@
 ## 34.5.0-next.4
 
+## 34.15.0-nightly.1
+
+### Minor Changes
+
+- [#8391](https://github.com/LedgerHQ/ledger-live/pull/8391) [`2747ffb`](https://github.com/LedgerHQ/ledger-live/commit/2747ffb4cf5a9756eed992015ce9204da232aeab) Thanks [@qperrot](https://github.com/qperrot)! - fix: import from stacks, playwright test selecting 7d timerange
+
+### Patch Changes
+
+- Updated dependencies [[`32a5e45`](https://github.com/LedgerHQ/ledger-live/commit/32a5e453e06c3c432fcb7e5d8e385f7677c3db64), [`2747ffb`](https://github.com/LedgerHQ/ledger-live/commit/2747ffb4cf5a9756eed992015ce9204da232aeab)]:
+  - @ledgerhq/coin-xrp@0.7.0-nightly.1
+  - @ledgerhq/coin-stacks@0.2.0-nightly.2
+
 ## 34.14.1-nightly.0
 
 ### Patch Changes

@@ -1,5 +1,17 @@
 # live-mobile
 
+## 3.57.0-nightly.1
+
+### Minor Changes
+
+- [#8380](https://github.com/LedgerHQ/ledger-live/pull/8380) [`f4f0ca3`](https://github.com/LedgerHQ/ledger-live/commit/f4f0ca31c4e4f9ea83d151e326ceeb37d180665a) Thanks [@LucasWerey](https://github.com/LucasWerey)! - Wait for fetchData from braze before open the app. The braze landing page weren't able to render anything if a user coming from a notification hadn't lockpin
+
+### Patch Changes
+
+- Updated dependencies [[`2747ffb`](https://github.com/LedgerHQ/ledger-live/commit/2747ffb4cf5a9756eed992015ce9204da232aeab)]:
+  - @ledgerhq/coin-stacks@0.2.0-nightly.2
+  - @ledgerhq/live-common@34.15.0-nightly.1
+
 ## 3.56.1-nightly.0
 
 ### Patch Changes
