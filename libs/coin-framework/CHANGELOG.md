@@ -1,5 +1,16 @@
 # @ledgerhq/coin-framework
 
+## 0.20.0-nightly.1
+
+### Minor Changes
+
+- [#8159](https://github.com/LedgerHQ/ledger-live/pull/8159) [`0b51d37`](https://github.com/LedgerHQ/ledger-live/commit/0b51d37762c73a88d7204d1fcc3bb60a110568ed) Thanks [@Wozacosta](https://github.com/Wozacosta)! - feat: scanAccount handle scheme arg
+
+### Patch Changes
+
+- Updated dependencies [[`724fa8b`](https://github.com/LedgerHQ/ledger-live/commit/724fa8b29cbda74a729c5756f91c5c9b745fdbdb)]:
+  - @ledgerhq/types-live@6.54.0-nightly.1
+
 ## 0.19.1-nightly.0
 
 ### Patch Changes

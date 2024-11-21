@@ -1,5 +1,29 @@
 # ledger-live-desktop
 
+## 2.93.0-nightly.3
+
+### Minor Changes
+
+- [#8392](https://github.com/LedgerHQ/ledger-live/pull/8392) [`72245a5`](https://github.com/LedgerHQ/ledger-live/commit/72245a510420fa8e02166a006c8d82a88da11a7f) Thanks [@themooneer](https://github.com/themooneer)! - use common MemoTagField for sol/xrp and extract memo related value from transaction coin/by/coin
+
+### Patch Changes
+
+- Updated dependencies [[`0b51d37`](https://github.com/LedgerHQ/ledger-live/commit/0b51d37762c73a88d7204d1fcc3bb60a110568ed), [`724fa8b`](https://github.com/LedgerHQ/ledger-live/commit/724fa8b29cbda74a729c5756f91c5c9b745fdbdb), [`0397e32`](https://github.com/LedgerHQ/ledger-live/commit/0397e32253ea2af6fc901d69b51f6a59896f3e6a), [`be83cab`](https://github.com/LedgerHQ/ledger-live/commit/be83cabecda649b52cb23be0d1f4ec822629b112)]:
+  - @ledgerhq/coin-framework@0.20.0-nightly.1
+  - @ledgerhq/types-live@6.54.0-nightly.1
+  - @ledgerhq/live-common@34.15.0-nightly.2
+  - @ledgerhq/coin-evm@2.6.0-nightly.1
+  - @ledgerhq/react-ui@0.17.0-nightly.0
+  - @ledgerhq/coin-bitcoin@0.8.8-nightly.1
+  - @ledgerhq/coin-cosmos@0.2.1-nightly.1
+  - @ledgerhq/coin-filecoin@1.3.3-nightly.1
+  - @ledgerhq/live-countervalues@0.2.13-nightly.1
+  - @ledgerhq/live-countervalues-react@0.2.13-nightly.1
+  - @ledgerhq/live-nft@0.4.13-nightly.1
+  - @ledgerhq/live-nft-react@0.4.13-nightly.1
+  - @ledgerhq/live-wallet@0.7.5-nightly.1
+  - @ledgerhq/domain-service@1.2.12-nightly.1
+
 ## 2.93.0-nightly.2
 
 ### Minor Changes

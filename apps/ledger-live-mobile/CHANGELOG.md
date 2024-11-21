@@ -1,5 +1,30 @@
 # live-mobile
 
+## 3.57.0-nightly.2
+
+### Minor Changes
+
+- [#8398](https://github.com/LedgerHQ/ledger-live/pull/8398) [`724fa8b`](https://github.com/LedgerHQ/ledger-live/commit/724fa8b29cbda74a729c5756f91c5c9b745fdbdb) Thanks [@LucasWerey](https://github.com/LucasWerey)! - Add llm Reborn II feature flag for A/B Test + analytics
+
+### Patch Changes
+
+- Updated dependencies [[`0b51d37`](https://github.com/LedgerHQ/ledger-live/commit/0b51d37762c73a88d7204d1fcc3bb60a110568ed), [`724fa8b`](https://github.com/LedgerHQ/ledger-live/commit/724fa8b29cbda74a729c5756f91c5c9b745fdbdb), [`0397e32`](https://github.com/LedgerHQ/ledger-live/commit/0397e32253ea2af6fc901d69b51f6a59896f3e6a)]:
+  - @ledgerhq/coin-framework@0.20.0-nightly.1
+  - @ledgerhq/types-live@6.54.0-nightly.1
+  - @ledgerhq/live-common@34.15.0-nightly.2
+  - @ledgerhq/coin-evm@2.6.0-nightly.1
+  - @ledgerhq/coin-cosmos@0.2.1-nightly.1
+  - @ledgerhq/coin-elrond@0.1.8-nightly.1
+  - @ledgerhq/coin-filecoin@1.3.3-nightly.1
+  - @ledgerhq/coin-stacks@0.2.0-nightly.3
+  - @ledgerhq/live-countervalues@0.2.13-nightly.1
+  - @ledgerhq/live-countervalues-react@0.2.13-nightly.1
+  - @ledgerhq/live-nft@0.4.13-nightly.1
+  - @ledgerhq/live-nft-react@0.4.13-nightly.1
+  - @ledgerhq/live-wallet@0.7.5-nightly.1
+  - @ledgerhq/domain-service@1.2.12-nightly.1
+  - @ledgerhq/native-ui@0.25.4-nightly.0
+
 ## 3.57.0-nightly.1
 
 ### Minor Changes
