@@ -1,5 +1,11 @@
 # @ledgerhq/coin-framework
 
+## 0.20.0-nightly.2
+
+### Minor Changes
+
+- [#8432](https://github.com/LedgerHQ/ledger-live/pull/8432) [`daa059a`](https://github.com/LedgerHQ/ledger-live/commit/daa059a90eb4381a0936c4a3703e8061db24072a) Thanks [@sprohaszka-ledger](https://github.com/sprohaszka-ledger)! - Alpaca allows delegate and undelegate tx crafting
+
 ## 0.20.0-nightly.1
 
 ### Minor Changes

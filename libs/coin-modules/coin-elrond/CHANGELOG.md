@@ -1,5 +1,12 @@
 # @ledgerhq/coin-elrond
 
+## 0.1.8-nightly.2
+
+### Patch Changes
+
+- Updated dependencies [[`daa059a`](https://github.com/LedgerHQ/ledger-live/commit/daa059a90eb4381a0936c4a3703e8061db24072a)]:
+  - @ledgerhq/coin-framework@0.20.0-nightly.2
+
 ## 0.1.8-nightly.1
 
 ### Patch Changes

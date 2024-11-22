@@ -1,5 +1,26 @@
 # ledger-live-desktop
 
+## 2.93.0-nightly.4
+
+### Minor Changes
+
+- [#8428](https://github.com/LedgerHQ/ledger-live/pull/8428) [`ed57628`](https://github.com/LedgerHQ/ledger-live/commit/ed5762814f5f2212982a462843043f9bac35e20d) Thanks [@thesan](https://github.com/thesan)! - Fix flaky portfolio e2e test
+
+### Patch Changes
+
+- Updated dependencies [[`daa059a`](https://github.com/LedgerHQ/ledger-live/commit/daa059a90eb4381a0936c4a3703e8061db24072a)]:
+  - @ledgerhq/coin-framework@0.20.0-nightly.2
+  - @ledgerhq/live-common@34.15.0-nightly.3
+  - @ledgerhq/coin-bitcoin@0.8.8-nightly.2
+  - @ledgerhq/coin-cosmos@0.2.1-nightly.2
+  - @ledgerhq/coin-evm@2.6.0-nightly.2
+  - @ledgerhq/coin-filecoin@1.3.3-nightly.2
+  - @ledgerhq/live-countervalues@0.2.13-nightly.2
+  - @ledgerhq/live-countervalues-react@0.2.13-nightly.2
+  - @ledgerhq/live-nft@0.4.13-nightly.2
+  - @ledgerhq/live-nft-react@0.4.13-nightly.2
+  - @ledgerhq/live-wallet@0.7.5-nightly.2
+
 ## 2.93.0-nightly.3
 
 ### Minor Changes

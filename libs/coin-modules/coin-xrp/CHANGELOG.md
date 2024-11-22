@@ -1,5 +1,16 @@
 # @ledgerhq/coin-xrp
 
+## 0.7.0-nightly.3
+
+### Minor Changes
+
+- [#8432](https://github.com/LedgerHQ/ledger-live/pull/8432) [`daa059a`](https://github.com/LedgerHQ/ledger-live/commit/daa059a90eb4381a0936c4a3703e8061db24072a) Thanks [@sprohaszka-ledger](https://github.com/sprohaszka-ledger)! - Alpaca allows delegate and undelegate tx crafting
+
+### Patch Changes
+
+- Updated dependencies [[`daa059a`](https://github.com/LedgerHQ/ledger-live/commit/daa059a90eb4381a0936c4a3703e8061db24072a)]:
+  - @ledgerhq/coin-framework@0.20.0-nightly.2
+
 ## 0.7.0-nightly.2
 
 ### Patch Changes

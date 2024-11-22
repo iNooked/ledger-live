@@ -1,5 +1,29 @@
 # live-mobile
 
+## 3.57.0-nightly.3
+
+### Minor Changes
+
+- [#8429](https://github.com/LedgerHQ/ledger-live/pull/8429) [`b1bc784`](https://github.com/LedgerHQ/ledger-live/commit/b1bc78456197f9a0c7c063ea6df8bcebe70e8d00) Thanks [@LucasWerey](https://github.com/LucasWerey)! - Add reborn landing pages
+
+- [#8400](https://github.com/LedgerHQ/ledger-live/pull/8400) [`7d8e4fa`](https://github.com/LedgerHQ/ledger-live/commit/7d8e4fa637f1232da89512674450f1ce52f40fb9) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - Landing Page Sticky CTA Content Card
+
+### Patch Changes
+
+- Updated dependencies [[`daa059a`](https://github.com/LedgerHQ/ledger-live/commit/daa059a90eb4381a0936c4a3703e8061db24072a)]:
+  - @ledgerhq/coin-framework@0.20.0-nightly.2
+  - @ledgerhq/live-common@34.15.0-nightly.3
+  - @ledgerhq/coin-cosmos@0.2.1-nightly.2
+  - @ledgerhq/coin-elrond@0.1.8-nightly.2
+  - @ledgerhq/coin-evm@2.6.0-nightly.2
+  - @ledgerhq/coin-filecoin@1.3.3-nightly.2
+  - @ledgerhq/coin-stacks@0.2.0-nightly.4
+  - @ledgerhq/live-countervalues@0.2.13-nightly.2
+  - @ledgerhq/live-countervalues-react@0.2.13-nightly.2
+  - @ledgerhq/live-nft@0.4.13-nightly.2
+  - @ledgerhq/live-nft-react@0.4.13-nightly.2
+  - @ledgerhq/live-wallet@0.7.5-nightly.2
+
 ## 3.57.0-nightly.2
 
 ### Minor Changes
