@@ -1,6 +1,8 @@
 export class AppInfos {
   constructor(public readonly name: string) {}
 
+  static readonly APTOS = new AppInfos("Aptos");
+
   static readonly BITCOIN = new AppInfos("Bitcoin");
 
   static readonly BITCOIN_TESTNET = new AppInfos("Bitcoin Test");

@@ -248,6 +248,14 @@ export const specs: Specs = {
     },
     dependency: "",
   },
+  Aptos: {
+    currency: getCryptoCurrencyById("aptos"),
+    appQuery: {
+      model: DeviceModelId.nanoSP,
+      appName: "Aptos",
+    },
+    dependency: "",
+  },
 };
 
 export async function startSpeculos(
