@@ -1,5 +1,18 @@
 ## 34.5.0-next.4
 
+## 34.15.0-nightly.4
+
+### Minor Changes
+
+- [#8373](https://github.com/LedgerHQ/ledger-live/pull/8373) [`cd565e3`](https://github.com/LedgerHQ/ledger-live/commit/cd565e3b6e0735f4f00a67f26279e22b17cef846) Thanks [@CremaFR](https://github.com/CremaFR)! - swap history works for DEX swaps
+
+- [#7739](https://github.com/LedgerHQ/ledger-live/pull/7739) [`517fa44`](https://github.com/LedgerHQ/ledger-live/commit/517fa44bbc40425995bf840ecab60773d022a30d) Thanks [@ComradeAERGO](https://github.com/ComradeAERGO)! - move vechain to its own coin module
+
+### Patch Changes
+
+- Updated dependencies [[`517fa44`](https://github.com/LedgerHQ/ledger-live/commit/517fa44bbc40425995bf840ecab60773d022a30d)]:
+  - @ledgerhq/coin-vechain@2.2.0-nightly.0
+
 ## 34.15.0-nightly.3
 
 ### Patch Changes

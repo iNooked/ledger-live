@@ -1,5 +1,25 @@
 # ledger-live-desktop
 
+## 2.93.0-nightly.5
+
+### Minor Changes
+
+- [#8434](https://github.com/LedgerHQ/ledger-live/pull/8434) [`3eee976`](https://github.com/LedgerHQ/ledger-live/commit/3eee97630e774b2ad38b8427f0328d0c77226fcb) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - Improve MEV analytics
+
+- [#8402](https://github.com/LedgerHQ/ledger-live/pull/8402) [`d7f58b6`](https://github.com/LedgerHQ/ledger-live/commit/d7f58b6b22dfa5120a9038d2ef3459450bae70d8) Thanks [@sergiubreban](https://github.com/sergiubreban)! - fix style for a completed sell tx
+
+- [#8385](https://github.com/LedgerHQ/ledger-live/pull/8385) [`12ffbd5`](https://github.com/LedgerHQ/ledger-live/commit/12ffbd55fdf52c0a8e3200527a918dbc58b8ca05) Thanks [@bharamboure-ledger](https://github.com/bharamboure-ledger)! - broadcasting on e2e tests only on scheduled workflows on Monday
+
+- [#8358](https://github.com/LedgerHQ/ledger-live/pull/8358) [`064828d`](https://github.com/LedgerHQ/ledger-live/commit/064828dc0e8b1759e55e425a5f4ac48ec02451a6) Thanks [@adammino-ledger](https://github.com/adammino-ledger)! - change label stake for UK to Yield, to Earn for others
+
+- [#8416](https://github.com/LedgerHQ/ledger-live/pull/8416) [`a541e82`](https://github.com/LedgerHQ/ledger-live/commit/a541e82c076c1bbab360122c54b7054e16aa4737) Thanks [@Couto](https://github.com/Couto)! - Add swap related analytic events
+
+### Patch Changes
+
+- Updated dependencies [[`cd565e3`](https://github.com/LedgerHQ/ledger-live/commit/cd565e3b6e0735f4f00a67f26279e22b17cef846), [`b9cffce`](https://github.com/LedgerHQ/ledger-live/commit/b9cffcebd1ecc4b24da730ffd17addf9a980cf3d), [`517fa44`](https://github.com/LedgerHQ/ledger-live/commit/517fa44bbc40425995bf840ecab60773d022a30d)]:
+  - @ledgerhq/live-common@34.15.0-nightly.4
+  - @ledgerhq/react-ui@0.17.0-nightly.1
+
 ## 2.93.0-nightly.4
 
 ### Minor Changes

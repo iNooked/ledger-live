@@ -1,5 +1,11 @@
 # @ledgerhq/coin-evm
 
+## 2.2.0-nightly.0
+
+### Minor Changes
+
+- [#7739](https://github.com/LedgerHQ/ledger-live/pull/7739) [`517fa44`](https://github.com/LedgerHQ/ledger-live/commit/517fa44bbc40425995bf840ecab60773d022a30d) Thanks [@ComradeAERGO](https://github.com/ComradeAERGO)! - move vechain to its own coin module
+
 ## 2.1.3
 
 ### Patch Changes

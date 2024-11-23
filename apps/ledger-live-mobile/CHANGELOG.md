@@ -1,5 +1,22 @@
 # live-mobile
 
+## 3.57.0-nightly.4
+
+### Minor Changes
+
+- [#8434](https://github.com/LedgerHQ/ledger-live/pull/8434) [`3eee976`](https://github.com/LedgerHQ/ledger-live/commit/3eee97630e774b2ad38b8427f0328d0c77226fcb) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - Improve MEV analytics
+
+- [#8417](https://github.com/LedgerHQ/ledger-live/pull/8417) [`842b255`](https://github.com/LedgerHQ/ledger-live/commit/842b255581d095fffe8b202404840fd08ee5d5c3) Thanks [@LucasWerey](https://github.com/LucasWerey)! - Update old reborn banner
+
+- [#8358](https://github.com/LedgerHQ/ledger-live/pull/8358) [`064828d`](https://github.com/LedgerHQ/ledger-live/commit/064828dc0e8b1759e55e425a5f4ac48ec02451a6) Thanks [@adammino-ledger](https://github.com/adammino-ledger)! - change label stake for UK to Yield, to Earn for others
+
+- [#7739](https://github.com/LedgerHQ/ledger-live/pull/7739) [`517fa44`](https://github.com/LedgerHQ/ledger-live/commit/517fa44bbc40425995bf840ecab60773d022a30d) Thanks [@ComradeAERGO](https://github.com/ComradeAERGO)! - move vechain to its own coin module
+
+### Patch Changes
+
+- Updated dependencies [[`cd565e3`](https://github.com/LedgerHQ/ledger-live/commit/cd565e3b6e0735f4f00a67f26279e22b17cef846), [`517fa44`](https://github.com/LedgerHQ/ledger-live/commit/517fa44bbc40425995bf840ecab60773d022a30d)]:
+  - @ledgerhq/live-common@34.15.0-nightly.4
+
 ## 3.57.0-nightly.3
 
 ### Minor Changes

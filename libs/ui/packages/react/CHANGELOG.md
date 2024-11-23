@@ -1,5 +1,11 @@
 # @ledgerhq/react-ui
 
+## 0.17.0-nightly.1
+
+### Minor Changes
+
+- [#8387](https://github.com/LedgerHQ/ledger-live/pull/8387) [`b9cffce`](https://github.com/LedgerHQ/ledger-live/commit/b9cffcebd1ecc4b24da730ffd17addf9a980cf3d) Thanks [@thesan](https://github.com/thesan)! - Add new portfolio content card component
+
 ## 0.17.0-nightly.0
 
 ### Minor Changes
