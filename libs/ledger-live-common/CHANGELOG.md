@@ -1,5 +1,18 @@
 ## 34.5.0-next.4
 
+## 34.15.0-nightly.5
+
+### Minor Changes
+
+- [#8401](https://github.com/LedgerHQ/ledger-live/pull/8401) [`5c4455f`](https://github.com/LedgerHQ/ledger-live/commit/5c4455f80b03991843e16c80c5af5a019db25227) Thanks [@chrisduma-ledger](https://github.com/chrisduma-ledger)! - Fixes app install and refactors logic
+
+### Patch Changes
+
+- Updated dependencies [[`abb25e1`](https://github.com/LedgerHQ/ledger-live/commit/abb25e1c0238b918824a9350ac29a425c2b19643), [`4fc1d7a`](https://github.com/LedgerHQ/ledger-live/commit/4fc1d7a0d52839b7d57e1c81b99b8e6a2cfa69c8), [`5c4455f`](https://github.com/LedgerHQ/ledger-live/commit/5c4455f80b03991843e16c80c5af5a019db25227)]:
+  - @ledgerhq/hw-app-eth@6.42.0-nightly.2
+  - @ledgerhq/wallet-api-exchange-module@0.8.0-nightly.0
+  - @ledgerhq/coin-evm@2.6.0-nightly.2
+
 ## 34.15.0-nightly.4
 
 ### Minor Changes

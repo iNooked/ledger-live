@@ -1,5 +1,13 @@
 # @ledgerhq/hw-app-eth
 
+## 6.42.0-nightly.2
+
+### Minor Changes
+
+- [#8430](https://github.com/LedgerHQ/ledger-live/pull/8430) [`abb25e1`](https://github.com/LedgerHQ/ledger-live/commit/abb25e1c0238b918824a9350ac29a425c2b19643) Thanks [@lambertkevin](https://github.com/lambertkevin)! - Add support for `SWEEP` command in Uniswap plugin
+
+- [#8473](https://github.com/LedgerHQ/ledger-live/pull/8473) [`4fc1d7a`](https://github.com/LedgerHQ/ledger-live/commit/4fc1d7a0d52839b7d57e1c81b99b8e6a2cfa69c8) Thanks [@lambertkevin](https://github.com/lambertkevin)! - Force entries order in EIP-712 Structs when providing their implementation.
+
 ## 6.41.1-nightly.1
 
 ### Patch Changes
