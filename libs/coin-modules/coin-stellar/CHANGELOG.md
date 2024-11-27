@@ -1,31 +1,20 @@
 # @ledgerhq/coin-stellar
 
-## 0.4.0-nightly.2
-
-### Minor Changes
-
-- [#8432](https://github.com/LedgerHQ/ledger-live/pull/8432) [`daa059a`](https://github.com/LedgerHQ/ledger-live/commit/daa059a90eb4381a0936c4a3703e8061db24072a) Thanks [@sprohaszka-ledger](https://github.com/sprohaszka-ledger)! - Alpaca allows delegate and undelegate tx crafting
+## 0.3.8
 
 ### Patch Changes
 
-- Updated dependencies [[`daa059a`](https://github.com/LedgerHQ/ledger-live/commit/daa059a90eb4381a0936c4a3703e8061db24072a)]:
-  - @ledgerhq/coin-framework@0.20.0-nightly.2
+- Updated dependencies [[`5ce33a4`](https://github.com/LedgerHQ/ledger-live/commit/5ce33a417ecc87face54c1864aa49476c5f394b9), [`a52f6ae`](https://github.com/LedgerHQ/ledger-live/commit/a52f6ae3d49ea8daea42d9cdc24e9dd0d6d0f371), [`748cf14`](https://github.com/LedgerHQ/ledger-live/commit/748cf146b3e903172831e7e5ddbc29a3565c8932), [`61f8b03`](https://github.com/LedgerHQ/ledger-live/commit/61f8b033f710369171e277f5c0faede636207160)]:
+  - @ledgerhq/types-live@6.53.1
+  - @ledgerhq/coin-framework@0.19.1
 
-## 0.3.8-nightly.1
-
-### Patch Changes
-
-- Updated dependencies [[`0b51d37`](https://github.com/LedgerHQ/ledger-live/commit/0b51d37762c73a88d7204d1fcc3bb60a110568ed), [`724fa8b`](https://github.com/LedgerHQ/ledger-live/commit/724fa8b29cbda74a729c5756f91c5c9b745fdbdb)]:
-  - @ledgerhq/coin-framework@0.20.0-nightly.1
-  - @ledgerhq/types-live@6.54.0-nightly.1
-
-## 0.3.8-nightly.0
+## 0.3.8-next.0
 
 ### Patch Changes
 
-- Updated dependencies [[`61f8b03`](https://github.com/LedgerHQ/ledger-live/commit/61f8b033f710369171e277f5c0faede636207160)]:
-  - @ledgerhq/types-live@6.53.1-nightly.0
-  - @ledgerhq/coin-framework@0.19.1-nightly.0
+- Updated dependencies [[`5ce33a4`](https://github.com/LedgerHQ/ledger-live/commit/5ce33a417ecc87face54c1864aa49476c5f394b9), [`a52f6ae`](https://github.com/LedgerHQ/ledger-live/commit/a52f6ae3d49ea8daea42d9cdc24e9dd0d6d0f371), [`748cf14`](https://github.com/LedgerHQ/ledger-live/commit/748cf146b3e903172831e7e5ddbc29a3565c8932), [`61f8b03`](https://github.com/LedgerHQ/ledger-live/commit/61f8b033f710369171e277f5c0faede636207160)]:
+  - @ledgerhq/types-live@6.53.1-next.0
+  - @ledgerhq/coin-framework@0.19.1-next.0
 
 ## 0.3.7
 

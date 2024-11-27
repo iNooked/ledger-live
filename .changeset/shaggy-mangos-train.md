@@ -2,4 +2,4 @@
 "ledger-live-desktop": minor
 ---
 
-Localised URL
+Adding E2E test for Ledger Sync
