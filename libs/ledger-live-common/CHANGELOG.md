@@ -1,5 +1,11 @@
 ## 34.5.0-next.4
 
+## 34.15.0-nightly.0
+
+### Minor Changes
+
+- [#8240](https://github.com/LedgerHQ/ledger-live/pull/8240) [`224cc07`](https://github.com/LedgerHQ/ledger-live/commit/224cc07b86e8c5a6167ff77cfb99e42a1057813e) Thanks [@Wozacosta](https://github.com/Wozacosta)! - chore: Upgrade @celo/\* dependencies for compatibility with Celo as Layer 2
+
 ## 34.14.1
 
 ### Patch Changes

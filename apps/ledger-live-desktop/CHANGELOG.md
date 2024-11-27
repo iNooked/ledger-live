@@ -1,5 +1,25 @@
 # ledger-live-desktop
 
+## 2.93.0-nightly.0
+
+### Minor Changes
+
+- [#8319](https://github.com/LedgerHQ/ledger-live/pull/8319) [`42e9d67`](https://github.com/LedgerHQ/ledger-live/commit/42e9d67cd5c99f10e6e760c6a657ca7a8e3d45fb) Thanks [@sergiubreban](https://github.com/sergiubreban)! - Handle close sidebar and notify widget app
+
+- [#8397](https://github.com/LedgerHQ/ledger-live/pull/8397) [`2a9e2de`](https://github.com/LedgerHQ/ledger-live/commit/2a9e2de3d14958123f702e4bde93eeb52967cddd) Thanks [@thesan](https://github.com/thesan)! - Re-implement the portfolio content cards with UI components
+
+- [#8448](https://github.com/LedgerHQ/ledger-live/pull/8448) [`b135797`](https://github.com/LedgerHQ/ledger-live/commit/b1357973bd5c633c9483b634d1d8583a03dadbc5) Thanks [@VicAlbr](https://github.com/VicAlbr)! - Adding E2E test for Ledger Sync
+
+- [#8445](https://github.com/LedgerHQ/ledger-live/pull/8445) [`5532e7f`](https://github.com/LedgerHQ/ledger-live/commit/5532e7f63c75ab3f91f0791740c34c9dff4d4dbf) Thanks [@ComradeAERGO](https://github.com/ComradeAERGO)! - Fixing the account names in webviews account selection
+
+- [#8240](https://github.com/LedgerHQ/ledger-live/pull/8240) [`224cc07`](https://github.com/LedgerHQ/ledger-live/commit/224cc07b86e8c5a6167ff77cfb99e42a1057813e) Thanks [@Wozacosta](https://github.com/Wozacosta)! - chore: Upgrade @celo/\* dependencies for compatibility with Celo as Layer 2
+
+### Patch Changes
+
+- Updated dependencies [[`2a9e2de`](https://github.com/LedgerHQ/ledger-live/commit/2a9e2de3d14958123f702e4bde93eeb52967cddd), [`224cc07`](https://github.com/LedgerHQ/ledger-live/commit/224cc07b86e8c5a6167ff77cfb99e42a1057813e)]:
+  - @ledgerhq/react-ui@0.17.0-nightly.2
+  - @ledgerhq/live-common@34.15.0-nightly.0
+
 ## 2.92.1
 
 ### Patch Changes

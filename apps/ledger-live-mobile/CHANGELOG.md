@@ -1,5 +1,20 @@
 # live-mobile
 
+## 3.58.0-nightly.0
+
+### Minor Changes
+
+- [#8482](https://github.com/LedgerHQ/ledger-live/pull/8482) [`5e5d7d2`](https://github.com/LedgerHQ/ledger-live/commit/5e5d7d26f5ade21a7ffda5f23865cd74f806bd59) Thanks [@adammino-ledger](https://github.com/adammino-ledger)! - Change label to Yield for UK and Earn for the rest on quick action market menu
+
+- [#8435](https://github.com/LedgerHQ/ledger-live/pull/8435) [`d727654`](https://github.com/LedgerHQ/ledger-live/commit/d727654680d428d8cfcde22451975829059e6f05) Thanks [@cgrellard-ledger](https://github.com/cgrellard-ledger)! - LLM - Redirect user instead of showing a Ledger Sync error message when deleting the backup and attempting to re-sync
+
+- [#8476](https://github.com/LedgerHQ/ledger-live/pull/8476) [`c3107ab`](https://github.com/LedgerHQ/ledger-live/commit/c3107aba9ea342478443c881285eb53452d1cc09) Thanks [@LucasWerey](https://github.com/LucasWerey)! - update text on setup your device drawer
+
+### Patch Changes
+
+- Updated dependencies [[`224cc07`](https://github.com/LedgerHQ/ledger-live/commit/224cc07b86e8c5a6167ff77cfb99e42a1057813e)]:
+  - @ledgerhq/live-common@34.15.0-nightly.0
+
 ## 3.57.0
 
 ### Minor Changes
