@@ -161,7 +161,8 @@
     "@ledgerhq/hw-app-hedera": "1.0.0",
     "@ledgerhq/coin-filecoin": "1.3.2",
     "@ledgerhq/coin-stacks": "0.1.0",
-    "@ledgerhq/coin-vechain": "2.1.3"
+    "@ledgerhq/coin-vechain": "2.1.3",
+    "@ledgerhq/live-dmk": "0.1.0"
   },
   "changesets": [
     "afraid-houses-grin",
@@ -175,11 +176,13 @@
     "eighty-pants-give",
     "famous-tables-mate",
     "good-terms-hunt",
+    "happy-insects-sing",
     "honest-trainers-shake",
     "hot-cameras-fly",
     "khaki-llamas-flow",
     "kind-masks-unite",
     "loud-mangos-enjoy",
+    "many-moons-study",
     "new-eels-deliver",
     "new-ties-fly",
     "ninety-experts-tickle",

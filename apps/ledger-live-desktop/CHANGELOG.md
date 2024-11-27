@@ -1,5 +1,11 @@
 # ledger-live-desktop
 
+## 2.93.0-nightly.1
+
+### Minor Changes
+
+- [#8465](https://github.com/LedgerHQ/ledger-live/pull/8465) [`fc95133`](https://github.com/LedgerHQ/ledger-live/commit/fc9513365f85d80c4c0cfb6645c2d8ea86983a87) Thanks [@themooneer](https://github.com/themooneer)! - Make learn more cta dynamic per app name context
+
 ## 2.93.0-nightly.0
 
 ### Minor Changes
