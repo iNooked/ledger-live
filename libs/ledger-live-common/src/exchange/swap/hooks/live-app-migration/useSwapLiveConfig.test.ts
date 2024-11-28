@@ -18,12 +18,7 @@ describe("useSwapLiveConfig", () => {
       { enabled: boolean; params: { manifest_id: string; variant?: string } } | undefined
     >[],
   ) => {
-    const flagsKeys = [
-      "ptxSwapLiveAppDemoZero",
-      "ptxSwapLiveAppDemoOne",
-      "ptxSwapLiveAppDemoThree",
-      "ptxSwapCoreExperiment",
-    ];
+    const flagsKeys = ["ptxSwapLiveAppDemoThree", "ptxSwapCoreExperiment"];
 
     useMockFeature.mockImplementation(flagName => flags[flagsKeys.indexOf(flagName)] ?? null);
   };
@@ -34,7 +29,6 @@ describe("useSwapLiveConfig", () => {
 
   it("should highest priority flag if all features have the same enabled state", () => {
     setupFeatureFlagsMock([
-      { enabled: true, params: { manifest_id: "demo_0" } },
       { enabled: true, params: { manifest_id: "demo_1" } },
       { enabled: true, params: { manifest_id: "demo_3" } },
     ]);

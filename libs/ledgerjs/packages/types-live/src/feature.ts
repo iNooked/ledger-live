@@ -168,9 +168,7 @@ export type Features = CurrencyFeatures & {
   fetchAdditionalCoins: Feature_FetchAdditionalCoins;
   ptxCard: DefaultFeature;
   ptxSwapLiveAppMobile: DefaultFeature;
-  ptxSwapLiveAppDemoZero: Feature_PtxSwapLiveAppDemoZero;
-  ptxSwapLiveAppDemoOne: Feature_PtxSwapLiveAppDemoZero;
-  ptxSwapLiveAppDemoThree: Feature_PtxSwapLiveAppDemoZero;
+  ptxSwapLiveAppDemoThree: Feature_PtxSwapLiveAppDemoThree;
   ptxSwapCoreExperiment: Feature_PtxSwapCoreExperiment;
   ptxSwapMoonpayProvider: Feature_PtxSwapMoonpayProvider;
   ptxSwapExodusProvider: Feature_PtxSwapExodusProvider;
@@ -469,12 +467,7 @@ export type Feature_RatingsPrompt = Feature<{
   typeform_url: string;
 }>;
 
-export type Feature_PtxSwapLiveApp = Feature<{
-  currencies?: Array<string>;
-  families?: Array<string>;
-}>;
-
-export type Feature_PtxSwapLiveAppDemoZero = Feature<{
+export type Feature_PtxSwapLiveAppDemoThree = Feature<{
   manifest_id: string;
   currencies?: string[];
   families?: string[];

@@ -90,7 +90,6 @@ export const CURRENCY_DEFAULT_FEATURES = {
  */
 export const DEFAULT_FEATURES: Features = {
   ...CURRENCY_DEFAULT_FEATURES,
-
   brazeLearn: DEFAULT_FEATURE,
   portfolioExchangeBanner: DEFAULT_FEATURE,
   postOnboardingAssetsTransfer: DEFAULT_FEATURE,
@@ -399,22 +398,8 @@ export const DEFAULT_FEATURES: Features = {
   },
   ptxCard: DEFAULT_FEATURE,
 
-  ptxSwapLiveAppDemoZero: {
-    enabled: false,
-    params: {
-      manifest_id: "swap-live-app-demo-0",
-    },
-  },
-
-  ptxSwapLiveAppDemoOne: {
-    enabled: false,
-    params: {
-      manifest_id: "swap-live-app-demo-1",
-    },
-  },
-
   ptxSwapLiveAppDemoThree: {
-    enabled: false,
+    enabled: true,
     params: {
       manifest_id: "swap-live-app-demo-3",
     },

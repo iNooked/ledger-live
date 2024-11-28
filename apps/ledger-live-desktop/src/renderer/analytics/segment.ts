@@ -100,10 +100,6 @@ const getPtxAttributes = () => {
   const stakingProviders = analyticsFeatureFlagMethod("ethStakingProviders");
   const ptxCard = analyticsFeatureFlagMethod("ptxCard");
   const ptxSwapMoonpayProviderFlag = analyticsFeatureFlagMethod("ptxSwapMoonpayProvider");
-
-  const ptxSwapLiveAppDemoZero = analyticsFeatureFlagMethod("ptxSwapLiveAppDemoZero")?.enabled;
-  const ptxSwapLiveAppDemoOne = analyticsFeatureFlagMethod("ptxSwapLiveAppDemoOne")?.enabled;
-  const ptxSwapLiveAppDemoThree = analyticsFeatureFlagMethod("ptxSwapLiveAppDemoThree")?.enabled;
   const ptxSwapExodusProvider = analyticsFeatureFlagMethod("ptxSwapExodusProvider")?.enabled;
   const ptxSwapCoreExperimentFlag = analyticsFeatureFlagMethod("ptxSwapCoreExperiment");
   const ptxSwapCoreExperiment = ptxSwapCoreExperimentFlag?.enabled
@@ -130,9 +126,6 @@ const getPtxAttributes = () => {
     stakingProvidersEnabled,
     ptxCard,
     ptxSwapMoonpayProviderEnabled,
-    ptxSwapLiveAppDemoZero,
-    ptxSwapLiveAppDemoOne,
-    ptxSwapLiveAppDemoThree,
     ptxSwapCoreExperiment,
     ptxSwapExodusProvider,
   };

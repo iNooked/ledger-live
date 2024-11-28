@@ -26,10 +26,15 @@ const ErrorWrapper = styled.div`
   font-weight: 500;
 `;
 
+// set the default manifest ID for the production swap live app
+// in case the FF is failing to load the manifest ID
+// "swap-live-app-demo-3" points to production vercel URL for the swap live app
+const DEFAULT_MANIFEST_ID = process.env.DEFAULT_SWAP_MANIFEST_ID || "swap-live-app-demo-3";
+
 export function SwapApp() {
   const [unavailable, setUnavailable] = useState(false);
   const swapLiveEnabledFlag = useSwapLiveConfig();
-  const swapLiveAppManifestID = swapLiveEnabledFlag?.params?.manifest_id;
+  const swapLiveAppManifestID = swapLiveEnabledFlag?.params?.manifest_id || DEFAULT_MANIFEST_ID;
 
   const localManifest = useLocalLiveAppManifest(swapLiveAppManifestID || undefined);
   const remoteManifest = useRemoteLiveAppManifest(swapLiveAppManifestID || undefined);
