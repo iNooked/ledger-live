@@ -1,5 +1,19 @@
 # live-mobile
 
+## 3.58.0-nightly.1
+
+### Minor Changes
+
+- [#8509](https://github.com/LedgerHQ/ledger-live/pull/8509) [`9894ecc`](https://github.com/LedgerHQ/ledger-live/commit/9894eccddca137b46a3cfec63f29df2bebdeea0b) Thanks [@LucasWerey](https://github.com/LucasWerey)! - Fix layout issue on my ledger screen
+
+- [#8404](https://github.com/LedgerHQ/ledger-live/pull/8404) [`2901938`](https://github.com/LedgerHQ/ledger-live/commit/29019387955bbab5bc0adcd550bc9e32d08b4f72) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - Fix undefined join on Spam filter
+
+### Patch Changes
+
+- Updated dependencies [[`475b74c`](https://github.com/LedgerHQ/ledger-live/commit/475b74c1ba01b7e7a374cca14e274769a3c17476), [`faef7ed`](https://github.com/LedgerHQ/ledger-live/commit/faef7ed3b9954d2bbaf5c5a518e247fd441a73e7), [`2901938`](https://github.com/LedgerHQ/ledger-live/commit/29019387955bbab5bc0adcd550bc9e32d08b4f72)]:
+  - @ledgerhq/live-common@34.15.0-nightly.1
+  - @ledgerhq/live-nft-react@0.5.0-nightly.0
+
 ## 3.58.0-nightly.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # @ledgerhq/live-nft-react
 
+## 0.5.0-nightly.0
+
+### Minor Changes
+
+- [#8404](https://github.com/LedgerHQ/ledger-live/pull/8404) [`2901938`](https://github.com/LedgerHQ/ledger-live/commit/29019387955bbab5bc0adcd550bc9e32d08b4f72) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - Fix undefined join on Spam filter
+
 ## 0.4.13
 
 ### Patch Changes

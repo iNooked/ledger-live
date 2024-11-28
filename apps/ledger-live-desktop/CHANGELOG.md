@@ -1,5 +1,23 @@
 # ledger-live-desktop
 
+## 2.93.0-nightly.2
+
+### Minor Changes
+
+- [#8511](https://github.com/LedgerHQ/ledger-live/pull/8511) [`73f65a7`](https://github.com/LedgerHQ/ledger-live/commit/73f65a7aa3e08565794471545b431b4278c954f8) Thanks [@adammino-ledger](https://github.com/adammino-ledger)! - Changed the Electron util that detects the locale for swapping Yield-Earn labels
+
+- [#8500](https://github.com/LedgerHQ/ledger-live/pull/8500) [`faef7ed`](https://github.com/LedgerHQ/ledger-live/commit/faef7ed3b9954d2bbaf5c5a518e247fd441a73e7) Thanks [@VicAlbr](https://github.com/VicAlbr)! - Fix Speculos CI + Update checks on receive and subAccount tests"
+
+- [#8404](https://github.com/LedgerHQ/ledger-live/pull/8404) [`2901938`](https://github.com/LedgerHQ/ledger-live/commit/29019387955bbab5bc0adcd550bc9e32d08b4f72) Thanks [@mcayuelas-ledger](https://github.com/mcayuelas-ledger)! - Fix undefined join on Spam filter
+
+- [#8497](https://github.com/LedgerHQ/ledger-live/pull/8497) [`d7ae5ff`](https://github.com/LedgerHQ/ledger-live/commit/d7ae5ffc941dab74a5bcc6f52f8d2040e582757d) Thanks [@VicAlbr](https://github.com/VicAlbr)! - adding e2e test
+
+### Patch Changes
+
+- Updated dependencies [[`475b74c`](https://github.com/LedgerHQ/ledger-live/commit/475b74c1ba01b7e7a374cca14e274769a3c17476), [`faef7ed`](https://github.com/LedgerHQ/ledger-live/commit/faef7ed3b9954d2bbaf5c5a518e247fd441a73e7), [`2901938`](https://github.com/LedgerHQ/ledger-live/commit/29019387955bbab5bc0adcd550bc9e32d08b4f72)]:
+  - @ledgerhq/live-common@34.15.0-nightly.1
+  - @ledgerhq/live-nft-react@0.5.0-nightly.0
+
 ## 2.93.0-nightly.1
 
 ### Minor Changes
