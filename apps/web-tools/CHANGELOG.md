@@ -1,5 +1,12 @@
 # web-tools
 
+## 0.11.2-nightly.2
+
+### Patch Changes
+
+- Updated dependencies [[`e857228`](https://github.com/LedgerHQ/ledger-live/commit/e85722807a58ead3fcb8b06bf5bcf33cea393483)]:
+  - @ledgerhq/hw-transport-webhid@6.29.5-nightly.0
+
 ## 0.11.2-nightly.1
 
 ### Patch Changes
