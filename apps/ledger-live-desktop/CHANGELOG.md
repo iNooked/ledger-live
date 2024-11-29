@@ -1,5 +1,19 @@
 # ledger-live-desktop
 
+## 2.93.0-nightly.5
+
+### Minor Changes
+
+- [#8525](https://github.com/LedgerHQ/ledger-live/pull/8525) [`032a018`](https://github.com/LedgerHQ/ledger-live/commit/032a018e2410a4074c4d2075ce3bd205858732db) Thanks [@CremaFR](https://github.com/CremaFR)! - fix: default gas limit
+
+- [#8514](https://github.com/LedgerHQ/ledger-live/pull/8514) [`b8b9f76`](https://github.com/LedgerHQ/ledger-live/commit/b8b9f767deea088ebf5cb7d976a1204f6c0d316f) Thanks [@ComradeAERGO](https://github.com/ComradeAERGO)! - Removed message fields for sign message modal for ACRE Withdrawals
+
+- [#8524](https://github.com/LedgerHQ/ledger-live/pull/8524) [`8e11fb4`](https://github.com/LedgerHQ/ledger-live/commit/8e11fb49d5d3956230a004972e2b79a905b8a891) Thanks [@CremaFR](https://github.com/CremaFR)! - fix: stop saving fees when closing
+
+### Patch Changes
+
+- [#8529](https://github.com/LedgerHQ/ledger-live/pull/8529) [`b8fdd1c`](https://github.com/LedgerHQ/ledger-live/commit/b8fdd1c32c46a9a3f10bc129f8ef66de3cda0b35) Thanks [@valpinkman](https://github.com/valpinkman)! - Fix IPC transport register
+
 ## 2.93.0-nightly.4
 
 ### Minor Changes

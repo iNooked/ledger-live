@@ -1,5 +1,11 @@
 # live-mobile
 
+## 3.58.0-nightly.2
+
+### Minor Changes
+
+- [#8514](https://github.com/LedgerHQ/ledger-live/pull/8514) [`b8b9f76`](https://github.com/LedgerHQ/ledger-live/commit/b8b9f767deea088ebf5cb7d976a1204f6c0d316f) Thanks [@ComradeAERGO](https://github.com/ComradeAERGO)! - Removed message fields for sign message modal for ACRE Withdrawals
+
 ## 3.58.0-nightly.1
 
 ### Minor Changes
