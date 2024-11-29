@@ -3,7 +3,7 @@ import { Flex } from "@ledgerhq/native-ui";
 import { CategoryContentCard, BrazeContentCard } from "../types";
 import Header from "./Header";
 import Layout from "./Layout";
-import { IsInViewContextProvider } from "LLM/contexts/IsInViewContext";
+import { InViewContextProvider } from "~/newArch/contexts/InViewContext";
 
 type Props = {
   category: CategoryContentCard;
@@ -19,9 +19,9 @@ const ContentCardsCategory = ({ category, categoryContentCards }: Props) => {
         cta={category.cta}
         link={category.link}
       />
-      <IsInViewContextProvider>
+      <InViewContextProvider>
         <Layout category={category} cards={categoryContentCards} />
-      </IsInViewContextProvider>
+      </InViewContextProvider>
     </Flex>
   );
 };
