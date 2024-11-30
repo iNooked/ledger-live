@@ -1,5 +1,34 @@
 # ledger-live-desktop
 
+## 2.93.0-nightly.6
+
+### Minor Changes
+
+- [#8375](https://github.com/LedgerHQ/ledger-live/pull/8375) [`c45ee45`](https://github.com/LedgerHQ/ledger-live/commit/c45ee457a9f5500ae42f2a8fb7f0cfb7926f319b) Thanks [@Canestin](https://github.com/Canestin)! - add mev protection
+
+- [#8523](https://github.com/LedgerHQ/ledger-live/pull/8523) [`90b2950`](https://github.com/LedgerHQ/ledger-live/commit/90b295032fed0420e44effc6446f8ca2e209c600) Thanks [@lpaquet-ledger](https://github.com/lpaquet-ledger)! - fix swap Id in history
+
+### Patch Changes
+
+- [#8503](https://github.com/LedgerHQ/ledger-live/pull/8503) [`322fd58`](https://github.com/LedgerHQ/ledger-live/commit/322fd58ffcde6d592eb27af1fd93f8c45d33205c) Thanks [@jiyuzhuang](https://github.com/jiyuzhuang)! - Remove `feature_recover_upsell_redirection` feature flag and unused components
+
+- [#8540](https://github.com/LedgerHQ/ledger-live/pull/8540) [`aa7d44a`](https://github.com/LedgerHQ/ledger-live/commit/aa7d44a18b42d54c65585a6e6769571f51e5fd2f) Thanks [@valpinkman](https://github.com/valpinkman)! - Fix speculos transport
+
+- Updated dependencies [[`c45ee45`](https://github.com/LedgerHQ/ledger-live/commit/c45ee457a9f5500ae42f2a8fb7f0cfb7926f319b), [`322fd58`](https://github.com/LedgerHQ/ledger-live/commit/322fd58ffcde6d592eb27af1fd93f8c45d33205c)]:
+  - @ledgerhq/types-live@6.54.0-nightly.0
+  - @ledgerhq/coin-evm@2.6.0-nightly.0
+  - @ledgerhq/live-common@34.15.0-nightly.2
+  - @ledgerhq/coin-framework@0.19.2-nightly.0
+  - @ledgerhq/coin-bitcoin@0.8.9-nightly.0
+  - @ledgerhq/coin-cosmos@0.2.2-nightly.0
+  - @ledgerhq/coin-filecoin@1.3.4-nightly.0
+  - @ledgerhq/domain-service@1.2.13-nightly.0
+  - @ledgerhq/live-countervalues@0.2.14-nightly.0
+  - @ledgerhq/live-countervalues-react@0.2.14-nightly.0
+  - @ledgerhq/live-nft@0.4.14-nightly.0
+  - @ledgerhq/live-nft-react@0.5.0-nightly.1
+  - @ledgerhq/live-wallet@0.7.6-nightly.0
+
 ## 2.93.0-nightly.5
 
 ### Minor Changes

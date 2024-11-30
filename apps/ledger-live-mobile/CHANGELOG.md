@@ -1,5 +1,33 @@
 # live-mobile
 
+## 3.58.0-nightly.3
+
+### Minor Changes
+
+- [#8377](https://github.com/LedgerHQ/ledger-live/pull/8377) [`e381081`](https://github.com/LedgerHQ/ledger-live/commit/e381081aa94d629ca1bee0802b0c95676aee7bdc) Thanks [@themooneer](https://github.com/themooneer)! - Prepare add account v2 reusable screens
+
+- [#8375](https://github.com/LedgerHQ/ledger-live/pull/8375) [`c45ee45`](https://github.com/LedgerHQ/ledger-live/commit/c45ee457a9f5500ae42f2a8fb7f0cfb7926f319b) Thanks [@Canestin](https://github.com/Canestin)! - add mev protection
+
+### Patch Changes
+
+- [#8503](https://github.com/LedgerHQ/ledger-live/pull/8503) [`322fd58`](https://github.com/LedgerHQ/ledger-live/commit/322fd58ffcde6d592eb27af1fd93f8c45d33205c) Thanks [@jiyuzhuang](https://github.com/jiyuzhuang)! - Remove `feature_recover_upsell_redirection` feature flag and unused components
+
+- Updated dependencies [[`c45ee45`](https://github.com/LedgerHQ/ledger-live/commit/c45ee457a9f5500ae42f2a8fb7f0cfb7926f319b), [`322fd58`](https://github.com/LedgerHQ/ledger-live/commit/322fd58ffcde6d592eb27af1fd93f8c45d33205c)]:
+  - @ledgerhq/types-live@6.54.0-nightly.0
+  - @ledgerhq/coin-evm@2.6.0-nightly.0
+  - @ledgerhq/live-common@34.15.0-nightly.2
+  - @ledgerhq/coin-framework@0.19.2-nightly.0
+  - @ledgerhq/coin-cosmos@0.2.2-nightly.0
+  - @ledgerhq/coin-elrond@0.1.9-nightly.0
+  - @ledgerhq/coin-filecoin@1.3.4-nightly.0
+  - @ledgerhq/coin-stacks@0.1.2-nightly.0
+  - @ledgerhq/domain-service@1.2.13-nightly.0
+  - @ledgerhq/live-countervalues@0.2.14-nightly.0
+  - @ledgerhq/live-countervalues-react@0.2.14-nightly.0
+  - @ledgerhq/live-nft@0.4.14-nightly.0
+  - @ledgerhq/live-nft-react@0.5.0-nightly.1
+  - @ledgerhq/live-wallet@0.7.6-nightly.0
+
 ## 3.58.0-nightly.2
 
 ### Minor Changes
