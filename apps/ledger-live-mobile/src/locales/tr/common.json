@@ -1287,19 +1287,19 @@
     "title" : "Bir Ledger'a ihtiyacınız var",
     "desc" : "Güvenliğiniz için Ledger Live yalnızca bir cihazla çalışır. Devam etmek için bir cihaza ihtiyacınız var.",
     "cta" : "Ledger'ınızı şimdi satın alın",
-    "footer" : "Zaten bir cihazım var, şimdi kurmak istiyorum",
-    "bannerTitle" : "Kriptolarınızı ve NFT'lerinizi güvende tutun",
-    "bannerTitle2" : "Bir Ledger Cihazıyla işlem yapmak için",
-    "bannerSubtitle" : "bir Nano'ya ihtiyacınız olacak",
-    "bannerButtonTitle" : "Nano'yu Keşfedin",
-    "bannerButtonTitle2" : "Cihaz satın al",
-    "setupCta" : "Zaten bir cihazım var, onu kuralım"
+    "footer" : "Zaten bir Ledger cihazım var, onu kuralım",
+    "bannerTitle" : "Kriptolarınız ve NFT'leriniz için birinci sınıf güvenlik",
+    "bannerTitle2" : "Ledger Flex ile işlem yapmak için",
+    "bannerSubtitle" : "bir Ledger cihazınızın olması gerekir",
+    "bannerButtonTitle" : "Flex'i keşfedin",
+    "bannerButtonTitle2" : "Ledger satın alın",
+    "setupCta" : "Zaten bir Ledger cihazım var, onu kuralım"
   },
   "postBuyDeviceSetupNanoWall" : {
-    "title" : "Cihazınız elinize geçti mi?",
-    "desc" : "Cihazınız elinize geçtiğinde kurulumunu Ledger Live üzerinde başlatabilirsiniz!",
-    "cta" : "Cihazımı kur",
-    "bannerTitle" : "Cihazınız elinize geçti mi?",
+    "title" : "Ledger cihazınız elinize ulaştı mı?",
+    "desc" : "Ledger cihazınız elinize ulaştığında Ledger Live uygulamasının tüm özelliklerinin kilidini açmak için cihazınızın kurulumunu yapın.",
+    "cta" : "Ledger'ımı kur",
+    "bannerTitle" : "Ledger cihazınız elinize ulaştı mı?",
     "bannerCta" : "Kurulumu başlatın",
     "continue" : "Devam"
   },
@@ -2360,8 +2360,7 @@
       "swap" : "Takas et",
       "send" : "Gönder",
       "deposit" : "Al",
-      "stake" : "Stake et",
-      "yield" : "Getiri"
+      "stake" : "Stake et"
     },
     "recoverBanner" : {
       "subscribeDone" : {
@@ -2871,6 +2870,8 @@
       "developerModeDesc" : "Geliştirici uygulamalarını My Ledger'da görün ve Testnet uygulamalarını etkinleştirin.",
       "analytics" : "Analiz",
       "analyticsDesc" : "Ledger Live'ın performansının ölçülebilmesi ve hem uygulamanın hem de deneyiminizin geliştirilebilmesi için uygulama kullanım verilerini Ledger'ın toplamasına izin verin.",
+      "mevProtection" : "MEV Koruması",
+      "mevProtectionDesc" : "Ethereum'da daha güvenilir işlemler için MEV Korumasını etkinleştirin",
       "personalizedRecommendations" : "Kişiselleştirilmiş deneyim",
       "personalizedRecommendationsDesc" : "Size kişiselleştirilmiş öneriler ve tercihlerinize uygun içerikler sunabilmemiz ve pazarlama kampanyalarımızın performansını ölçebilmemiz için uygulama kullanım verilerini Ledger'ın toplamasına izin verin.",
       "analyticsModal" : {
@@ -3270,7 +3271,7 @@
     },
     "stake" : {
       "title" : "Stake et",
-      "description" : "Sahip olduğunuz kriptoları stake edin."
+      "description" : "Kriptolarınızla ödüller kazanın."
     },
     "swap" : {
       "title" : "Takas et",
