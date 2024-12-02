@@ -1287,20 +1287,20 @@
     "title" : "Ledgerが必要です",
     "desc" : "セキュリティーの都合上、Ledger Liveはデバイス上でのみ機能します。継続にはデバイスが必要です。",
     "cta" : "Ledgerを今すぐ購入",
-    "footer" : "既にデバイスを持っており、セットアップを開始可能",
-    "bannerTitle" : "暗号資産とNFTを安全に保管",
-    "bannerTitle2" : "Ledgerデバイスを使って取引するには、",
-    "bannerSubtitle" : "Ledgerデバイスにお任せ",
-    "bannerButtonTitle" : "Nanoをチェック",
-    "bannerButtonTitle2" : "デバイスを購入する",
-    "setupCta" : "すでにデバイスを持っている場合の設定"
+    "footer" : "すでにLedgerを持っているので、セットアップします",
+    "bannerTitle" : "暗号資産とNFTの一流のセキュリティ",
+    "bannerTitle2" : "トレードにはLedgerが必要です",
+    "bannerSubtitle" : "Ledger Flexで実現",
+    "bannerButtonTitle" : "Flexの詳細を知る",
+    "bannerButtonTitle2" : "Ledgerを購入する",
+    "setupCta" : "すでにLedgerを持っているので、セットアップします"
   },
   "postBuyDeviceSetupNanoWall" : {
-    "title" : "デバイスを受け取りましたか？",
-    "desc" : "デバイスを受け取ったら、Ledger Liveでセットアップを開始できます!",
-    "cta" : "デバイスをセットアップ",
-    "bannerTitle" : "デバイスを受け取りましたか？",
-    "bannerCta" : "セットアップを始める",
+    "title" : "Ledgerはすでに入手されましたか？",
+    "desc" : "Ledgerを入手したら、セットアップしてLedger Liveアプリの全機能をご利用ください。",
+    "cta" : "Ledgerをセットアップ",
+    "bannerTitle" : "Ledgerを受け取りましたか？",
+    "bannerCta" : "セットアップを開始",
     "continue" : "続行"
   },
   "purchaseDevice" : {
@@ -2360,8 +2360,7 @@
       "swap" : "スワップ",
       "send" : "送付",
       "deposit" : "受け取る",
-      "stake" : "ステーキング",
-      "yield" : "イールド"
+      "stake" : "ステーキング"
     },
     "recoverBanner" : {
       "subscribeDone" : {
@@ -2871,6 +2870,8 @@
       "developerModeDesc" : "My Ledgerに開発者用アプリを表示し、テストネットアプリを有効化してください。",
       "analytics" : "アナリティクス",
       "analyticsDesc" : "Ledgerがアプリの使用状況データを収集できるようにし、Ledger Liveのパフォーマンスを測定し、アプリと体験の両方を向上させます。",
+      "mevProtection" : "MEV保護",
+      "mevProtectionDesc" : "MEV保護を有効にすると、イーサリアムでのトランザクションの信頼性が高まります",
       "personalizedRecommendations" : "好みに合わせてコンテンツをカスタマイズ",
       "personalizedRecommendationsDesc" : "Ledgerがアプリの使用状況データを収集して、好みに合ったパーソナライズされた推奨事項やコンテンツを提供し、Ledgerのマーケティングキャンペーンのパフォーマンスを測定できるようにします。",
       "analyticsModal" : {
@@ -3270,7 +3271,7 @@
     },
     "stake" : {
       "title" : "ステーキング",
-      "description" : "保有する暗号資産をステーキングしましょう。"
+      "description" : "お持ちの暗号資産で報酬を獲得しましょう。"
     },
     "swap" : {
       "title" : "スワップ",
