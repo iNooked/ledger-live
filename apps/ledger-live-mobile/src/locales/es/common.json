@@ -2360,8 +2360,7 @@
       "swap" : "Permutar",
       "send" : "Enviar",
       "deposit" : "Recibir",
-      "stake" : "Participar",
-      "yield" : "Rendimiento"
+      "stake" : "Participar"
     },
     "recoverBanner" : {
       "subscribeDone" : {
@@ -2871,6 +2870,8 @@
       "developerModeDesc" : "Muestra las aplicaciones de desarrollador en Mi Ledger y habilita las aplicaciones Testnet.",
       "analytics" : "Análisis",
       "analyticsDesc" : "Permite que Ledger recopile los datos de uso de la aplicación para ayudarnos a medir el rendimiento de Ledger Live y mejorar tanto la aplicación como tu experiencia.",
+      "mevProtection" : "Protección contra MEV",
+      "mevProtectionDesc" : "Activa Protección contra MEV para lograr transacciones más fiables en Ethereum",
       "personalizedRecommendations" : "Experiencia personalizada",
       "personalizedRecommendationsDesc" : "Permite que la aplicación de Ledger recopile los datos de uso de la aplicación para ofrecerte recomendaciones y contenido personalizados que se ajusten a tus preferencias y para ayudarnos a medir el rendimiento de nuestras campañas de marketing.",
       "analyticsModal" : {
@@ -3270,7 +3271,7 @@
     },
     "stake" : {
       "title" : "Poner en participación",
-      "description" : "Pon en participación las cripto que tienes."
+      "description" : "Obtén recompensas por tus cripto."
     },
     "swap" : {
       "title" : "Permutar",
