@@ -169,8 +169,6 @@ export type Features = CurrencyFeatures & {
   ptxCard: DefaultFeature;
   ptxSwapLiveAppMobile: DefaultFeature;
   ptxSwapLiveAppDemoThree: Feature_PtxSwapLiveAppDemoThree;
-  ptxSwapCoreExperiment: Feature_PtxSwapCoreExperiment;
-  ptxSwapMoonpayProvider: Feature_PtxSwapMoonpayProvider;
   ptxSwapExodusProvider: Feature_PtxSwapExodusProvider;
   ptxSwapReceiveTRC20WithoutTrx: Feature_PtxSwapReceiveTRC20WithoutTrx;
   flexibleContentCards: Feature_FlexibleContentCards;
@@ -473,13 +471,6 @@ export type Feature_PtxSwapLiveAppDemoThree = Feature<{
   families?: string[];
 }>;
 
-export type Feature_PtxSwapCoreExperiment = Feature<{
-  variant: "Demo0" | "Demo3" | "Demo3Thorswap";
-  manifest_id: string;
-  currencies?: string[];
-  families?: string[];
-}>;
-
 export type Feature_FetchAdditionalCoins = Feature<{
   batch: number;
 }>;
@@ -546,7 +537,6 @@ export type Feature_PtxServiceCtaExchangeDrawer = DefaultFeature;
 export type Feature_PtxServiceCtaScreens = DefaultFeature;
 export type Feature_PortfolioExchangeBanner = DefaultFeature;
 export type Feature_BrazeLearn = DefaultFeature;
-export type Feature_PtxSwapMoonpayProvider = DefaultFeature;
 export type Feature_PtxSwapExodusProvider = DefaultFeature;
 export type Feature_PtxSwapReceiveTRC20WithoutTrx = DefaultFeature;
 export type Feature_FlexibleContentCards = DefaultFeature;

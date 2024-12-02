@@ -99,12 +99,7 @@ const getPtxAttributes = () => {
   const fetchAdditionalCoins = analyticsFeatureFlagMethod("fetchAdditionalCoins");
   const stakingProviders = analyticsFeatureFlagMethod("ethStakingProviders");
   const ptxCard = analyticsFeatureFlagMethod("ptxCard");
-  const ptxSwapMoonpayProviderFlag = analyticsFeatureFlagMethod("ptxSwapMoonpayProvider");
   const ptxSwapExodusProvider = analyticsFeatureFlagMethod("ptxSwapExodusProvider")?.enabled;
-  const ptxSwapCoreExperimentFlag = analyticsFeatureFlagMethod("ptxSwapCoreExperiment");
-  const ptxSwapCoreExperiment = ptxSwapCoreExperimentFlag?.enabled
-    ? ptxSwapCoreExperimentFlag?.params?.variant
-    : undefined;
 
   const isBatch1Enabled: boolean =
     !!fetchAdditionalCoins?.enabled && fetchAdditionalCoins?.params?.batch === 1;
@@ -118,15 +113,13 @@ const getPtxAttributes = () => {
     stakingProviders?.params?.listProvider?.length > 0
       ? stakingProviders?.params?.listProvider.length
       : "flag not loaded";
-  const ptxSwapMoonpayProviderEnabled: boolean = !!ptxSwapMoonpayProviderFlag?.enabled;
+
   return {
     isBatch1Enabled,
     isBatch2Enabled,
     isBatch3Enabled,
     stakingProvidersEnabled,
     ptxCard,
-    ptxSwapMoonpayProviderEnabled,
-    ptxSwapCoreExperiment,
     ptxSwapExodusProvider,
   };
 };

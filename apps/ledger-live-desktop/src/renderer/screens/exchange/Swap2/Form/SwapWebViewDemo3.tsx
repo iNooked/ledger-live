@@ -406,20 +406,8 @@ const SwapWebView = ({ manifest, liveAppUnavailable }: SwapWebProps) => {
             }
           : {}),
         ...(state?.from ? { fromPath: simplifyFromPath(state?.from) } : {}),
-        ...(swapLiveEnabledFlag?.params && "variant" in swapLiveEnabledFlag.params
-          ? {
-              ptxSwapCoreExperiment: swapLiveEnabledFlag.params?.variant as string,
-            }
-          : {}),
       }).toString(),
-    [
-      isOffline,
-      state?.defaultAccount,
-      state?.defaultParentAccount,
-      state?.from,
-      walletState,
-      swapLiveEnabledFlag,
-    ],
+    [isOffline, state?.defaultAccount, state?.defaultParentAccount, state?.from, walletState],
   );
 
   const onSwapWebviewError = (error?: SwapLiveError) => {

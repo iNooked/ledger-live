@@ -405,15 +405,6 @@ export const DEFAULT_FEATURES: Features = {
     },
   },
 
-  ptxSwapCoreExperiment: {
-    enabled: false,
-    params: {
-      variant: "Demo0",
-      manifest_id: "swap-live-app-demo-0",
-    },
-  },
-
-  ptxSwapMoonpayProvider: DEFAULT_FEATURE,
   ptxSwapExodusProvider: DEFAULT_FEATURE,
 
   llmAnalyticsOptInPrompt: {
