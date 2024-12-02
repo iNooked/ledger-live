@@ -7,7 +7,6 @@ import { getEnv } from "@ledgerhq/live-env";
 import { getNodeApi } from "@ledgerhq/coin-evm/api/node/index";
 import { getMainAccount, getParentAccount } from "@ledgerhq/live-common/account/helpers";
 import { getAccountBridge } from "@ledgerhq/live-common/bridge/impl";
-import { useSwapLiveConfig } from "@ledgerhq/live-common/exchange/swap/hooks/live-app-migration/useSwapLiveConfig";
 import { getAbandonSeedAddress } from "@ledgerhq/live-common/exchange/swap/hooks/useFromState";
 import {
   convertToAtomicUnit,
@@ -53,6 +52,7 @@ import {
 } from "../utils/index";
 import FeesDrawerLiveApp from "./FeesDrawerLiveApp";
 import WebviewErrorDrawer from "./WebviewErrorDrawer/index";
+
 export class UnableToLoadSwapLiveError extends Error {
   constructor(message: string) {
     const name = "UnableToLoadSwapLiveError";
@@ -128,8 +128,6 @@ const SwapWebView = ({ manifest, liveAppUnavailable }: SwapWebProps) => {
     defaultParentAccount?: Account;
     from?: string;
   }>();
-  const swapLiveEnabledFlag = useSwapLiveConfig();
-
   const { networkStatus } = useNetworkStatus();
   const isOffline = networkStatus === NetworkStatus.OFFLINE;
 

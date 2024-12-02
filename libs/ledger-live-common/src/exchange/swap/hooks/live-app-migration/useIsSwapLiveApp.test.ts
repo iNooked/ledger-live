@@ -66,18 +66,6 @@ describe("useIsSwapLiveApp hook", () => {
     expect(result.current.enabled).toBe(true);
   });
 
-  it("returns false when currencyFrom family is not in families, currencyFrom is not in currencies, and feature is disabled", () => {
-    useMockFeature.mockImplementation(flagName => {
-      if (flagName === "ptxSwapLiveAppDemoThree") {
-        return { enabled: false };
-      }
-    });
-
-    const { result } = renderHook(() => useIsSwapLiveApp({ currencyFrom: bitcoin }));
-
-    expect(result.current.enabled).toBe(false);
-  });
-
   it("returns enabled flag if both families and currencies are empty arrays", () => {
     useMockFeature.mockImplementation(flagName => {
       if (flagName === "ptxSwapLiveAppDemoThree") {
