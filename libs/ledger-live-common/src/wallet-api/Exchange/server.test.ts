@@ -69,7 +69,7 @@ describe("handlers", () => {
 
     it("calls SWAP with correct infos", async () => {
       // Given
-      const accounts = [genAccount("accountId1"), genAccount("accountId2")];
+      const accounts = () => [genAccount("accountId1"), genAccount("accountId2")];
       const handler = handlers({
         accounts,
         tracking: mockTracking,
@@ -108,7 +108,7 @@ describe("handlers", () => {
 
     it("calls SELL with correct infos", async () => {
       // Given
-      const accounts = [genAccount("accountId1"), genAccount("accountId2")];
+      const accounts = () => [genAccount("accountId1"), genAccount("accountId2")];
       const handler = handlers({
         accounts,
         tracking: mockTracking,
@@ -141,7 +141,7 @@ describe("handlers", () => {
 
     it("calls FUND with correct infos", async () => {
       // Given
-      const accounts = [genAccount("accountId1"), genAccount("accountId2")];
+      const accounts = () => [genAccount("accountId1"), genAccount("accountId2")];
       const handler = handlers({
         accounts,
         tracking: mockTracking,

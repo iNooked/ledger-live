@@ -55,6 +55,10 @@ import { registerTransportModules } from "~/renderer/live-common-setup";
 const rootNode = document.getElementById("react-root");
 const TAB_KEY = 9;
 
+export const store = createStore({
+  dbMiddleware,
+});
+
 async function init() {
   // at this step. we know the app error handling will happen here. so we can unset the global onerror
   window.onerror = null;
@@ -109,9 +113,6 @@ async function init() {
   if (window.localStorage.getItem("hard-reset")) {
     await hardReset();
   }
-  const store = createStore({
-    dbMiddleware,
-  });
   sentry(() => sentryLogsSelector(store.getState()));
   let notifiedSentryLogs = false;
   store.subscribe(() => {

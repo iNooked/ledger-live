@@ -133,7 +133,7 @@ const SwapWebView = ({ manifest, liveAppUnavailable }: SwapWebProps) => {
   const { networkStatus } = useNetworkStatus();
   const isOffline = networkStatus === NetworkStatus.OFFLINE;
 
-  const customPTXHandlers = usePTXCustomHandlers(manifest, accounts);
+  const customPTXHandlers = usePTXCustomHandlers(manifest);
   const customHandlers = useMemo(
     () => ({
       ...loggerHandlers,

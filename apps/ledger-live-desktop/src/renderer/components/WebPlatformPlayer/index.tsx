@@ -42,7 +42,7 @@ export default function WebPlatformPlayer({ manifest, inputs, onClose, config, .
 
   const accounts = useSelector(flattenAccountsSelector);
   const customACREHandlers = useACRECustomHandlers(manifest, accounts);
-  const customPTXHandlers = usePTXCustomHandlers(manifest, accounts);
+  const customPTXHandlers = usePTXCustomHandlers(manifest);
 
   const customHandlers = useMemo<WalletAPICustomHandlers>(() => {
     return {

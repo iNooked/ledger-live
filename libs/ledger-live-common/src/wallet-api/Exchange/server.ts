@@ -108,7 +108,7 @@ export const handlers = ({
     "custom.exchange.error": uiError,
   },
 }: {
-  accounts: AccountLike[];
+  accounts: () => AccountLike[];
   tracking: TrackingAPI;
   manifest: AppManifest;
   uiHooks: ExchangeUiHooks;
@@ -116,6 +116,7 @@ export const handlers = ({
   ({
     "custom.exchange.start": customWrapper<ExchangeStartParams, ExchangeStartResult>(
       async params => {
+        const currentAccounts = accounts();
         if (!params) {
           tracking.startExchangeNoParams(manifest);
           return { transactionId: "" };
@@ -134,9 +135,9 @@ export const handlers = ({
 
         // Use `if else` instead of switch to leverage TS type narrowing and avoid `params` force cast.
         if (params.exchangeType == "SWAP") {
-          exchangeParams = extractSwapStartParam(params, accounts);
+          exchangeParams = extractSwapStartParam(params, currentAccounts);
         } else if (params.exchangeType == "SELL") {
-          exchangeParams = extractSellStartParam(params, accounts);
+          exchangeParams = extractSellStartParam(params, currentAccounts);
         } else {
           exchangeParams = {
             exchangeType: params.exchangeType,
@@ -160,6 +161,7 @@ export const handlers = ({
     ),
     "custom.exchange.complete": customWrapper<ExchangeCompleteParams, ExchangeCompleteResult>(
       async params => {
+        const currentAccounts = accounts();
         if (!params) {
           tracking.completeExchangeNoParams(manifest);
           return { transactionHash: "" };
@@ -175,13 +177,13 @@ export const handlers = ({
           return Promise.reject(new Error(`accountId ${params.fromAccountId} unknown`));
         }
 
-        const fromAccount = accounts.find(acc => acc.id === realFromAccountId);
+        const fromAccount = currentAccounts.find(acc => acc.id === realFromAccountId);
 
         if (!fromAccount) {
           throw new ServerError(createAccountNotFound(params.fromAccountId));
         }
 
-        const fromParentAccount = getParentAccount(fromAccount, accounts);
+        const fromParentAccount = getParentAccount(fromAccount, currentAccounts);
 
         let exchange: Exchange;
 
@@ -191,14 +193,14 @@ export const handlers = ({
             return Promise.reject(new Error(`accountId ${params.toAccountId} unknown`));
           }
 
-          const toAccount = accounts.find(a => a.id === realToAccountId);
+          const toAccount = currentAccounts.find(a => a.id === realToAccountId);
 
           if (!toAccount) {
             throw new ServerError(createAccountNotFound(params.toAccountId));
           }
 
           // TODO: check logic for EmptyTokenAccount
-          let toParentAccount = getParentAccount(toAccount, accounts);
+          let toParentAccount = getParentAccount(toAccount, currentAccounts);
           let newTokenAccount;
           if (params.tokenCurrency) {
             const currency = findTokenById(params.tokenCurrency);

@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useCallback, useMemo } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { WalletAPICustomHandlers } from "@ledgerhq/live-common/wallet-api/types";
 import {
@@ -6,7 +6,7 @@ import {
   ExchangeType,
 } from "@ledgerhq/live-common/wallet-api/Exchange/server";
 import trackingWrapper from "@ledgerhq/live-common/wallet-api/Exchange/tracking";
-import { AccountLike, Operation } from "@ledgerhq/types-live";
+import { Operation } from "@ledgerhq/types-live";
 import { track } from "~/renderer/analytics/segment";
 import { currentRouteNameRef } from "~/renderer/analytics/screenRefs";
 import { closePlatformAppDrawer, openExchangeDrawer } from "~/renderer/actions/UI";
@@ -14,8 +14,14 @@ import { WebviewProps } from "../Web3AppWebview/types";
 import { context } from "~/renderer/drawers/Provider";
 import WebviewErrorDrawer from "~/renderer/screens/exchange/Swap2/Form/WebviewErrorDrawer";
 import { platformAppDrawerStateSelector } from "~/renderer/reducers/UI";
+import { flattenAccountsSelector } from "~/renderer/reducers/accounts";
+import { store } from "~/renderer/init";
 
-export function usePTXCustomHandlers(manifest: WebviewProps["manifest"], accounts: AccountLike[]) {
+function getAccounts() {
+  return flattenAccountsSelector(store.getState());
+}
+
+export function usePTXCustomHandlers(manifest: WebviewProps["manifest"]) {
   const dispatch = useDispatch();
   const { setDrawer } = React.useContext(context);
 
@@ -47,7 +53,7 @@ export function usePTXCustomHandlers(manifest: WebviewProps["manifest"], account
   return useMemo<WalletAPICustomHandlers>(() => {
     return {
       ...exchangeHandlers({
-        accounts,
+        accounts: getAccounts,
         tracking,
         manifest,
         uiHooks: {
@@ -91,5 +97,5 @@ export function usePTXCustomHandlers(manifest: WebviewProps["manifest"], account
         },
       }),
     };
-  }, [accounts, tracking, manifest, dispatch, setDrawer, isDrawerOpen]);
+  }, [tracking, manifest, dispatch, setDrawer, isDrawerOpen]);
 }
