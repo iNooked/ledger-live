@@ -1287,19 +1287,19 @@
     "title" : "أنت بحاجة إلى جهاز Ledger",
     "desc" : "من أجل أمانك، Ledger Live يعمل فقط مع جهاز. أنت بحاجة إلى جهاز لتتمكن من المتابعة.",
     "cta" : "اشترِ محفظتك Ledger الآن",
-    "footer" : "أنا أمتلك جهاز بالفعل، لنعده الآن",
-    "bannerTitle" : "حافظ على أصولك المشفرة وNFTs آمنة",
-    "bannerTitle2" : "ستحتاج إلى Nano للتداول",
-    "bannerSubtitle" : "بجهاز Ledger",
-    "bannerButtonTitle" : "اكتشف Nano",
-    "bannerButtonTitle2" : "اشترِ جهاز",
-    "setupCta" : "أنا أمتلك جهاز بالفعل، لنعده الآن"
+    "footer" : "لديّ جهاز Ledger بالفعل، لنعده",
+    "bannerTitle" : "مستوى عالي التطور من الأمان لأصولك المشفرة ورموزك غير القابلة للاستبدال",
+    "bannerTitle2" : "ستحتاج إلى جهاز Ledger لتكون قادراً على التداول",
+    "bannerSubtitle" : "بواسطة Ledger Flex",
+    "bannerButtonTitle" : "اكتشف Flex",
+    "bannerButtonTitle2" : "شراء Ledger",
+    "setupCta" : "لديّ جهاز Ledger بالفعل، لنعده"
   },
   "postBuyDeviceSetupNanoWall" : {
     "title" : "هل استلمت جهازك؟",
     "desc" : "بمجرد أن تستلم جهازك، يُمكنك البدء في إعداده من خلال Ledger Live!",
     "cta" : "إعداد جهازي",
-    "bannerTitle" : "هل استلمت جهازك؟",
+    "bannerTitle" : "تلقيت جهازك Ledger؟",
     "bannerCta" : "ابدأ الإعداد",
     "continue" : "متابعة"
   },
@@ -2871,6 +2871,8 @@
       "developerModeDesc" : "عرض تطبيقات المطور في My Ledger (جهازي Ledger) وتمكين تطبيقات Testnet.",
       "analytics" : "تحليلات",
       "analyticsDesc" : "قم بتمكين Ledger من جمع بيانات استخدام التطبيق للمساعدة في قياس أداء Ledger Live وتحسين كلٍ من التطبيق وتجربتك.",
+      "mevProtection" : "حماية الحد الأقصى للقيمة القابلة للاستخراج (MEV)",
+      "mevProtectionDesc" : "قم بتمكين حماية الحد الأقصى للقيمة القابلة للاستخراج (MEV) لمعاملات أكثر موثوقية على إيثريوم",
       "personalizedRecommendations" : "تجربة مخصصة",
       "personalizedRecommendationsDesc" : "قم بتمكين Ledger من جمع بيانات استخدام التطبيق لتقديم توصيات مخصصة ومحتوى يطابق تفضيلاتك وللمساعدة في قياس أداء حملاتنا التسويقية.",
       "analyticsModal" : {
